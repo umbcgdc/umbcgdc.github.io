@@ -73,6 +73,10 @@ h6, .h6 {
   z-index: -1;
 }
 
+.bleh{
+ text-align: center;   
+}
+
 /*
  * Jumbotron at the top of the page.
  */
