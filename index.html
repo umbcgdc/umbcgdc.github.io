@@ -8,6 +8,7 @@
 	<meta name="description" content="Main website for the UMBC Game Developers Club." />
 	<meta name="keywords"  content="UMBC,Game Developers,Unity,Unreal,Maryland,Baltimore" />
 	<meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
@@ -89,13 +90,16 @@
         
     .calendar{
        position: absolute;
-       bottom: 16%;
-	   left: 2%;
+       left: 20%;
+       bottom: 20%;
+       width: 60%;
+       height: 70%;
+       overflow: hidden;
     }
         
     .gdcImage{
         position: absolute;
-        bottom: 20%;
+        bottom: 25%;
         width: 50%;
     }
         
@@ -210,16 +214,12 @@
 
 <div id="fullpage">
 	<div class="section " id="section0">
-        <div class="gdcImage2">
-				<img src="imgs/shirt8color_final.png" style="width: 110%; height: 110%" alt="simple" />
-        </div>
+        <img class="gdcImage2" src="imgs/shirt8color_final.png" alt="simple" />
         <div class="title"><div class="rel"><h3>UMBC<br><em1>GAME</em1></em1><br><em2>DEV</em2><br><em3>CLUB</em3></h3></div></div>
     </div>
     <div class="section" id="section0">
        <div class="title"><h1>Calendar</h1></div>
-        <div class="calendar">
-            <iframe src="https://calendar.google.com/calendar/embed?src=agc6nsvt7kq1lm9bkd4c26pv38%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="900" height="700" frameborder="0" scrolling="no"></iframe>
-        </div>
+       <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=agc6nsvt7kq1lm9bkd4c26pv38%40group.calendar.google.com&ctz=America/New_York" scrolling="no"></iframe>
     </div>
 	<div class="section" id="section1">
 	    <div class="slide" id="slide1">
