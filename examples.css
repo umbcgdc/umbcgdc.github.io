@@ -7,7 +7,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
     margin: 0;
 }
 a{
-	text-decoration:none;
+	color: blue;
 }
 table {
     border-spacing: 0;
@@ -75,7 +75,7 @@ p{
 #menu li {
 	display:inline;
     outline: none;
-	color: #fff;
+	color: blue;
 	background:#0a0400;
 	background: #0a0400;
 }
@@ -83,11 +83,11 @@ p{
 	background:#fff;
     outline: none;
 	background: #0a0400;
-	color: #fff;
+	color: blue;
 }
 #menu li a{
-	text-decoration:none;
-	color: #fff;
+	color: white;
+    text-decoration: none;
 }
 #menu li.active a:hover{
 	color: #0a0400;

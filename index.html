@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Background images - fullPage.js</title>
+	<title>UMBC Game Dev</title>
 	<meta name="author" content="UMBC Game Developers Club" />
 	<meta name="description" content="Main website for the UMBC Game Developers Club." />
 	<meta name="keywords"  content="UMBC,Game Developers,Unity,Unreal,Maryland,Baltimore" />
@@ -13,16 +13,23 @@
 
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
+    <link rel="icon" href="./imgs/faviconNew.png">
 	<style>
 
 	/* Style for our header texts
 	* --------------------------------------- */
+        
+    html,body {
+        height:100%;
+    }
+        
 	h1{
 		font-size: 5em;
 		font-family: arial,helvetica;
 		color: #fff;
 		margin:0;
 		padding:0;
+        
 	}
         
     h2{
@@ -42,38 +49,33 @@
         text-align: left;
     }
         
-    div.rel{
-        position: fixed;
-        left: 5%;
-        bottom: 10%;
-    }
+    p{
         
-    em1{
-        color: #fff87c;
-    }
-        
-    em2{
-        color: #ffd64a;
-    }
-        
-    em3{
-        color: #f87b48;
-    }
-        
-    a{
-        color: #fff;
+        padding-top: 10px;
+        color: '#000';
     }
         
     p1{
-        position: absolute;
-        font-size: 2em;
+        font-size: 14px;
         font-family: arial, helvetica;
-        left: 3%;
-        bottom: 40%;
-        color: '#4d4d4d';
-        text-align: center;
+        margin: 0 auto;
+        color: '#000';
+        text-align: left;
     }
 
+    p2{
+        font-size: 12pt;
+        font-family: arial, helvetica;
+        color: '#B8B8B8';
+        text-align: left;    
+    }
+        
+    p3{
+        font-size: 12pt;
+        font-family: arial, helvetica;
+        color: '#B8B8B8';
+        text-align: center;    
+    }
 	/* Centered texts in each section
 	* --------------------------------------- */
 	.section{
@@ -88,26 +90,12 @@
         text-align:right;
     }
         
-    .calendar{
-       position: absolute;
-       left: 20%;
-       bottom: 20%;
-       width: 60%;
-       height: 70%;
-       overflow: hidden;
-    }
-        
     .gdcImage{
-        position: absolute;
-        bottom: 25%;
-        width: 50%;
+        height: 80%;
+        width: 100%;
+        margin: 0 auto;
     }
         
-    .gdcImage2{
-        position: fixed;
-        bottom:-3%;
-        left: 50%;
-    }
         
     div.mess{
         position: absolute;
@@ -116,62 +104,136 @@
         bottom: 40%;
     }
         
-    #header, #footer{
+    #header{
 		position:fixed;
-		height: 30px;
+		height: 50px;
 		display:block;
 		width: 100%;
 		background: #0a0400;
 		z-index:9;
 		text-align:center;
 		color: #f2f2f2;
-		padding: 20px 0 0 0;
 	}
+    #header2{
+		height: 300px;
+		display:block;
+		width: 100%;
+		background: red;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+	}
+        
+    #footer{
+        height: 300px;
+        display: block;
+        width: 100%;
+        background: #0a0400;
+        z-index: 9;
+        text-align:center;
+		color: #f2f2f2;
+    }
+        
+    .container {
+        margin: auto;
+        width: 90%;
+        max-width: 1300px;
+        background: #FFFFFF;
+        padding-top: 50px;
+        height: 100%;
+    }
+    
+    #cont0{
+        background: black;
+        padding-top: 100px;
+    }
+    @font-face{
+        font-family: SaboFilledFont;
+        src: url(./fonts/sabofilled-webfont.ttf);        
+    }
+    #menu li a{
+	   color: white;
+        font-family: SaboFilledFont;
+    }
 
 
 	/* Backgrounds will cover all the section
 	* --------------------------------------- */
 	.section{
 		background-size: cover;
+        background: #ffffff; /* Old browsers */
+        background-image: url('./imgs/pixel_weave.png');
+        background-repeat: repeat-y repeat-x;
 	}
+        
+        
 	.slide{
 		background-size: cover;
 	}
 
 	/* Defining each section background and styles
 	* --------------------------------------- */
-	#section0{
-		padding: 30% 0 0 0;
-	}
-    #section0{
-		padding: 30% 0 0 0;
-	}
-	#section2{
-		padding: 6% 0 0 0;
-	}
-	#section3{
-		padding: 6% 0 0 0;
-	}
-    #section4{
-		padding: 30% 0 0 0;
-	}
+    .headerTitle{
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 90%;
+        background:orange; 
+    }
+    .headerImg {
+        position: relative;
+        float: right;
+        width: 50%;
+        height: 80%;
+        margin: 0 auto;
+    }
+    #actualImg{
+        width: 100%; //your image/element width here
+        height: 10%; //your image/element height here
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        max-height: 720px;
+        top: 35px; left: 0; bottom: 10px; right: 0;
+        overflow: scroll;
+    }
+    .calendar{
+       width: 80%;
+       height: 70%;
+       padding-top: 10%;
+       margin: 0 auto;
+    }
+        
 	#section4 h1{
 		color: #000;
 	}
 
-
- 	/*Adding background for the slides
-	* --------------------------------------- */
-	#slide1{
-		padding: 10% 0 0 0;
-	}
-
-
 	/* Bottom menu
 	* --------------------------------------- */
 	#infoMenu li a {
-		color: #fff;
+		color: blue;
 	}
+    #menu{
+        width: 100%;       
+    }
+    #myImg{
+        box-shadow: 10px 10px 5px #181818;
+        width: 60%;
+        margin: 0 auto;
+    }
+    #test{
+        width: 40%;
+        padding: 5px 5px 5px 5px;
+        text-align: left;
+        margin: 0 auto;
+    }
+    #test2{
+        width: 40%;
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+        margin: 0 auto;
+    }
+        
 	</style>
 
 	<!--[if IE]>
@@ -179,7 +241,7 @@
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
-
+   
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
@@ -189,9 +251,10 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-                sectionsColor: ['#0a0400', '#fbb023', '#d0581c', '#f1ac88', '#4d4d4d', '#98a3a5'],
+                sectionsColor: ['#000000', '#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff'],
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage'],
-				verticalCentered: false
+                autoScrolling: false,
+                fitToSection: false,
 
 			});
 		});
@@ -200,65 +263,93 @@
 </head>
 <body>
     
-    
 <div id="header"></div>
 <ul id="menu">
 	<li data-menuanchor="firstPage"><a href="#firstPage">HOME</a></li>
 	<li data-menuanchor="secondPage"><a href="#secondPage">CALENDAR</a></li>
 	<li data-menuanchor="3rdPage"><a href="#3rdPage">MEDIA</a></li>
-	<li data-menuanchor="4thpage"><a href="#4thpage">GAMES</a></li>
-    <li data-menuanchor="5thpage"><a href="#5thpage">CONTACT</a></li>
-    <li data-menuanchor="6thpage"><a href="#6thpage">ABOUT</a></li>
-    <li data-menuanchor="7thpage"><a href="#7thpage">PROJECTS</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">TITLES</a></li>
 </ul>
 
 <div id="fullpage">
-	<div class="section " id="section0">
-        <img class="gdcImage2" src="imgs/shirt8color_final.png" alt="simple" />
-        <div class="title"><div class="rel"><h3>UMBC<br><em1>GAME</em1></em1><br><em2>DEV</em2><br><em3>CLUB</em3></h3></div></div>
+	<div class="section" id="section0">
+        <div class="container" id="cont0">
+            <div class="headerImg" id="hImg0"><img src="imgs/shirt8color_final.png" alt="simple" id="actualImg"/></div>
+            <div class="headerImg" id=hImg1><img src="imgs/HeaderLeft.png" alt="simple" id="actualImg"/></div>
+        </div>
     </div>
-    <div class="section" id="section0">
-       <div class="title"><h1>Calendar</h1></div>
-       <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=agc6nsvt7kq1lm9bkd4c26pv38%40group.calendar.google.com&ctz=America/New_York" scrolling="no"></iframe>
+    <div class="section" id="sectionC">
+        <div class="container">
+            <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=agc6nsvt7kq1lm9bkd4c26pv38%40group.calendar.google.com&ctz=America/New_York" style="border-width:0" scrolling="no" frameborder="0"></iframe>
+            <!--<div class="titlePage2"><h1>Calendar</h1></div>-->
+        </div>
     </div>
 	<div class="section" id="section1">
-	    <div class="slide" id="slide1">
-            <div class="gdcImage">
-				<img src="imgs/Img001.jpg" style="width: 50%; height: 50%" alt="simple" />
-				<p>URCAD 2015 with the Inheritance project group.</p>
-			</div>
-        </div>
-	    <div class="slide" id="slide1">
-            <div class="gdcImage">
-				<img src="imgs/Img002.jpg" style="width: 50%; height: 50%" alt="simple" />
-				<p>Check out that GDC cake bruh.</p>
-			</div>
-        </div>
-        <div class="title"><h1>Media</h1></div>
-	</div>
+        <div class="container">
+	        <div class="slide" id="slide1">
+                <div class="gdcImage">
+                    <img src="imgs/Img001.jpg" id="myImg" alt="simple" />
+                     <p>URCAD 2015 with the Inheritance project group.</p>
+			     </div>
+            </div>
+	       <div class="slide" id="slide1">
+                <div class="gdcImage">
+                    <img src="imgs/Img002.jpg" id="myImg" alt="simple" />
+                    <p>A GDC-Themed Cake made by our Vice President Andrea!</p>
+                </div>
+            </div>
+            <div class="slide" id="slide1">
+                <div class="gdcImage">
+                    <img src="imgs/Img003.jpg" id="myImg" alt="simple" />
+                    <p>Students playing GDC games at URCAD 2015.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide1">
+                <div class="gdcImage">
+                    <img src="imgs/Img004.jpg" id="myImg" alt="simple" />
+                    <p>The Game Dev Club poster for the 2014/2015 year.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide1">
+                <div class="gdcImage">
+                    <img src="imgs/Img005.jpg" id="myImg" alt="simple" />
+                    <p>Game Dev members waiting for DEC to start!</p>
+                </div>
+            </div>
+            <div class="slide" id="slide1">
+                <div class="gdcImage">
+                    <img src="imgs/Img006.jpg" id="myImg" alt="simple" />
+                    <p>Another view of that delicious cake.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide1">
+                <div class="gdcImage">
+                    <img src="imgs/Img007.jpg" id="myImg" alt="simple" />
+                    <p>Industry presenters give presentations every year at DEC.</p>
+                </div>
+            </div>
+	   </div>
+    </div>
     <div class="section" id="section2">
-        <p1>Past GDC Projects Will Be Here</p1>
-        <div class="title"><h1>Games</h1></div>
+        <div class="container">
+	        <div class="slide" id="slide1">
+                <div class="gdcImage">
+				    <img src="imgs/GameScreen01.jpg" id="myImg" alt="simple" />
+				    <p>Graveyard Beat</p>
+                    <div id="test"><p2>A fighting game that has decoupled itself from the continuous nature of the genre, instead embracing the discrete temporal mechanics of rhythm games to provide a unique and innovative experience.</p2></div>
+			     </div>
+            </div>
+             <div class="slide" id="slide1">
+                <div class="gdcImage">
+				    <img src="imgs/GameScreen02.jpg" id="myImg" alt="simple" />
+				    <p>Heart Attack</p>
+                    <div id="test"><p2>A 3D asymmetrical multiplayer game that exacerbates the anxieties inherent in competitive play to produce a game revolving around tension and fear, and their respective mechanical representations.</p2></div>
+                    <div id="test2"><p3>Project Lead: Bryan Jarrell<br>Coding Lead: Conrad Etherton<br>Art Lead: Charles Douglas<br>Programmers: Joe O'Malley, Jeremy Suon<br>Artists: Zachary Holtzman<br><br>Repository Link: <a href="https://bitbucket.org/jbryan4/heartattackmain">https://bitbucket.org/jbryan4/heartattackmain</a><br>Playable Demo: </p3></div>
+			     </div>
+            </div>
+	   </div>
     </div>
-	<div class="section" id="section3">
-        <h2>PRESIDENT: Eliot Carney-Seim - eliot2@umbc.edu</h2>
-        <h2>VICE PRESIDENT: Andrea Wozniak - wozniak1@umbc.edu</h2>
-        <h2>TREASURER: Chris Hamer - chamer1@umbc.edu</h2>
-        <h2>SECRETARY: Charles Douglas - cdougl2@umbc.edu</h2>
-        <h2>WEB: Bryan Jarrell - jbryan4@umbc.edu
-</h2>
-        <h2><a target="_blank" href="https://twitter.com/umbcgdc">TWITTER</a> - <a target="_blank"  href="https://www.facebook.com/groups/umbcgamedev/">FACEBOOK</a> - <a target="_blank" href="http://my.umbc.edu/groups/gdc">MYUMBC</a></h2>
-        <div class="title"><h1>Contact</h1></div>
-    </div>
-    <div class="section" id="section4"><div class="mess">
-       <p1>The GDC was formed in the Fall 2005 semester by Eric Jordan with the goal of giving students from varied backgrounds a chance to work together and make games. <br><br>Meetings are weekly: On Wednesday from 12:00-1:00 PM and on Friday at 1:00PM. <br><br>The club room is located in Engineering 005A.</p1></div>
-       <div class="title"><h1>About</h1></div>
-    </div>
-    <div class="section" id="section4">
-       <p1>Past GDC Projects Will Be Here</p1>
-       <div class="title"><h1>Projects</h1></div>
-    </div>
-</div>
+<div id="footer"></div>
 
 </body>
 </html>
