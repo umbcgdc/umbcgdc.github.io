@@ -1,0 +1,43 @@
+
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #f9f9f9;
+        font-weight: bold;
+}
+
+
+
+article {
+    
+}
+
+header {
+    background-color: black;
+    color: #ffbf10;
+}
+
+#copyright {
+    background-color: black;
+}
+
+
+
+.navbar-nav > li > a, .navbar-nav > li, .navbar-brand {
+    padding-top:0px !important; padding-bottom:15px !important;
+    height: 30px;
+    color: white;
+    font-size: 28px;
+}
+.navbar {min-height:30px !important;
+    background:black;
+}
+
+.logo {padding: 10px;}
+.info {padding: 5px;}
+
+
+nav {
+    background-color: black;
+        color: white;
+}
