@@ -4,12 +4,18 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     background-color: #f9f9f9;
         font-weight: bold;
+        overflow-x: hidden;
+
+
 }
 
+article, footer {
+    padding-left: 30px;
+    padding-right: 30px
+}
 
-
-article {
-    
+article li {
+    list-style: none;
 }
 
 header {
@@ -18,10 +24,16 @@ header {
 }
 
 #copyright {
-    background-color: black;
+    width: 100%;
 }
 
+.media_list {
+    list-style: none;
+}
 
+#footer-separator {
+    border-top: 1px solid #111;
+}
 
 .navbar-nav > li > a, .navbar-nav > li, .navbar-brand {
     padding-top:0px !important; padding-bottom:15px !important;
@@ -29,6 +41,14 @@ header {
     color: white;
     font-size: 28px;
 }
+.navbar-default .navbar-nav > li > a {
+    color: #888;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ccc;
+}
+
 .navbar {min-height:30px !important;
     background:black;
 }

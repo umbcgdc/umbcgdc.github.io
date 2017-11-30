@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<article> <!-- EDIT BELOW THIS LINE. -->
-<h1>Pardon our dust...</h1>
-    <p>This website is currently under construction. For any questions, inquiries, or for more information, please contact us at umbcgamedev@gmail.com .</p>
+# Welcome To The UMBC Game Developers Club
 
-
-</article> <!-- EDIT ABOVE THIS LINE. -->
+#### The UMBC Game Developers Club is a professional, career focused club dedicated to bringing students of all majors together to learn about game development, learn in a team based environment, network, and improve our resumes and portfolios to get jobs upon graduation.
