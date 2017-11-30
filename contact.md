@@ -3,22 +3,18 @@ layout: default
 title: Contact
 permalink: /contact/
 ---
-<div class="row">
 
-<div class="col-sm-8 blog-main">
+## Contact Our Officers!
 
-  <div class="blog-post">
+
+  <div>
     <ul>
-        <li>President: Eliot Carney-Seim - eliot2@umbc.edu</li>
-        <li>Vice-President and Historian: Andrea Wozniak - wozniak1@umbc.edu</li>
-        <li>Treasurer: Chris Hamer - chamer1@umbc.edu</li>
-        <li>Secretary: Charles Douglas - cdougl2@umbc.edu</li>
-        <li>Web: Bryan Jarrell - jbryan4@umbc.edu</li>
+        <li>President: Andrea Wozniak - wozniak1@umbc.edu</li>
+        <li>Vice President: Shea Sandifer - ssandif1@umbc.edu</li>
+        <li>Treasurer: Khadijah Wali - kwali2@umbc.edu</li>
+        <li>Secretary: Chris Hamer - chamer1@umbc.edu</li>
+        <li>Educational Outreach - Tulie Mitiuriev - ac80579@umbc.edu</li>
+        <li>Webmaster - Sam Siegel - ssiegel2@umbc.edu</li>
     </ul>
 
-  </div><!-- /.blog-post -->
-
-
-</div><!-- /.blog-main -->
-
-</div><!-- /.row -->
+  </div>
