@@ -4,11 +4,11 @@ title: Games
 permalink: /games/
 ---
 
-### Club Games are a work in progress!
+## Club Games are a work in progress!
 
-# Game Dev's 2017 Game List
+### Game Dev's 2017 Game List
 
-Star Marten
+## Game 1: Star Marten
 
 Description: TBA
 
