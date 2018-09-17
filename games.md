@@ -6,7 +6,7 @@ permalink: /games/
 
 ## Club Games are a work in progress!
 
-### Game Dev's 2017 Game List
+# Game Dev's 2017 Game List
 
 ## Game 1: Star Marten
 
