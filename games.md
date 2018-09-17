@@ -6,11 +6,11 @@ permalink: /games/
 
 ### Club Games are a work in progress!
 
-## Game Dev's 2017 Game List
+# Game Dev's 2017 Game List
 
-## Star Marten
+Star Marten
 
-# Description: TBA
+Description: TBA
 
-# Link: https://mnchino.itch.io/star-marten
+Link: https://mnchino.itch.io/star-marten
 
