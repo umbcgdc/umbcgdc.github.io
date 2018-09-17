@@ -4,4 +4,13 @@ title: Games
 permalink: /games/
 ---
 
-## Playable club games coming soon!
+### Club Games are a work in progress!
+
+## Game Dev's 2017 Game List
+
+## Star Marten
+
+# Description: TBA
+
+# Link: https://mnchino.itch.io/star-marten
+
