@@ -6,8 +6,6 @@ permalink: /games/
 
 <script src = "/js/imghover.js"></script>
 
-#### Club Games are a work in progress!
-
 <!--
 
 ## Game Dev's 2017 Game List
