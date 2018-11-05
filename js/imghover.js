@@ -11,32 +11,26 @@ function enableImg(img) {
 	img1.style.display = "block";
 }
 
-function toggleImg(img, txt1) {
-    
+function toggleImgSize(img) {
     var img1 = document.getElementById(img);
-    var txt = document.getElementById(txt1);
     
-    if (img1.style.display == "none") {
-        img1.style.display = "block";
-        txt.innerHTML = "Close Picture";
+    if (img1.dataset.setting == "max") {
+        // going to become large
+        img1.title = "Click to Enlarge";
+        img1.style.width = '200px';
+        img1.style.height = '200px';
+        img1.dataset.setting = "min";
     } else {
-        img1.style.display = "none";
-        txt.innerHTML = "Open Picture";
+        // going to become small
+        img1.title = "Click to Minimize";
+        img1.style.width = 'auto';
+        img1.style.height = 'auto';
+        img1.dataset.setting = "max";
     }
     
 }
 
-function toggleVideo(vid, txt1) {
-    var img1 = document.getElementById(vid);
-    var txt = document.getElementById(txt1);
+function hoverText(textID) {
+    var txt = document.getElementByID(textID);
     
-    if (img1.style.display == "none") {
-        //alert("true");
-        img1.style.display = "block";
-        txt.innerHTML = "Close Video";
-    } else {
-        //alert("false");
-        img1.style.display = "none";
-        txt.innerHTML = "Open Video";
-    }
 }
