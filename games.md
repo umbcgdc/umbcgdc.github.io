@@ -13,7 +13,7 @@ permalink: /games/
 
 #### Description: 
 
-TBA
+A 2D platformer, built on the Game Maker engine, which features interesting platforming, various powerups, and unique levels and challenges in order to clear the two fully-built levels.
 
 #### Link: [itch.io](https://mnchino.itch.io/star-marten)
 
