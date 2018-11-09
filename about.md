@@ -29,7 +29,7 @@ Check out [our resources tab](../resources/) for more information on what we use
 
 ### What if I don't have a laptop or it's not that good?
 
-The lab room we meet in has computers any UMBC student can use. Just log in using your UMBC credentials and the computer will let you in, with Unity, Unreal and many other important applications already installed. However, for ease of convenience, if you have a laptop you should try and bring it in.
+The lab room we meet in has computers any UMBC student can use. Just log in using your UMBC credentials and the computer will let you in, with Unity, Unreal and many other important applications already installed. However, for convenience, if you have a laptop you should try and bring it in.
 
 ## Events
 
