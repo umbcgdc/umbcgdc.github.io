@@ -8,6 +8,27 @@ permalink: /about/
 
 The UMBC Game Developers Club is a professional, career focused club dedicated to bringing students of all majors together to learn about game development, learn in a team based environment, network, and improve our resumes and portfolios to get jobs upon graduation.
 
+## Frequently Asked Questions
+
+### Where do we meet?
+
+We meet at Engineering 005B on Wedensdays (12PM-1PM) and Fridays (1PM-5PM). Drop by anytime; you can leave or come anytime during the meetings.
+
+### Do I need game development/art/programming experience do join?
+
+No experience is necessary! The Game  Developers Club exists to help members learn about game development, whatever their starting skill level.
+
+### Is it too late to join?
+
+Absolutely not! Just pop in during a meeting and ask an officer about the teams. We can help you get set up with a team that can accomodate your skill level and interests.
+
+### What game engines, programs, and programming languages do you use?
+Most of our game development teams use the Unity game engine (using C#), with Unreal 4 (using Blueprints and C++) as a close second. Other game engines (Godot, Xenko) are also used on occasion.
+
+Check out [our resources tab](../resources/) for more information on what we use.
+
+## Events
+
 ### Annual Game Jam
 
 A Game Jam is a period of time (usually 48 hours) where everyone comes together to pitch new game ideas around a theme, form teams based on what you’re interested in, and make a small prototype of your idea! (Sleep is optional!)
@@ -27,3 +48,5 @@ Through our networking, we bring in several industry veterans to present and giv
 ### Digital Entertainment Conference
 
 The Digital Entertainment Conference is our club’s biggest annual event where we bring in industry veterans to give lectures to the club, the UMBC community, and everyone interested in the game industry. (High School students are welcome)
+
+
