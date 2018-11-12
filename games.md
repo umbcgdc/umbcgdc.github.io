@@ -26,8 +26,10 @@ A 2D platformer, built on the Game Maker engine, which features interesting plat
 
 A unique twist on the traditional Connect 4 game, ported to mobile using the Godot engine.
 
-
+<!--
 <img title = "Click to Enlarge" src = "/gdcimgs/Connect4Heroes.png" onClick = "toggleImgSize('c4h')" data-setting='min' style = "width: 10%; height: 10%;" id = "c4h">
+-->
+<img src = "/gdcimgs/Connect4Heroes.png" class = "img" id = "c4h">
 
 ### Game 2: Harrowing Flight
 
@@ -36,7 +38,7 @@ A unique twist on the traditional Connect 4 game, ported to mobile using the God
 A 3D Space Dogfighting Game, built on the Xenko engine.
 
 
-<img title = "Click to Enlarge" src = "/gdcimgs/HarrowingFlight.png" onClick = "toggleImgSize('hf')" style = "width: 10%; height: 10%;" id = "hf">
+<img src = "/gdcimgs/HarrowingFlight.png" class = "img" id = "hf">
 
 ### Game 3: Skeletons and Hats
 
@@ -45,7 +47,7 @@ A 3D Space Dogfighting Game, built on the Xenko engine.
 A multiplayer fighting game involving pickups and innovative gameplay, built on the Unity engine.
 
 
-<img title = "Click to Enlarge" src = "/gdcimgs/SkeletonsAndHats.png" onClick = "toggleImgSize('skh')" style = "width: 10%; height: 10%;" id = "skh">
+<img src = "/gdcimgs/SkeletonsAndHats.png" class = "img" id = "skh">
 
 
 ### Game 4: Edgerson
@@ -55,7 +57,7 @@ A multiplayer fighting game involving pickups and innovative gameplay, built on 
 A fast paced puzzle platformer built on the Unity Engine.
 
 
-<img title = "Click to Enlarge" src = "/gdcimgs/Edgerson.png" onClick = "toggleImgSize('edg')" style = "width: 10%; height: 10%;" id = "edg">
+<img src = "/gdcimgs/Edgerson.png" class = "img" id = "edg">
 
 
 ### Game 5: Bad Boy
@@ -65,7 +67,7 @@ A fast paced puzzle platformer built on the Unity Engine.
 A 3D Boss Rush game built on Unreal Engine. 
 
 
-<img title = "Click to Enlarge" src = "/gdcimgs/BadBoySlime.jpg" onClick = "toggleImgSize('BB')" style = "width: 10%; height: 10%;" id = "BB">
+<img src = "/gdcimgs/BadBoySlime.jpg" class = "img" id = "BB">
 
 
 ### Game 6: Crash Site
@@ -75,7 +77,7 @@ A 3D Boss Rush game built on Unreal Engine.
 A 2D Metroidvania platformer based on fast movement built on the Unity Engine. 
 
 
-<img title = "Click to Enlarge" src = "/gdcimgs/CrashSite.png" onClick = "toggleImgSize('CS')" style = "width: 10%; height: 10%;" id = "CS">
+<img src = "/gdcimgs/CrashSite.png" class = "img" id = "CS">
 
 
 ### Game 7: Adryft
@@ -84,4 +86,4 @@ A 2D Metroidvania platformer based on fast movement built on the Unity Engine.
 
 An atmospheric, story driven, action game with slow burning melee based combat. Built on the Unity Engine.
 
-<img title = "Click to Enlarge" src = "/gdcimgs/Adryft.png" onClick = "toggleImgSize('AD')" style = "width: 10%; height: 10%;" id = "AD">
+<img src = "/gdcimgs/Adryft.png" class = "img" id = "AD">
