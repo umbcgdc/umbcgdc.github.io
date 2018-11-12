@@ -17,8 +17,8 @@ function toggleImgSize(img) {
     if (img1.dataset.setting == "max") {
         // going to become large
         img1.title = "Click to Enlarge";
-        img1.style.width = '200px';
-        img1.style.height = '200px';
+        img1.style.width = '10%';
+        img1.style.height = '10%';
         img1.dataset.setting = "min";
     } else {
         // going to become small
