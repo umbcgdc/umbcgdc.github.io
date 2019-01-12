@@ -99,6 +99,10 @@ Unity3D
 
 A 2D Metroidvania platformer based on fast movement built on the Unity Engine. 
 
+#### Roster:
+ - Alex Leger (Project Lead)
+ - Jesse Hinman (Artist)
+ - Micah DeBruno (Programmer)
 
 <img src = "/gdcimgs/CrashSite.png" class = "img" id = "CS">
 
