@@ -40,13 +40,15 @@ function upsize(img) {
     
     //alert(natW);
     
-    var aspRat = natW / natH;
+    var aspRat;
     
     var retW = 0;
     var retH = 0;
     
     if (natW > window.innerWidth * 0.9) {
         retW = window.innerWidth * 0.9;
+        aspRat = retW / natW;
+        
         retH = natH * 0.9 * aspRat;
     } else {
         retW = natW;
@@ -62,16 +64,22 @@ function downsize(img, factor) {
     var natW = img.naturalWidth;
     var natH = img.naturalHeight;
     
-    var aspRat = natW / natH;
+    var aspRat;
     
     var retW = 0;
     var retH = 0;
     
     if (natW > window.innerWidth) {
         retW = window.innerWidth * 0.9 * factor;
+        
+        aspRat = retW / natW;
+        
         retH = natH * 0.9 * aspRat * factor;
     } else {
         retW = natW * factor;
+        
+        aspRat = retW / natW;
+        
         retH = natH * factor;
     }
     
@@ -80,7 +88,7 @@ function downsize(img, factor) {
     
     if (retW < window.innerWidth * minSize) {
         retW = window.innerWidth * minSize;
-        aspRat = window.innerWidth * minSize / natW;
+        aspRat = retW / natW;
         retH = natH * aspRat;
     }
     
