@@ -18,17 +18,29 @@ function toggleImgSize(img) {
     if (img1.dataset.setting == "max") {
         // going to become large
         img1.title = "Click to Enlarge";
-        var values = downsize(img1, 0.3);
-        img1.style.width = values[0] + "px";
-        img1.style.height = values[1] + "px";
+        
+        img1.style.maxWidth = "30%";
+        img1.style.maxHeight = "30%";
+        
+        //var values = downsize(img1, 0.3);
+        //img1.style.maxWidth = values[0] + "px";
+        //img1.style.maxHeight = values[1] + "px";
+        
         img1.dataset.setting = "min";
+        
     } else {
         // going to become small
         img1.title = "Click to Minimize";
-        var values = upsize(img1)
-        img1.style.width = values[0] + "px";
-        img1.style.height = values[1] + "px";
+        
+        img1.style.maxWidth = "100%";
+        img1.style.maxHeight = "100%";
+        
+        //var values = upsize(img1)
+        //img1.style.width = values[0] + "px";
+        //img1.style.height = values[1] + "px";
+        
         img1.dataset.setting = "max";
+        
     }
     
 }
@@ -114,11 +126,15 @@ window.onload = function() {
             toggleImgSize( imgID ); 
         } );
         
-        var values = downsize(imgList[i], 0.3);
+        //var values = downsize(imgList[i], 0.3);
+        var values = "30%";
         
         imgList[i].dataset.setting = "min";
-        imgList[i].style.width = values[0] + "px";
-        imgList[i].style.height = values[1] + "px";
+        //imgList[i].style.width = values[0] + "px";
+        //imgList[i].style.height = values[1] + "px";
+        
+        imgList[i].style.maxWidth = values;
+        imgList[i].style.maxHeight = values;
         imgList[i].title = "Click to Enlarge";
     }
     
