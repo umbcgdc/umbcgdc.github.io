@@ -45,6 +45,9 @@ function toggleImgSize(img) {
     
 }
 
+// depreceated functions
+// percentages handle it pretty well
+/*
 // img should be an Image
 function upsize(img) {
     var natW = img.naturalWidth;
@@ -112,6 +115,7 @@ function hoverText(textID) {
     var txt = document.getElementByID(textID);
     
 }
+*/
 
 window.onload = function() {
     var imgList = document.getElementsByClassName("img");
@@ -135,6 +139,9 @@ window.onload = function() {
         
         imgList[i].style.maxWidth = values;
         imgList[i].style.maxHeight = values;
+        
+        
+        
         imgList[i].title = "Click to Enlarge";
     }
     
