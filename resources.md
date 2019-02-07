@@ -41,7 +41,7 @@ One of the more accessible game engines used for game development, with C# as th
 
 [C#](https://www.tutorialspoint.com/csharp/): Another language used by several engines, including Unity3D Engine.
 
-##### Latent C# Resources for Unity:
+##### Latest C# Resources for Unity:
 
 1. [Microsoft .NET 4.x in Unity](https://docs.microsoft.com/en-us/visualstudio/cross-platform/unity-scripting-upgrade?view=vs-2017#choosing-between-net-4x-and-net-standard-20-profiles)
 
