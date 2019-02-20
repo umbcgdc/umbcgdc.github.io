@@ -49,7 +49,7 @@ Harrowing Flight is a multiplayer 3D space dogfighting game where you work with 
 
 <img src = "/gdcimgs/HarrowingFlightUpdated.png" class = "img" id = "hf">
 
-### Game 3: Skeletons and Hats
+### Game 3: Skeletons in Hats
 
 #### Description: 
 
