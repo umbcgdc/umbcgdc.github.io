@@ -3,7 +3,9 @@ layout: default
 permalink: /resources/
 ---
 
-## Educational content coming soon!
+## K-12 Resources
+
+[Introductory Game Software Brochure](https://drive.google.com/file/d/1sGBfcBohxUsj543ve1wU1v_cKSWCj5_b/view?usp=sharing)
 
 ## Resources
 
