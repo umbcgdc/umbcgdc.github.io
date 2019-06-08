@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="ui/logo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300" rel="stylesheet"> 
+  <link href="css/main.css" rel="stylesheet">
+
+  <title>UMBC Game Developers Club</title>
+</head>
+
+<body>
+
+<header id="header">
+  <gamedev-header></gamedev-header>
+</header>
+
+<div id="main"> <!--MAIN CONTENT-->
+
+<h1>About Game Developers Club</h1>
+<p>The UMBC Game Developers Club is a professional, career focused club dedicated to bringing students of all majors together to learn about game development, learn in a team based environment, network, and improve our resumes and portfolios to get jobs upon graduation.</p>
+
+<section>
+<gamedev-expand-all label="Frequently Asked Questions">
+
+<gamedev-dropdown label="Where do we meet?">
+  <p>We meet at Engineering 005B on Wedensdays (12PM-1PM) and Fridays (1PM-5PM). Drop by anytime; you can leave or come anytime during the meetings.</p>
+</gamedev-dropdown>
+
+<gamedev-dropdown label="Do I need game development/art/programming experience to join?">
+  <p>No experience is necessary! The Game Developers Club exists to help members learn about game development, whatever their starting skill level.</p>
+</gamedev-dropdown>
+
+<gamedev-dropdown label="Is it too late to join?">
+  <p>Absolutely not! Just pop in during a meeting and ask an officer about the teams. We can help you get set up with a team that can accomodate your skill level and interests.</p>
+</gamedev-dropdown>
+
+<gamedev-dropdown label="What game engines, programs, and programming languages do you use?">
+<p>Most of our game development teams use the Unity game engine (using C#), with Unreal 4 (using Blueprints and C++) as a close second. Other game engines (Godot, Xenko) are also used on occasion.</p>
+<p>Check out our resources tab for more information on what we use.</p>
+</gamedev-dropdown>
+
+<gamedev-dropdown label="What if I don’t have a laptop or it’s not that good?">
+  <p>The lab room we meet in has computers any UMBC student can use. Just log in using your UMBC credentials and the computer will let you in, with Unity, Unreal and many other important applications already installed. However, for convenience, if you have a laptop you should try and bring it in.</p>
+</gamedev-dropdown>
+</gamedev-expand-all>
+</section>
+
+<section>
+<gamedev-expand-all label="Events">
+
+<gamedev-dropdown label="Annual Game Jam">
+  <p>A Game Jam is a period of time (usually 48 hours) where everyone comes together to pitch new game ideas around a theme, form teams based on what you’re interested in, and make a small prototype of your idea! (Sleep is optional!)</p>
+
+  <p>Every year during the first few weeks of the Fall semester, we have our Annual Game Jam. The games that come from this Jam are voted on, with the primary factors of whom had good team cohesion, has the skills to create the idea proposed, and an idea that could be made in an academic year.</p>
+
+  <p>The games voted in will then be made for the rest of the academic year! These project games will work with the goal of making a small polished product to show employers and the UMBC community at a number of events such as URCAD, Gamescape, Reverse Career Fair, MAGFEST, and more!</p>
+</gamedev-dropdown>
+
+<gamedev-dropdown label="Career Opportunities">
+<p>The club strives to help students get jobs and internships in a variety of different fields and upgrade their resumes and portfolios by putting the students into a productive, team-based environment, where they set milestones and deadlines by themselves to push a presentable product.</p>
+
+<p>The club works with several groups such as the IGDA and Baltimore Unreal Engine Group to help students get used to networking and interacting with professionals in the game industry.</p>
+
+<p>Through our networking, we bring in several industry veterans to present and give lectures to the club on topics ranging from the reality of the industry, to music, art, and programming.</p>
+</gamedev-dropdown>
+
+<gamedev-dropdown label="Digital Entertainment Conference">
+<p>The Digital Entertainment Conference is our club’s biggest annual event where we bring in industry veterans to give lectures to the club, the UMBC community, and everyone interested in the game industry. (High School students are welcome)</p>
+</gamedev-dropdown>
+</gamedev-expand-all>
+</section>
+
+</div> <!--END MAIN CONTENT-->
+
+<footer id="footer">
+  <gamedev-footer></gamedev-footer>
+</footer>
+
+<script src="js/vue.min.js"></script>
+<script src="components/gamedev-dropdown.js"></script>
+<script src="components/gamedev-template.js"></script>
+</body>
+
+</html>

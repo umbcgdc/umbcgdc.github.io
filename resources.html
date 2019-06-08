@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="ui/logo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300" rel="stylesheet"> 
+  <link href="css/main.css" rel="stylesheet">
+
+  <title>UMBC Game Developers Club</title>
+</head>
+
+<body>
+<header id="header">
+  <gamedev-header></gamedev-header>
+</header>
+
+<div id="main" class="special-links"> <!--MAIN CONTENT-->
+
+<section>
+<h1>K-12 Resources</h1>
+<p><a href="https://drive.google.com/file/d/1sGBfcBohxUsj543ve1wU1v_cKSWCj5_b/view?usp=sharing">Introductory Game Software Brochure</a></p>
+</section>
+
+<section>
+
+<h1>Resources</h1>
+
+<gamedev-dropdown label="Primary Engines">
+
+  <p><a href="https://www.unrealengine.com/en-US/what-is-unreal-engine-4">Unreal Engine 4</a></p>
+  <p>One of the primary game engines used right now for 3D game development, featuring a strong C++ usage and various tools such as blueprints to streamline development.</p>
+
+  <p><a href="https://unity3d.com/">Unity3D</a></p>
+  <p>One of the more accessible game engines used for game development, with C# as the primary code language and various tools and plugins to develop both 2D and 3D games.</p>
+
+</gamedev-dropdown>
+
+<gamedev-dropdown label="Alternative Engines">
+  <p><a href="https://www.cryengine.com/">CryEngine</a></p>
+  <p><a href="https://godotengine.org/">Godot</a></p>
+  <p><a href="https://xenko.com/">Xenko</a></p>
+  <p>How to use Xenko on Lab Computers:<p>
+  <ol>
+    <li>Click “download package” from <a href="https://www.nuget.org/packages/Xenko.GameStudio/">this website.</a></li>
+    <li>Right click the downloaded .nupkg and unzip it with 7zip</li>
+    <li>Go to the lib folder and click on “Xenko.GameStudio.exe”. It may take a little bit to load for the first time.</li>
+  </ol>
+  <p><a href="https://aws.amazon.com/lumberyard/">Amazon Lumberyard</a></p>
+  <p><a href="https://www.yoyogames.com/gamemaker">Game Maker Studio</a></p>
+</gamedev-dropdown>
+
+<gamedev-dropdown label="Languages">
+  <p><a href="http://www.cplusplus.com/doc/tutorial/">C++</a>: The language of choice for various engines, including Unreal Engine 4.</p>
+  <p><a href="https://www.tutorialspoint.com/csharp/">C#</a>: Another language used by several engines, including Unity3D Engine.</p>
+  <p>Latest C# Resources for Unity:<p>
+  <ul>
+    <li>
+      <p><a href="https://docs.microsoft.com/en-us/visualstudio/cross-platform/unity-scripting-upgrade?view=vs-2017#choosing-between-net-4x-and-net-standard-20-profiles">Microsoft .NET 4.x in Unity</a></p>
+    </li>
+    <li>
+      <p><a href="https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap-en-us/0">A guide on Asynchronous programming using Coroutines and TAP.</a></p>
+    </li>
+    <li>
+      <p><a href="http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/">Another resource on Async and Await in Unity.</a></p>
+    </li>
+  </ul>
+</gamedev-dropdown>
+
+<gamedev-dropdown label="3D Modeling">
+  <p><a href="https://www.blender.org/">Blender</a></p>
+  <p><a href="https://www.autodesk.com/products/maya/overview">Maya</a></p>
+  <p><a href="https://www.autodesk.com/products/3ds-max/overview">3DS Max</a></p>
+</gamedev-dropdown>
+
+<gamedev-dropdown label="2D Art">
+  <p><a href="https://krita.org/en/">Krita</a></p>
+</gamedev-dropdown>
+
+</section>
+
+</div> <!--END MAIN CONTENT-->
+
+<footer id="footer">
+  <gamedev-footer></gamedev-footer>
+</footer>
+
+<script src="js/vue.min.js"></script>
+<script src="components/gamedev-dropdown.js"></script>
+<script src="components/gamedev-template.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../ui/logo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300" rel="stylesheet"> 
+  <link href="../css/main.css" rel="stylesheet">
+  <style>
+    a {
+      margin: 0;
+    }
+    .blue-theme {
+      color: #000055;
+      background-color: #88bbee;
+    }
+    .blue-theme a {
+      color: #ccffff;
+    }
+    .blue-theme button {
+      color: #000055;
+      font-family: 'Roboto Condensed';
+    }
+    .blue-theme button p:hover {
+      text-decoration: underline;
+    }
+    .blue-theme section, .blue-theme {
+      border-color: #ccffff;
+    }
+    .blue-theme .gamedev-dropdown .open::before {
+      border-top: 10px solid #000055;
+    }
+    .blue-theme .gamedev-dropdown .closed::before {
+      border-left: 10px solid #000055;
+    }
+    textarea {
+      width: 100%;
+      height: 8em;
+      padding: 1em;
+      box-sizing: border-box;
+    }
+  </style>
+  <title>Maintaining the Website</title>
+</head>
+
+<body class="blue-theme">
+
+<div id="main"> <!--MAIN CONTENT-->
+
+<h1>Website Guide</h1>
+
+<button v-for="tab of tabs" :key="tab" @click="currentTab=tab">
+  <p>{{ tab }}</p>
+</button>
+
+<div v-show="currentTab=='Update Games List'">
+
+<section>
+<p>This is the documentation for the website!</p>
+<p>I recommend reading this ("Update Games List") tab, but the rest is really not necessary unless you need to add pages.</p>
+</section>
+
+<section>
+<h2>Updating the Games List</h2>
+<p>To add games to the games list, you only need to edit "games_list.js", found in the home directory. Preferably, you would organize the images in images/year.</p>
+<p>Looking at the existing games in the file should give you a good idea of how to add a game. It's possible you won't need to read this guide at all, so please take a look at the file.</p>
+</section>
+
+<section>
+<h3>Adding a tab to the list</h3>
+<p>To add a tab (such as for a year), open the games_list.js file. The games are stored in an object which holds lists which holds more objects (lol).</p>
+<p>Each key in the main object is a tab, so you just need to add a key-value pair for the tab name and the list of games under that tab.</p>
+<textarea readonly>
+"Tab Name": [
+  // games will go in here, each game separated by a comma.
+]
+</textarea>
+<p>Tabs can be in any order, because they are automatically sorted by year and then alphabetically. The site will always open to the most recent year (it also will not overshoot).</p>
+</section>
+
+<section>
+<h3>Adding a game to a tab</h3>
+<p>Each game is an unnamed object, so you write the properties of a game between curly braces {}. The only required property is "name".</p>
+<textarea readonly>
+"Tab Name": [
+  { name: "Sample Game Title" },
+  { name: "Another Game Title" },
+]
+</textarea>
+<p>Whitespace doesn't matter, so you can space out the properties however you want to make it more readable.</p>
+</section>
+
+<section>
+<gamedev-expand-all label="List of game properties">
+<p>Properties can be listed in any order. Remember to put a comma between each property.</p>
+<gamedev-dropdown label="name">
+  <p>The title of the game. The only required property.</p>
+</gamedev-dropdown>
+<gamedev-dropdown label="description">
+  <p>A short description of the game.</p>
+</gamedev-dropdown>
+<gamedev-dropdown label="engine">
+  <p>The name of the engine that game was created in.</p>
+</gamedev-dropdown>
+<gamedev-dropdown label="images">
+  <p>A list containing links/file paths to images of the game. They are displayed in the order you write them in.</p>
+  <textarea readonly>
+images: [
+  "images/2018/some-image.png",
+  "images/2018/some-other-image.png"
+]
+  </textarea>
+</gamedev-dropdown>
+<gamedev-dropdown label="links">
+  <p>A list containing pairs of link names and links. They are displayed in the order you write them in.</p>
+  <textarea readonly>
+links: [
+  ["link name", "https://www.google.com/"],
+  ["other link", "https://duckduckgo.com/"]
+]
+  </textarea>
+</gamedev-dropdown>
+<gamedev-dropdown label="roster">
+  <p>List of people who worked on the game (credits).</p>
+  <textarea readonly>
+roster: [
+  "Me",
+  "My friend"
+]
+  </textarea>
+</gamedev-dropdown>
+</gamedev-expand-all>
+</section>
+
+<section>
+<h3>Debugging</h3>
+<gamedev-dropdown label="If you open the file and there is no content on the page, make sure...">
+<ul>
+  <li>There are commas between every entry in the lists</li>
+  <li>There are commas between every property</li>
+  <li>There are commas between every tab</li>
+  <li>All brackets/braces of any kind have a matching end bracket/brace</li>
+</ul>
+</gamedev-dropdown>
+<gamedev-dropdown label="If a specific entry you made isn't appearing on the page, make sure...">
+<ul>
+  <li>You saved the file</li>
+  <li>You reloaded the page</li>
+  <li>You're viewing the file and not the online website</li>
+  <li>The property name is spelled correctly</li>
+  <li>Everything that should be in quotes actually has quotes around it</li>
+  <li>Your content is inside the games_list and not before or after</li>
+</ul>
+</gamedev-dropdown>
+<p>You can always duplicate an existing game entry to use as a template.</p>
+</section>
+
+</div>
+
+<div v-show="currentTab=='Create Pages'">
+
+<section>
+<h2>Using Components</h2>
+<p>This site currently uses a framework, <a href="https://vuejs.org/">Vue</a>! You only need to know basic html/css (and this guide) to use the components, but if you want to check out Vue, this <a href="https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/">tutorial series</a> is helpful.</p>
+<p>Anyway, here's everything you need to know to use the gamedev components.</p>
+</section>
+
+<section>
+<h3>Setting up a page</h3>
+<p>There's a file called <a href="../template.html">template.html</a> in the home directory that contains the page template with the header, footer, and head tags. Just duplicate it and change the content in the "main" div.</p>
+<gamedev-dropdown label="Extended explanation of page content">
+  <p>(Hover over lines to show explanation)</p>
+  <pre v-for="line in webTemplate" :title="line[1]">{{ line[0] }}</pre>
+</gamedev-dropdown>
+</section>
+
+<section>
+<h3>Using the components</h3>
+<p>Components are basically custom html elements, included through scripts. Once you include the template script, they can be used in the following elements:</p>
+<ul>
+  <li>#header</li>
+  <li>#main</li>
+  <li>#footer</li>
+</ul>
+<p>The source files for the components are found in the "components" folder, and they all start with the prefix "gamedev-". Check them out if you're familiar with Vue or just want to look at the html templates and css classes.</p>
+<p>To use components, you need 3 things:</p>
+<gamedev-dropdown label="Include Vue">
+  <p>The components require Vue to work, so you should include vue with:</p>
+  <textarea readonly><script src="js/vue.min.js"></script></textarea>
+</gamedev-dropdown>
+<gamedev-dropdown label="Include the script of the component you want">
+  <p>Each component is contained in a js file that has to be included. Check the <a href="#" @click="currentTab='Component Properties'">full list</a> of which components are in which file.</p>
+  <textarea readonly><script src="components/gamedev-some-component.js"></script></textarea>
+</gamedev-dropdown>
+<gamedev-dropdown label="Include the template component">
+  <p>The template component creates a Vue element (necessary to use components). It also includes the header and footer components; they don't need to be included separately.</p>
+  <textarea readonly><script src="components/gamedev-template.js"></script></textarea>
+</gamedev-dropdown>
+<p>Then, you can use the components just like you would use a normal html element. For example, you can make a dropdown like this, and it automatically applies the styling and functionality of the dropdown component:</p>
+<textarea readonly>
+  <gamedev-dropdown label="Example label">
+    <p>Some content here!</p>
+  </gamedev-dropdown>
+</textarea>
+<gamedev-dropdown label="Example label">
+  <p>Some content here!</p>
+</gamedev-dropdown>
+<p>Check <a href="#" @click="currentTab='Component Properties'">here</a> to see the properties of the different components/how to use them specifically.</p>
+</section>
+
+<section>
+<h3>Why didn't you use webpack/.vue files/something else?</h3>
+<p>My main goal was to make the website as easy to edit as possible for someone with knowledge of only html5/css3. With this type of component registration, whoever is maintaining the website just has to include the scripts and then write html with a few extra elements, and there is (hopefully) no confusion over scoped css or the framework itself.</p>
+</section>
+
+<section>
+<h3>Additional notes</h3>
+<p>If you end up inserting content using Vue's "mustaches", remember to include v-cloak on the element so the content won't show until Vue has loaded.</p>
+<p>If you've created a different Vue root node for yourself, but want to use the main styling, you can use class="main" instead of id="main".</p>
+</section>
+
+<section>
+<h3>Enjoy being Webmaster of the Game Developers Club!</h3>
+</section>
+
+</div>
+
+<div v-show="currentTab=='Component Properties'">
+
+<gamedev-expand-all label="List of Components and Properties">
+<p>Properties in [ ] are optional.</p>
+<p>Non-string properties must be listed with a colon in front, like :property="value".</p>
+
+<section> <!--DROPDOWNS-->
+<h3>Dropdown</h3>
+<gamedev-dropdown label="gamedev-dropdown">
+  <p>Creates a button you can click to show more content.</p>
+  <p>Properties:</p>
+  <ul>
+    <li>[open]: <i>true</i> if the dropdown should be open be default.</li>
+    <li>label: the text on the dropdown.</li>
+  </ul>
+</gamedev-dropdown>
+<gamedev-dropdown label="gamedev-expand-all">
+  <p>Creates a button you can click to open all dropdowns directly inside this component.</p>
+  <p>Properties:</p>
+  <ul>
+    <li>[label]: a section header if you want.</li>
+    <li>[expand]: the text to display on the button. "Expand All" by default.</li>
+    <li>[close]: the text to display on the button after it was clicked. "Close All" by default.</li>
+  </ul>
+</gamedev-dropdown>
+<gamedev-dropdown label="Example">
+<section>
+  <textarea readonly style="height:15em">
+  <gamedev-expand-all label="Header">
+  
+    <gamedev-dropdown :open="true" label="some text">
+      <p>Some content</p>
+    </gamedev-dropdown>
+  
+    <gamedev-dropdown label="other text">
+      <p>More content</p>
+    </gamedev-dropdown>
+  
+  </gamedev-expand-all>
+  </textarea>
+  <gamedev-expand-all label="Header">
+    <gamedev-dropdown :open="true" label="An open tab">
+      <p>Some content</p>
+    </gamedev-dropdown>
+    <gamedev-dropdown label="A closed tab">
+      <p>More content</p>
+    </gamedev-dropdown>
+  </gamedev-expand-all>
+</section>
+</gamedev-dropdown>
+
+</section> <!--END DROPDOWNS-->
+
+<section> <!--VIDEOS-->
+<h3>Video</h3>
+<gamedev-dropdown label="gamedev-video">
+  <p>Lets you display a youtube video with just a link. Note that if the video is hidden when the page loads, youtube will not supply it with a high-quality thumbnail.</p>
+  <p>Properties:</p>
+  <ul>
+    <li>src: a link to the video.</li>
+  </ul>
+</gamedev-dropdown>
+<gamedev-dropdown label="Example">
+  <textarea readonly>
+<gamedev-video src="https://www.youtube.com/embed/?listType=playlist&list=UUIKfaNXsz7qUd366ayobr-Q"></gamedev-video>
+  </textarea>
+  <gamedev-video src="https://www.youtube.com/embed/?listType=playlist&list=UUIKfaNXsz7qUd366ayobr-Q"></gamedev-video>
+</gamedev-dropdown>
+</section> <!--END VIDEOS-->
+
+<section> <!--TEMPLATE-->
+<h3>Header and Footer</h3>
+<p>The file "gamedev-template.js" contains a lot of components, but the only ones you will likely write on your page are "gamedev-header" and "gamedev-footer". Also, remember that components have to be in #header, #main, or #footer (unless you've created your own Vue instance).</p>
+<gamedev-dropdown label="gamedev-header">
+  <p>Inserts the entire header into the page. Please put it inside a header element, for semantic and accessibility reasons.</p>
+  <textarea readonly>
+<header id="header">
+  <gamedev-header></gamedev-header>
+</header>
+  </textarea>
+</gamedev-dropdown>
+<gamedev-dropdown label="gamedev-footer">
+  <p>Inserts the footer into the page. Please put it inside a footer element, for semantic and accessibilty reasons.</p>
+  <textarea readonly>
+<footer id="footer">
+  <gamedev-footer></gamedev-footer>
+</footer>
+  </textarea>
+</gamedev-dropdown>
+<gamedev-dropdown label="gamedev-nav">
+  <p>Included in the header. Edit the "links" in the data if you need to add links to the nav.</p>
+</gamedev-dropdown>
+<gamedev-dropdown label="gamedev-social">
+  <p>Included in the footer. If you need to add a social link, they're in the footer template.</p>
+  <p>Properties:</p>
+  <ul>
+    <li>image: the icon to display next to the link.</li>
+    <li>[href]: the address to go to when the link is clicked.</li>
+  </ul>
+  <textarea readonly style="height:9em">
+<gamedev-social
+  image="ui/twitter.png"
+  href="https://twitter.com/umbcGameDev/">
+  @umbcGameDev
+</gamedev-social>
+  </textarea>
+</gamedev-dropdown>
+</section> <!--END TEMPLATE-->
+
+</gamedev-expand-all>
+
+</div>
+
+</div> <!--END MAIN CONTENT-->
+
+<script src="../js/vue.min.js"></script>
+<script src="../components/gamedev-dropdown.js"></script>
+<script src="../components/gamedev-video.js"></script>
+<script src="readme.js"></script>
+</body>
+
+</html>

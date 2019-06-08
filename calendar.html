@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="ui/logo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300" rel="stylesheet"> 
+  <link href="css/main.css" rel="stylesheet">
+  <style>
+  .calendar {
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    .calendar {
+      height: 60vh;
+    }
+  }
+  </style>
+
+  <title>UMBC Game Developers Club</title>
+</head>
+
+<body>
+
+<header id="header">
+  <gamedev-header></gamedev-header>
+</header>
+
+<div id="main"> <!--MAIN CONTENT-->
+
+<section>
+<iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=umbcgamedev%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</section>
+
+</div> <!--END MAIN CONTENT-->
+
+<footer id="footer">
+  <gamedev-footer></gamedev-footer>
+</footer>
+
+<script src="js/vue.min.js"></script>
+<script src="components/gamedev-template.js"></script>
+</body>
+
+</html>

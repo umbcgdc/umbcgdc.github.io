@@ -1,0 +1,102 @@
+body {
+  background-color: #2a2a2a;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.year-tab {
+  font-size: 1.4em;
+  text-decoration: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #ffbf10;
+  display: inline-block;
+  margin: 0 0 1.3em 5%;
+}
+
+.year-tab-current {
+  color: red;
+}
+
+.year-tab:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.year-page {
+  padding: 0;
+  margin: 0;
+}
+
+.year-page li {
+  position: relative;
+  display: inline-block;
+  padding: 7% 12%;
+  margin: 1% .5%;
+}
+
+.year-page li img {
+  position: absolute;
+  top: 3%;
+  left: 6%;
+  max-width: 90%;
+}
+
+.year-page li img:hover {
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px black;
+}
+
+.image-viewer {
+  position: relative;
+}
+
+.game-thumb-holder {
+  margin-top: 1rem;
+}
+
+.game-thumb {
+  max-width: 23%;
+  max-height: 30vh;
+  display: inline-block;
+  margin: 0 1% .5rem 1%;
+  outline: 1px solid #ffbf10;
+}
+
+.game-thumb:hover {
+  box-shadow: 0px 0px 15px #ffbf10;
+}
+
+.overlay {
+  max-width: 20%;
+  opacity: .5;
+  position: absolute;
+  top: 35%;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.close-button {
+  top: 5%;
+  right: 3%;
+  max-height: 20%;
+}
+
+.arrow-left {
+  left: 2%;
+}
+
+.arrow-right {
+  right: 2%;
+}
+
+@media screen and (max-width: 800px) {
+  .game-thumb {
+    max-width: 48%;
+  }
+}

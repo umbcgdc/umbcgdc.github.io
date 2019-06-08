@@ -1,0 +1,3 @@
+# beg crawlers not to read the documentation
+user-agent: *
+disallow: /readme
