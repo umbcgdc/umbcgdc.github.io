@@ -203,7 +203,6 @@ template: `
       UMBC GameDev
     </gamedev-social>
   </ul>
-  <p>Copyright text coming soon. Please pardon our dust.</p>
 </div>
 `
 

@@ -15,95 +15,60 @@
 
 <body>
 
-<header id="header">
-  <gamedev-header></gamedev-header>
-</header>
+<div id="wrapper">
 
-<!-- MAIN CONTENT move to components on new fix-->
+<div id="header">
+  <gamedev-header></gamedev-header>
+</div>
+
+<!-- MAIN CONTENT -->
 <div id="main" class="hidden"></div>
 <div class="main">
 <div v-cloak id="all-games">
 
-<a
-  href="#"
+<button
   v-for="year of years"
   class="year-tab"
   :class="[year==currentYear ? 'year-tab-current' : '']"
   @click="changeYear(year)">
-  {{ year }}
-</a>
+  <h2>{{ year }}</h2>
+</button>
 
-<div v-for="year of years" v-show="year==currentYear">
+<ul v-for="year of years" v-if="year==currentYear" class="year-page">
 
-  <section v-for="game of games[year]" :key="game.id">
-
-    <h1>{{ game.name }}</h1>
-    <p v-if="game.links">Links:
-      <a v-for="link of game.links" :href="link[1]">{{ link[0] }}</a>
-    </p>
-
-    <p v-if="game.description">{{ game.description }}</p>
-
-    <div
-      v-if="game.images"
-      v-show="currentImageViewer==game.id"
-      class="image-viewer"
-      @mouseover="viewerHovered=true"
-      @mouseleave="viewerHovered=false">
-
+  <li v-for="game of games[year]" :key="game.id" class="game-card">
+    <div class="game-cover-container">
+      <div class="game-cover">
       <img
-        :src="game.images[game.current]"
-        class="full-image">
-      <img
-        src="ui/close_button.png"
-        v-show="viewerHovered"
-        class="overlay close-button"
-        @click="closeImageViewer">
-      <img
-        src="ui/arrow_left.png"
-        v-show="game.images.length > 1 && viewerHovered"
-        class="overlay arrow-left"
-        @click="showLeft(game)">
-      <img
-        src="ui/arrow_right.png"
-        v-show="game.images.length > 1 && viewerHovered"
-        class="overlay arrow-right"
-        @click="showRight(game)">
-
+        :src="game.images[0]"
+        @click="openGameDisplay(game)">
+      </div>
     </div>
+  </li>
+  <transition name="appear">
+    <gamedev-game-display
+      v-if="currentGameOpen!=null"
+      :game="currentGameOpen"
+      @close="closeGameDisplay">
+    </gamedev-game-display>
+  </transition>
 
-    <div v-if="game.images" class="game-thumb-holder">
-      <img
-        v-for="image, index of game.images"
-        :src="image"
-        class="game-thumb"
-        @click="toggleImageViewer(game, index)">
-    </div>
-
-    <p v-if="game.engine">Engine: {{ game.engine }}</p>
-
-    <div v-if="game.roster">
-      <p v-if="game.roster.length">Roster:</p>
-      <ul>
-        <li v-for="person of game.roster">{{ person }}</li>
-      </ul>
-    </div>
-
-  </section>
-
-</div>
+</ul>
 
 </div> <!-- END MAIN CONTENT -->
 </div>
 
-<footer id="footer">
+<div id="footer">
   <gamedev-footer></gamedev-footer>
-</footer>
+</div>
 
-<script src="games_list.js"></script>
+</div>
+
 <script src="js/vue.min.js"></script>
-<script src="js/games.js"></script>
+<script src="components/gamedev-game-display.js"></script>
 <script src="components/gamedev-template.js"></script>
+<script src="games_list.js"></script>
+<script src="js/games.js"></script>
 </body>
 
 </html>

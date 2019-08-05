@@ -7,16 +7,7 @@ body {
 }
 
 .year-tab {
-  font-size: 1.4em;
-  text-decoration: none;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #ffbf10;
-  display: inline-block;
-  margin: 0 0 1.3em 5%;
-}
-
-.year-tab-current {
-  color: red;
+  margin-right: 1em;
 }
 
 .year-tab:hover {
@@ -24,50 +15,63 @@ body {
   cursor: pointer;
 }
 
+.year-tab-current, .light-theme .year-tab-current {
+  color: red;
+}
+
 .year-page {
   padding: 0;
   margin: 0;
 }
 
-.year-page li {
-  position: relative;
+.game-card {
+  box-sizing: border-box;
   display: inline-block;
-  padding: 7% 12%;
-  margin: 1% .5%;
+  width: 25%;
+  padding: 1vw;
 }
 
-.year-page li img {
+.game-card:hover {
+  padding: 0;
+}
+
+.game-cover-container {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.game-cover {
   position: absolute;
-  top: 3%;
-  left: 6%;
-  max-width: 90%;
-}
-
-.year-page li img:hover {
-  max-width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 0 10px black;
+  width: 100%;
+  height: 100%;
+}
+
+.game-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.game-cover:hover {
+  box-shadow: 0 0 5px black;
+}
+
+.game-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #2a2a2a;
+}
+
+.light-theme .game-columns {
+  background-color: white;
 }
 
 .image-viewer {
   position: relative;
-}
-
-.game-thumb-holder {
-  margin-top: 1rem;
-}
-
-.game-thumb {
-  max-width: 23%;
-  max-height: 30vh;
-  display: inline-block;
-  margin: 0 1% .5rem 1%;
-  outline: 1px solid #ffbf10;
-}
-
-.game-thumb:hover {
-  box-shadow: 0px 0px 15px #ffbf10;
 }
 
 .overlay {
@@ -95,8 +99,51 @@ body {
   right: 2%;
 }
 
+.modal-centered {
+      position: absolute;
+      margin-left: 2vw;
+      top: 50%;
+      width: 96vw;
+      max-height: 100vh;
+      transform: translateY(-50%);
+}
+
+.thumbs {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.scrollable {
+  box-sizing: border-box;
+  max-height: 96vh;
+  overflow-y: scroll;
+  padding: 1em;
+}
+
 @media screen and (max-width: 800px) {
-  .game-thumb {
-    max-width: 48%;
+  .game-columns {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr max-content;
+    overflow-y: scroll;
+  }
+  .thumbs {
+    display: none;
+  }
+  .scrollable {
+    height: auto;
+    overflow-y: visible;
+  }
+  .modal-centered {
+    max-height: 80vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-card {
+    width: 50%;
   }
 }

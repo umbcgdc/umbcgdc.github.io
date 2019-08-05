@@ -32,43 +32,23 @@ var all_games = new Vue({
     years: _years,
     currentYear: _year,
     games: games_list,
-    currentImageViewer: null,
-    viewerHovered: false
+    currentGameOpen: null
   },
   methods: {
     // display some year's game list
     changeYear: function(year) {
       this.currentYear = year;
     },
-    // closes the image viewer
-    closeImageViewer: function() {
-      this.currentImageViewer = null;
+    openGameDisplay: function(game) {
+      this.currentGameOpen = game;
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "relative";
+      document.body.style.maxHeight = "100vh";
     },
-    // toggles the image viewer based on what thumbnail was clicked
-    toggleImageViewer: function(game, index) {
-      // close viewer if the thumb that's being display was clicked
-      if (this.currentImageViewer == game.id && game.current == index) {
-        this.closeImageViewer();
-      } else {
-        game.current = index;
-        this.currentImageViewer = game.id;
-      }
-    },
-    // display previous image in image viewer
-    showLeft: function(game) {
-      if (game.current > 0) {
-        game.current--;
-      } else {
-        game.current = game.images.length - 1;
-      }
-    },
-    // display the next image in image viewer
-    showRight: function(game) {
-      if (game.current < game.images.length -1) {
-        game.current++;
-      } else {
-        game.current = 0;
-      }
+    closeGameDisplay: function() {
+    	this.currentGameOpen = null;
+    	document.body.style.overflow = "auto";
+    	document.body.style.position = "relative";
     }
   }
 })
