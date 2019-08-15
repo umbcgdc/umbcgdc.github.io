@@ -16,10 +16,10 @@ props: {
 },
 
 template: `
-<div style="position:relative;">
+<div class="game-image-viewer">
 
   <div
-    style="position:relative;"
+    style="position:relative; flex-shrink:1; min-content:0"
     @mouseover="hovered=true"
     @mouseleave="hovered=false">
 
