@@ -55,11 +55,11 @@ images: [
 ]
 
 :: links
-   A list containing pairs of link names and links. They are displayed in the order you write them in.
+   A list containing pairs of link names and links. They are displayed in the order you write them in. You can add the name of a material design icon (https://material.io/resources/icons/) if you'd like your link to have a different icon next to it.
 
 links: [
   ["link name", "https://www.google.com/"],
-  ["other link", "https://duckduckgo.com/"]
+  ["other link", "https://duckduckgo.com/", "videogame_asset"]
 ]
 
 :: roster
@@ -230,3 +230,17 @@ Properties:
   href="https://twitter.com/umbcGameDev/">
   @umbcGameDev
 </gamedev-social>
+
+-- Game Display --
+
+:: gamedev-game-display
+Displays a single game's card in the middle of the screen. Included as part of the games page.
+
+Properties:
+  game: a game object (see 'Update Games List' for more info).
+
+:: gamedev-image-viewer
+It is included in the gamedev-game-display component. It's pretty specific, so it would be advisable not to use the gamedev-image-viewer for anything else.
+
+Properties:
+  images: an array of images.

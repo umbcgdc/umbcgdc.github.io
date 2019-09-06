@@ -96,8 +96,13 @@ template: `
     <div class="scrollable">
       <h1>{{ game.name }}</h1>
       <div>
-        <p v-if="game.links">Links:
-          <a v-for="link of game.links" :href="link[1]">{{ link[0] }}</a>
+        <p v-if="game.links">
+          <a v-for="link of game.links" :href="link[1]">
+            <i class="material-icons md-18">
+              {{ link.length>2 ? link[2] : "link" }}
+            </i>
+            {{ link[0] }}
+          </a>
         </p>
         <p v-if="game.description">{{ game.description }}</p>
         <p v-if="game.engine">Engine: {{ game.engine }}</p>
@@ -106,6 +111,8 @@ template: `
           <ul>
             <li v-for="person of game.roster">{{ person }}</li>
           </ul>
+        </div>
+        <div v-if="game.customhtml" v-html="game.customhtml">
         </div>
       </div>
       <img src="ui/close_button.png" class="overlay close-button" @click="close">

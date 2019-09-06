@@ -11,7 +11,9 @@ template: `
   </button>
 
   <div class="gamedev-nav-links desktop">
-    <a v-for="link of links" :href="link[1]">{{ link[0] }}</a>
+    <a v-for="link of links" :href="link[1]" style="margin-left: 1em;">
+      {{ link[0] }}
+    </a>
     <button
       class="theme-change light"
       @click="changeTheme('light-theme')"
@@ -50,7 +52,7 @@ data() {
       ["About", "about.html"],
       ["Games", "games.html"],
       ["Resources", "resources.html"],
-      ["Events", "https://my3.my.umbc.edu/groups/gdc"],
+      ["Events", "events.html"],
       ["Contact", "contact.html"]
     ],
     open: false,
@@ -159,7 +161,7 @@ props: {
   }
 },
 template: `
-<li class="special-links">
+<li>
   <a :href="href">
     <img class="icon-image" :src="image">
     <slot></slot>
@@ -223,4 +225,6 @@ var footer = new Vue({
 var _theme = localStorage.getItem('theme');
 if (_theme == 'light-theme') {
   document.body.className = 'light-theme';
+} else {
+  document.body.className = 'dark-theme';
 }

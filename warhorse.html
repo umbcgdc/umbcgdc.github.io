@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="ui/logo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300" rel="stylesheet">
+  <link href="warhorse/warhorse.css" rel="stylesheet">
+
+  <title>UMBC Game Developers Club</title>
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id="war-game">
+
+  <div v-if="state!=states.combat" id="main-menu" class="ui-box menu">
+    <button @click="acquireHorse">Acquire</button>
+    <button @click="trainHorses">Train</button>
+    <button @click="battle">Battle</button>
+    <button v-if="RIPlist.length>0" @click="state=states.rip">RIP</button>
+  </div>
+
+  <div v-if="openStable!=null">
+    <div class="ui-box">
+      <h2>{{ caption }}</h2>
+      <horse-list class="horse-list" :stable="openStable"></horse-list>
+    </div>
+  </div>
+
+  <div v-if="state==states.acquiring">
+    <div class="ui-box">
+      <h2>What will you name your horse?</h2>
+      <label for="horse-name">Name:</label>
+      <input type="text" id="horse-name" @keyup.enter="addHorse"></input>
+      <p>{{ error }}</p>
+    </div>
+  </div>
+
+  <div v-if="state==states.combat">
+    <p v-for="line of combatLog">{{ line }}</p>
+    <button @click="endCombat">End Combat</button>
+  </div>
+
+  <div v-if="state==states.rip">
+    <div class="ui-box">
+      <h2>RIP</h2>
+      <p v-for="horse of RIPlist">{{ horse }}</p>
+      <h4>~You will forever be remembered~</h4>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+</footer>
+
+<script src="js/vue.min.js"></script>
+<script src="warhorse/Horse.js"></script>
+<script src="warhorse/Main.js"></script>
+</body>
+
+</html>

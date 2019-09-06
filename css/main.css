@@ -8,6 +8,7 @@ body {
   margin: 0;
 }
 
+/* hides page until loaded */
 [v-cloak] {
   display: none;
 }
@@ -43,8 +44,7 @@ ul {
 }
 
 a {
-  color: red;
-  margin-left: 1em;
+  color: white;
   text-decoration: none;
 }
 
@@ -87,6 +87,13 @@ section {
   margin-right: .5em;
 }
 
+/* material design icon rules */
+.material-icons { vertical-align: text-bottom; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
 .flex-row {
   display: flex;
 }
@@ -98,11 +105,6 @@ section {
 .flex-row>* {
   align-self: center;
   box-sizing: border-box;
-}
-
-.special-links a {
-  margin: 0;
-  color: white;
 }
 
 /* Specific styles */
@@ -196,18 +198,14 @@ section {
   left: 0;
 }
 
-/* Animation for mobile navigation */
+/* Animation for mobile navigation and games page */
 
-.appear-enter-active {
-  transition: opacity .5s;
+.appear-enter-active, .appear-leave-active {
+  transition: opacity .2s;
 }
 
-.appear-enter {
+.appear-enter, .appear-leave-to {
   opacity: 0;
-}
-
-.appear-enter-move {
-  transition: transform 1s;
 }
 
 /* theme colors */
@@ -221,7 +219,7 @@ section {
   border-color: black;
 }
 
-.light-theme .special-links a {
+.light-theme a {
   color: black;
   font-weight: bold;
 }

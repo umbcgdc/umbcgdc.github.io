@@ -1,8 +1,6 @@
 let games_list = { // games list
 
 
-
-
 // YEAR 2017 //
 2017: [
 
@@ -48,7 +46,13 @@ let games_list = { // games list
     "Artists: Michael Igoe, Kaela Chen, Virgilio Tan",
     "Music: Desmond Oliver, Louis Witt",
     "Voice Acting: Alex Holstein, Nithya Prakash, Natalia Mitiuriev, Young Lee"
-  ]
+  ],
+  links: [
+    ["itch.io", "https://mnchino.itch.io/yonko-battle-windows-ver", "laptop_windows"],
+    ["Google Play", "https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US", "phone_android"]
+  ],
+  customhtml: `<p><a href="https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US"></a></p>
+  <p><a href="https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US" target="_blank"><img class="full-image" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"></a><br></p>`
 },
 
 { name: "Harrowing Flight",
@@ -124,6 +128,9 @@ let games_list = { // games list
     "Liam Gorman: Lead Artist",
     "Daniel Cunningham: Composer"
   ],
+  links: [
+    ["itch.io", "https://liamupton1.github.io/Adryft/"]
+  ]
 },
 
 { name: "Role Playing Gamble",
