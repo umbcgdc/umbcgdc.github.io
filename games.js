@@ -39,7 +39,12 @@ let games_list = { // games list
 { name: "Yonko Battle",
   description: "A gatcha-style twist on the classic Four-in-a-row game--designed exclusively for Android through the Godot Game Engine.  Complete with player customizations, voice acting, and online multiplayer.  Find your own strategy to connect your way to victory!",
   engine: "Godot",
-  images: ["images/2018/YonkoBattle-URCAD.png"],
+  images: [
+    "images/2018/YonkoBattle-URCAD.png",
+    "https://img.itch.zone/aW1hZ2UvNDczOTgwLzI0MzE5MjUucG5n/original/yJlMLB.png",
+    "https://img.itch.zone/aW1hZ2UvNDczOTgwLzI0MzE5MjYucG5n/original/fWoPEK.png",
+    "https://img.itch.zone/aW1hZ2UvNDczOTgwLzI0MzE5MjcucG5n/original/iks809.png"
+  ],
   roster: [
     "Project Lead: Anthony Ellis",
     "Programming & UI: Anthony Ellis, Brandon Ellis, Young Lee",
