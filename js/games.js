@@ -26,13 +26,46 @@ _years.sort((a, b) => {
   return a - b;
 });
 
-var all_games = new Vue({
-  el: '#all-games',
-  data: {
-    years: _years,
-    currentYear: _year,
-    games: games_list,
-    currentGameOpen: null
+Vue.component('gamedev-games-list', {
+  template: `
+  <div>
+    <button
+      v-for="year of years"
+      class="year-tab"
+      :class="[year==currentYear ? 'year-tab-current' : '']"
+      @click="changeYear(year)">
+      <h2>{{ year }}</h2>
+    </button>
+
+    <ul v-for="year of years" v-if="year==currentYear" class="year-page">
+
+      <li v-for="game of games[year]" :key="game.id" class="game-card">
+        <div class="game-cover-container">
+          <div class="game-cover">
+          <img
+            :src="game.images[0]"
+            @click="openGameDisplay(game)">
+          </div>
+        </div>
+      </li>
+      <transition name="appear">
+        <gamedev-game-display
+          v-if="currentGameOpen!=null"
+          :game="currentGameOpen"
+          @close="closeGameDisplay">
+        </gamedev-game-display>
+      </transition>
+
+    </ul>
+  </div>
+  `,
+  data() {
+    return {
+      years: _years,
+      currentYear: _year,
+      games: games_list,
+      currentGameOpen: null
+    }
   },
   methods: {
     // display some year's game list

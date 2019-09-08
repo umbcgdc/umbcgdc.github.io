@@ -13,11 +13,10 @@
 </head>
 
 <body>
-<header id="header">
-  <gamedev-header></gamedev-header>
-</header>
+<div id="gamedev-root">
+<gamedev-header></gamedev-header>
 
-<div id="main" class="special-links"> <!--MAIN CONTENT-->
+<main class="main">
 
 <section>
 <h1>K-12 Resources</h1>
@@ -81,11 +80,10 @@
 
 </section>
 
-</div> <!--END MAIN CONTENT-->
+</main>
 
-<footer id="footer">
-  <gamedev-footer></gamedev-footer>
-</footer>
+<gamedev-footer></gamedev-footer>
+</div>
 
 <script src="js/vue.min.js"></script>
 <script src="components/gamedev-dropdown.js"></script>

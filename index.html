@@ -45,11 +45,9 @@
 </head>
 
 <body>
-<div id="main">
 
-<header>
-  <gamedev-header @theme-change="themeChange"></gamedev-header>
-</header>
+<div id="gamedev-root">
+<gamedev-header @theme-change="themeChange"></gamedev-header>
 
 <main role="main" class="main">
 
@@ -67,10 +65,7 @@
 
 </main>
 
-<footer id="footer">
-  <gamedev-footer></gamedev-footer>
-</footer>
-
+<gamedev-footer></gamedev-footer>
 </div>
 
 <script src="js/vue.min.js"></script>

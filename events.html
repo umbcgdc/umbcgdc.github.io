@@ -28,11 +28,10 @@
 
 <body>
 
-<header id="header">
-  <gamedev-header></gamedev-header>
-</header>
+<div id="gamedev-root">
+<gamedev-header></gamedev-header>
 
-<div id="main"> <!--MAIN CONTENT-->
+<main role="main" class="main">
 
 <section>
   <a href="https://my3.my.umbc.edu/groups/gdc">
@@ -43,11 +42,10 @@
 
 <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=umbcgamedev%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-</div> <!--END MAIN CONTENT-->
+</main>
 
-<footer id="footer">
-  <gamedev-footer></gamedev-footer>
-</footer>
+<gamedev-footer></gamedev-footer>
+</div>
 
 <script src="js/vue.min.js"></script>
 <script src="components/gamedev-template.js"></script>

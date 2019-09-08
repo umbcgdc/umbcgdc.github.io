@@ -15,61 +15,25 @@
 </head>
 
 <body>
-
-<div id="wrapper">
-
-<div id="header">
+<div id="gamedev-root">
+  <div id="wrapper">
   <gamedev-header></gamedev-header>
-</div>
 
-<!-- MAIN CONTENT -->
-<div id="main" class="hidden"></div>
-<div class="main">
-<div v-cloak id="all-games">
+  <main role="main" class="main">
 
-<button
-  v-for="year of years"
-  class="year-tab"
-  :class="[year==currentYear ? 'year-tab-current' : '']"
-  @click="changeYear(year)">
-  <h2>{{ year }}</h2>
-</button>
+    <gamedev-games-list></gamedev-games-list>
 
-<ul v-for="year of years" v-if="year==currentYear" class="year-page">
+  </main>
 
-  <li v-for="game of games[year]" :key="game.id" class="game-card">
-    <div class="game-cover-container">
-      <div class="game-cover">
-      <img
-        :src="game.images[0]"
-        @click="openGameDisplay(game)">
-      </div>
-    </div>
-  </li>
-  <transition name="appear">
-    <gamedev-game-display
-      v-if="currentGameOpen!=null"
-      :game="currentGameOpen"
-      @close="closeGameDisplay">
-    </gamedev-game-display>
-  </transition>
-
-</ul>
-
-</div> <!-- END MAIN CONTENT -->
-</div>
-
-<div id="footer">
   <gamedev-footer></gamedev-footer>
+  </div>
 </div>
 
-</div>
-
-<script src="js/vue.min.js"></script>
+<script src="js/vue.js"></script>
 <script src="components/gamedev-game-display.js"></script>
-<script src="components/gamedev-template.js"></script>
 <script src="games_list.js"></script>
 <script src="js/games.js"></script>
+<script src="components/gamedev-template.js"></script>
 </body>
 
 </html>

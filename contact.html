@@ -13,11 +13,11 @@
 </head>
 
 <body>
-<header id="header">
-  <gamedev-header></gamedev-header>
-</header>
 
-<div id="main"> <!--MAIN CONTENT-->
+<div id="gamedev-root">
+<gamedev-header></gamedev-header>
+
+<main role="main" class="main">
 
 <section>
 <h1>Contact Our Officers!</h1>
@@ -31,11 +31,10 @@
 </ul>
 </section>
 
-</div> <!--END MAIN CONTENT-->
+</main>
 
-<footer id="footer">
-  <gamedev-footer></gamedev-footer>
-</footer>
+<gamedev-footer></gamedev-footer>
+</div>
 
 <script src="js/vue.min.js"></script>
 <script src="components/gamedev-template.js"></script>

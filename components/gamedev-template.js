@@ -11,7 +11,9 @@ template: `
   </button>
 
   <div class="gamedev-nav-links desktop">
-    <a v-for="link of links" :href="link[1]">{{ link[0] }}</a>
+    <a v-for="link of links" :href="link[1]" style="margin-left:1em;">
+      {{ link[0] }}
+    </a>
     <button
       class="theme-change light"
       @click="changeTheme('light-theme')"
@@ -50,7 +52,7 @@ data() {
       ["About", "about.html"],
       ["Games", "games.html"],
       ["Resources", "resources.html"],
-      ["Events", "https://my3.my.umbc.edu/groups/gdc"],
+      ["Events", "events.html"],
       ["Contact", "contact.html"]
     ],
     open: false,
@@ -111,7 +113,7 @@ methods: {
 Vue.component('gamedev-header', {
 
 template: `
-<div :style="main">
+<header :style="main">
   <div class="flex-row">
     <a href="index.html">
       <img
@@ -128,7 +130,7 @@ template: `
   </div>
   <hr style="background-color: gray">
   <gamedev-nav @theme-change="themeChange"></gamedev-nav>
-</div>
+</header>
 `,
 
 data() {
@@ -166,7 +168,7 @@ props: {
   }
 },
 template: `
-<li class="special-links">
+<li>
   <a :href="href">
     <img class="icon-image" :src="image">
     <slot></slot>
@@ -182,7 +184,7 @@ template: `
 Vue.component('gamedev-footer', {
 
 template: `
-<div style="padding: 0 5% 3% 5%;">
+<footer style="padding: 0 5% 3% 5%;">
   <hr style="margin-bottom: 2rem;">
   <h2>Follow Us</h2>
   <ul>
@@ -210,18 +212,14 @@ template: `
       UMBC GameDev
     </gamedev-social>
   </ul>
-  <p>Copyright text coming soon. Please pardon our dust.</p>
-</div>
+</footer>
 `
 
 });
 
-// elements that can be used on every page
-var header = new Vue({
-  el: '#header'
-});
-var main = new Vue({
-  el: '#main',
+// root element usable on all pages
+var gamedevRoot = new Vue({
+  el: '#gamedev-root',
   data: {
     theme: localStorage.getItem('theme') || 'dark-theme'
   },
@@ -240,9 +238,6 @@ var main = new Vue({
       return this.theme.slice(0, -6)
     }
   }
-});
-var footer = new Vue({
-  el: '#footer'
 });
 
 // load theme
