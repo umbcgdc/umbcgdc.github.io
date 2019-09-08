@@ -115,9 +115,9 @@ template: `
         <div v-if="game.customhtml" v-html="game.customhtml">
         </div>
       </div>
-      <img src="ui/close_button.png" class="overlay close-button" @click="close">
     </div>
   </div>
+  <img src="ui/close_button.png" class="overlay close-button" @click="close">
 </div>
 `,
 
