@@ -296,19 +296,9 @@ roster: [
 <p>The file "gamedev-template.js" contains a lot of components, but the only ones you will likely write on your page are "gamedev-header" and "gamedev-footer".</p>
 <gamedev-dropdown label="gamedev-header">
   <p>Inserts the entire header into the page.</p>
-  <textarea readonly>
-<header id="header">
-  <gamedev-header></gamedev-header>
-</header>
-  </textarea>
 </gamedev-dropdown>
 <gamedev-dropdown label="gamedev-footer">
   <p>Inserts the footer into the page.</p>
-  <textarea readonly>
-<footer id="footer">
-  <gamedev-footer></gamedev-footer>
-</footer>
-  </textarea>
 </gamedev-dropdown>
 <gamedev-dropdown label="gamedev-nav">
   <p>Included in the header. Edit the "links" in the data if you need to add links to the nav.</p>
@@ -332,6 +322,9 @@ roster: [
 
 <section> <!--GAMES-->
   <h3>Game Display</h3>
+  <gamedev-dropdown label="gamedev-games-list">
+    <p>Displays the list of all the games for the games page. This is where you'll have to check if you want to redo the layout.</p>
+  </gamedev-dropdown>
   <gamedev-dropdown label="gamedev-game-display">
     <p>Displays a single game's card in the middle of the screen. Included as part of the games page.</p>
     <p>Properties:</p>

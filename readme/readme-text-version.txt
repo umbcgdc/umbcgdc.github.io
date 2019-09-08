@@ -196,19 +196,8 @@ The file "gamedev-template.js" contains a lot of components, but the only ones y
 :: gamedev-header
 Inserts the entire header into the page.
 
-Example:
-<header id="header">
-  <gamedev-header></gamedev-header>
-</header>
-
 :: gamedev-footer
 Inserts the footer into the page.
-
-Example:
-<footer id="footer">
-  <gamedev-footer></gamedev-footer>
-</footer>
-  </textarea>
 
 :: gamedev-nav
 Included in the header. Edit the "links" in the data if you need to add links to the nav.
@@ -227,6 +216,9 @@ Properties:
 </gamedev-social>
 
 -- Game Display --
+
+:: gamedev-games-list
+Displays the list of all the games for the games page. This is where you'll have to check if you want to redo the layout.
 
 :: gamedev-game-display
 Displays a single game's card in the middle of the screen. Included as part of the games page.
