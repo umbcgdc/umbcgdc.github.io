@@ -8,8 +8,9 @@ props: {
   },
 },
 template: `
-<div class="gamedev-video">
+<div :style="video">
   <iframe
+    :style="iframe"
     width="560"
     height="315"
     :src="src"
@@ -18,5 +19,21 @@ template: `
     allowfullscreen>
   </iframe>
 </div>
-`
+`,
+data() {
+  return {
+    video: {
+      display: 'block',
+      maxWidth: '100%',
+      position: 'relative',
+      height: '0',
+      paddingBottom: '56.25%',
+    },
+    iframe: {
+      position: 'absolute',
+      width: '100%',
+      height: '100%',
+    }
+  }
+}
 });

@@ -8,12 +8,11 @@ body {
   margin: 0;
 }
 
-/* hides page until loaded */
 [v-cloak] {
   display: none;
 }
 
-#main, .main {
+.main {
   padding: 2rem 5% 0 5%;
 }
 
@@ -44,7 +43,8 @@ ul {
 }
 
 a {
-  color: white;
+  color: red;
+  margin-left: 1em;
   text-decoration: none;
 }
 
@@ -87,13 +87,6 @@ section {
   margin-right: .5em;
 }
 
-/* material design icon rules */
-.material-icons { vertical-align: text-bottom; }
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
 .flex-row {
   display: flex;
 }
@@ -105,6 +98,11 @@ section {
 .flex-row>* {
   align-self: center;
   box-sizing: border-box;
+}
+
+.special-links a {
+  margin: 0;
+  color: white;
 }
 
 /* Specific styles */
@@ -152,21 +150,6 @@ section {
   background: linear-gradient(to bottom right, black 50%, white 50%);
 }
 
-.gamedev-video {
-  display: block;
-  margin: 1em auto;
-  max-width: 60%;
-  position: relative;
-  height: 0;
-  padding-bottom: 33.75%;
-}
-
-.gamedev-video iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 .gamedev-dropdown {
   position: relative;
   padding-left: 15px;
@@ -198,14 +181,18 @@ section {
   left: 0;
 }
 
-/* Animation for mobile navigation and games page */
+/* Animation for mobile navigation */
 
-.appear-enter-active, .appear-leave-active {
-  transition: opacity .2s;
+.appear-enter-active {
+  transition: opacity .5s;
 }
 
-.appear-enter, .appear-leave-to {
+.appear-enter {
   opacity: 0;
+}
+
+.appear-enter-move {
+  transition: transform 1s;
 }
 
 /* theme colors */
@@ -219,7 +206,7 @@ section {
   border-color: black;
 }
 
-.light-theme a {
+.light-theme .special-links a {
   color: black;
   font-weight: bold;
 }
@@ -251,7 +238,7 @@ section {
 
 /* Mobile Breakpoint */
 @media screen and (max-width: 800px) {
-  #main, .main {
+  .main {
     padding: 3%;
   }
 

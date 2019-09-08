@@ -11,9 +11,7 @@ template: `
   </button>
 
   <div class="gamedev-nav-links desktop">
-    <a v-for="link of links" :href="link[1]" style="margin-left: 1em;">
-      {{ link[0] }}
-    </a>
+    <a v-for="link of links" :href="link[1]">{{ link[0] }}</a>
     <button
       class="theme-change light"
       @click="changeTheme('light-theme')"
@@ -52,7 +50,7 @@ data() {
       ["About", "about.html"],
       ["Games", "games.html"],
       ["Resources", "resources.html"],
-      ["Events", "events.html"],
+      ["Events", "https://my3.my.umbc.edu/groups/gdc"],
       ["Contact", "contact.html"]
     ],
     open: false,
@@ -101,6 +99,7 @@ methods: {
       body.className = theme;
       localStorage.setItem('theme', theme);
     }
+    this.$emit('theme-change')
   }
 },
 
@@ -128,7 +127,7 @@ template: `
     </div>
   </div>
   <hr style="background-color: gray">
-  <gamedev-nav></gamedev-nav>
+  <gamedev-nav @theme-change="themeChange"></gamedev-nav>
 </div>
 `,
 
@@ -140,6 +139,12 @@ data() {
     }
   }
 },
+
+methods: {
+  themeChange() {
+    this.$emit('theme-change')
+  }
+}
 
 });
 
@@ -161,7 +166,7 @@ props: {
   }
 },
 template: `
-<li>
+<li class="special-links">
   <a :href="href">
     <img class="icon-image" :src="image">
     <slot></slot>
@@ -205,6 +210,7 @@ template: `
       UMBC GameDev
     </gamedev-social>
   </ul>
+  <p>Copyright text coming soon. Please pardon our dust.</p>
 </div>
 `
 
@@ -215,7 +221,25 @@ var header = new Vue({
   el: '#header'
 });
 var main = new Vue({
-  el: '#main'
+  el: '#main',
+  data: {
+    theme: localStorage.getItem('theme') || 'dark-theme'
+  },
+  created() {
+    document.body.className = this.theme;
+  },
+  methods: {
+    themeChange() {
+      // update the theme when it's changed
+      this.theme = document.body.className;
+    }
+  },
+  computed: {
+    twitterTheme() {
+      //twttr.widgets.load(document.getElementById('tweets'))
+      return this.theme.slice(0, -6)
+    }
+  }
 });
 var footer = new Vue({
   el: '#footer'
@@ -225,6 +249,4 @@ var footer = new Vue({
 var _theme = localStorage.getItem('theme');
 if (_theme == 'light-theme') {
   document.body.className = 'light-theme';
-} else {
-  document.body.className = 'dark-theme';
 }
