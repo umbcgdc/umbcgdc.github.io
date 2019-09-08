@@ -104,17 +104,14 @@ You can view an extended explanation of page content on the html version of this
 
 
 -- Using the components --
-Components are basically custom html elements, included through scripts. Once you include the template script, they can be used in the following elements:
-:: #header
-:: #main
-:: #footer
+Components are basically custom html elements, included through scripts. Once you include the template script, they can be used in the #gamedev-root element.
 
 The source files for the components are found in the "components" folder, and they all start with the prefix "gamedev-". Check them out if you're familiar with Vue or just want to look at the html templates and css classes.
 
 To use components, you need 3 things:
 
 :: Include Vue
-The components require Vue to work, so you should include vue with:
+The components require Vue to work, so make sure the page has included Vue with:
    <script src="js/vue.min.js"></script>
 
 :: Include the script of the component you want
@@ -139,8 +136,6 @@ My main goal was to make the website as easy to edit as possible for someone wit
 
 -- Additional notes --
 If you end up inserting content using Vue's {{ mustaches }}, remember to include v-cloak on the element so the content won't show until Vue has loaded.
-
-If you've created a different Vue root node for yourself, but want to use the main styling, you can use class="main" instead of id="main".
 
 ~~ Enjoy being Webmaster of the Game Developers Club! ~~
 
@@ -196,10 +191,10 @@ Example:
 
 -- Header and Footer --
 
-The file "gamedev-template.js" contains a lot of components, but the only ones you will likely write on your page are "gamedev-header" and "gamedev-footer". Also, remember that components have to be in #header, #main, or #footer (unless you've created your own Vue instance).
+The file "gamedev-template.js" contains a lot of components, but the only ones you will likely write on your page are "gamedev-header" and "gamedev-footer".
 
 :: gamedev-header
-Inserts the entire header into the page. Please put it inside a header element, for semantic and accessibility reasons.
+Inserts the entire header into the page.
 
 Example:
 <header id="header">
@@ -207,7 +202,7 @@ Example:
 </header>
 
 :: gamedev-footer
-Inserts the footer into the page. Please put it inside a footer element, for semantic and accessibilty reasons.
+Inserts the footer into the page.
 
 Example:
 <footer id="footer">

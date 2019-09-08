@@ -47,7 +47,7 @@
 
 <body class="blue-theme">
 
-<div id="main"> <!--MAIN CONTENT-->
+<main role="main" id="main" class="main"> <!--MAIN CONTENT-->
 
 <h1>Website Guide</h1>
 
@@ -178,16 +178,11 @@ roster: [
 
 <section>
 <h3>Using the components</h3>
-<p>Components are basically custom html elements, included through scripts. Once you include the template script, they can be used in the following elements:</p>
-<ul>
-  <li>#header</li>
-  <li>#main</li>
-  <li>#footer</li>
-</ul>
+<p>Components are basically custom html elements, included through scripts. Once you include the template script, they can be used in the #gamedev-root element.</p>
 <p>The source files for the components are found in the "components" folder, and they all start with the prefix "gamedev-". Check them out if you're familiar with Vue or just want to look at the html templates and css classes.</p>
 <p>To use components, you need 3 things:</p>
 <gamedev-dropdown label="Include Vue">
-  <p>The components require Vue to work, so you should include vue with:</p>
+  <p>The components require Vue to work, so makes sure the page has included vue with:</p>
   <textarea readonly><script src="js/vue.min.js"></script></textarea>
 </gamedev-dropdown>
 <gamedev-dropdown label="Include the script of the component you want">
@@ -218,7 +213,6 @@ roster: [
 <section>
 <h3>Additional notes</h3>
 <p>If you end up inserting content using Vue's "mustaches", remember to include v-cloak on the element so the content won't show until Vue has loaded.</p>
-<p>If you've created a different Vue root node for yourself, but want to use the main styling, you can use class="main" instead of id="main".</p>
 </section>
 
 <section>
@@ -299,9 +293,9 @@ roster: [
 
 <section> <!--TEMPLATE-->
 <h3>Header and Footer</h3>
-<p>The file "gamedev-template.js" contains a lot of components, but the only ones you will likely write on your page are "gamedev-header" and "gamedev-footer". Also, remember that components have to be in #header, #main, or #footer (unless you've created your own Vue instance).</p>
+<p>The file "gamedev-template.js" contains a lot of components, but the only ones you will likely write on your page are "gamedev-header" and "gamedev-footer".</p>
 <gamedev-dropdown label="gamedev-header">
-  <p>Inserts the entire header into the page. Please put it inside a header element, for semantic and accessibility reasons.</p>
+  <p>Inserts the entire header into the page.</p>
   <textarea readonly>
 <header id="header">
   <gamedev-header></gamedev-header>
@@ -309,7 +303,7 @@ roster: [
   </textarea>
 </gamedev-dropdown>
 <gamedev-dropdown label="gamedev-footer">
-  <p>Inserts the footer into the page. Please put it inside a footer element, for semantic and accessibilty reasons.</p>
+  <p>Inserts the footer into the page.</p>
   <textarea readonly>
 <footer id="footer">
   <gamedev-footer></gamedev-footer>
