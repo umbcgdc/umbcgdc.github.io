@@ -161,7 +161,7 @@ let games_list = { // games list
   ]
 },
 
-{ name: "Role Playing Gamble",
+{ name: "Role-Playing Gamble",
   description: "In this Turn Based RPG, our band of heroes traverses a dangerous, monster-infested college campus…to restore electricity for all students. Along the way, you’ll learn that luck is sometimes not on your side, with everything determined by a roll of the dice.",
   engine: "Unity",
   images: ["images/2018/RolePlayingGamble-URCAD.png"],

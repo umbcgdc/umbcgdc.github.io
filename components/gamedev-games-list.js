@@ -42,9 +42,11 @@ Vue.component('gamedev-games-list', {
       <li v-for="game of games[year]" :key="game.id" class="game-card">
         <div class="game-cover-container">
           <div class="game-cover">
-          <img
-            :src="game.images[0]"
-            @click="openGameDisplay(game)">
+            <img
+              :src="game.images[0]"
+              @click="openGameDisplay(game)">
+            <div class="darken"></div>
+            <h3>{{ game.name }}</h3>
           </div>
         </div>
       </li>
