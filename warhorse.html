@@ -6,58 +6,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="ui/logo.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:300" rel="stylesheet">
-  <link href="warhorse/warhorse.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"></script>
+  <style>
+    body {
+      background: 
+        radial-gradient(at 0% 0%, yellow, transparent 30%),
+        linear-gradient(#aaffff, #aaffaa);
+      margin: 0;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    @media screen and (max-width: 768px), print {
+      .hero-body {
+        padding: 0;
+      }
+    }
+</style>
 
   <title>UMBC Game Developers Club</title>
 </head>
 
 <body>
 
-<header>
-</header>
+<main id="war-game" class="hero is-fullheight container">
 
-<div id="war-game">
-
-  <div v-if="state!=states.combat" id="main-menu" class="ui-box menu">
-    <button @click="acquireHorse">Acquire</button>
-    <button @click="trainHorses">Train</button>
-    <button @click="battle">Battle</button>
-    <button v-if="RIPlist.length>0" @click="state=states.rip">RIP</button>
+<div class="hero-head is-hidden-mobile">
+  <div class="has-text-centered" style="padding-top:5em;">
+    <h1 class="title is-2">WARHORSE</h1>
+    <p class="subtitle">Originally by Professor Dixon</p>
   </div>
-
-  <div v-if="openStable!=null">
-    <div class="ui-box">
-      <h2>{{ caption }}</h2>
-      <horse-list class="horse-list" :stable="openStable"></horse-list>
-    </div>
-  </div>
-
-  <div v-if="state==states.acquiring">
-    <div class="ui-box">
-      <h2>What will you name your horse?</h2>
-      <label for="horse-name">Name:</label>
-      <input type="text" id="horse-name" @keyup.enter="addHorse"></input>
-      <p>{{ error }}</p>
-    </div>
-  </div>
-
-  <div v-if="state==states.combat">
-    <p v-for="line of combatLog">{{ line }}</p>
-    <button @click="endCombat">End Combat</button>
-  </div>
-
-  <div v-if="state==states.rip">
-    <div class="ui-box">
-      <h2>RIP</h2>
-      <p v-for="horse of RIPlist">{{ horse }}</p>
-      <h4>~You will forever be remembered~</h4>
-    </div>
-  </div>
-
 </div>
 
-<footer>
-</footer>
+<div class="hero-body">
+<div class="container">
+
+<section class="columns is-centered is-vcentered">
+
+  <div v-if="state!=states.combat" class="column is-narrow-tablet">
+    <div class="buttons box">
+      <button class="button is-fullwidth" @click="acquireHorse">Acquire</button>
+      <button class="button is-fullwidth" @click="trainHorses">Train</button>
+      <button class="button is-fullwidth" @click="battle">Battle</button>
+      <button
+        v-if="RIPlist.length>0"
+        class="button is-fullwidth"
+        @click="state=states.rip">
+        RIP
+      </button>
+    </div>
+  </div>
+
+  <div v-if="openStable!=null" class="column">
+    <div class="box">
+      <h2 class="title is-4">{{ caption }}</h2>
+      <div class="card">
+        <div class="card-content">
+          <horse-list class="horse-list" :stable="openStable"></horse-list>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div v-if="state==states.acquiring" class="column is-narrow-tablet">
+    <div class="box">
+      <h2 class="title is-4">What will you name your horse?</h2>
+      <div class="field is-horizontal">
+        <div class="field-label">
+          <label for="horse-name">Name:</label>
+        </div>
+        <div class="field-body">
+          <input
+            class="input is-small"
+            type="text"
+            id="horse-name"
+            @keyup.enter="addHorse">
+        </div>
+      </div>
+      <p class="has-text-danger">{{ error }}</p>
+    </div>
+  </div>
+
+  <div v-if="state==states.combat" class="column">
+    <div class="box has-text-centered">
+      <p v-for="line of combatLog">{{ line }}</p>
+      <button class="button" @click="endCombat">End Combat</button>
+    </div>
+  </div>
+
+  <div v-if="state==states.rip" class="column">
+    <div class="box">
+      <h2 class="title">RIP</h2>
+      <ul>
+        <li v-for="horse of RIPlist">{{ horse }}</li>
+      </u>
+      <hr>
+      <h4 class="subtitle">~You will forever be remembered~</h4>
+    </div>
+  </div>
+
+</section>
+
+</div>
+</div>
+
+<div class="hero-foot is-hidden-mobile">
+  <section class="section">
+    <p class="subtitle">© 2019</p>
+  </section>
+</div>
+
+</main>
 
 <script src="js/vue.min.js"></script>
 <script src="warhorse/Horse.js"></script>

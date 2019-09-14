@@ -11,14 +11,30 @@ props: {
   },
 },
 template: `
-<div class="horse-list-item" @click="clicked">
-  <p>{{ horse.size }}</p>
-  <p>{{ horse.name }}</p>
-  <p>{{ horse.health }}</p>
-  <p>{{ horse.speed }}</p>
-  <p>{{ horse.training }}</p>
-</div>
+<a class="columns is-mobile" @click="clicked">
+  <div class="column is-2 is-hidden-mobile">
+    <span class="icon">
+      <i :class="icon"></i>
+    </span>
+  </div>
+  <div class="column is-5">{{ horse.name }}</div>
+  <div class="column is-1">{{ horse.health }}</div>
+  <div class="column is-1-tablet is-2-mobile">{{ horse.speed }}</div>
+  <div class="column is-3">{{ horse.training }}</div>
+</a>
 `,
+computed: {
+  icon() {
+    switch(this.horse.size) {
+      case 'Light':
+        return 'fas fa-horse';
+      case 'Medium':
+        return 'fas fa-2x fa-horse';
+      case 'Heavy':
+        return 'fas fa-2x fa-horse-head';
+    }
+  }
+},
 methods: {
   clicked() {
     switch(War.state) {
@@ -61,12 +77,12 @@ props: {
 },
 template: `
 <div>
-  <div class="horse-list-header">
-    <h4></h4>
-    <h4>Name</h4>
-    <h4>HP</h4>
-    <h4>Spd</h4>
-    <h4>Lvl</h4>
+  <div class="columns is-mobile">
+    <div class="column is-2 is-hidden-mobile"><p>Size</p></div>
+    <div class="column is-5"><p>Name</p></div>
+    <div class="column is-1"><p>HP</p></div>
+    <div class="column is-1-tablet is-2-mobile"><p>Spd</p></div>
+    <div class="column is-3"><p>Lvl</p></div>
   </div>
   <horse-list-item
     v-for="horse of stable.horses"
@@ -226,6 +242,7 @@ var War = new Vue({
       this.combat();
     },
     combat() {
+      this.combatLog = [];
       let turn = 0;
       let damage = 0;
       while (this.myHorse.health > 0 && this.enemyHorse.health > 0 && turn < 100) {
