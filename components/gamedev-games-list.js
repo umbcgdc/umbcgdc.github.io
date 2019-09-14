@@ -77,11 +77,31 @@ Vue.component('gamedev-games-list', {
       document.body.style.overflow = "hidden";
       document.body.style.position = "relative";
       document.body.style.maxHeight = "100vh";
+      // update hash to contain game year and name
+      let _hash_safe_name = game.name.replace(/\s/g, '-').toLowerCase();
+      window.location.hash = this.currentYear + '-'+ _hash_safe_name;
     },
     closeGameDisplay: function() {
     	this.currentGameOpen = null;
     	document.body.style.overflow = "auto";
-    	document.body.style.position = "relative";
+      document.body.style.position = "relative";
+      // remove game hash
+      window.location.hash = '';
+    }
+  },
+  created() {
+    // check the hash to direct to a specific game (#2017-star-marten)
+    let _hash = window.location.hash.slice(1).toLowerCase();
+    if (_hash) {
+      let _hash_year = _hash.slice(0, 4);
+      // use a regex to search in case game contains dashes instead of spaces
+      let _re = new RegExp(_hash.slice(5).replace(/\-/g, '[\\s\\-]'), 'i');
+      let _matches = games_list[_hash_year].filter(game => _re.test(game.name));
+      // open game of first match
+      if (_matches.length) {
+        this.changeYear(_hash_year);
+        this.openGameDisplay(_matches[0]);
+      }
     }
   }
 })
