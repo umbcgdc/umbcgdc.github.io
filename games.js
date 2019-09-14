@@ -39,7 +39,8 @@ let games_list = { // games list
     "images/2017/golem-3.png"
   ],
   links: [
-    ["Website", "https://skyleroneill.github.io/little-golem/"]
+    ["Website", "https://skyleroneill.github.io/little-golem/"],
+    ["Video", "https://www.youtube.com/watch?v=Sr4A106mkUw", "video_library"]
   ],
   roster: [
     "Skyler O’Neill: Project Lead, Programmer, and Level Designer",

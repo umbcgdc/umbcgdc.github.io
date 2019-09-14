@@ -97,7 +97,7 @@ template: `
       <h1>{{ game.name }}</h1>
       <div>
         <p v-if="game.links">
-          <a v-for="link of game.links" :href="link[1]">
+          <a v-for="link of game.links" :href="link[1]" class="game-links">
             <i class="material-icons md-18">
               {{ link.length>2 ? link[2] : "link" }}
             </i>
