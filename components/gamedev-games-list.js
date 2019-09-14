@@ -85,8 +85,6 @@ Vue.component('gamedev-games-list', {
     	this.currentGameOpen = null;
     	document.body.style.overflow = "auto";
       document.body.style.position = "relative";
-      // remove game hash
-      window.location.hash = '';
     }
   },
   created() {
