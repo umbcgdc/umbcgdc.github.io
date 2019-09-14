@@ -92,7 +92,7 @@ Vue.component('gamedev-games-list', {
   created() {
     // check the hash to direct to a specific game (#2017-star-marten)
     let _hash = window.location.hash.slice(1).toLowerCase();
-    if (_hash) {
+    if (_hash && _hash.length > 4) {
       let _hash_year = _hash.slice(0, 4);
       // use a regex to search in case game contains dashes instead of spaces
       let _re = new RegExp(_hash.slice(5).replace(/\-/g, '[\\s\\-]'), 'i');
