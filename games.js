@@ -29,6 +29,26 @@ let games_list = { // games list
   links: [
     ["itch.io", "https://khadyah.itch.io/marzipan"]
   ]
+},
+
+{ name: "Little Golem",
+  description: "Little Golem is a puzzle adventure game which revolves around the mechanics of shifting gravity and rolling to solve puzzles.",
+  images: [
+    "images/2017/golem-tilting-lanterns.png",
+    "images/2017/golem-main-hub.png",
+    "images/2017/golem-3.png"
+  ],
+  links: [
+    ["Website", "https://skyleroneill.github.io/little-golem/"]
+  ],
+  roster: [
+    "Skyler O’Neill: Project Lead, Programmer, and Level Designer",
+    "Zachariah Hale: Programming Lead and 3D Artist",
+    "Josh Ludlow: Art Lead, Environment Modeller",
+    "Mario Moya: Music, Concept Artist, and 3D Artist",
+    "Miguel Fuentes: 3D Character Artist and Animator"
+  ],
+  engine: "Unity"
 }
 
 ], // end year 2017
