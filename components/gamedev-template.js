@@ -234,8 +234,10 @@ var gamedevRoot = new Vue({
   },
   computed: {
     twitterTheme() {
-      //twttr.widgets.load(document.getElementById('tweets'))
       return this.theme.slice(0, -6)
+    },
+    twitterHeight() {
+      return window.innerHeight > window.innerWidth ? '80vh' : '35vw';
     }
   }
 });

@@ -45,8 +45,6 @@ Vue.component('gamedev-games-list', {
             <img
               :src="game.images[0]"
               @click="openGameDisplay(game)">
-            <div class="darken"></div>
-            <h3>{{ game.name }}</h3>
           </div>
         </div>
       </li>
