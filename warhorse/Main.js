@@ -253,7 +253,7 @@ var War = new Vue({
           this.combatLog.push(`${this.myHorse.name} deals ${damage} damage to ${this.enemyHorse.name}!`);
           this.enemyHorse.health -= damage;
         }
-        if (turn % this.enemyHorse.speed == 0) {
+        if (turn % this.enemyHorse.speed == 0 && this.enemyHorse.health > 0) {
           // enemy attacks you
           damage = 2 * Math.round(this.enemyHorse.attack());
           this.combatLog.push(`${this.enemyHorse.name} deals ${damage} damage to ${this.myHorse.name}!`);

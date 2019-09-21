@@ -49,12 +49,28 @@
 
   <div v-if="state!=states.combat" class="column is-narrow-tablet">
     <div class="buttons box">
-      <button class="button is-fullwidth" @click="acquireHorse">Acquire</button>
-      <button class="button is-fullwidth" @click="trainHorses">Train</button>
-      <button class="button is-fullwidth" @click="battle">Battle</button>
+      <button
+        class="button is-fullwidth"
+        :class="{'is-active': state==states.acquiring}"
+        @click="acquireHorse">
+        Acquire
+      </button>
+      <button
+        class="button is-fullwidth"
+        :class="{'is-active': state==states.train}"
+        @click="trainHorses">
+        Train
+      </button>
+      <button
+        class="button is-fullwidth"
+        :class="{'is-active': state==states.choose || state==states.battle}"
+        @click="battle">
+        Battle
+      </button>
       <button
         v-if="RIPlist.length>0"
         class="button is-fullwidth"
+        :class="{'is-active': state==states.rip}"
         @click="state=states.rip">
         RIP
       </button>
@@ -76,15 +92,20 @@
     <div class="box">
       <h2 class="title is-4">What will you name your horse?</h2>
       <div class="field is-horizontal">
-        <div class="field-label">
+        <div class="field-label is-normal">
           <label for="horse-name">Name:</label>
         </div>
-        <div class="field-body">
+        <div class="field-body field has-addons">
+          <p class="control">
           <input
             class="input"
             type="text"
             id="horse-name"
             @keyup.enter="addHorse">
+          </p>
+          <p class="control">
+            <button class="button" @click="addHorse">Get</button>
+          </p>
         </div>
       </div>
       <p class="has-text-danger">{{ error }}</p>
@@ -122,7 +143,7 @@
 
 </main>
 
-<script src="js/vue.min.js"></script>
+<script src="js/vue.js"></script>
 <script src="warhorse/Horse.js"></script>
 <script src="warhorse/Main.js"></script>
 </body>
