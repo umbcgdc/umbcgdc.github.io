@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Roboto+Condensed:300&display=swap');
 /* Base element styles */
 
 body {
@@ -245,7 +246,14 @@ section {
 /* Mobile Breakpoint */
 @media screen and (max-width: 800px) {
   .main {
-    padding: 3%;
+    padding: 5%;
+  }
+
+  section {
+    padding: 0;
+    margin-bottom: 3em;
+    border: none;
+    border-top: 5px solid #ffbf10;
   }
 
   .gamedev-video {
