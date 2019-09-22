@@ -92,9 +92,13 @@ props: {
 template: `
 <div :style="fixed">
   <div class="game-columns modal-centered">
-    <gamedev-image-viewer :images="game.images"></gamedev-image-viewer>
+    <gamedev-image-viewer
+      v-if="game.images"
+      :images="game.images">
+    </gamedev-image-viewer>
     <div class="scrollable">
       <h1>{{ game.name }}</h1>
+      <p v-if="game.tagline"><i>{{ game.tagline }}</i></p>
       <div>
         <p v-if="game.links">
           <a v-for="link of game.links" :href="link[1]" class="game-links">

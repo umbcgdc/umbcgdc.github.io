@@ -65,6 +65,13 @@ body {
   box-shadow: 0 0 5px black;
 }
 
+.game-cover p {
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
 .game-columns {
   display: grid;
   grid-template-columns: 2fr 1fr;
