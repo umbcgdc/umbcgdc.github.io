@@ -381,6 +381,75 @@ var games_list = JSON.parse(`
 
   "2014": [
     {
+      "name": "Rolling Thunder",
+      "description": "Rolling Thunder is a tactical flight simulator, where big guns and reckless commands win the day.",
+      "roster": [
+        "Project Lead: Zachary Holtzman",
+        "Artists: Dan Cassell, Katherine Dillon, Charles Douglas",
+        "Programmers: Bryan Jarrell, Joe O'Malley, Dakota Abernathy",
+        "Writers: Charles Douglas, Joe O'Malley"
+      ]
+    },
+    {
+      "name": "Secondhand",
+      "description": "A disease in unleashed upon a derelict cruise ship. When the vessel's mechanical servants begin a fatal quaratining, it's up to Henrietta, the ship's mechanic, to save whoever she can.",
+      "roster": [
+        "Project Lead: Austin Pagano",
+        "Programming Lead: Chris Hamer",
+        "Art Lead: Savannah Myers",
+        "Artists: Nicole Simke, Graham Sullivan",
+        "Programmers: DJ Streat, Adam Cunningham",
+        "Sound Design: Graham Sullivan"
+      ]
+    },
+    {
+      "name": "Revolve Online",
+      "description": "Take control of the FPS genre by winning, gaining points, and spending them to make changes to ANY aspect of the game, permanently.",
+      "roster": [
+        "Project Lead: Eliot Carney-Seim",
+        "Programming Lead: Eliot Carney_Seim",
+        "Art Lead: Andrea Wozniak",
+        "Programming: Conrad Etherton, Roberto Melgar, Jed Song, Nathaniel J. Dorr",
+        "Sound Design: Maxwell Poole"
+      ]
+    },
+    {
+      "name": "Inheritance",
+      "description": "Inheritance is a 2D dungeon crawler where you can level up your parent characters to make a strong new class child how receive the inheritance of the past characters you controlled.",
+      "roster": [
+        "Project Lead: Andrea Wozniak",
+        "Programming Lead: Yadikaer Yasheng",
+        "Art Lead: Wil Hromek",
+        "Team Members: Jasmine Martin",
+        "Artists: Jacqueline Wojcik, Natalie Yoshioka, Vincent Lay",
+        "Programmers: Malik Jackson"
+      ]
+    },
+    {
+      "name": "HueBots",
+      "description": "HueBots is a top-down puzzle game where you can build and control little multicolored robots, which you must use to solve increasingly complicated puzzles. The goal of each level is to get your special white robot to the finish!",
+      "roster": [
+        "Project Lead: Michael Leung",
+        "Programming Lead: Tad Cordle",
+        "Art Lead: Erika Schumacher",
+        "Team Members: Jasmine Martin"
+      ],
+      "links": [
+        ["Steam", "https://store.steampowered.com/app/397400/HueBots/"],
+        ["itch.io", "https://huebotics.itch.io/huebots"]
+      ],
+      "customhtml": "<p><img class='full-image' src='https://steamcdn-a.akamaihd.net/steam/apps/397400/header.jpg'></p>",
+      "images": [
+        "https://img.itch.zone/aW1hZ2UvMzQ4NTAvMTQ5NzgyLnBuZw==/original/EkHjUH.png",
+        "https://img.itch.zone/aW1hZ2UvMzQ4NTAvMTQ5NzgzLnBuZw==/original/6bE3i8.png",
+        "https://img.itch.zone/aW1hZ2UvMzQ4NTAvMTQ5NzgxLnBuZw==/original/AjQGjo.png",
+        "https://img.itch.zone/aW1hZ2UvMzQ4NTAvMTQ5NzgwLnBuZw==/original/oY9n8M.png"
+      ]
+    }
+  ],
+
+  "2013": [
+    {
       "name": "Project JACK",
       "tagline": "Hectic Skeleton Combat",
       "description": "Multiplayer arena combat, with completely physics-simulated bodies. Lose a leg or break your spine, you can keep on fighting anyway! Changing gravity and a spread of weapons makes no two matches the same.",
@@ -471,11 +540,29 @@ var games_list = JSON.parse(`
     }
   ],
 
+  "2008": [
+    {
+      "name": "Cryo and Pyro",
+      "description": "The primary goal is to create a fun and engaging game which works both on Microsoft Windows and Xbox 360 systems. The game will take the form of a side-scrolling 2D platformer with an emphasis on fast-based gameplay and combat. The game is designed to have two players cooperating in the same gameplay environment, each with different abilities. The players must use each of their respective abilities in tandem to traverse the level and reach the goal.",
+      "customhtml": "<p>In order to create the game we first had to create an engine, which is the framework on top of which the game is made. We decided to go with a pre-made engine in order to speed up development. The platform we chose is Microsoft XNA because it facilitates development on the Windows and Xbox platforms. Then programmers set to work fixing and modifying the engine to make it fit the game as envisioned. The artists began to work on concept artwork in order to set a visual style and decide how the game would look.</p><p>As the work progressed, the programmers then needed to start adding in more specific elements to the game. This includes menus, enemies, and other gameplay elements. The artists began to producwe sprites, which are the individual images which are being used by the game to create the image which is seen by the player. The programmers then began adding the sprites to the game. The final stage is balancing the enemies and creating levels for the players to play in.</p>"
+    },
+    {
+      "name": "Gunther",
+      "description": "The goal of Gunther is to create a grimy fairy-tale world that revolved around the character Gunther, a mercenary looking to profit off a small town. The game is a 3rd person Hack and Slash set in a 3D environment. The game is intended to give the players a feeling of being swarmed by demons and constricted by a time limit as they must defeat the quickly multiplying enemies that have inhabited this game world.",
+      "customhtml": "<p>To create the game, programmers use a game engine, a pre-made toolset for game devlopment. Gunther is the first game done by the Game Developers Club to use a student-made game engine. Gunther uses the engine, <a href='#2005-Mercury' onclick='window.location.href=\\"#2005-Mercury\\";window.location.reload()'>Mercury</a>, a multi-platform multi-threaded game engine written in C++. The engine has been developed over the past four years by members of the club and is an Open Source engine available for download and use.</p><p>For the art assets, artists created 3D models in programs like Maya and 3D Studio Max. They construct characters and objects using primitive polygons, like spheres and cubes. Once modeled, objects are UV mapped, a process that converts the 3D faces of a model to a 2D plane. Using this map, artists can paint over it and map it back on to the model, completing a process known as texturing. Finally, for characters, models are given bones and joints known as a rig so that an animator may give the character life.</p>"
+    }
+  ],
+
   "2005": [
     {
       "name": "Project Tetra Code Design",
       "description": "Project Tetra uses a multi-layered design. Each layer of code is designed to provide the above layer with an interface for using its functionality. This means that no one layer of code has to concern itself with the full complexity of the game code.",
       "customhtml": "<p><blockquote>C# Script System<blockquote>Script Interface<blockquote>Code<blockquote>Gamebryo - Game Engine<blockquote>DirectX - Toolset</blockquote></blockquote></blockquote></blockquote></blockquote></p><p>The bottom layer is a toolset known as DirectX. DirectX provides the application with an interface to the graphics hardware (Direct3D) as well as interfaces to input devices (Direct Input). DirectX is provided by Microsoft for free and is the most commonly used toolset for graphics in Windows.</p><p>The next layer is Gamebryo which is a Game Engine. Gamebryo provides an interface for creating basic game objects. It hides the DirectX layer and therefore simplifies the above layers of code. Gamebryo is not specific to Project Tetra but rather generalized game code written by a company known as Emergent.</p><p>On top of Gamebryo sits the game layer. This layer consists of code specific to the game. It is written in C++ and is compiled into the application. It manages the core game play functionality that is not likely to change during the development process.</p><p>Next there is the script interface layer. This layer consists of managed C++ that can be used by the script system. This layer acts as a middle man between the core game code and the script system.</p><p>The top layer is our C# script system. The script system is used to easily modify the game. Scripts define things such as character classes and character skills. They are also used to make basic decisions such as what music to play or when to open a door.</p>"
+    },
+    {
+      "name": "Mercury",
+      "description": "Mercury is a C++, Open Source, Multi-platform, Multi-threaded Game Engine that runs fully featured on Linux and Windows®. It is worked on my a few GDC members. Mercury compiles in GCC3.2 - 4.1 in Linux, and many different compilers in Windows®.",
+      "customhtml": "<p>Mercury isn't just a graphics library, but a full programming environment. In general, code designed to be run in Mercury needs not to make calls to the system or any functions that would be platform dependent. Despite this, Mercury should remain small and applications that utilize it should not have to suffer exaggerated load times for features they do not use. Mercury's registration system allows different features to be compiled in without modification of other code. For example, if there is no need for physics in your project, the ODE library and code (what we use for physics) can simply not be linked and ODE will not be used.</p><p>Mercury is designed around open source fundamentals. Most of what you will see supported in Mercury and used with Mercury is Open. We feel that you should be able to develop a great game without having to purchase proprietary tools and systems.</p><p>Mercury's primary goal is speed. Mercury sacrifices some of the benefits that are gained by clean coding when a noticeable performance increase can be found for the end user. Assembly code for common math functions being compiled in Windows for extra performance is an example of the paramount of speed in Mercury. We've re-written some of the STL data types for added functionality as well as improved performance.</p>"
     }
   ]
 }
