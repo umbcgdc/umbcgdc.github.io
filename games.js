@@ -1,6 +1,111 @@
 var games_list = JSON.parse(`
 {
 
+  "2019": [
+    {
+      "name": "Bad Boy: Tournament Edition",
+      "tagline": "2D fighter sort of in-between Smash and traditional fighting games",
+      "roster": [
+        "Trevor A",
+        "Alex L",
+        "Oliver B",
+        "Angie S",
+        "Jaron H"
+      ]
+    },
+    {
+      "name": "Invisible Ink",
+      "tagline": "2D Choose your own adventure sidescroller with a similar premise to The Giver (but not really)",
+      "roster": [
+        "Stephen V",
+        "Kristian M",
+        "Alexander W",
+        "Yitzhak O",
+        "Tim W",
+        "Ajel B",
+        "Aaron G",
+        "Austin W",
+        "Brian M"
+      ]
+    },
+    {
+      "name": "Sludger",
+      "description": "A 2.5D twin-stick bullet hell with quirky characters and a variety of abilities. Has the mechanic of scaling player size to health.",
+      "roster": [
+        "Skyler O'Neill"
+      ]
+    },
+    {
+      "name": "Modeling Madness",
+      "roster": [
+        "Artist: Felice H",
+        "Lead/Programmer: Matt B"
+      ],
+      "customhtml": "<p>A former model, having recently escaped from Hell, must become beautiful again in time for One Last Photoshoot.</p><p>Squeeze through the layers of psychogeometry that make up each person's psyche so that you might manipulate them into letting you use their shower.</p><p>In the process you might, for the first time in your entire life, make a friend. :)</p>"
+    },
+    {
+      "name": "Pop-Up",
+      "description": "Journey through stories of kings, pilots, and dictators in Pop-Up, an action adventure across many stories of fiction and myths! Experience events told through different perspectives and timelines in a variety of settings in a retro 2D style.",
+      "roster": [
+        "Team Lead/Lead Programmer/General Marketer: Charlie Hunter",
+        "Lead Story: Ariana Washington",
+        "Programmer: Ben Melluso",
+        "Lead Sound: Chase Pullen",
+        "Lead Music: Clayton Crownover",
+        "Programmer/Story: Christina Lukaszczyk",
+        "Lead Environmental Design/Story: Irene Azurmendi",
+        "Lead Map Designer/Story: Paisley Code",
+        "Lead Pawn Designer: Simbiat Odeshina"
+      ]
+    },
+    {
+      "name": "Bruise Cruise",
+      "tagline": "Alcohol-powered 2D action platformer",
+      "roster": [
+        "Team Lead: Ben",
+        "Lead Engineer: J Rob",
+        "Lead Musician: Adam",
+        "Programmer: Justin",
+        "Programmer: Marvin",
+        "Lead Artist: Mathias"
+      ]
+    },
+    {
+      "name": "Totally Not Gauntlet/Mystery Dungeon",
+      "tagline": "* working title",
+      "description": "A realtime top-down dungeon crawler with the fast-paced mechanics of Gauntlet and Pokemon Mystery Dungeon where you make your way through floors of a proceedurally generated dungeon.",
+      "roster": [
+        "Project Lead, Musician: Desmond",
+        "Programmer: Anthony",
+        "Artist: Raychel"
+      ]
+    },
+    {
+      "name": "Candybaggers",
+      "tagline": "* working title",
+      "description": "A top-down arcade game about trick-or-treating, pulling pranks, and stealing candy from your friends with cute pixel art.",
+      "roster": [
+        "Project Lead, Art, Sound: Aaron Tolbert-Smith",
+        "Programmer: Jo Thomas"
+      ]
+    },
+    {
+      "name": "Mini Golf or Whatever",
+      "description": "Game for mobile where you have a golf ball. You can knock it into some holes if you want, or whatever.",
+      "roster": [
+        "Zach Hale"
+      ]
+    },
+    {
+      "name": "New America: Businessman",
+      "tagline": "Trade-based point and click game with choices and consequences",
+      "roster": [
+        "Liam Upton",
+        "Liam Gorman"
+      ]
+    }
+  ],
+
   "2018": [
     {
       "name": "Yonko Battle",
@@ -223,6 +328,9 @@ var games_list = JSON.parse(`
         "3D Art lead: Emma O'Donnell",
         "Programming Lead: Jacob Bradford",
         "Design Lead: Zachary Holtzman"
+      ],
+      "images": [
+        "images/2016/umbra.png"
       ]
     },
     {
@@ -234,6 +342,9 @@ var games_list = JSON.parse(`
         "Programmers: Young Lee, Toyosi Rayemo, Aaron Lewis",
         "3D Artists: Vincent Lay, Josh Ludlow",
         "UI Artist: Nick Anderson"
+      ],
+      "images": [
+        "images/2016/Project_Junker_URCAD.png"
       ]
     },
     {
@@ -260,6 +371,9 @@ var games_list = JSON.parse(`
       "description": "Fulfill your duties as a fire extinguisher and put out the ever spreading fires threatening your surprisingly flammable room, but be careful not to run into the roaring flames as the force from your extinguisher pushes you around! This fast paced survival game was originally made in 48 hours for Ludum Dare 37 and can be played on PC and Android.",
       "roster": [
         "Conrad Etherton (Programming, art, and music)"
+      ],
+      "images": [
+        "images/2016/PutItOut.png"
       ]
     },
     {
@@ -284,7 +398,18 @@ var games_list = JSON.parse(`
         "Programming Lead: Chris Hamer",
         "Music: Evan Thweatt",
         "Artists: Jacqueline Wojcik, Erika Schumacher, Savanah May"
-      ]
+      ],
+      "links": [
+        ["Website", "http://www.legacyoftheshards.com/"]
+      ],
+      "images": [
+        "http://www.legacyoftheshards.com/images/Aren1.PNG",
+        "http://www.legacyoftheshards.com/images/ArenFlying1.png",
+        "http://www.legacyoftheshards.com/images/ArenQuest1.PNG",
+        "http://www.legacyoftheshards.com/images/ArenPlatforming1.png"
+      ],
+      "description": "Set in a fantastical world filled with exploration, the player assumes the role of Aren, an adventurous youth seeking the means to travel beyond his home to find his long-lost parents. The game mechanics focus on classic platforming to explore and pursue nonlinear objectives. Players can approach quests and goals from several angles, building their own playstyle as they progress.",
+      "customhtml": "<p><a href='https://www.facebook.com/LegacyoftheShards/'><img class='icon-image' src='ui/facebook.png'>Facebook</a></p><p><a href='https://twitter.com/LegacyOfShards'><img class='icon-image' src='ui/twitter.png'>Twitter</a></p>"
     },
     {
       "name": "Heart Attack",
@@ -322,11 +447,22 @@ var games_list = JSON.parse(`
     {
       "name": "Dethroned",
       "tagline": "Table Top Game",
+      "description": "A card game fusing Real-Time combat with the Hidden-Role genre. Simple enough for parties but deep enough for veteran gamers.",
       "roster": [
         "Project Lead: Eliot Carney-Seim",
         "Art Lead: Graham Dolle",
         "Editor: Andrea Wozniak"
-      ]
+      ],
+      "links": [
+        ["Kickstarter", "https://www.kickstarter.com/projects/kitelion/dethroned-the-card-game"],
+        ["BGG Homepage", "https://boardgamegeek.com/boardgame/195149/dethroned-real-time-combat-card-game"]
+      ],
+      "images": [
+        "https://i.imgur.com/fwyMIPs.jpg",
+        "https://i.imgur.com/uFyl1pa.png",
+        "https://i.imgur.com/0feUYnc.png"
+      ],
+      "customhtml": "<p><a href='https://www.facebook.com/kiteliongames/'><img class='icon-image' src='ui/facebook.png'>KiteLion Games, LLC on Facebook</a></p>"
     },
     {
       "name": "Sporbitals",
