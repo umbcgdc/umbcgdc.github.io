@@ -33,10 +33,6 @@ body {
   box-sizing: border-box;
   display: inline-block;
   width: 25%;
-  padding: 1vw;
-}
-
-.game-card:hover {
   padding: 0;
 }
 
@@ -52,6 +48,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 1vw;
+  box-sizing: border-box;
 }
 
 .game-cover img {
@@ -63,6 +61,7 @@ body {
 
 .game-cover:hover {
   box-shadow: 0 0 5px black;
+  padding: 0;
 }
 
 .game-cover p {
@@ -70,6 +69,13 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+.game-title-text {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  text-align: left;
 }
 
 .game-columns {

@@ -44,6 +44,19 @@ var games_list = JSON.parse(`
       "customhtml": "<p>A former model, having recently escaped from Hell, must become beautiful again in time for One Last Photoshoot.</p><p>Squeeze through the layers of psychogeometry that make up each person's psyche so that you might manipulate them into letting you use their shower.</p><p>In the process you might, for the first time in your entire life, make a friend. :)</p>"
     },
     {
+      "name": "Bitcoin Miner",
+      "description": "A mobile game where on the bottom half of the phone screen you are a miner mining crystals to receive bitcoin, and as you harvest more bitcoin you get more miners. On the top of the screen you are reading a visual novel about a high school boy",
+      "roster": [
+        "Brandon",
+        "Alex",
+        "Alana",
+        "Michael",
+        "Harmeet",
+        "Faith",
+        "Craig"
+      ]
+    },
+    {
       "name": "Pop-Up",
       "description": "Journey through stories of kings, pilots, and dictators in Pop-Up, an action adventure across many stories of fiction and myths! Experience events told through different perspectives and timelines in a variety of settings in a retro 2D style.",
       "roster": [
@@ -269,6 +282,7 @@ var games_list = JSON.parse(`
   "2017": [
     {
       "name": "Star Marten",
+      "tagline": "A platformer with mini games to boost your abilities",
       "description": "A 2D platformer which features interesting platforming, various powerups, and unique levels and challenges in order to clear the two fully-built levels.",
       "engine": "GameMaker",
       "images": [
@@ -316,6 +330,43 @@ var games_list = JSON.parse(`
         "Miguel Fuentes: 3D Character Artist and Animator"
       ],
       "engine": "Unity"
+    },
+    {
+      "name": "Fansail",
+      "description": "An arcade-style survival game as you pilot a parachute through dangerous terrain while protecting passengers",
+      "images": [
+        "images/2017/Fansail.png",
+        "images/2017/Fansail_2.png"
+      ]
+    },
+    {
+      "name": "Top Cop",
+      "description": "A beat 'em up game where you battle against gangsters in an old action movie",
+      "images": [
+        "images/2017/Top_Cop.png",
+        "images/2017/Top_Cop_2.png"
+      ]
+    },
+    {
+      "name": "Phantom",
+      "description": "A point-and-click mystery game where the player is a detective who works alongside the ghost of the victim to solve a crime",
+      "images": [
+        "images/2017/Phantom_1.png",
+        "images/2017/Phantom_2.png",
+        "images/2017/Phantom_3.png"
+      ]
+    },
+    {
+      "name": "Rock Dog",
+      "description": "A turn-based role-playing game where you control a rock-star as you play tunes across multiple venues"
+    },
+    {
+      "name": "Baby Dragon Assassin",
+      "description": "A stealth platformer game where you play as an imaginative child in daycare through their eyes and stealthily try to get your ball back from a bully"
+    },
+    {
+      "name": "Ultrarian",
+      "description": "A top-down shooter/stealth game with recruiting mechanics while you play as a cop hunting down criminals"
     }
   ],
   
