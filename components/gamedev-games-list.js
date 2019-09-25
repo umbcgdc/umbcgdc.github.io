@@ -39,6 +39,8 @@ Vue.component('gamedev-games-list', {
 
     <ul v-for="year of years" v-if="year==currentYear" class="year-page">
 
+      <h1 class="text-centered">{{ yearRange }} Games</h1>
+
       <li v-for="game of games[year]" :key="game.id" class="game-card">
         <div class="game-cover-container">
           <div class="game-cover" @click="openGameDisplay(game)">
@@ -74,10 +76,10 @@ Vue.component('gamedev-games-list', {
   },
   methods: {
     // display some year's game list
-    changeYear: function(year) {
+    changeYear(year) {
       this.currentYear = year;
     },
-    openGameDisplay: function(game) {
+    openGameDisplay(game) {
       this.currentGameOpen = game;
       document.body.style.overflow = "hidden";
       document.body.style.position = "relative";
@@ -86,7 +88,7 @@ Vue.component('gamedev-games-list', {
       let _hash_safe_name = game.name.replace(/\s/g, '-').toLowerCase();
       window.location.hash = this.currentYear + '-'+ _hash_safe_name;
     },
-    closeGameDisplay: function() {
+    closeGameDisplay() {
     	this.currentGameOpen = null;
     	document.body.style.overflow = "auto";
       document.body.style.position = "relative";
@@ -107,6 +109,11 @@ Vue.component('gamedev-games-list', {
         this.changeYear(_hash_year);
         this.openGameDisplay(_matches[0]);
       }
+    }
+  },
+  computed: {
+    yearRange() {
+      return this.currentYear + '-' + (parseInt(this.currentYear) + 1);
     }
   }
 })
