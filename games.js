@@ -415,6 +415,9 @@ var games_list = JSON.parse(`
         "Art Lead: Khadijah Wali",
         "Programming lead: Matt Wong",
         "Team: Cameron Blomquist, Carolyn Wu, Courney Lovett, Dylan Haire, Emily Lambros, Igor Savchenko, Isiah Daniel, Nicholas Ho, Shelby Morales"
+      ],
+      "images": [
+        "images/2016/Catacombs.png"
       ]
     },
     {
