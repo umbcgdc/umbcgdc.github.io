@@ -41,7 +41,7 @@ var games_list = JSON.parse(`
         "Artist: Felice H",
         "Lead/Programmer: Matt B"
       ],
-      "customhtml": "<p>A former model, having recently escaped from Hell, must become beautiful again in time for One Last Photoshoot.</p><p>Squeeze through the layers of psychogeometry that make up each person's psyche so that you might manipulate them into letting you use their shower.</p><p>In the process you might, for the first time in your entire life, make a friend. :)</p>"
+      "description": "A former model, having recently escaped from Hell, must become beautiful again in time for One Last Photoshoot. Squeeze through the layers of psychogeometry that make up each person's psyche so that you might manipulate them into letting you use their shower.\\n\\nIn the process you might, for the first time in your entire life, make a friend. :)"
     },
     {
       "name": "Bitcoin Miner",
