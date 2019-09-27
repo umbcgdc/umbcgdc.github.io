@@ -103,8 +103,8 @@ var games_list = JSON.parse(`
       ]
     },
     {
-      "name": "Mini Golf or Whatever",
-      "description": "Game for mobile where you have a golf ball. You can knock it into some holes if you want, or whatever.",
+      "name": "Shatter Ball",
+      "description": "Game for mobile where you control a ball. You can shoot it at high speeds and slow down time, get to the end of the course as fast as you can.",
       "roster": [
         "Zach Hale"
       ]
