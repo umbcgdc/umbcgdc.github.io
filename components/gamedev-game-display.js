@@ -108,7 +108,7 @@ template: `
             {{ link[0] }}
           </a>
         </p>
-        <p v-if="game.description">{{ game.description }}</p>
+        <p v-if="game.description" class="linebreaks">{{ game.description }}</p>
         <p v-if="game.engine">Engine: {{ game.engine }}</p>
         <div v-if="game.roster">
           <p>Roster:</p>

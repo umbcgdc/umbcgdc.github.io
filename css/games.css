@@ -82,6 +82,9 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: #2a2a2a;
+}
+
+.linebreaks {
   white-space: pre-line;
 }
 

@@ -165,6 +165,9 @@ var games_list = JSON.parse(`
         "Yitzhak Oshry: Programmer",
         "Gregory Marinakis: Programmer",
         "Spencer Korman: Art Lead"
+      ],
+      "links": [
+        ["Video", "https://www.youtube.com/watch?v=mxyX83h6mS8", "video_library"]
       ]
     },
 
@@ -354,6 +357,9 @@ var games_list = JSON.parse(`
         "images/2017/Phantom_1.png",
         "images/2017/Phantom_2.png",
         "images/2017/Phantom_3.png"
+      ],
+      "links": [
+        ["Video", "https://www.youtube.com/watch?v=fzsacZ7_wOg", "video_library"]
       ]
     },
     {
