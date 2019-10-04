@@ -33,6 +33,11 @@ var games_list = JSON.parse(`
       "description": "A 2.5D twin-stick bullet hell with quirky characters and a variety of abilities. Has the mechanic of scaling player size to health.",
       "roster": [
         "Skyler O'Neill"
+      ],
+      "images": [
+        "images/2019/SludgerPrototype1.png",
+        "images/2019/SludgerPrototype2.png",
+        "images/2019/SludgerPrototype3.png"
       ]
     },
     {
@@ -69,6 +74,13 @@ var games_list = JSON.parse(`
         "Lead Environmental Design/Story: Irene Azurmendi",
         "Lead Map Designer/Story: Paisley Code",
         "Lead Pawn Designer: Simbiat Odeshina"
+      ],
+      "images": [
+        "images/2019/Popup_1.png",
+        "images/2019/Popup_2.png",
+        "images/2019/Popup_3.png",
+        "images/2019/Popup_4.png",
+        "images/2019/Popup_5.png"
       ]
     },
     {
@@ -114,6 +126,10 @@ var games_list = JSON.parse(`
       "roster": [
         "Liam Upton",
         "Liam Gorman"
+      ],
+      "images": [
+        "images/2019/New_America_Businessman_1.png",
+        "images/2019/New_America_Businessman_2.png"
       ]
     }
   ],
