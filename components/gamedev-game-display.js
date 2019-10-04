@@ -19,7 +19,7 @@ template: `
 <div class="game-image-viewer">
 
   <div
-    style="position:relative; flex-shrink:1; min-content:0"
+    style="position:relative; flex-shrink:1; min-content:0; max-height:100vh"
     @mouseover="hovered=true"
     @mouseleave="hovered=false">
 

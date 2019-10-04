@@ -46,7 +46,10 @@ var games_list = JSON.parse(`
         "Artist: Felice H",
         "Lead/Programmer: Matt B"
       ],
-      "description": "A former model, having recently escaped from Hell, must become beautiful again in time for One Last Photoshoot. Squeeze through the layers of psychogeometry that make up each person's psyche so that you might manipulate them into letting you use their shower.\\n\\nIn the process you might, for the first time in your entire life, make a friend. :)"
+      "description": "A former model, having recently escaped from Hell, must become beautiful again in time for One Last Photoshoot. Squeeze through the layers of psychogeometry that make up each person's psyche so that you might manipulate them into letting you use their shower.\\n\\nIn the process you might, for the first time in your entire life, make a friend. :)",
+      "images": [
+        "images/2019/Modeling_Madness.gif"
+      ]
     },
     {
       "name": "Bitcoin Miner",
@@ -118,6 +121,9 @@ var games_list = JSON.parse(`
       "description": "Game for mobile where you control a ball. You can shoot it at high speeds and slow down time, get to the end of the course as fast as you can.",
       "roster": [
         "Zach Hale"
+      ],
+      "images": [
+        "images/2019/Shatterball.jpg"
       ]
     },
     {
