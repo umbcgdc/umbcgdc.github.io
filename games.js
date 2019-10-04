@@ -181,7 +181,8 @@ var games_list = JSON.parse(`
           "Google Play",
           "https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US",
           "phone_android"
-        ]
+        ],
+        ["Video", "https://youtu.be/hyFMgBVXJBE", "video_library"]
       ],
       "customhtml": "<p><a href='https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US'></a></p><p><a href='https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US' target='_blank'><img class='full-image' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'></a><br></p>"
     },
@@ -217,6 +218,9 @@ var games_list = JSON.parse(`
         "Mario Moya: 3D Artist",
         "Eric Saulsbury: 3D Artist",
         "Josh Ludlow: 3D Artist"
+      ],
+      "links": [
+        ["Video", "https://youtu.be/ssjjznpaVAY", "video_library"]
       ]
     },
 
@@ -235,7 +239,10 @@ var games_list = JSON.parse(`
       "description": "Bad Boy is a 3D action platformer focusing on tight boss battles.  It's about a chubby little man with a heart full of rage versus the world's finest bounty hunters, monsters and goons.",
       "engine": "Unreal Engine 4",
       "images": ["images/2018/BadBoy-URCAD.png"],
-      "roster": ["Trevor: Project Lead"]
+      "roster": ["Trevor: Project Lead"],
+      "links": [
+        ["Video", "https://youtu.be/lK_R0eTM--A", "video_library"]
+      ]
     },
 
     {
@@ -328,7 +335,10 @@ var games_list = JSON.parse(`
         "https://img.itch.zone/aW1hZ2UvMzAyMjg2LzE0NzkyNTYucG5n/original/lA77b0.png",
         "https://img.itch.zone/aW1hZ2UvMzAyMjg2LzE0NzkyNjAucG5n/original/JSelhr.png"
       ],
-      "links": [["itch.io", "https://mnchino.itch.io/star-marten"]],
+      "links": [
+        ["itch.io", "https://mnchino.itch.io/star-marten"],
+        ["Video", "https://youtu.be/qKatPdyj1OA", "video_library"]
+      ],
       "roster": [
         "Lead & Artist: Kailah DuPree",
         "UI & Programming: Anthony Ellis",
@@ -345,7 +355,10 @@ var games_list = JSON.parse(`
         "https://img.itch.zone/aW1hZ2UvMzA1MzY0LzE0OTgxMDIucG5n/original/8yHXGT.png",
         "https://img.itch.zone/aW1hZ2UvMzA1MzY0LzE0OTgxMDMucG5n/original/VObzYm.png"
       ],
-      "links": [["itch.io", "https://khadyah.itch.io/marzipan"]],
+      "links": [
+        ["itch.io", "https://khadyah.itch.io/marzipan"],
+        ["Video", "https://youtu.be/qxzwsgdLNbk", "video_library"]
+      ],
       "engine": "Unity",
       "roster": [
         "Project Lead, Programming Lead, & Art Lead: Khadijah Wali",
@@ -391,6 +404,9 @@ var games_list = JSON.parse(`
         "Dylan Haire - Project Lead",
         "Angelo C Hojaji - Art Lead",
         "Dalton Mongue - Programming Lead"
+      ],
+      "links": [
+        ["Video", "https://youtu.be/TW61JUWbIfo", "video_library"]
       ]
     },
     {
@@ -419,7 +435,7 @@ var games_list = JSON.parse(`
       ],
       "engine": "Unity",
       "links": [
-        ["Video", "https://www.youtube.com/watch?v=fzsacZ7_wOg", "video_library"]
+        ["Video", "https://youtu.be/fzsacZ7_wOg", "video_library"]
       ],
       "roster": [
         "Zachary Holtzman (writer)",
@@ -488,6 +504,9 @@ var games_list = JSON.parse(`
       ],
       "images": [
         "images/2016/umbra.png"
+      ],
+      "links": [
+        ["Video", "https://www.youtube.com/watch?v=UQuVIn59ZYI&list=PLxmn--VhkgOhOuRnX8IKkLlOppqto2eW5", "video_library"]
       ]
     },
     {
@@ -592,6 +611,9 @@ var games_list = JSON.parse(`
         "Programmers: Ben Hazlett, Young Lee",
         "Artists: Vincent Lay, Emma O'Donnell",
         "Music: Sam Siegel"
+      ],
+      "images": [
+        "images/2015/Graveyard_Beat.jpg"
       ]
     },
     {
@@ -719,6 +741,17 @@ var games_list = JSON.parse(`
         "Team Members: Jasmine Martin",
         "Artists: Jacqueline Wojcik, Natalie Yoshioka, Vincent Lay",
         "Programmers: Malik Jackson"
+      ],
+      "engine": "Unity",
+      "images": [
+        "images/2014/Inheritance_1.png",
+        "images/2014/Inheritance_2.png",
+        "images/2014/Inheritance_3.png",
+        "images/2014/Inheritance_4.png",
+        "images/2014/Inheritance_5.png"
+      ],
+      "links": [
+        ["Concept Art Archive", "https://www.coroflot.com/jacquelinewojcik/Inheritence", "photo_library"]
       ]
     },
     {
@@ -804,13 +837,22 @@ var games_list = JSON.parse(`
       "name": "Bounty Trial",
       "engine": "Blender",
       "description": "Starting form humble beginnings, an orphan leaves his hometown to discover his origins. Too poor to afford a steel helmet, he adorns himself with a wooden bucket instead. In this epic of the middle ages, Max must overcome sinister forces as well as his own insignificance. Set in the era of medieval castles and towns, this Hack and Slash 3rd person RPG adventure game includes interacting and adding characters to your group in order to win treasures from a variety of enemies in combat.",
-      "customhtml": "<h3>Development Challenges</h3><p>The most challenging aspect of the game was getting the characters to follow commands from the player seamlessly with smooth transitions from action to action as well as from moving in one direction to pulling out a sword and slashing in another direction. Some other difficulties we have experienced in using the Blender Game Engine was versioning as a team and using python scripts integrated into logic bricks.</p>"
+      "customhtml": "<h3>Development Challenges</h3><p>The most challenging aspect of the game was getting the characters to follow commands from the player seamlessly with smooth transitions from action to action as well as from moving in one direction to pulling out a sword and slashing in another direction. Some other difficulties we have experienced in using the Blender Game Engine was versioning as a team and using python scripts integrated into logic bricks.</p>",
+      "links": [
+        ["Video", "https://www.youtube.com/watch?v=u_5rFt4jipg", "video_library"]
+      ]
     },
     {
       "name": "X-Zip-It!",
       "engine": "FlatRedBall",
       "description": "In a world where people can not unzip their own zippers, it is up to you and your magic unzipping powers to avert this catastrophe. You must unzip zippers on a variety of clothing types while dealing with various obstacles such as buttons, buckles and necklaces. Tap the buttons, pinch the buckles and avoid the deadly necklaces.",
-      "customhtml": "<h3>Development Challenges</h3><p>The most difficult aspect of this project was dealing with the platform that we chose, mobile devices.</p><p>We originally chose Android as our platform, and in doing so ran into a ton of issues as there are no solid game engines for Android devices. The best we could find were some libraries that made it marginally easier to make a game, but these libraries had annoying quirks that made programming a nightmare. In addition, the Android emulator was abysmal. It could not run our game at a consistent frame rate even in its most simple stages.</p><p>We ended up migrating everything to Windows Phone halfway through the year because the development environment was much more friendly.</p><p>The second biggest challenge has been trying to get the zipper behavior how we want it. It's been difficult to implement moving back and forth on the zipper track without running into game-breaking errors.</p>"
+      "customhtml": "<h3>Development Challenges</h3><p>The most difficult aspect of this project was dealing with the platform that we chose, mobile devices.</p><p>We originally chose Android as our platform, and in doing so ran into a ton of issues as there are no solid game engines for Android devices. The best we could find were some libraries that made it marginally easier to make a game, but these libraries had annoying quirks that made programming a nightmare. In addition, the Android emulator was abysmal. It could not run our game at a consistent frame rate even in its most simple stages.</p><p>We ended up migrating everything to Windows Phone halfway through the year because the development environment was much more friendly.</p><p>The second biggest challenge has been trying to get the zipper behavior how we want it. It's been difficult to implement moving back and forth on the zipper track without running into game-breaking errors.</p>",
+      "links": [
+        ["Trailer", "https://www.youtube.com/watch?v=AHm_sRuVYHE", "video_library"]
+      ],
+      "images": [
+        "https://img.youtube.com/vi/AHm_sRuVYHE/maxresdefault.jpg"
+      ]
     }
   ],
 
@@ -830,12 +872,31 @@ var games_list = JSON.parse(`
       "name": "Light",
       "description": "Light is a puzzle-platformer set in a world that has been overcome by darkness. Making his way deep underground in search of the source of this darkness, the main character is aided by only trace amounts of light that remain. The player must take advantage of his prism-like body to split light into a variety of colors, each of which gives him a special ability. These abilities are useful in solving puzzles and defeating enemies, bringing him closer to reaching the source of darkness and restoring light to the world.",
       "engine": "FlatRedBall (XNA)",
-      "customhtml":"<p>Light was made in XNA with the FlatRedBall engine. This powerful engine has many tools available to assist in everything from editing animations to implementing AI. Many technical problems were avoided or easily worked around, allowing the team to focus on gameplay mechanics. Most of the time the player has very limited abilities, except when in the presence of light, which the player can use to harness special abilities - one for each color on the Xbox 360 controller. The main puzzle mechanic focuses on shooting light off a series of reflective surfaces, bouncing it at the correct angles so that the beam of light eventually hits a target that will change some part of the level and allow progression to the next room.</p><p>The team first worked on getting the mechanics working, and then shifted focus to building a world and puzzles. The goal was to have three levels, starting in a dark forest and progressing underground into a cave and finally to an underground temple where the story concludes.</p>"
+      "customhtml":"<p>Light was made in XNA with the FlatRedBall engine. This powerful engine has many tools available to assist in everything from editing animations to implementing AI. Many technical problems were avoided or easily worked around, allowing the team to focus on gameplay mechanics. Most of the time the player has very limited abilities, except when in the presence of light, which the player can use to harness special abilities - one for each color on the Xbox 360 controller. The main puzzle mechanic focuses on shooting light off a series of reflective surfaces, bouncing it at the correct angles so that the beam of light eventually hits a target that will change some part of the level and allow progression to the next room.</p><p>The team first worked on getting the mechanics working, and then shifted focus to building a world and puzzles. The goal was to have three levels, starting in a dark forest and progressing underground into a cave and finally to an underground temple where the story concludes.</p>",
+      "links": [
+        ["Website", "http://www.gregaring.com/games/light"],
+        ["Gameplay Video", "https://www.youtube.com/watch?v=SScyf-zhv1A&list=PL46014654C0670E33", "video_library"],
+        ["Demo Video", "https://www.youtube.com/watch?v=0ommu7wdPco", "video_library"]
+      ],
+      "images": [
+        "https://img.youtube.com/vi/0ommu7wdPco/0.jpg"
+      ]
     },
     {
       "name": "City of Gears",
       "description": "City of Gears in a top-down role-playing game (RPG) set in a Victorian-esque \\"Steampunk\\" world. You play as the son of an airship captain after coming of age and the start of your adventures. Battle enemies, solve puzzles, and explore the world you live in. Each of the four starting classes; Warrior, Alchemist, Rogue and Ranger, have their own unique abilities and skills. Mechanics originate from Multi User Dungeons (MUDs), room-based combat, quests, and node-connected world maps. Mechanics are also drawn from modern RPGs and modernized graphics. Developement involved Flash and Actionscript 3, through the gaming library FlashPunk, developed by Chevy Ray Johnston (flashpunk.net).",
       "customhtml": "<p>The development process provided many unique challenges. Due to the genre, we had high demand for art assets and a large quantity of in-game objects. This required efficient handling of object creation, level loading, and player state management. We developed several prototype engines and systems for handling these aspects of the code. Each implementation posed new concrete challenges with rendering, collision handling, media loading and management. We discovered FlashPunk as a sufficient code base that met our needs. Then, we ported our existing code into the current prototype. The prototype demonstrates an initial level and single player class in this environment. We also utilize an excellent 2D Map editor called <a href='http://www.ogmoeditor.com/'>OGMO</a>, which simplifies the process of adding and customizing levels for the game. Utilizing xml projects and level files, OGMO produces levels that can be directly integrated into the game engine.</p><p>Future goals include more levels, character models and development of mechanics. We plan to incorporate a real-time turn-based combat system that will add more dynamic and strategic gameplay thus improving combat. Also, we will continue to develop simple conventions so that this code can be reused to produce other tileset/top-down games.</p>"
+    }
+  ],
+
+  "2009": [
+    {
+      "name": "World Weaver",
+      "links": [
+        ["Video", "https://www.youtube.com/watch?v=cPTrJqgLddw&list=PL2C1E749056F4257C&index=1", "video_library"],
+        ["Concept Art", "https://www.deviantart.com/icetigris/art/Athena-Design-Sheet-161120184", "photo"],
+        ["3D Model", "https://www.deviantart.com/icetigris/art/Athena-Model-192620689", "photo"]
+      ]
     }
   ],
 
@@ -848,7 +909,13 @@ var games_list = JSON.parse(`
     {
       "name": "Gunther",
       "description": "The goal of Gunther is to create a grimy fairy-tale world that revolved around the character Gunther, a mercenary looking to profit off a small town. The game is a 3rd person Hack and Slash set in a 3D environment. The game is intended to give the players a feeling of being swarmed by demons and constricted by a time limit as they must defeat the quickly multiplying enemies that have inhabited this game world.",
-      "customhtml": "<p>To create the game, programmers use a game engine, a pre-made toolset for game devlopment. Gunther is the first game done by the Game Developers Club to use a student-made game engine. Gunther uses the engine, <a href='#2005-Mercury' onclick='window.location.href=\\"#2005-Mercury\\";window.location.reload()'>Mercury</a>, a multi-platform multi-threaded game engine written in C++. The engine has been developed over the past four years by members of the club and is an Open Source engine available for download and use.</p><p>For the art assets, artists created 3D models in programs like Maya and 3D Studio Max. They construct characters and objects using primitive polygons, like spheres and cubes. Once modeled, objects are UV mapped, a process that converts the 3D faces of a model to a 2D plane. Using this map, artists can paint over it and map it back on to the model, completing a process known as texturing. Finally, for characters, models are given bones and joints known as a rig so that an animator may give the character life.</p>"
+      "customhtml": "<p>To create the game, programmers use a game engine, a pre-made toolset for game devlopment. Gunther is the first game done by the Game Developers Club to use a student-made game engine. Gunther uses the engine, <a href='#2005-Mercury' onclick='window.location.href=\\"#2005-Mercury\\";window.location.reload()'>Mercury</a>, a multi-platform multi-threaded game engine written in C++. The engine has been developed over the past four years by members of the club and is an Open Source engine available for download and use.</p><p>For the art assets, artists created 3D models in programs like Maya and 3D Studio Max. They construct characters and objects using primitive polygons, like spheres and cubes. Once modeled, objects are UV mapped, a process that converts the 3D faces of a model to a 2D plane. Using this map, artists can paint over it and map it back on to the model, completing a process known as texturing. Finally, for characters, models are given bones and joints known as a rig so that an animator may give the character life.</p>",
+      "images": [
+        "images/2008/Gunther.jpg"
+      ],
+      "links": [
+        ["Video", "https://www.youtube.com/watch?v=fiEay_LTg1g&list=PL33A31B174332D5F8", "video_library"]
+      ]
     }
   ],
 
@@ -861,7 +928,11 @@ var games_list = JSON.parse(`
     {
       "name": "Mercury",
       "description": "Mercury is a C++, Open Source, Multi-platform, Multi-threaded Game Engine that runs fully featured on Linux and Windows®. It is worked on my a few GDC members. Mercury compiles in GCC3.2 - 4.1 in Linux, and many different compilers in Windows®.",
-      "customhtml": "<p>Mercury isn't just a graphics library, but a full programming environment. In general, code designed to be run in Mercury needs not to make calls to the system or any functions that would be platform dependent. Despite this, Mercury should remain small and applications that utilize it should not have to suffer exaggerated load times for features they do not use. Mercury's registration system allows different features to be compiled in without modification of other code. For example, if there is no need for physics in your project, the ODE library and code (what we use for physics) can simply not be linked and ODE will not be used.</p><p>Mercury is designed around open source fundamentals. Most of what you will see supported in Mercury and used with Mercury is Open. We feel that you should be able to develop a great game without having to purchase proprietary tools and systems.</p><p>Mercury's primary goal is speed. Mercury sacrifices some of the benefits that are gained by clean coding when a noticeable performance increase can be found for the end user. Assembly code for common math functions being compiled in Windows for extra performance is an example of the paramount of speed in Mercury. We've re-written some of the STL data types for added functionality as well as improved performance.</p>"
+      "customhtml": "<p>Mercury isn't just a graphics library, but a full programming environment. In general, code designed to be run in Mercury needs not to make calls to the system or any functions that would be platform dependent. Despite this, Mercury should remain small and applications that utilize it should not have to suffer exaggerated load times for features they do not use. Mercury's registration system allows different features to be compiled in without modification of other code. For example, if there is no need for physics in your project, the ODE library and code (what we use for physics) can simply not be linked and ODE will not be used.</p><p>Mercury is designed around open source fundamentals. Most of what you will see supported in Mercury and used with Mercury is Open. We feel that you should be able to develop a great game without having to purchase proprietary tools and systems.</p><p>Mercury's primary goal is speed. Mercury sacrifices some of the benefits that are gained by clean coding when a noticeable performance increase can be found for the end user. Assembly code for common math functions being compiled in Windows for extra performance is an example of the paramount of speed in Mercury. We've re-written some of the STL data types for added functionality as well as improved performance.</p>",
+      "links": [
+        ["Documentation", "http://hgengine.sourceforge.net/", "description"],
+        ["SourceForge", "https://sourceforge.net/projects/hgengine/"]
+      ]
     }
   ]
 }
