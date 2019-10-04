@@ -131,6 +131,19 @@ var games_list = JSON.parse(`
         "images/2019/New_America_Businessman_1.png",
         "images/2019/New_America_Businessman_2.png"
       ]
+    },
+    {
+      "name": "Fred and Red",
+      "roster": [
+        "Shawn Oppermann"
+      ],
+      "engine": "Unity",
+      "images": [
+        "images/2019/Fred_and_Red_1.png",
+        "images/2019/Fred_and_Red_2.png",
+        "images/2019/Fred_and_Red_3.png",
+        "images/2019/Fred_and_Red_4.png"
+      ]
     }
   ],
 
@@ -301,7 +314,7 @@ var games_list = JSON.parse(`
     {
       "name": "Star Marten",
       "tagline": "A platformer with mini games to boost your abilities",
-      "description": "A 2D platformer which features interesting platforming, various powerups, and unique levels and challenges in order to clear the two fully-built levels.",
+      "description": "In this 2D platformer, you control a marten, weaving your way through the solar system to stop the space dragon invasion.  Defeat enemies, collect stars, and power up to Galaxian form to make it to the star gate in one piece!",
       "engine": "GameMaker",
       "images": [
         "https://img.itch.zone/aW1hZ2UvMzAyMjg2LzE0NzkyNTQucG5n/original/AgLfCH.png",
@@ -309,7 +322,12 @@ var games_list = JSON.parse(`
         "https://img.itch.zone/aW1hZ2UvMzAyMjg2LzE0NzkyNTYucG5n/original/lA77b0.png",
         "https://img.itch.zone/aW1hZ2UvMzAyMjg2LzE0NzkyNjAucG5n/original/JSelhr.png"
       ],
-      "links": [["itch.io", "https://mnchino.itch.io/star-marten"]]
+      "links": [["itch.io", "https://mnchino.itch.io/star-marten"]],
+      "roster": [
+        "Lead & Artist: Kailah DuPree",
+        "UI & Programming: Anthony Ellis",
+        "Music: Desmond Oliver"
+      ]
     },
 
     {
@@ -321,7 +339,12 @@ var games_list = JSON.parse(`
         "https://img.itch.zone/aW1hZ2UvMzA1MzY0LzE0OTgxMDIucG5n/original/8yHXGT.png",
         "https://img.itch.zone/aW1hZ2UvMzA1MzY0LzE0OTgxMDMucG5n/original/VObzYm.png"
       ],
-      "links": [["itch.io", "https://khadyah.itch.io/marzipan"]]
+      "links": [["itch.io", "https://khadyah.itch.io/marzipan"]],
+      "engine": "Unity",
+      "roster": [
+        "Project Lead, Programming Lead, & Art Lead: Khadijah Wali",
+        "Programmers: Yitzhak Oshry, Young Lee, Cameron Blomquist"
+      ]
     },
 
     {
@@ -351,30 +374,53 @@ var games_list = JSON.parse(`
     },
     {
       "name": "Fansail",
-      "description": "An arcade-style survival game as you pilot a parachute through dangerous terrain while protecting passengers",
+      "tagline": "An arcade-style survival game as you pilot a parachute through dangerous terrain while protecting passengers",
+      "description": "Fansail is a game about piloting a wind propelled parachute through dangerous terrain without keeling over and dropping your passengers. Instead of having a health bar, your success is measured by how many points you can collect on the way, and your failure occurs if the obstacles along the way successfully stop you from proceeding in a timely manner, or if they knock all of your passengers out.",
+      "engine": "Unity",
       "images": [
         "images/2017/Fansail.png",
         "images/2017/Fansail_2.png"
+      ],
+      "roster": [
+        "Dylan Haire - Project Lead",
+        "Angelo C Hojaji - Art Lead",
+        "Dalton Mongue - Programming Lead"
       ]
     },
     {
       "name": "Top Cop",
-      "description": "A beat 'em up game where you battle against gangsters in an old action movie",
+      "tagline": "A beat 'em up game where you battle against gangsters in an old action movie",
+      "description": "Project Hong Kong Top Cop is a side scrolling beat 'em up game where the player plays as a man in Hong Kong, attempting to survive in the streets against local thugs and gangsters. The game features melee combat, a blocking system, and (soon to be) combos that allow the player flexibility while playing; various enemies spawn to attempt to stop the player, and certain objectives related to the game, such as beating a certain number of enemies up or surviving for a certain amount of time, are the goals of the game.",
+      "engine": "Unity",
       "images": [
+        "images/2017/Top_Cop_3.png",
         "images/2017/Top_Cop.png",
         "images/2017/Top_Cop_2.png"
+      ],
+      "roster": [
+        "Alex Leger",
+        "Trevor Ancona",
+        "Vincent Lay"        
       ]
     },
     {
       "name": "Phantom",
-      "description": "A point-and-click mystery game where the player is a detective who works alongside the ghost of the victim to solve a crime",
+      "description": "Project Phantom is a 2D point-and-click mystery game, in which the player solves murder mysteries and controls an investigative medium and the ghost of the murdered victim. The player can control Claire, a supernatural detective who can converse with ghosts, and the ghosts in order to collect evidence and convict the right suspect.",
       "images": [
         "images/2017/Phantom_1.png",
         "images/2017/Phantom_2.png",
         "images/2017/Phantom_3.png"
       ],
+      "engine": "Unity",
       "links": [
         ["Video", "https://www.youtube.com/watch?v=fzsacZ7_wOg", "video_library"]
+      ],
+      "roster": [
+        "Zachary Holtzman (writer)",
+        "Natalia \\"Tulie\\" Mitiuriev (project lead and artist)",
+        "Shea Sandifer (programmer)",
+        "Samuel Siegel (programmer)",
+        "Casey Dahlgren (artist)"
       ]
     },
     {
@@ -383,11 +429,26 @@ var games_list = JSON.parse(`
       "images": [
         "images/2017/Rock_Dog.png",
         "images/2017/RockDoggo_Inspiration.png"
+      ],
+      "engine": "Construct 2",
+      "roster": [
+        "Project/Programming Lead: Kit Heckman",
+        "Art Lead: Michael Igoe"
       ]
     },
     {
       "name": "Baby Dragon Assassin",
-      "description": "A stealth platformer game where you play as an imaginative child in daycare through their eyes and stealthily try to get your ball back from a bully"
+      "tagline": "A stealth platformer game where you play as an imaginative child in daycare through their eyes and stealthily try to get your ball back from a bully",
+      "description": "Baby Dragon Assassin is a 2D platform game with stealth elements. The setting takes place in a daycare, consisting of two levels to start. The art aspect of the game is bright and child-like. The mechanics of the game with consists of 2D platforms, stealth secessions, hiding behind cloths and boxes, to avoid some enemies and an adult that will put you into time out. Two levels were created.",
+      "engine": "Unity",
+      "roster": [
+        "Project/ Art Lead - Shelby Morales",
+        "Head Programmer - Ben Przysucha",
+        "Programmer - Austin ‘Herb’ Herbert"        
+      ],
+      "images": [
+        "images/2017/Baby_Dragon_Assassin.png"
+      ]
     },
     {
       "name": "Ultrariah",
@@ -401,7 +462,11 @@ var games_list = JSON.parse(`
         "images/2017/sc6.png",
         "images/2017/sc7.png",
         "images/2017/sc8.png"
-      ]
+      ],
+      "roster": [
+        "Project Lead: James Raw"
+      ],
+      "engine": "Unity"
     }
   ],
   

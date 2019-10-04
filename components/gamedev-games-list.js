@@ -48,7 +48,7 @@ Vue.component('gamedev-games-list', {
               v-if="game.images"
               :src="game.images[0]"
             >
-            <div v-else style="position:relative">
+            <div v-else class="game-cover">
               <img src="ui/game_placeholder.jpg">
               <p class="game-title-text">{{ game.name }}</p>
             </div>
