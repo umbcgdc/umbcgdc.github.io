@@ -84,8 +84,7 @@ var games_list = JSON.parse(`
       ]
     },
     {
-      "name": "Totally Not Gauntlet/Mystery Dungeon",
-      "tagline": "* working title",
+      "name": "Myztree",
       "description": "A realtime top-down dungeon crawler with the fast-paced mechanics of Gauntlet and Pokemon Mystery Dungeon where you make your way through floors of a proceedurally generated dungeon.",
       "roster": [
         "Project Lead, Musician: Desmond",
@@ -364,15 +363,29 @@ var games_list = JSON.parse(`
     },
     {
       "name": "Rock Dog",
-      "description": "A turn-based role-playing game where you control a rock-star as you play tunes across multiple venues"
+      "description": "A turn-based role-playing game where you control a rock-star as you play tunes across multiple venues",
+      "images": [
+        "images/2017/Rock_Dog.png",
+        "images/2017/RockDoggo_Inspiration.png"
+      ]
     },
     {
       "name": "Baby Dragon Assassin",
       "description": "A stealth platformer game where you play as an imaginative child in daycare through their eyes and stealthily try to get your ball back from a bully"
     },
     {
-      "name": "Ultrarian",
-      "description": "A top-down shooter/stealth game with recruiting mechanics while you play as a cop hunting down criminals"
+      "name": "Ultrariah",
+      "description": "A top-down shooter/stealth game with recruiting mechanics while you play as a cop hunting down criminals",
+      "images": [
+        "images/2017/sc1.png",
+        "images/2017/sc2.png",
+        "images/2017/sc3.png",
+        "images/2017/sc4.png",
+        "images/2017/sc5.png",
+        "images/2017/sc6.png",
+        "images/2017/sc7.png",
+        "images/2017/sc8.png"
+      ]
     }
   ],
   
@@ -695,7 +708,10 @@ var games_list = JSON.parse(`
       "name": "Cosmoknights",
       "engine": "FlatRedBall",
       "description": "Cosmoknights is a 2D multiplayer action side-scroller in which astronauts from different countries crash their ships in the same asteroid field. Now they're in a race against each other to get ship pieces scattered in the asteroids to repair their ships and escape the field. Our goal for the project was to create a balanced multiplayer experience with a simple set of rules that players could pick up and understand easily.",
-      "customhtml": "<h3>Development Challenges</h3><p>The basic mechanics for the game did not take very long to implement, but balancing different factors like the speed of the player took a lot of play-testing. The biggest challenge was setting up the code to support different computers communicating fro multiplayer.</p>"
+      "customhtml": "<h3>Development Challenges</h3><p>The basic mechanics for the game did not take very long to implement, but balancing different factors like the speed of the player took a lot of play-testing. The biggest challenge was setting up the code to support different computers communicating fro multiplayer.</p>",
+      "images": [
+        "images/2011/cosmoknights2.png"
+      ]
     },
     {
       "name": "Bounty Trial",
