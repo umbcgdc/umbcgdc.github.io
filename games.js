@@ -26,6 +26,9 @@ var games_list = JSON.parse(`
         "Aaron G",
         "Austin W",
         "Brian M"
+      ],
+      "images": [
+        "images/2019/Invisible_Ink.png"
       ]
     },
     {
