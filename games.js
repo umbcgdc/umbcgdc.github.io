@@ -114,6 +114,9 @@ var games_list = JSON.parse(`
       "roster": [
         "Project Lead, Art, Sound: Aaron Tolbert-Smith",
         "Programmer: Jo Thomas"
+      ],
+      "images": [
+        "images/2019/Candybaggers.jpg"
       ]
     },
     {
