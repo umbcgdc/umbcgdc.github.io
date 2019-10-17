@@ -187,7 +187,7 @@ template: `
 <footer style="padding: 0 5% 3% 5%;">
   <hr style="margin-bottom: 2rem;">
   <h2>Follow Us</h2>
-  <ul>
+  <ul style="list-style-type:none">
     <gamedev-social
       image="ui/mail.png"
       href="mailto:umbcgamedev@gmail.com">
