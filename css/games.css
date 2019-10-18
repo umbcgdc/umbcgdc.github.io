@@ -6,17 +6,52 @@ body {
   display: none;
 }
 
-.year-tab {
-  margin-right: 1em;
+#year-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  color: #ffbf10;
+  border: 3px solid #ffbf10;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-right: 1.5em;
 }
 
-.year-tab:hover {
-  color: red;
-  cursor: pointer;
+#year-select option {
+  color: black;
 }
 
-.year-tab-current, .light-theme .year-tab-current {
-  color: red;
+.select-styler {
+  position: relative;
+}
+
+.select-styler h3 {
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.select-styler:after {
+  content: "";
+  position: absolute;
+  top: .3em;
+  right: .5em;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffbf10;
+}
+
+.light-theme #year-select {
+  color: black;
+  border: 3px solid black;
+}
+
+.light-theme .select-styler:after {
+  border-top: 10px solid black;
 }
 
 .year-page {

@@ -29,13 +29,15 @@ _years.sort((a, b) => {
 Vue.component('gamedev-games-list', {
   template: `
   <div>
-    <button
-      v-for="year of years"
-      class="year-tab"
-      :class="[year==currentYear ? 'year-tab-current' : '']"
-      @click="changeYear(year)">
-      <h2>{{ year }}</h2>
-    </button>
+
+    <span class="select-styler">
+      <label for="year-select"><h3>Year:</h3></label>
+      <select id="year-select" v-model="currentYear">
+        <option v-for="year of years" class="year-tab">
+          {{ year }}
+        </option>
+      </select>
+    </span>
 
     <ul v-for="year of years" v-if="year==currentYear" class="year-page">
 
@@ -75,10 +77,6 @@ Vue.component('gamedev-games-list', {
     }
   },
   methods: {
-    // display some year's game list
-    changeYear(year) {
-      this.currentYear = year;
-    },
     openGameDisplay(game) {
       this.currentGameOpen = game;
       document.body.style.overflow = "hidden";
@@ -106,7 +104,7 @@ Vue.component('gamedev-games-list', {
       let _matches = games_list[_hash_year].filter(game => _re.test(game.name));
       // open game of first match
       if (_matches.length) {
-        this.changeYear(_hash_year);
+        this.currentYear = _hash_year;
         this.openGameDisplay(_matches[0]);
       }
     }
