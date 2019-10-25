@@ -99,6 +99,10 @@ var games_list = JSON.parse(`
         "Programmer: Justin",
         "Programmer: Marvin",
         "Lead Artist: Mathias"
+      ],
+      "images": [
+        "images/2019/Bruise_Cruise_1.png",
+        "images/2019/Bruise_Cruise_2.png"
       ]
     },
     {
