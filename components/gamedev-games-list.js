@@ -33,17 +33,17 @@ Vue.component('gamedev-games-list', {
     <span class="select-styler">
       <label for="year-select"><h3>Year:</h3></label>
       <select id="year-select" v-model="currentYear">
-        <option v-for="year of years" class="year-tab">
-          {{ year }}
+        <option v-for="year of years" :value="year" class="year-tab">
+          {{ yearRange(year) }}
         </option>
       </select>
     </span>
 
-    <ul v-for="year of years" v-if="year==currentYear" class="year-page">
+    <ul class="year-page">
 
-      <h1 class="text-centered">{{ yearRange }} Games</h1>
+      <h1 class="text-centered">{{ yearRange(currentYear) }} Games</h1>
 
-      <li v-for="game of games[year]" :key="game.id" class="game-card">
+      <li v-for="game of games[currentYear]" :key="game.id" class="game-card">
         <div class="game-cover-container">
           <div class="game-cover" @click="openGameDisplay(game)">
             <img
@@ -57,6 +57,7 @@ Vue.component('gamedev-games-list', {
           </div>
         </div>
       </li>
+
       <transition name="appear">
         <gamedev-game-display
           v-if="currentGameOpen!=null"
@@ -66,6 +67,7 @@ Vue.component('gamedev-games-list', {
       </transition>
 
     </ul>
+
   </div>
   `,
   data() {
@@ -77,6 +79,9 @@ Vue.component('gamedev-games-list', {
     }
   },
   methods: {
+    yearRange(year) {
+      return year + '-' + (parseInt(year, 10) + 1);
+    },
     openGameDisplay(game) {
       this.currentGameOpen = game;
       document.body.style.overflow = "hidden";
@@ -107,11 +112,6 @@ Vue.component('gamedev-games-list', {
         this.currentYear = _hash_year;
         this.openGameDisplay(_matches[0]);
       }
-    }
-  },
-  computed: {
-    yearRange() {
-      return this.currentYear + '-' + (parseInt(this.currentYear) + 1);
     }
   }
 })
