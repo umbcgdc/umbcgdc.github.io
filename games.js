@@ -126,7 +126,12 @@ var games_list = JSON.parse(`
         "Programmer: Jo Thomas"
       ],
       "images": [
-        "images/2019/Candybaggers.jpg"
+        "images/2019/Candybaggers.jpg",
+        "images/2019/Candybaggers_2.png"
+      ],
+      "links": [
+        ["itch.io", "https://atolbertsmith.itch.io/candybaggers"],
+        ["Video", "https://youtu.be/gJVI2SYooTI", "video_library"]
       ]
     },
     {
