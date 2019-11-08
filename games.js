@@ -65,6 +65,9 @@ var games_list = JSON.parse(`
         "Harmeet",
         "Faith",
         "Craig"
+      ],
+      "images": [
+        "images/2019/Bitcoin_Miner.png"
       ]
     },
     {
