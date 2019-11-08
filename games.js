@@ -44,7 +44,7 @@ var games_list = JSON.parse(`
       ]
     },
     {
-      "name": "Modeling Madness",
+      "name": "Modeling Mayhem",
       "roster": [
         "Artist: Felice H",
         "Lead/Programmer: Matt B"
