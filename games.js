@@ -11,6 +11,9 @@ var games_list = JSON.parse(`
         "Oliver B",
         "Angie S",
         "Jaron H"
+      ],
+      "images": [
+        "images/2019/Bad_Boy.png"
       ]
     },
     {
