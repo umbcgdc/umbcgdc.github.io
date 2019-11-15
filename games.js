@@ -38,7 +38,11 @@ var games_list = JSON.parse(`
       "name": "Sludger",
       "description": "A 2.5D twin-stick bullet hell with quirky characters and a variety of abilities. Has the mechanic of scaling player size to health.",
       "roster": [
-        "Skyler O'Neill"
+        "Skyler O'Neill - Project Lead",
+        "Aaron Wescott - 2D and 3D Artist",
+        "Miguel Fuentes - 3D Artist",
+        "Michael Wellen - Music",
+        "Cade - Writing"
       ],
       "images": [
         "images/2019/SludgerPrototype1.png",
