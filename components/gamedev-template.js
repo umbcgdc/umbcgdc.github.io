@@ -205,6 +205,12 @@ template: `
       href="https://www.facebook.com/groups/umbcgamedev/">
       UMBC Game Developers Club
     </gamedev-social>
+
+    <gamedev-social
+      image="ui/instagram.png"
+      href="https://www.instagram.com/umbcgamedevelopers/">
+      umbcgamedevelopers
+    </gamedev-social>
     
     <gamedev-social
       image="ui/youtube.png"
