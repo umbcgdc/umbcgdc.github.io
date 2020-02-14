@@ -3,6 +3,20 @@ var games_list = JSON.parse(`
 
   "2019": [
     {
+      "name": "BINARY",
+      "tagline": "* working title",
+      "roster": [
+        "Seth Davis - Project Lead and Programmer",
+        "Keli Christiansen - Artist"
+      ],
+      "description": "A puzzle platformer in which the player has the unique ability to manipulate the code in all objects in order to reach the goal of each level",
+      "images": [
+        "images/2019/Binary_1.png",
+        "images/2019/Binary_2.png",
+        "images/2019/Binary_3.png"
+      ]
+    },
+    {
       "name": "Bad Boy: Tournament Edition",
       "tagline": "2D fighter sort of in-between Smash and traditional fighting games",
       "roster": [
