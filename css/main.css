@@ -318,7 +318,7 @@ section {
     display: block;
   }
 
-  .columns {
+  .columns:not(.mobile) {
     display: block;
   }
   .column.two-thirds {

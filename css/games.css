@@ -186,6 +186,9 @@
   .image-viewer img {
     max-height: 50vh;
   }
+  .image-viewer .columns {
+    background: red;
+  }
   .scrollable {
     margin: auto;
     padding: 0 1em;

@@ -34,7 +34,7 @@ template: `
     </div>
 
     <div v-if="images.length > 1" class="column pa-0">
-      <div class="columns">
+      <div class="columns mobile">
         <div
           v-for="(img, index) of images"
           :key="img"
