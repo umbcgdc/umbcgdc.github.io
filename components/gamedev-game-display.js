@@ -5,10 +5,6 @@
 Vue.component('gamedev-image-viewer', {
 
 props: {
-  video: {
-    type: String,
-    required: false
-  },
   images: {
     type: Array,
     required: true
@@ -18,6 +14,7 @@ props: {
 template: `
 <div>
   <div class="vertical columns" style="max-height:100%">
+
     <div
       class="image-viewer column"
       @mouseover="hovered=true"
@@ -35,15 +32,24 @@ template: `
         @click="showRight()"
       >
     </div>
-    <div v-if="images.length > 1" class="column" style="padding:0">
-      <div v-for="(img, index) of images" :key="img" class="game-card">
-        <div class="game-cover-container">
-          <div class="game-cover">
-            <img :src="img" @click="changeImage(index)">
+
+    <div v-if="images.length > 1" class="column pa-0">
+      <div class="columns">
+        <div
+          v-for="(img, index) of images"
+          :key="img"
+          class="column pa-0"
+          style="max-width:25%"
+        >
+          <div class="game-cover-container">
+            <div class="game-cover">
+              <img :src="img" @click="changeImage(index)">
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 `,
@@ -89,11 +95,13 @@ props: {
 
 template: `
 <div class="modal columns">
+
   <gamedev-image-viewer
     :images="game.images"
     class="column two-thirds"
   >
   </gamedev-image-viewer>
+
   <div class="scrollable column">
     <h1>{{ game.name }}</h1>
     <p v-if="game.tagline"><i>{{ game.tagline }}</i></p>
@@ -104,6 +112,7 @@ template: `
         </i>
         {{ link.text }}
       </a>
+    </p>
     <p v-if="game.description" class="linebreaks">{{ game.description }}</p>
     <p v-if="game.engine">Engine: {{ game.engine }}</p>
     <div v-if="game.roster">
@@ -114,7 +123,9 @@ template: `
     </div>
     <div v-if="game.customhtml" v-html="game.customhtml"></div>
   </div>
+
   <img src="ui/close_button.png" class="overlay close-button" @click="close">
+
 </div>
 `,
 

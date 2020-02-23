@@ -38,15 +38,6 @@
   border-top: 10px solid #ffbf10;
 }
 
-.light-theme #year-select {
-  color: black;
-  border: 3px solid black;
-}
-
-.light-theme .select-styler:after {
-  border-top: 10px solid black;
-}
-
 /* Main page */
 .year-page {
   padding: 0;
@@ -124,7 +115,7 @@
 }
 
 .image-viewer {
-  position:relative;
+  position: relative;
   flex-basis: 100%;
   overflow: hidden;
 }
@@ -170,6 +161,19 @@
 
 .scrollable h1 {
   margin-top: 0;
+}
+
+.light-theme #year-select {
+  color: black;
+  border: 3px solid black;
+}
+
+.light-theme .select-styler:after {
+  border-top: 10px solid black;
+}
+
+.light-theme .modal {
+  background: white;
 }
 
 @media screen and (max-width: 800px) {
