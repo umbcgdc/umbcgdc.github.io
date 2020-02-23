@@ -18,7 +18,11 @@ props: {
 template: `
 <div>
   <div class="vertical columns" style="max-height:100%">
-    <div class="column" style="flex-basis: 100%; overflow: hidden; position:relative;" @mouseover="hovered=true" @mouseleave="hovered=false">
+    <div
+      class="image-viewer column"
+      @mouseover="hovered=true"
+      @mouseleave="hovered=false"
+    >
       <img :src="images[currentImage]" class="full-image">
       <img src="ui/arrow_left.png"
         v-show="images.length > 1 && hovered"

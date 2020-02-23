@@ -121,6 +121,7 @@ section {
 
 .column {
   display: block;
+  box-sizing: border-box;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
@@ -130,15 +131,6 @@ section {
 .column.two-thirds {
   flex: none;
   width: 66.6667%
-}
-
-@media screen and (max-width: 800px) {
-  .columns {
-    display: block;
-  }
-  .column.two-thirds {
-    width: 100%;
-  }
 }
 
 .special-links a {
@@ -320,6 +312,13 @@ section {
   
   .gamedev-nav-links.mobile {
     display: block;
+  }
+
+  .columns {
+    display: block;
+  }
+  .column.two-thirds {
+    width: 100%;
   }
 
   .light-theme footer a {
