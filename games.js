@@ -154,8 +154,15 @@ var games_list = JSON.parse(`
         "images/2019/Candybaggers_2.png"
       ],
       "links": [
-        ["itch.io", "https://atolbertsmith.itch.io/candybaggers"],
-        ["Video", "https://youtu.be/gJVI2SYooTI", "video_library"]
+        {
+          "text": "itch.io",
+          "href": "https://atolbertsmith.itch.io/candybaggers"
+        },
+        {
+          "text": "Video",
+          "href": "https://youtu.be/gJVI2SYooTI",
+          "icon": "video_library"
+        }
       ]
     },
     {
@@ -214,17 +221,21 @@ var games_list = JSON.parse(`
         "Voice Acting: Alex Holstein, Nithya Prakash, Natalia Mitiuriev, Young Lee"
       ],
       "links": [
-        [
-          "itch.io",
-          "https://mnchino.itch.io/yonko-battle-windows-ver",
-          "laptop_windows"
-        ],
-        [
-          "Google Play",
-          "https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US",
-          "phone_android"
-        ],
-        ["Video", "https://youtu.be/hyFMgBVXJBE", "video_library"]
+        {
+          "text": "itch.io",
+          "href": "https://mnchino.itch.io/yonko-battle-windows-ver",
+          "icon": "laptop_windows"
+        },
+        {
+          "text": "Google Play",
+          "href": "https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US",
+          "icon": "phone_android"
+        },
+        {
+          "text": "Video",
+          "href": "https://youtu.be/hyFMgBVXJBE",
+          "icon": "video_library"
+        }
       ],
       "customhtml": "<p><a href='https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US'></a></p><p><a href='https://play.google.com/store/apps/details?id=umbc.gamedev.yonkobattle&hl=en_US' target='_blank'><img class='full-image' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'></a><br></p>"
     },
@@ -244,7 +255,11 @@ var games_list = JSON.parse(`
         "Spencer Korman: Art Lead"
       ],
       "links": [
-        ["Video", "https://www.youtube.com/watch?v=mxyX83h6mS8", "video_library"]
+        {
+          "text": "Video",
+          "href":"https://www.youtube.com/watch?v=mxyX83h6mS8",
+          "icon": "video_library"
+        }
       ]
     },
 
@@ -262,7 +277,11 @@ var games_list = JSON.parse(`
         "Josh Ludlow: 3D Artist"
       ],
       "links": [
-        ["Video", "https://youtu.be/ssjjznpaVAY", "video_library"]
+        {
+          "text":"Video",
+          "href": "https://youtu.be/ssjjznpaVAY",
+          "icon": "video_library"
+        }
       ]
     },
 
@@ -283,7 +302,11 @@ var games_list = JSON.parse(`
       "images": ["images/2018/BadBoy-URCAD.png"],
       "roster": ["Trevor: Project Lead"],
       "links": [
-        ["Video", "https://youtu.be/lK_R0eTM--A", "video_library"]
+        {
+          "text": "Video",
+          "href": "https://youtu.be/lK_R0eTM--A",
+          "icon": "video_library"
+        }
       ]
     },
 
@@ -317,7 +340,12 @@ var games_list = JSON.parse(`
         "Liam Gorman: Lead Artist",
         "Daniel Cunningham: Composer"
       ],
-      "links": [["itch.io", "https://liamupton1.github.io/Adryft/"]]
+      "links": [
+        {
+          "text": "itch.io",
+          "href": "https://liamupton1.github.io/Adryft/"
+        }
+      ]
     },
 
     {
@@ -378,8 +406,15 @@ var games_list = JSON.parse(`
         "https://img.itch.zone/aW1hZ2UvMzAyMjg2LzE0NzkyNjAucG5n/original/JSelhr.png"
       ],
       "links": [
-        ["itch.io", "https://mnchino.itch.io/star-marten"],
-        ["Video", "https://youtu.be/qKatPdyj1OA", "video_library"]
+        {
+          "text": "itch.io",
+          "href": "https://mnchino.itch.io/star-marten"
+        },
+        {
+          "text": "Video",
+          "href": "https://youtu.be/qKatPdyj1OA",
+          "icon": "video_library"
+        }
       ],
       "roster": [
         "Lead & Artist: Kailah DuPree",
@@ -398,8 +433,15 @@ var games_list = JSON.parse(`
         "https://img.itch.zone/aW1hZ2UvMzA1MzY0LzE0OTgxMDMucG5n/original/VObzYm.png"
       ],
       "links": [
-        ["itch.io", "https://khadyah.itch.io/marzipan"],
-        ["Video", "https://youtu.be/qxzwsgdLNbk", "video_library"]
+        {
+          "text": "itch.io",
+          "href": "https://khadyah.itch.io/marzipan"
+        },
+        {
+          "text": "Video",
+          "href": "https://youtu.be/qxzwsgdLNbk",
+          "icon": "video_library"
+        }
       ],
       "engine": "Unity",
       "roster": [
@@ -417,12 +459,15 @@ var games_list = JSON.parse(`
         "images/2017/golem-3.png"
       ],
       "links": [
-        ["Website", "https://skyleroneill.github.io/little-golem/"],
-        [
-          "Video",
-          "https://www.youtube.com/watch?v=Sr4A106mkUw",
-          "video_library"
-        ]
+        {
+          "text": "Website",
+          "href": "https://skyleroneill.github.io/little-golem/"
+        },
+        {
+          "text": "Video",
+          "href": "https://www.youtube.com/watch?v=Sr4A106mkUw",
+          "icon": "video_library"
+        }
       ],
       "roster": [
         "Skyler O’Neill: Project Lead, Programmer, and Level Designer",
@@ -448,7 +493,11 @@ var games_list = JSON.parse(`
         "Dalton Mongue - Programming Lead"
       ],
       "links": [
-        ["Video", "https://youtu.be/TW61JUWbIfo", "video_library"]
+        {
+          "text": "Video",
+          "href": "https://youtu.be/TW61JUWbIfo",
+          "icon": "video_library"
+        }
       ]
     },
     {
@@ -477,7 +526,11 @@ var games_list = JSON.parse(`
       ],
       "engine": "Unity",
       "links": [
-        ["Video", "https://youtu.be/fzsacZ7_wOg", "video_library"]
+        {
+          "text": "Video",
+          "href": "https://youtu.be/fzsacZ7_wOg",
+          "icon": "video_library"
+        }
       ],
       "roster": [
         "Zachary Holtzman (writer)",
@@ -548,7 +601,11 @@ var games_list = JSON.parse(`
         "images/2016/umbra.png"
       ],
       "links": [
-        ["Video", "https://www.youtube.com/watch?v=UQuVIn59ZYI&list=PLxmn--VhkgOhOuRnX8IKkLlOppqto2eW5", "video_library"]
+        {
+          "text": "Video",
+          "href": "https://www.youtube.com/watch?v=UQuVIn59ZYI&list=PLxmn--VhkgOhOuRnX8IKkLlOppqto2eW5",
+          "icon": "video_library"
+        }
       ]
     },
     {
@@ -621,7 +678,10 @@ var games_list = JSON.parse(`
         "Artists: Jacqueline Wojcik, Erika Schumacher, Savanah May"
       ],
       "links": [
-        ["Website", "http://www.legacyoftheshards.com/"]
+        {
+          "text": "Website",
+          "href": "http://www.legacyoftheshards.com/"
+        }
       ],
       "images": [
         "http://www.legacyoftheshards.com/images/Aren1.PNG",
@@ -678,8 +738,14 @@ var games_list = JSON.parse(`
         "Editor: Andrea Wozniak"
       ],
       "links": [
-        ["Kickstarter", "https://www.kickstarter.com/projects/kitelion/dethroned-the-card-game"],
-        ["BGG Homepage", "https://boardgamegeek.com/boardgame/195149/dethroned-real-time-combat-card-game"]
+        {
+          "text": "Kickstarter",
+          "href": "https://www.kickstarter.com/projects/kitelion/dethroned-the-card-game"
+        },
+        {
+          "text": "BGG Homepage",
+          "href": "https://boardgamegeek.com/boardgame/195149/dethroned-real-time-combat-card-game"
+        }
       ],
       "images": [
         "https://i.imgur.com/fwyMIPs.jpg",
@@ -793,7 +859,11 @@ var games_list = JSON.parse(`
         "images/2014/Inheritance_5.png"
       ],
       "links": [
-        ["Concept Art Archive", "https://www.coroflot.com/jacquelinewojcik/Inheritence", "photo_library"]
+        {
+          "text": "Concept Art Archive",
+          "href": "https://www.coroflot.com/jacquelinewojcik/Inheritence",
+          "icon": "photo_library"
+        }
       ]
     },
     {
@@ -806,8 +876,14 @@ var games_list = JSON.parse(`
         "Team Members: Jasmine Martin"
       ],
       "links": [
-        ["Steam", "https://store.steampowered.com/app/397400/HueBots/"],
-        ["itch.io", "https://huebotics.itch.io/huebots"]
+        {
+          "text": "Steam",
+          "href": "https://store.steampowered.com/app/397400/HueBots/"
+        },
+        {
+          "text": "itch.io",
+          "href": "https://huebotics.itch.io/huebots"
+        }
       ],
       "customhtml": "<p><img class='full-image' src='https://steamcdn-a.akamaihd.net/steam/apps/397400/header.jpg'></p>",
       "images": [
@@ -881,7 +957,11 @@ var games_list = JSON.parse(`
       "description": "Starting form humble beginnings, an orphan leaves his hometown to discover his origins. Too poor to afford a steel helmet, he adorns himself with a wooden bucket instead. In this epic of the middle ages, Max must overcome sinister forces as well as his own insignificance. Set in the era of medieval castles and towns, this Hack and Slash 3rd person RPG adventure game includes interacting and adding characters to your group in order to win treasures from a variety of enemies in combat.",
       "customhtml": "<h3>Development Challenges</h3><p>The most challenging aspect of the game was getting the characters to follow commands from the player seamlessly with smooth transitions from action to action as well as from moving in one direction to pulling out a sword and slashing in another direction. Some other difficulties we have experienced in using the Blender Game Engine was versioning as a team and using python scripts integrated into logic bricks.</p>",
       "links": [
-        ["Video", "https://www.youtube.com/watch?v=u_5rFt4jipg", "video_library"]
+        {
+          "text": "Video",
+          "href": "https://www.youtube.com/watch?v=u_5rFt4jipg",
+          "icon": "video_library"
+        }
       ]
     },
     {
@@ -890,7 +970,11 @@ var games_list = JSON.parse(`
       "description": "In a world where people can not unzip their own zippers, it is up to you and your magic unzipping powers to avert this catastrophe. You must unzip zippers on a variety of clothing types while dealing with various obstacles such as buttons, buckles and necklaces. Tap the buttons, pinch the buckles and avoid the deadly necklaces.",
       "customhtml": "<h3>Development Challenges</h3><p>The most difficult aspect of this project was dealing with the platform that we chose, mobile devices.</p><p>We originally chose Android as our platform, and in doing so ran into a ton of issues as there are no solid game engines for Android devices. The best we could find were some libraries that made it marginally easier to make a game, but these libraries had annoying quirks that made programming a nightmare. In addition, the Android emulator was abysmal. It could not run our game at a consistent frame rate even in its most simple stages.</p><p>We ended up migrating everything to Windows Phone halfway through the year because the development environment was much more friendly.</p><p>The second biggest challenge has been trying to get the zipper behavior how we want it. It's been difficult to implement moving back and forth on the zipper track without running into game-breaking errors.</p>",
       "links": [
-        ["Trailer", "https://www.youtube.com/watch?v=AHm_sRuVYHE", "video_library"]
+        {
+          "text": "Trailer",
+          "href": "https://www.youtube.com/watch?v=AHm_sRuVYHE",
+          "icon": "video_library"
+        }
       ],
       "images": [
         "https://img.youtube.com/vi/AHm_sRuVYHE/maxresdefault.jpg"
@@ -916,9 +1000,20 @@ var games_list = JSON.parse(`
       "engine": "FlatRedBall (XNA)",
       "customhtml":"<p>Light was made in XNA with the FlatRedBall engine. This powerful engine has many tools available to assist in everything from editing animations to implementing AI. Many technical problems were avoided or easily worked around, allowing the team to focus on gameplay mechanics. Most of the time the player has very limited abilities, except when in the presence of light, which the player can use to harness special abilities - one for each color on the Xbox 360 controller. The main puzzle mechanic focuses on shooting light off a series of reflective surfaces, bouncing it at the correct angles so that the beam of light eventually hits a target that will change some part of the level and allow progression to the next room.</p><p>The team first worked on getting the mechanics working, and then shifted focus to building a world and puzzles. The goal was to have three levels, starting in a dark forest and progressing underground into a cave and finally to an underground temple where the story concludes.</p>",
       "links": [
-        ["Website", "http://www.gregaring.com/games/light"],
-        ["Gameplay Video", "https://www.youtube.com/watch?v=SScyf-zhv1A&list=PL46014654C0670E33", "video_library"],
-        ["Demo Video", "https://www.youtube.com/watch?v=0ommu7wdPco", "video_library"]
+        {
+          "text": "Website",
+          "href": "http://www.gregaring.com/games/light"
+        },
+        {
+          "text": "Gameplay Video",
+          "href": "https://www.youtube.com/watch?v=SScyf-zhv1A&list=PL46014654C0670E33",
+          "icon": "video_library"
+        },
+        {
+          "text": "Demo Video",
+          "href": "https://www.youtube.com/watch?v=0ommu7wdPco",
+          "icon": "video_library"
+        }
       ],
       "images": [
         "https://img.youtube.com/vi/0ommu7wdPco/0.jpg"
@@ -935,9 +1030,21 @@ var games_list = JSON.parse(`
     {
       "name": "World Weaver",
       "links": [
-        ["Video", "https://www.youtube.com/watch?v=cPTrJqgLddw&list=PL2C1E749056F4257C&index=1", "video_library"],
-        ["Concept Art", "https://www.deviantart.com/icetigris/art/Athena-Design-Sheet-161120184", "photo"],
-        ["3D Model", "https://www.deviantart.com/icetigris/art/Athena-Model-192620689", "photo"]
+        {
+          "text": "Video",
+          "href": "https://www.youtube.com/watch?v=cPTrJqgLddw&list=PL2C1E749056F4257C&index=1",
+          "icon": "video_library"
+        },
+        {
+          "text": "Concept Art",
+          "href": "https://www.deviantart.com/icetigris/art/Athena-Design-Sheet-161120184",
+          "icon": "photo"
+        },
+        {
+          "text": "3D Model",
+          "href": "https://www.deviantart.com/icetigris/art/Athena-Model-192620689",
+          "icon": "photo"
+        }
       ]
     }
   ],
@@ -956,7 +1063,11 @@ var games_list = JSON.parse(`
         "images/2008/Gunther.jpg"
       ],
       "links": [
-        ["Video", "https://www.youtube.com/watch?v=fiEay_LTg1g&list=PL33A31B174332D5F8", "video_library"]
+        {
+          "text": "Video",
+          "href": "https://www.youtube.com/watch?v=fiEay_LTg1g&list=PL33A31B174332D5F8",
+          "icon": "video_library"
+        }
       ]
     }
   ],
@@ -972,8 +1083,15 @@ var games_list = JSON.parse(`
       "description": "Mercury is a C++, Open Source, Multi-platform, Multi-threaded Game Engine that runs fully featured on Linux and Windows®. It is worked on by a few GDC members. Mercury compiles in GCC3.2 - 4.1 in Linux, and many different compilers in Windows®.",
       "customhtml": "<p>Mercury isn't just a graphics library, but a full programming environment. In general, code designed to be run in Mercury needs not to make calls to the system or any functions that would be platform dependent. Despite this, Mercury should remain small and applications that utilize it should not have to suffer exaggerated load times for features they do not use. Mercury's registration system allows different features to be compiled in without modification of other code. For example, if there is no need for physics in your project, the ODE library and code (what we use for physics) can simply not be linked and ODE will not be used.</p><p>Mercury is designed around open source fundamentals. Most of what you will see supported in Mercury and used with Mercury is Open. We feel that you should be able to develop a great game without having to purchase proprietary tools and systems.</p><p>Mercury's primary goal is speed. Mercury sacrifices some of the benefits that are gained by clean coding when a noticeable performance increase can be found for the end user. Assembly code for common math functions being compiled in Windows for extra performance is an example of the paramount of speed in Mercury. We've re-written some of the STL data types for added functionality as well as improved performance.</p>",
       "links": [
-        ["Documentation", "http://hgengine.sourceforge.net/", "description"],
-        ["SourceForge", "https://sourceforge.net/projects/hgengine/"]
+        {
+          "text": "Documentation",
+          "href": "http://hgengine.sourceforge.net/",
+          "icon": "description"
+        },
+        {
+          "text": "SourceForge",
+          "href": "https://sourceforge.net/projects/hgengine/"
+        }
       ]
     }
   ]

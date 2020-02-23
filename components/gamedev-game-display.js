@@ -1,5 +1,5 @@
 // components:
-// gamedev-image-viewer: image viewer, takes in a game and displays the images & vid
+// gamedev-image-viewer: image viewer, takes an array of images to display
 // gamedev-game-display: shows a game, includes an image viewer
 
 Vue.component('gamedev-image-viewer', {
@@ -16,37 +16,31 @@ props: {
 },
 
 template: `
-<div class="game-image-viewer">
-
-  <div
-    style="position:relative; flex-shrink:1; min-content:0; max-height:100vh"
-    @mouseover="hovered=true"
-    @mouseleave="hovered=false">
-
-    <img :src="images[currentImage]" class="full-image">
-    <img
-      src="ui/arrow_left.png"
-      v-show="images.length > 1 && hovered"
-      class="overlay arrow-left"
-      @click="showLeft()">
-    <img
-      src="ui/arrow_right.png"
-      v-show="images.length > 1 && hovered"
-      class="overlay arrow-right"
-      @click="showRight()">
-
-  </div>
-
-  <ul v-if="images.length > 1" class="thumbs">
-    <li v-for="image, index of images" :key="index" class="game-card">
-      <div class="game-cover-container">
-        <div class="game-cover">
-          <img :src="image" @click="changeImage(index)" class="full-image">
+<div>
+  <div class="vertical columns" style="max-height:100%">
+    <div class="column" style="flex-basis: 100%; overflow: hidden; position:relative;" @mouseover="hovered=true" @mouseleave="hovered=false">
+      <img :src="images[currentImage]" class="full-image">
+      <img src="ui/arrow_left.png"
+        v-show="images.length > 1 && hovered"
+        class="overlay arrow-left"
+        @click="showLeft()"
+      >
+      <img src="ui/arrow_right.png"
+        v-show="images.length > 1 && hovered"
+        class="overlay arrow-right"
+        @click="showRight()"
+      >
+    </div>
+    <div v-if="images.length > 1" class="column" style="padding:0">
+      <div v-for="(img, index) of images" :key="img" class="game-card">
+        <div class="game-cover-container">
+          <div class="game-cover">
+            <img :src="img" @click="changeImage(index)">
+          </div>
         </div>
       </div>
-    </li>
-  </ul>
-
+    </div>
+  </div>
 </div>
 `,
 
@@ -90,36 +84,31 @@ props: {
 },
 
 template: `
-<div :style="fixed">
-  <div class="game-columns modal-centered">
-    <gamedev-image-viewer
-      v-if="game.images"
-      :images="game.images">
-    </gamedev-image-viewer>
-    <div class="scrollable">
-      <h1>{{ game.name }}</h1>
-      <p v-if="game.tagline"><i>{{ game.tagline }}</i></p>
-      <div>
-        <p v-if="game.links">
-          <a v-for="link of game.links" :href="link[1]" class="game-links">
-            <i class="material-icons md-18">
-              {{ link.length>2 ? link[2] : "link" }}
-            </i>
-            {{ link[0] }}
-          </a>
-        </p>
-        <p v-if="game.description" class="linebreaks">{{ game.description }}</p>
-        <p v-if="game.engine">Engine: {{ game.engine }}</p>
-        <div v-if="game.roster">
-          <p>Roster:</p>
-          <ul>
-            <li v-for="person of game.roster">{{ person }}</li>
-          </ul>
-        </div>
-        <div v-if="game.customhtml" v-html="game.customhtml">
-        </div>
-      </div>
+<div class="modal columns">
+  <gamedev-image-viewer
+    :images="game.images"
+    class="column two-thirds"
+  >
+  </gamedev-image-viewer>
+  <div class="scrollable column">
+    <h1>{{ game.name }}</h1>
+    <p v-if="game.tagline"><i>{{ game.tagline }}</i></p>
+    <p v-if="game.links">
+      <a v-for="link of game.links" :href="link.href" class="game-links">
+        <i class="material-icons md-18">
+          {{ link.icon || "link" }}
+        </i>
+        {{ link.text }}
+      </a>
+    <p v-if="game.description" class="linebreaks">{{ game.description }}</p>
+    <p v-if="game.engine">Engine: {{ game.engine }}</p>
+    <div v-if="game.roster">
+      <p>Roster:</p>
+      <ul>
+        <li v-for="person of game.roster">{{ person }}</li>
+      </ul>
     </div>
+    <div v-if="game.customhtml" v-html="game.customhtml"></div>
   </div>
   <img src="ui/close_button.png" class="overlay close-button" @click="close">
 </div>

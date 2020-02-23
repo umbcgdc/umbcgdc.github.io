@@ -11,34 +11,12 @@
     .twitter-timeline {
       width: 100vw !important;
     }
-    .video-and-twitter {
-      display: flex;
-      flex-direction: row;
-      max-height: min-content;
-      align-items: center;
-    }
-    .flex-twitter {
-      flex: 1;
-      overflow-y: scroll;
-      margin-left: 2%;
+    .twitter-outline {
       border: 1px solid rgba(145,165,180,.6);
       border-radius: 5px;
     }
-    .flex-video {
-      flex: 2;
-    }
     @media screen and (max-width: 800px) {
-      .video-and-twitter {
-        flex-direction: column;
-      }
-      .flex-video {
-        width: 100%;
-        margin-bottom: 1em;
-      }
-      .flex-twitter {
-        margin: 0;
-      }
-      /* potential solution to allow twitter scroll iOS */
+      /* allow twitter scroll iOS */
       .timeline-Viewport {
         -webkit-overflow-scrolling: touch;
       }
@@ -63,12 +41,14 @@
     Join the mailing list (UMBC emails only)
   </a></p>
 
-  <div class="video-and-twitter">
-    <div class="flex-video">
+  <div class="columns">
+    <div class="column two-thirds">
       <gamedev-video src="https://www.youtube.com/embed/?listType=playlist&list=UUIKfaNXsz7qUd366ayobr-Q"></gamedev-video>
     </div>
-    <div class="flex-twitter" id="tweets">
-      <a class="twitter-timeline" :data-theme="twitterTheme" :height="twitterHeight" href="https://twitter.com/umbcGameDev">Tweets by @umbcGameDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="column">
+      <div class="twitter-outline" id="tweets">
+        <a class="twitter-timeline" :data-theme="twitterTheme" :height="twitterHeight" href="https://twitter.com/umbcGameDev">Tweets by @umbcGameDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
   </div>
 

@@ -1,11 +1,4 @@
-body {
-  background-color: #2a2a2a;
-}
-
-[v-cloak] {
-  display: none;
-}
-
+/* Year selection (left) */
 #year-select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -54,14 +47,10 @@ body {
   border-top: 10px solid black;
 }
 
+/* Main page */
 .year-page {
   padding: 0;
   margin: 0;
-}
-
-.game-image-viewer {
-	display: flex;
-	flex-direction: column;
 }
 
 .game-card {
@@ -115,10 +104,23 @@ body {
   color: #ffbf10;
 }
 
-.game-columns {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  background-color: #2a2a2a;
+/* Modal */
+.modal-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000077;
+}
+
+.modal {
+  position: fixed;
+  left: 5vw;
+  top: 5vh;
+  width: 90vw;
+  max-height: 90vh;
+  background: #2a2a2a;
 }
 
 .linebreaks {
@@ -127,14 +129,6 @@ body {
 
 .game-links {
   margin-right: .5em;
-}
-
-.light-theme .game-columns {
-  background-color: white;
-}
-
-.image-viewer {
-  position: relative;
 }
 
 .overlay {
@@ -162,67 +156,12 @@ body {
   right: 2%;
 }
 
-.modal-centered {
-  position: absolute;
-  margin-left: 2vw;
-  top: 50%;
-  width: 96vw;
-  max-height: 100vh;
-  transform: translateY(-50%);
-}
-
-.thumbs {
-  width: 100%;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .scrollable {
-  box-sizing: border-box;
-  max-height: 96vh;
+  margin: 1em auto;
+  padding: 0 2em 0 0;
   overflow-y: auto;
-  padding: 1em;
 }
 
-/* wide version */
-@media screen and (min-aspect-ratio: 7/3) {
-	.thumbs {
-	  overflow-y: auto;
-	  max-height: 100%;
-	  flex-basis: 50%;
-	}
-	.game-image-viewer .game-card {
-	  display: block;
-	  width: 100%;
-	}
-	.game-image-viewer {
-	  flex-direction: row-reverse;
-	  max-height: 100vh;
-	}
-}
-
-/* thin version */
-@media screen and (max-width: 800px) {
-  .game-columns {
-    grid-template-columns: auto;
-    grid-template-rows: 1fr max-content;
-    overflow-y: scroll;
-  }
-  .thumbs {
-    display: none;
-  }
-  .scrollable {
-    height: auto;
-    overflow-y: visible;
-  }
-  .modal-centered {
-    max-height: 80vh;
-  }
-}
-
-/* mobile version */
-@media screen and (max-width: 500px) {
-  .game-card {
-    width: 50%;
-  }
+.scrollable h1 {
+  margin-top: 0;
 }

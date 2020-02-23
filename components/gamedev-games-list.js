@@ -3,7 +3,7 @@
 let _i = 0;
 for (let year in games_list) {
   for (let game of games_list[year]) {
-    game.id = _i; // unique id allows vue to speed up loading
+    game.id = _i; // unique id helps vue keep track of elements
     game.current = 0; // current image
     _i++;
   }
@@ -58,15 +58,18 @@ Vue.component('gamedev-games-list', {
         </div>
       </li>
 
-      <transition name="appear">
+    </ul>
+
+    <transition name="appear">
+      <div v-if="currentGameOpen!=null">
+        <div class="modal-background" @click="closeGameDisplay">
+        </div>
         <gamedev-game-display
-          v-if="currentGameOpen!=null"
           :game="currentGameOpen"
           @close="closeGameDisplay">
         </gamedev-game-display>
-      </transition>
-
-    </ul>
+      </div>
+  </transition>
 
   </div>
   `,

@@ -111,6 +111,36 @@ section {
   box-sizing: border-box;
 }
 
+.columns {
+  display: flex;
+}
+
+.columns.vertical {
+  flex-direction: column;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+
+.column.two-thirds {
+  flex: none;
+  width: 66.6667%
+}
+
+@media screen and (max-width: 800px) {
+  .columns {
+    display: block;
+  }
+  .column.two-thirds {
+    width: 100%;
+  }
+}
+
 .special-links a {
   margin: 0;
   color: white;
@@ -192,7 +222,7 @@ section {
   left: 0;
 }
 
-/* Animation for mobile navigation */
+/* Fade in animation */
 
 .appear-enter-active {
   transition: opacity .5s;
