@@ -85,7 +85,8 @@ var games_list = JSON.parse(`
         "Michael",
         "Harmeet",
         "Faith",
-        "Craig"
+        "Craig",
+        "Felice"
       ],
       "images": [
         "images/2019/Bitcoin_Miner.png"
