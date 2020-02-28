@@ -134,7 +134,7 @@ var games_list = JSON.parse(`
       "description": "A realtime top-down dungeon crawler with the fast-paced mechanics of Gauntlet and Pokemon Mystery Dungeon where you make your way through floors of a proceedurally generated dungeon.",
       "roster": [
         "Project Lead, Musician: Desmond",
-        "Programmer: Anthony",
+        "Programmer: Anthony, Lowen",
         "Artist: Raychel"
       ],
       "images": [
