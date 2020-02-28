@@ -136,7 +136,8 @@ var games_list = JSON.parse(`
       "roster": [
         "Project Lead, Musician: Desmond",
         "Programmer: Anthony, Lowen",
-        "Artist: Raychel"
+        "Artist: Raychel",
+        "3D Models: Isaac Brown"
       ],
       "images": [
         "images/2019/Myztree.png"
