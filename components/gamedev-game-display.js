@@ -20,7 +20,9 @@ template: `
       @mouseover="hovered=true"
       @mouseleave="hovered=false"
     >
-      <img :src="images[currentImage]" class="full-image">
+      <div style="width:100%;">
+        <img :src="images[currentImage]" class="full-image">
+      </div>
       <img src="ui/arrow_left.png"
         v-show="images.length > 1 && hovered"
         class="overlay arrow-left"
