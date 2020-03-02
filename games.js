@@ -79,14 +79,12 @@ var games_list = JSON.parse(`
       "name": "Bitcoin Miner",
       "description": "A mobile game where on the bottom half of the phone screen you are a miner mining crystals to receive bitcoin, and as you harvest more bitcoin you get more miners. On the top of the screen you are reading a visual novel about a high school boy",
       "roster": [
-        "Brandon",
-        "Alex",
-        "Alana",
-        "Michael",
-        "Harmeet",
-        "Faith",
-        "Craig",
-        "Felice"
+        "Project Lead - Brandon Ellis",
+        "Script Writers - Andrew Beck, Cade Christianson",
+        "Programmers - Alana Reyes, Craig Stone",
+        "Sprite Artist - Faith Madeoy Gault",
+        "Lead Character Artist - Felice Henriquez",
+        "Character Art - Alex Holstein, Angela Liu"
       ],
       "images": [
         "images/2019/Bitcoin_Miner.png"
