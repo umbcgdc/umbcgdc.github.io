@@ -81,10 +81,22 @@ section {
   display: block;
 }
 
-.icon-image {
-  max-width: 1em;
-  max-height: 1em;
-  margin-right: .5em;
+.icon-link {
+  display: inline-block;
+  margin: 0 .2em;
+  vertical-align: text-top;
+}
+
+.icon-link img {
+  width: 1.1rem;
+  vertical-align: middle;
+}
+
+footer .copyright {
+  font-size: .8em;
+  color: white;
+  text-align: right;
+  padding-right: 5%;
 }
 
 .text-centered {
@@ -257,7 +269,7 @@ section {
 }
 
 .light-theme footer {
-  background-color: #aaaaaa;
+  background-color: #999999;
 }
 
 .light-theme footer hr {
@@ -332,19 +344,12 @@ section {
 
 /* Header Breakpoint */
 @media screen and (max-width: 808px) and (orientation: portrait) {
-  .flex-row {
-    flex-direction: column;
-  }
-
   .flex-row>*:first-child {
-    padding-right: 0%;
+    padding-right: 1em;
   }
-
-  .flex-row>* {
-    max-height: 15vh;
-  }
-  
-  .flex-row img {
-    max-height: 15vh;
+  footer .copyright {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 10%;
   }
 }

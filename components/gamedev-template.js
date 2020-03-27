@@ -150,33 +150,6 @@ methods: {
 
 });
 
-// <gamedev-social
-//   image: "images/image.png"
-//   href: "#">
-//   Some text here
-// </gamedev-social>
-
-Vue.component('gamedev-social', {
-props: {
-  image: {
-    type: String,
-    required: true
-  },
-  href: {
-    type: String,
-    default: "#"
-  }
-},
-template: `
-<li>
-  <a :href="href">
-    <img class="icon-image" :src="image">
-    <slot></slot>
-  </a>
-</li>
-`
-});
-
 // <footer id="footer">
 //   <gamedev-footer></gamedev-footer>
 // </footer>
@@ -184,40 +157,32 @@ template: `
 Vue.component('gamedev-footer', {
 
 template: `
-<footer style="padding: 0 5% 3% 5%;">
+<footer style="padding-bottom: 2rem;">
   <hr style="margin-bottom: 2rem;">
-  <h2>Follow Us</h2>
-  <ul style="list-style-type:none">
-    <gamedev-social
-      image="ui/mail.png"
-      href="mailto:umbcgamedev@gmail.com">
-      umbcgamedev@gmail.com
-    </gamedev-social>
-    
-    <gamedev-social
-      image="ui/twitter.png"
-      href="https://twitter.com/umbcGameDev/">
-      @umbcGameDev
-    </gamedev-social>
-    
-    <gamedev-social
-      image="ui/facebook.png"
-      href="https://www.facebook.com/groups/umbcgamedev/">
-      UMBC Game Developers Club
-    </gamedev-social>
+  <div class="columns">
+    <h3 class="column" style="margin-left:5%;">
+      <a href="https://twitter.com/umbcGameDev/" class="icon-link">
+        <img src="ui/twitter.png">
+      </a>
+      
+      <a href="https://www.facebook.com/groups/umbcgamedev/" class="icon-link">
+        <img src="ui/facebook.png">
+      </a>
 
-    <gamedev-social
-      image="ui/instagram.png"
-      href="https://www.instagram.com/umbcgamedevelopers/">
-      umbcgamedevelopers
-    </gamedev-social>
-    
-    <gamedev-social
-      image="ui/youtube.png"
-      href="https://www.youtube.com/channel/UCIKfaNXsz7qUd366ayobr-Q/">
-      UMBC GameDev
-    </gamedev-social>
-  </ul>
+      <a href="https://www.instagram.com/umbcgamedevelopers/" class="icon-link">
+        <img src="ui/instagram.png">
+      </a>
+      
+      <a href="https://www.youtube.com/channel/UCIKfaNXsz7qUd366ayobr-Q/" class="icon-link">
+        <img src="ui/youtube.png">
+      </a>
+
+      <a href="mailto:umbcgamedev@gmail.com" class="icon-link">
+        <img src="ui/mail.png">
+      </a>
+    </h3>
+    <p class="column copyright">© UMBC Game Developers Club. All rights reserved.</p>
+  </div>
 </footer>
 `
 
