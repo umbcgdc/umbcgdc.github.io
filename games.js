@@ -76,7 +76,7 @@ var games_list = JSON.parse(`
       ]
     },
     {
-      "name": "Bitcoin Miner",
+      "name": "Bit Rush",
       "description": "A mobile game where on the bottom half of the phone screen you are a miner mining crystals to receive bitcoin, and as you harvest more bitcoin you get more miners. On the top of the screen you are reading a visual novel about a high school boy",
       "roster": [
         "Project Lead - Brandon Ellis",
