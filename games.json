@@ -1,16 +1,16 @@
-var games_list = JSON.parse(`
 {
 
   "2019": [
     {
-      "name": "BINARY",
-      "tagline": "* working title",
+      "name": "Binary Bubbles",
+      "tagline": "Move and distribute code bubbles between machines in order to solve puzzles!",
       "roster": [
-        "Seth Davis - Project Lead and Programmer",
-        "Keli Christiansen - Artist"
+        "Seth Davis (Project Lead, Programmer, Designer)",
+        "Keli Christiansen (Artist)"
       ],
       "description": "A puzzle platformer in which the player has the unique ability to manipulate the code in all objects in order to reach the goal of each level",
       "images": [
+        "images/2019/Binary_URCAD.png",
         "images/2019/Binary_1.png",
         "images/2019/Binary_2.png",
         "images/2019/Binary_3.png"
@@ -52,11 +52,11 @@ var games_list = JSON.parse(`
       "name": "Sludger",
       "description": "A 2.5D twin-stick bullet hell with quirky characters and a variety of abilities. Has the mechanic of scaling player size to health.",
       "roster": [
-        "Skyler O'Neill - Project Lead",
-        "Aaron Wescott - 2D and 3D Artist",
-        "Miguel Fuentes - 3D Artist",
-        "Michael Wellen - Music",
-        "Cade - Writing"
+        "Skyler O'Neill (Project Lead, Programmer)",
+        "Cade Christianson (Writer)",
+        "Miguel Fuentes (3D Artist)",
+        "Aaron Wescott (2D and 3D Artist)",
+        "Michael Wellen (Music)"
       ],
       "images": [
         "images/2019/SludgerPrototype1.png",
@@ -534,7 +534,7 @@ var games_list = JSON.parse(`
       ],
       "roster": [
         "Zachary Holtzman (writer)",
-        "Natalia \\"Tulie\\" Mitiuriev (project lead and artist)",
+        "Natalia \"Tulie\" Mitiuriev (project lead and artist)",
         "Shea Sandifer (programmer)",
         "Samuel Siegel (programmer)",
         "Casey Dahlgren (artist)"
@@ -985,14 +985,14 @@ var games_list = JSON.parse(`
   "2010": [
     {
       "name": "Slug 3D",
-      "description": "Slug 3D is a platforming game encouraging evading obstacles, rather than trying to eliminate them as many platformers do currently. You play as the character Slug as you try to overcome different dangers solely through tactical retreat and makng use of her jumping and \\"slugtion\\" abilities. We still want to appeal to a more mature gaming crowd and are attempting to achieve this through increasing levels of difficulty.",
+      "description": "Slug 3D is a platforming game encouraging evading obstacles, rather than trying to eliminate them as many platformers do currently. You play as the character Slug as you try to overcome different dangers solely through tactical retreat and makng use of her jumping and \"slugtion\" abilities. We still want to appeal to a more mature gaming crowd and are attempting to achieve this through increasing levels of difficulty.",
       "customhtml": "<ul><li>The development started out with concepts and deciding on the genre of the game, as well as deciding which game mechanics we would like to feature.</li><li>From there we created a small prototype of the game, a single level which properly displayed everything we wanted the game to do, and then built on that prototype by adding enemies, obstacles, and more art assets.</li><li>Through this process we continued to make level after level until we had a complete game.</li><u/l>"
     },
     {
       "name": "Titan",
       "description": "Titan is a multiplayer first person shooter game that takes place in the future on one of Saturn's moons: Titan. Titan uses realistic physics with future theoretical weapons.",
       "engine": "Unity",
-      "customhtml": "<ul><li>The function of the \\"Dune Mover\\" is to pick up and push objects through space. Different objects have different mass and react differently under its force. This weapon can also pick up players and catch flying rockets.</li><li>The rocket launcher is a classic weapon which players will have to learn how to use strategically when fighting against opponents with more advanced technology.</li><li>The Gravity Gun's effect can be deadly if allowed to charge up to critical mass causing either a blackhole singularity or a downright outbursting explosion of force. If charged stablely the emitted gravity field effects can be used to curve projectiles, make force barriers, or even flush out opponents.</li><li>Graphics are rich and can be taxing for a computer. We set a small restriction which was rarely violated, to keep models under 10,000 polygons for a single model.</li><li>Level design mainly consists of futuristic developing colonies. Symmetrical design was used to allow nearly everything that's not bolted to the ground to be used in combat. The Unity 3D editor creates rich natural terrain and modeling programs such as 3Ds Max were used to make models and scenes.</li><li>Code is written in Javascript and C# using Unity's code system. The code is then attatched to objects in 3D space that objey the game's physics engine.</li></ul>"
+      "customhtml": "<ul><li>The function of the \"Dune Mover\" is to pick up and push objects through space. Different objects have different mass and react differently under its force. This weapon can also pick up players and catch flying rockets.</li><li>The rocket launcher is a classic weapon which players will have to learn how to use strategically when fighting against opponents with more advanced technology.</li><li>The Gravity Gun's effect can be deadly if allowed to charge up to critical mass causing either a blackhole singularity or a downright outbursting explosion of force. If charged stablely the emitted gravity field effects can be used to curve projectiles, make force barriers, or even flush out opponents.</li><li>Graphics are rich and can be taxing for a computer. We set a small restriction which was rarely violated, to keep models under 10,000 polygons for a single model.</li><li>Level design mainly consists of futuristic developing colonies. Symmetrical design was used to allow nearly everything that's not bolted to the ground to be used in combat. The Unity 3D editor creates rich natural terrain and modeling programs such as 3Ds Max were used to make models and scenes.</li><li>Code is written in Javascript and C# using Unity's code system. The code is then attatched to objects in 3D space that objey the game's physics engine.</li></ul>"
     },
     {
       "name": "Light",
@@ -1021,7 +1021,7 @@ var games_list = JSON.parse(`
     },
     {
       "name": "City of Gears",
-      "description": "City of Gears in a top-down role-playing game (RPG) set in a Victorian-esque \\"Steampunk\\" world. You play as the son of an airship captain after coming of age and the start of your adventures. Battle enemies, solve puzzles, and explore the world you live in. Each of the four starting classes; Warrior, Alchemist, Rogue and Ranger, have their own unique abilities and skills. Mechanics originate from Multi User Dungeons (MUDs), room-based combat, quests, and node-connected world maps. Mechanics are also drawn from modern RPGs and modernized graphics. Developement involved Flash and Actionscript 3, through the gaming library FlashPunk, developed by Chevy Ray Johnston (flashpunk.net).",
+      "description": "City of Gears in a top-down role-playing game (RPG) set in a Victorian-esque \"Steampunk\" world. You play as the son of an airship captain after coming of age and the start of your adventures. Battle enemies, solve puzzles, and explore the world you live in. Each of the four starting classes; Warrior, Alchemist, Rogue and Ranger, have their own unique abilities and skills. Mechanics originate from Multi User Dungeons (MUDs), room-based combat, quests, and node-connected world maps. Mechanics are also drawn from modern RPGs and modernized graphics. Developement involved Flash and Actionscript 3, through the gaming library FlashPunk, developed by Chevy Ray Johnston (flashpunk.net).",
       "customhtml": "<p>The development process provided many unique challenges. Due to the genre, we had high demand for art assets and a large quantity of in-game objects. This required efficient handling of object creation, level loading, and player state management. We developed several prototype engines and systems for handling these aspects of the code. Each implementation posed new concrete challenges with rendering, collision handling, media loading and management. We discovered FlashPunk as a sufficient code base that met our needs. Then, we ported our existing code into the current prototype. The prototype demonstrates an initial level and single player class in this environment. We also utilize an excellent 2D Map editor called <a href='http://www.ogmoeditor.com/'>OGMO</a>, which simplifies the process of adding and customizing levels for the game. Utilizing xml projects and level files, OGMO produces levels that can be directly integrated into the game engine.</p><p>Future goals include more levels, character models and development of mechanics. We plan to incorporate a real-time turn-based combat system that will add more dynamic and strategic gameplay thus improving combat. Also, we will continue to develop simple conventions so that this code can be reused to produce other tileset/top-down games.</p>"
     }
   ],
@@ -1058,7 +1058,7 @@ var games_list = JSON.parse(`
     {
       "name": "Gunther",
       "description": "The goal of Gunther is to create a grimy fairy-tale world that revolved around the character Gunther, a mercenary looking to profit off a small town. The game is a 3rd person Hack and Slash set in a 3D environment. The game is intended to give the players a feeling of being swarmed by demons and constricted by a time limit as they must defeat the quickly multiplying enemies that have inhabited this game world.",
-      "customhtml": "<p>To create the game, programmers use a game engine, a pre-made toolset for game devlopment. Gunther is the first game done by the Game Developers Club to use a student-made game engine. Gunther uses the engine, <a href='#2005-Mercury' onclick='window.location.href=\\"#2005-Mercury\\";window.location.reload()'>Mercury</a>, a multi-platform multi-threaded game engine written in C++. The engine has been developed over the past four years by members of the club and is an Open Source engine available for download and use.</p><p>For the art assets, artists created 3D models in programs like Maya and 3D Studio Max. They construct characters and objects using primitive polygons, like spheres and cubes. Once modeled, objects are UV mapped, a process that converts the 3D faces of a model to a 2D plane. Using this map, artists can paint over it and map it back on to the model, completing a process known as texturing. Finally, for characters, models are given bones and joints known as a rig so that an animator may give the character life.</p>",
+      "customhtml": "<p>To create the game, programmers use a game engine, a pre-made toolset for game devlopment. Gunther is the first game done by the Game Developers Club to use a student-made game engine. Gunther uses the engine, <a href='#2005-Mercury' onclick='window.location.href=\"#2005-Mercury\";window.location.reload()'>Mercury</a>, a multi-platform multi-threaded game engine written in C++. The engine has been developed over the past four years by members of the club and is an Open Source engine available for download and use.</p><p>For the art assets, artists created 3D models in programs like Maya and 3D Studio Max. They construct characters and objects using primitive polygons, like spheres and cubes. Once modeled, objects are UV mapped, a process that converts the 3D faces of a model to a 2D plane. Using this map, artists can paint over it and map it back on to the model, completing a process known as texturing. Finally, for characters, models are given bones and joints known as a rig so that an animator may give the character life.</p>",
       "images": [
         "images/2008/Gunther.jpg"
       ],
@@ -1096,4 +1096,3 @@ var games_list = JSON.parse(`
     }
   ]
 }
-`)

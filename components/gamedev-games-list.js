@@ -1,30 +1,4 @@
-// Vue set up of Games page
-
-let _i = 0;
-for (let year in games_list) {
-  for (let game of games_list[year]) {
-    game.id = _i; // unique id helps vue keep track of elements
-    game.current = 0; // current image
-    _i++;
-  }
-}
-
-// find the newest year up to this year
-let _year = new Date().getFullYear();
-while (!(_year in games_list)) {
-  _year -= 1;
-}
-
-// sort tabs by number, string tabs at the end
-let _years = Object.keys(games_list);
-_years.sort((a, b) => {
-  if (typeof a == "string") {
-    return 0;
-  } else if (typeof b == "string") {
-    return 1;
-  }
-  return a - b;
-});
+//
 
 Vue.component('gamedev-games-list', {
   template: `
@@ -75,13 +49,44 @@ Vue.component('gamedev-games-list', {
   `,
   data() {
     return {
-      years: _years,
-      currentYear: _year,
-      games: games_list,
+      years: [],
+      currentYear: 0,
+      games: [],
       currentGameOpen: null
     }
   },
   methods: {
+    async loadGames() {
+      // get games from local file
+      let response = await fetch('./games.json')
+      this.games = await response.json()
+      this.years = Object.keys(this.games);
+
+      let _i = 0;
+      for (let year in this.games) {
+        for (let game of this.games[year]) {
+          game.id = _i; // unique id helps vue keep track of elements
+          game.current = 0; // current image
+          _i++;
+        }
+      }
+
+      // find the newest year up to this year
+      this.currentYear = new Date().getFullYear();
+      while (!(this.currentYear in this.games)) {
+        this.currentYear -= 1;
+      }
+
+      // sort tabs by number, string tabs at the end
+      this.years.sort((a, b) => {
+        if (typeof a == "string") {
+          return 0;
+        } else if (typeof b == "string") {
+          return 1;
+        }
+        return a - b;
+      });
+    },
     yearRange(year) {
       return year + '-' + (parseInt(year, 10) + 1);
     },
@@ -103,18 +108,21 @@ Vue.component('gamedev-games-list', {
     }
   },
   created() {
-    // check the hash to direct to a specific game (#2017-star-marten)
-    let _hash = window.location.hash.slice(1).toLowerCase();
-    if (_hash && _hash.length > 4) {
-      let _hash_year = _hash.slice(0, 4);
-      // use a regex to search in case game contains dashes instead of spaces
-      let _re = new RegExp(_hash.slice(5).replace(/\-/g, '[\\s\\-]'), 'i');
-      let _matches = games_list[_hash_year].filter(game => _re.test(game.name));
-      // open game of first match
-      if (_matches.length) {
-        this.currentYear = _hash_year;
-        this.openGameDisplay(_matches[0]);
+    this.loadGames().then(() => {
+      console.log("yeet")
+      // check the hash to direct to a specific game (#2017-star-marten)
+      let _hash = window.location.hash.slice(1).toLowerCase();
+      if (_hash && _hash.length > 4) {
+        let _hash_year = _hash.slice(0, 4);
+        // use a regex to search in case game contains dashes instead of spaces
+        let _re = new RegExp(_hash.slice(5).replace(/\-/g, '[\\s\\-]'), 'i');
+        let _matches = this.games[_hash_year].filter(game => _re.test(game.name));
+        // open game of first match
+        if (_matches.length) {
+          this.currentYear = _hash_year;
+          this.openGameDisplay(_matches[0]);
+        }
       }
-    }
+    });
   }
 })
