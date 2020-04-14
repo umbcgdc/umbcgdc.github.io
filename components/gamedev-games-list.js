@@ -109,7 +109,6 @@ Vue.component('gamedev-games-list', {
   },
   created() {
     this.loadGames().then(() => {
-      console.log("yeet")
       // check the hash to direct to a specific game (#2017-star-marten)
       let _hash = window.location.hash.slice(1).toLowerCase();
       if (_hash && _hash.length > 4) {

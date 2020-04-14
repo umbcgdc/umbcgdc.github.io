@@ -77,16 +77,22 @@
     },
     {
       "name": "Bit Rush",
+      "tagline": "A Visual Novel + 8-bit Platformer crossover mobile game about a high school student who plans to stop an evil corporation by buying out 51% of it's stock.",
       "description": "A mobile game where on the bottom half of the phone screen you are a miner mining crystals to receive bitcoin, and as you harvest more bitcoin you get more miners. On the top of the screen you are reading a visual novel about a high school boy",
       "roster": [
-        "Project Lead - Brandon Ellis",
-        "Script Writers - Andrew Beck, Cade Christianson",
-        "Programmers - Alana Reyes, Craig Stone",
-        "Sprite Artist - Faith Madeoy Gault",
-        "Lead Character Artist - Felice Henriquez",
-        "Character Art - Alex Holstein, Angela Liu"
+        "Brandon Ellis (Project Lead, Lead Programmer)",
+        "Felice Henriquez (Lead Character Artist)",
+        "Alana Reyes (Programmer)",
+        "Cade Christianson (Lead Story-writer)",
+        "Andrew Beck (Tester, Story-writer)",
+        "Faith Madeoy Gault (Sprite Artist)",
+        "Arason Anbazhagan (Musician)",
+        "Craig Stone (Programmer)",
+        "Alex Holstein (Early Character Designs)",
+        "Angela Liu (Early Character Designs)"
       ],
       "images": [
+        "images/2019/Bit_Rush.png",
         "images/2019/Bitcoin_Miner.png"
       ]
     },
@@ -116,12 +122,13 @@
       "name": "Bruise Cruise",
       "tagline": "Alcohol-powered 2D action platformer",
       "roster": [
-        "Team Lead: Ben",
-        "Lead Engineer: J Rob",
-        "Lead Musician: Adam",
-        "Programmer: Justin",
-        "Programmer: Marvin",
-        "Lead Artist: Mathias"
+        "Ben Przysucha (Team Lead)",
+        "Robert Avolio (Programming Lead)",
+        "Justin Loi (UI/UX Programmer)",
+        "Mathias Drgon (AI Programmer and 3D Artist)",
+        "Miguel Fuentes (3D Artist and Animator)",
+        "Adam Jordan (Sound Design and Music)",
+        "Alex Adkins (VFX Programmer)"
       ],
       "images": [
         "images/2019/Bruise_Cruise_1.png",
@@ -167,12 +174,14 @@
     },
     {
       "name": "Shatter Ball",
+      "tagline": "Race your way to the finish by launching a ball at top speed and slowing down time to dodge obstacles.",
       "description": "Game for mobile where you control a ball. You can shoot it at high speeds and slow down time, get to the end of the course as fast as you can.",
       "roster": [
-        "Zach Hale"
+        "Zachariah Hale (Lead Developer)"
       ],
       "images": [
-        "images/2019/Shatterball.jpg"
+        "images/2019/Shatterball.jpg",
+        "images/2019/Shatterball_2.jpg"
       ]
     },
     {
