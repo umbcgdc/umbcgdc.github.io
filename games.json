@@ -99,6 +99,13 @@
     {
       "name": "Pop-Up",
       "description": "Journey through stories of kings, pilots, and dictators in Pop-Up, an action adventure across many stories of fiction and myths! Experience events told through different perspectives and timelines in a variety of settings in a retro 2D style.",
+      "links": [
+        {
+          "text": "Game Jolt",
+          "href": "https://gamejolt.com/games/pop_up/440177",
+          "icon": "link"
+         }
+      ],
       "roster": [
         "Team Lead/Lead Programmer/General Marketer: Charlie Hunter",
         "Lead Story: Ariana Washington",
@@ -137,14 +144,17 @@
     },
     {
       "name": "Myztree",
+      "tagline": "A 2.5D procedurally generated dungeon-crawler in a plant-infested world. Race against the clock to make it to the top!",
       "description": "A realtime top-down dungeon crawler with the fast-paced mechanics of Gauntlet and Pokemon Mystery Dungeon where you make your way through floors of a proceedurally generated dungeon.",
       "roster": [
-        "Project Lead, Musician: Desmond",
-        "Programmer: Anthony, Lowen",
-        "Artist: Raychel",
-        "3D Models: Isaac Brown"
+        "Desmond Oliver (Project Lead, Musician, Programmer)",
+        "Anthony Ellis (Lead Programmer, UI)",
+        "Lowen DiPaula (Programmer)",
+        "Raychel Thress (Artist)",
+        "Isaac Brown (3D Modelling)"
       ],
       "images": [
+        "images/2019/Myztree_2.png",
         "images/2019/Myztree.png"
       ]
     },
@@ -198,13 +208,14 @@
     },
     {
       "name": "Fred and Red",
+      "tagline": "Guide mellow circles into holes using their attracting forces.",
       "roster": [
-        "Shawn Oppermann"
+        "Shawn Oppermann (Everything)"
       ],
       "engine": "Unity",
       "images": [
-        "images/2019/Fred_and_Red_1.png",
         "images/2019/Fred_and_Red_2.png",
+        "images/2019/Fred_and_Red_1.png",
         "images/2019/Fred_and_Red_3.png",
         "images/2019/Fred_and_Red_4.png"
       ]
