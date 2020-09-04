@@ -17,11 +17,8 @@
 <gamedev-header @theme-change="themeChange"></gamedev-header>
 
 <main role="main" class="main" id="timer">
-
-  <section>
-    <h1>UMBC Game Developers Club Direct</h1>
-    <direct-timer></direct-timer>
-  </section>
+  <direct-timer></direct-timer>
+  <img class="full-image" style="padding-bottom: 3em" src="ui/umbcdirect2020.png">
 
 </main>
 
@@ -32,16 +29,17 @@
 <script>
   Vue.component('direct-timer', {
     template: `
-      <div>
-        <h1 style="font-size:6rem; text-align:center;">{{ countdown }}</h1>
-        <p>The UMBC Game Developers Club Direct will be on {{ direct_day }}</p>
-      </div>
+      <h1 :style="style">{{ countdown }}</h1>
     `,
     data() {
       return {
         direct_date: new Date(2020, 8, 9, 10, 0),
-        direct_day: '10 AM on Wednesday, September 9th',
-        countdown: '00:00:00:00'
+        countdown: '00:00:00:00',
+        style: {
+          fontSize: '6rem',
+          textAlign: 'center',
+          margin: '0 auto'
+        }
       }
     },
     created() {
