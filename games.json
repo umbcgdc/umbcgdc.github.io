@@ -288,7 +288,7 @@
     {
       "name": "Harrowing Flight",
       "description": "The invasion has begun! Alien starships have descended upon the solar system and Earth's forces must take to the skies to defend their home. Shoot down enemy starfighters, defend yourself with your movable shield, and avoid the terrifying firepower of the alien capital ships in Harrowing Flight, a 3D spaceship dogfighting game.",
-      "engine": "Xenko",
+      "engine": "Stride",
       "images": [
         "images/2018/HarrowingFlight-URCAD.png",
         "images/2018/HarrowingFlight-1.png"
