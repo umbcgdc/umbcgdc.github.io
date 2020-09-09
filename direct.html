@@ -18,8 +18,6 @@
 
 <main role="main" class="main" id="timer">
   <direct-timer></direct-timer>
-  <img class="full-image" style="padding-bottom: 3em" src="ui/umbcdirect2020.png">
-
 </main>
 
 <gamedev-footer></gamedev-footer>
@@ -29,10 +27,17 @@
 <script>
   Vue.component('direct-timer', {
     template: `
+    <div>
       <h1 :style="style">{{ countdown }}</h1>
+      <div v-if="showVideo">
+        <gamedev-video src="https://www.youtube.com/embed/?listType=playlist&list=UUIKfaNXsz7qUd366ayobr-Q"></gamedev-video>
+      </div>
+      <img v-else class="full-image" style="padding-bottom: 3em" src="ui/umbcdirect2020.png">
+    </div>
     `,
     data() {
       return {
+        showVideo: false,
         direct_date: new Date(2020, 8, 9, 10, 15),
         countdown: '00:00:00:00',
         style: {
@@ -46,7 +51,10 @@
       let calc_countdown = () => {
         let current_date = Date.now();
         let count = this.direct_date - current_date;
-        if (count < 0) count = 0;
+        if (count < 0) {
+          count = 0;
+          showVideo = true;
+        }
         let days = Math.floor(count / 86400000).toString().padStart(2, '0');
         count -= days * 86400000;
         let hours = Math.floor(count / 3600000).toString().padStart(2, '0');
@@ -61,6 +69,7 @@
     }
   });
 </script>
+<script src="components/gamedev-video.js"></script>
 <script src="components/gamedev-template.js"></script>
 </body>
 
