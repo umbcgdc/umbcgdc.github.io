@@ -53,7 +53,8 @@ data() {
       ["Games", "games.html"],
       ["Resources", "resources.html"],
       ["Events", "events.html"],
-      ["Contact", "contact.html"]
+      ["Contact", "contact.html"],
+      ["Shop", "shop.html"]
     ],
     open: false,
     hamburger: {
