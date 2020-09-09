@@ -53,7 +53,7 @@
         let count = this.direct_date - current_date;
         if (count < 0) {
           count = 0;
-          showVideo = true;
+          this.showVideo = true;
         }
         let days = Math.floor(count / 86400000).toString().padStart(2, '0');
         count -= days * 86400000;
