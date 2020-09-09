@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="ui/logo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <title>UMBC Game Developers Club</title>
+</head>
+
+<body>
+
+<div id="gamedev-root">
+<gamedev-header @theme-change="themeChange"></gamedev-header>
+
+<main role="main" class="main">
+  <h2>UMBC Game Developers Shop</h2>
+  <section>
+    <redbubble-embed></redbubble-embed>
+  </section>
+</main>
+
+<gamedev-footer></gamedev-footer>
+</div>
+
+<script src="js/vue.min.js"></script>
+<script>
+  Vue.component('redbubble-embed', {
+    template: `
+      <iframe class="full-image" src="https://www.redbubble.com/people/gamedevclub/external-portfolio?count=4" scrolling="no" allowtransparency="true" width="506" :height="redBubbleHeight" frameborder="0"></iframe>
+    `,
+    data() {
+      return {
+        redBubbleHeight: window.innerWidth < 800 ? '1000' : '529'
+      }
+    }
+  })
+</script>
+<script src="components/gamedev-template.js"></script>
+</body>
+
+</html>
