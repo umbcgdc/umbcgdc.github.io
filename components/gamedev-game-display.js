@@ -104,7 +104,7 @@ template: `
   >
   </gamedev-image-viewer>
 
-  <div class="scrollable column">
+  <div class="scrollable column" style="margin-left: 1em">
     <h1>{{ game.name }}</h1>
     <p v-if="game.tagline"><i>{{ game.tagline }}</i></p>
     <p v-if="game.links">

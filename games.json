@@ -1,5 +1,104 @@
 {
 
+  "2020": [
+    {
+      "name": "Planetary Devastation",
+      "roster": [
+        "Joe",
+        "Keonte",
+        "Philip",
+        "Huy"
+      ],
+      "engine": "Unreal Engine 4",
+      "tagline": "Animal Crossing but space",
+      "description": "Planetary Devastation is a first person survival-type game made in Unreal Engine 4 that uses planetary gravitation to provide the player with a space-like feel.",
+      "links": [
+        {
+          "text": "Game Pitch",
+          "href": "https://youtu.be/_7aiSPo6Z0E",
+          "icon": "video_library"
+        },
+        {
+          "text": "Demo",
+          "href": "https://devkeo.itch.io/planetary-devastation",
+          "icon": "laptop_windows"
+        }
+      ]
+    },
+    {
+      "name": "Ele-mental",
+      "roster": [
+        "Seth Davis",
+        "Keli Christiansen"
+      ],
+      "engine": "Unreal Engine 4",
+      "tagline": "First Person Shooter Puzzle"
+    },
+    {
+      "name": "Spare Parts",
+      "roster": [
+        "Mathias",
+        "Aaron",
+        "Emma",
+        "Hex",
+        "Theresa"
+      ],
+      "engine": "Godot",
+      "tagline": "2D Horror",
+      "links": [
+        {
+          "text": "Demo",
+          "href": "https://thelovedoc.itch.io/spare-parts"
+        }
+      ]
+    },
+    {
+      "name": "\"Monsters\" of Ikuna",
+      "roster": [
+        "Lindsay",
+        "Connor",
+        "Jake",
+        "Sydnee",
+        "Alex",
+        "quixzotic"
+      ],
+      "engine": "Unity",
+      "tagline": "2D side scroller platformer beat-em-up in a sci-fi themed story-driven adventure...and cat girls"
+    },
+    {
+      "name": "Dusk Before Moonlight",
+      "roster": [
+        "Margaret Lucas",
+        "Ernan Ochoa",
+        "Paul Williams",
+        "Nathaniel Freeman",
+        "Sydnee Conigland",
+        "Jacob D'Imperio",
+        "Jacob Everhart",
+        "Emma Hunter",
+        "Conner Medinger"
+      ],
+      "engine": "Ren'py",
+      "tagline": "Visual Novel",
+      "links": [
+        {
+          "text": "Demo",
+          "href": "https://maggyrat.itch.io/werewolf-sound-novel",
+          "icon": "laptop_windows"
+        }
+      ]
+    },
+    {
+      "name": "Elderville",
+      "roster": [
+        "Allison",
+        "Spencer"
+      ],
+      "engine": "Unity",
+      "tagline": "2D Dungeon crawler"
+    }
+  ],
+
   "2019": [
     {
       "name": "Binary Bubbles",
