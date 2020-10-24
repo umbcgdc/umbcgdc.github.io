@@ -12,6 +12,12 @@
       "engine": "Unreal Engine 4",
       "tagline": "Animal Crossing but space",
       "description": "Planetary Devastation is a first person survival-type game made in Unreal Engine 4 that uses planetary gravitation to provide the player with a space-like feel.",
+      "images": [
+        "images/2020/Planetary_Devastation_1.png",
+        "images/2020/Planetary_Devastation_2.png",
+        "images/2020/Planetary_Devastation_3.png",
+        "images/2020/Planetary_Devastation_4.png"
+      ],
       "links": [
         {
           "text": "Game Pitch",
@@ -45,6 +51,9 @@
       ],
       "engine": "Godot",
       "tagline": "2D Horror",
+      "images": [
+        "images/2020/Spare_Parts_1.jpg"
+      ],
       "links": [
         {
           "text": "Demo",
