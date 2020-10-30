@@ -16,7 +16,9 @@
         "images/2020/Planetary_Devastation_1.png",
         "images/2020/Planetary_Devastation_2.png",
         "images/2020/Planetary_Devastation_3.png",
-        "images/2020/Planetary_Devastation_4.png"
+        "images/2020/Planetary_Devastation_5.jpeg",
+        "images/2020/Planetary_Devastation_6.jpeg",
+        "images/2020/Planetary_Devastation_7.jpeg"
       ],
       "links": [
         {
@@ -38,7 +40,10 @@
         "Keli Christiansen"
       ],
       "engine": "Unreal Engine 4",
-      "tagline": "First Person Shooter Puzzle"
+      "tagline": "First Person Shooter Puzzle",
+      "images": [
+        "images/2020/Ele_mental_1.png"
+      ]
     },
     {
       "name": "Spare Parts",
