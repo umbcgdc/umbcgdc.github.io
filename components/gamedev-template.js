@@ -178,6 +178,10 @@ template: `
         <img src="ui/youtube.png">
       </a>
 
+      <a href="https://www.twitch.tv/umbcgamedev/" class="icon-link">
+        <img src="ui/twitch.png">
+      </a>
+
       <a href="mailto:umbcgamedev@gmail.com" class="icon-link">
         <img src="ui/mail.png">
       </a>
