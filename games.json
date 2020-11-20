@@ -77,7 +77,10 @@
         "quixzotic"
       ],
       "engine": "Unity",
-      "tagline": "2D side scroller platformer beat-em-up in a sci-fi themed story-driven adventure...and cat girls"
+      "tagline": "2D side scroller platformer beat-em-up in a sci-fi themed story-driven adventure...and cat girls",
+      "images": [
+        "images/2020/Monsters_of_Ikuna_1.jpg"
+      ]
     },
     {
       "name": "Dusk Before Moonlight",
