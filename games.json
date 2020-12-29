@@ -42,7 +42,16 @@
       "engine": "Unreal Engine 4",
       "tagline": "First Person Shooter Puzzle",
       "images": [
-        "images/2020/Ele_mental_1.png"
+        "images/2020/Ele_mental_2.png",
+        "images/2020/Ele_mental_3.png",
+        "images/2020/Ele_mental_4.png"
+      ],
+      "links": [
+        {
+          "text": "Demo",
+          "href": "https://default-frogs.itch.io/ele-mental",
+          "icon": "laptop_windows"
+        }
       ]
     },
     {
