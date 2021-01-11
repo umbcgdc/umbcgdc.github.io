@@ -31,14 +31,18 @@
 
 <main role="main" class="main">
 
-<section>
+<h1>Events</h1>
+<iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=umbcgamedev%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<p>
   <a href="https://my3.my.umbc.edu/groups/gdc">
     <i class="material-icons md-18">link</i>
     myUMBC Events Page
   </a>
-</section>
+</p>
 
-<iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=umbcgamedev%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<!--using cors-anywhere to get headers because no server-->
+<gamedev-events feed="https://cors-anywhere.herokuapp.com/https://my3.my.umbc.edu/api/v0/posts.xml?group_token=gdc"></gamedev-events>
 
 </main>
 
@@ -46,7 +50,9 @@
 </div>
 
 <script src="js/vue.min.js"></script>
+<script src="components/gamedev-events.js"></script>
 <script src="components/gamedev-template.js"></script>
+
 </body>
 
 </html>
