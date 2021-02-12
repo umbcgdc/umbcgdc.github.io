@@ -21,8 +21,8 @@ template: `
   <p v-if="loading">Loading myUMBC content...</p>
 
   <div v-else>
-    <p v-show="xmlError">Error loading content.</p>
-    <p v-show="events.length == 0">No myUMBC posts found.</p>
+    <p v-if="xmlError">Error loading content.</p>
+    <p v-else-if="events.length == 0">No myUMBC posts found.</p>
 
     <section v-for="event of events" class="columns">
       <div class="column">
@@ -57,7 +57,11 @@ methods: {
       .then(response => response.text())
       .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
       .then(data => this.processData(data))
-      .catch(() => { this.xmlError = true; this.loading = false });
+      .catch((error) => {
+        this.xmlError = true;
+        this.loading = false;
+        console.error(error)
+      });
   },
   processData(data) {
     // get list of myUMBC events
