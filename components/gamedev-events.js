@@ -1,4 +1,4 @@
-// <gamedev-events feed="#" thumb-size="large"></gamedev-events>
+// <gamedev-events feed="#" no-posts="No myUMBC posts found." thumb-size="large"></gamedev-events>
 // pulls myUMBC content from the feed
 
 // for the myUMBC documentation check here https://my3.my.umbc.edu/groups/myumbc/files
@@ -7,6 +7,10 @@ const eventNodesToGet = ['PostedAt', 'Title', 'Tagline', 'Body', 'Summary', 'Web
 
 Vue.component('gamedev-events', {
 props: {
+  noPosts: {
+    type: String,
+    default: 'No myUMBC posts found.'
+  },
   feed: {
     type: String,
     required: true
@@ -22,7 +26,7 @@ template: `
 
   <div v-else>
     <p v-if="xmlError">Error loading content.</p>
-    <p v-else-if="events.length == 0">No myUMBC posts found.</p>
+    <p v-else-if="events.length == 0">{{ noPosts }}</p>
 
     <section v-for="event of events" class="columns">
       <div class="column">

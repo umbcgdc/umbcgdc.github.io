@@ -32,16 +32,21 @@
 <main role="main" class="main">
 
 <h1>Events</h1>
+
+<!--using https://apps.sga.umbc.edu/api-docs/ for cors headers-->
+<gamedev-events feed="https://apps.sga.umbc.edu/api/events/group/gdc" no-posts="No upcoming events found on myUMBC."></gamedev-events>
+
 <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=umbcgamedev%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<h1>Posts</h1>
 
 <p>
   <a href="https://my3.my.umbc.edu/groups/gdc">
     <i class="material-icons md-18">link</i>
-    myUMBC Events Page
+    myUMBC Page
   </a>
 </p>
 
-<!--using https://apps.sga.umbc.edu/api-docs/ for cors headers-->
 <gamedev-events feed="https://apps.sga.umbc.edu/api/posts/group/gdc"></gamedev-events>
 
 </main>
