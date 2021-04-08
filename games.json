@@ -132,7 +132,10 @@
         "Spencer"
       ],
       "engine": "Unity",
-      "tagline": "2D Dungeon crawler"
+      "tagline": "2D Dungeon crawler",
+      "images": [
+          "images/2020/Elderville.jpg"
+      ]
     }
   ],
 
