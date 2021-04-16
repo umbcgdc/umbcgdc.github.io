@@ -4,21 +4,22 @@
     {
       "name": "Planetary Devastation",
       "roster": [
-        "Joe",
-        "Keonte",
-        "Philip",
-        "Huy"
+        "Joseph Robinson: Lead Developer",
+        "Keonte Wilson-Robinson: Gameplay Programmer",
+        "Philip Guasa: Level Designer",
+        "Huy Nguyen: UI Programmer",
+        "T.J.: 3D Artist"
       ],
       "engine": "Unreal Engine 4",
-      "tagline": "Animal Crossing but space",
-      "description": "Planetary Devastation is a first person survival-type game made in Unreal Engine 4 that uses planetary gravitation to provide the player with a space-like feel.",
+      "description": "A first-person space survival game with the goal of reinvigorating your destroyed home planet.",
       "images": [
-        "images/2020/Planetary_Devastation_1.png",
-        "images/2020/Planetary_Devastation_2.png",
-        "images/2020/Planetary_Devastation_3.png",
-        "images/2020/Planetary_Devastation_5.jpeg",
-        "images/2020/Planetary_Devastation_6.jpeg",
-        "images/2020/Planetary_Devastation_7.jpeg"
+        "images/2020/Planetary_TitleScreen.png",
+        "images/2020/Planetary_SolarSystem.png",
+        "images/2020/Planetary_ReedPlanet.png",
+        "images/2020/Planetary_NebulaBush.png",
+        "images/2020/Planetary_MercuryAlien.png",
+        "images/2020/Planetary_MarsView.png",
+        "images/2020/Planetary_Credits.png"
       ],
       "links": [
         {
@@ -36,11 +37,12 @@
     {
       "name": "Ele-mental",
       "roster": [
-        "Seth Davis",
-        "Keli Christiansen"
+        "Seth Davis: Project Lead, Programmer",
+        "Keli Christiansen: Artist, Modeler",
+        "Emma Hunter: Musician"
       ],
       "engine": "Unreal Engine 4",
-      "tagline": "First Person Shooter Puzzle",
+      "description": "A 3D puzzle shooter where you harness the power of the elements through the nozzle of your gun!",
       "images": [
         "images/2020/Ele_mental_2.png",
         "images/2020/Ele_mental_3.png",
@@ -59,14 +61,13 @@
     {
       "name": "Spare Parts",
       "roster": [
-        "Mathias",
-        "Aaron",
-        "Emma",
-        "Hex",
-        "Theresa"
+        "Mathias Drgon: Project Lead, Programmer, Artist",
+        "Aaron Ku: Programmer",
+        "Emma Hunter: Musician, Programmer",
+        "Theresa Phan: Programmer, Artist"
       ],
       "engine": "Godot",
-      "tagline": "2D Horror",
+      "description:": "An Oregon-Trail style game where you play as a ghost who's lost its body in a wildfire, you need to overcome unique obstacles to escape the fires and collect enough limbs and organs to get your body back.",
       "images": [
         "images/2020/Spare_Parts_1.jpg",
         "images/2020/Spare_Parts_2.png",
@@ -84,12 +85,11 @@
     {
       "name": "\"Monsters\" of Ikuna",
       "roster": [
-        "Lindsay",
-        "Connor",
-        "Jake",
-        "Sydnee",
-        "Alex",
-        "quixzotic"
+        "Lindsay McCabe: Project Lead, Artist",
+        "Jacob Everhart: Musician",
+        "Sydnee Conigland: Character/Narrative Designer",
+        "Jesse: Artist",
+        "Jabril Hall: Programmer"
       ],
       "engine": "Unity",
       "tagline": "2D side scroller platformer beat-em-up in a sci-fi themed story-driven adventure...and cat girls",
@@ -100,18 +100,17 @@
     {
       "name": "Dusk Before Moonlight",
       "roster": [
-        "Margaret Lucas",
-        "Ernan Ochoa",
-        "Paul Williams",
-        "Nathaniel Freeman",
-        "Sydnee Conigland",
-        "Jacob D'Imperio",
-        "Jacob Everhart",
-        "Emma Hunter",
-        "Conner Medinger"
+        "Margaret Lucas: Project Lead, Artist, Programmer",
+        "Ernan Ochoa: Project Lead, Writer, Artist",
+        "Paul Williams: Writer",
+        "Sydnee Conigland: Editor, Programmer",
+        "Jacob Dimperio: Editor",
+        "Brian: Writer",
+        "Emma Hunter: Composer",
+        "Conner Medinger: Composer"
       ],
       "engine": "Ren'py",
-      "tagline": "Visual Novel",
+      "description": "A visual novel about a newly-turned werewolf-man trying to become human again.",
       "links": [
         {
           "text": "Demo",
@@ -128,12 +127,19 @@
     {
       "name": "Elderville",
       "roster": [
-        "Allison",
-        "Spencer"
+        "Allison Smith: Project Lead, Programmer",
+        "Spencer Lawrence: Project Lead, Programmer",
+        "Isaiah Swinton: Mechanic Designer, Programmer",
+        "Cade Christianson: Writer, Programmer",
+        "Andrew Beck: Writer, Programmer",
+        "Hannah Smith: Artist/Writer",
+        "Nga Nguyen: Artist",
+        "Hannah Perlow: Artist"
       ],
       "engine": "Unity",
-      "tagline": "2D Dungeon crawler",
+      "description": "A 2D Dungeon Crawler where an eldritch horror protects a village from other horrors of the night.",
       "images": [
+          "images/2020/Elderville_2.png",
           "images/2020/Elderville.jpg"
       ]
     }
