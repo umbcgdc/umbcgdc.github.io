@@ -45,7 +45,8 @@
     {
       "name": "VR-Sail",
       "engine": "",
-      "description": "A VR game where you explore an ocean by controlling a sail boat with motion controls."
+      "description": "A VR game where you explore an ocean by controlling a sail boat with motion controls.",
+      "images": ["images/2021/VR_Sail.jpg"]
     },
     {
       "name": "Punch",
