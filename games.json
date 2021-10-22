@@ -1,4 +1,101 @@
 {
+  "2021": [
+    {
+      "name": "Snowman",
+      "engine": "Unity",
+      "description": "A 3D platformer type game where you take a sentient growing snowman head on a rampage to reunite with its body by the end of each level.",
+      "images": [
+        "images/2021/Project_Snowman.jpg"
+      ]
+    },
+    {
+      "name": "Hunter",
+      "engine": "GameMaker",
+      "description": "A hack-and-slash platformer with emphasis on combining combat and traversal.",
+      "images": ["images/2021/Hunter.png"],
+      "links": [
+        {
+          "text": "Demo",
+          "href": "https://averyicypenguin.itch.io/hunter",
+          "icon": "laptop_windows"
+        },
+        {
+          "text": "Video",
+          "href": "https://twitter.com/umbcGameDev/status/1447955226426757120",
+          "icon": "video_library"
+        }
+      ]
+    },
+    {
+      "name": "Final Fantasy Knockoff",
+      "engine": "Godot",
+      "tagline": "A 2D RPG in the style of early Final Fantasy games",
+      "images": [
+        "images/2021/FFK.png"
+      ]
+    },
+    {
+      "name": "Satyr",
+      "engine": "Unity",
+      "description": "A 2D metroidvania type game. You play as a deer satyr who gets possessed by a god and has to travel across a world to find a city and take down a tyrannical empire.",
+      "images": [
+        "images/2021/Satyr.png"
+      ]
+    },
+    {
+      "name": "VR-Sail",
+      "engine": "",
+      "description": "A VR game where you explore an ocean by controlling a sail boat with motion controls."
+    },
+    {
+      "name": "Punch",
+      "engine": "",
+      "description": "A multiplayer VR Day-Z-genre game. Survival aspects with the need to scavenge food, water, and medicine, focused heavily on melee combat, including punching and swords."
+    },
+    {
+      "name": "Parry Rush",
+      "engine": "",
+      "description": "A 2.5d boss rush game where you can only attack by reflecting projectiles."
+    },
+    {
+      "name": "Hrabowski Kart",
+      "engine": "Unreal Engine",
+      "description": "",
+      "images": ["images/2021/Hrabowski_Kart.jpg"],
+      "links": [
+        {
+          "text": "Demo",
+          "href": "https://default-frogs.itch.io/karting-game",
+          "icon": "laptop_windows"
+        }
+      ]
+    },
+    {
+      "name": "Lost & Found",
+      "engine": "Unity",
+      "tagline": "A pixellated sidescroller where you join a school club and take on questionable tasks from other students for social status.",
+      "description": "You play as a freshman girl looking to climb the social ladder and become one of the most popular kids in school. While at school, you discover a secret society of students who go around campus completing tasks for others. Joining this club offers you a chance to increase your social points and gain a higher status than before. But it comes at a cost, as the jobs get more and more dangerous will you break under the peer pressure of other students or stand victorious as the most popular person in the whole school?",
+      "images": ["images/2021/Lost_and_Found.png"],
+      "links": [
+        {
+          "text": "Demo",
+          "href": "https://tonio-tech.itch.io/lost-found",
+          "icon": "laptop"
+        }
+      ]
+    },
+    {
+      "name": "Rhythm Game",
+      "engine": "Godot",
+      "tagline": "A mobile rhythm game",
+      "images": ["images/2021/Rhythm_Game.png"]
+    },
+    {
+      "name": "Untitled Loot Simulator",
+      "engine": "",
+      "description": "An open world game with a focus on exploration and discovery and a secondary focus on base-building.\n- First-person ARPG with fluid mechanical controls and combat.\n- Strong focus on procedural and random generation to ensure that no two playthroughs are ever the same.\n- Hunt down powerful enemies in the wilds and delve deep into the various dungeons you find in the wilderness to obtain the all-too-familiar dopamine hit of rare loot.\n- Companion AI that makes sense. Gone are the days of designated healers choosing to forsake the Hippocratic oath and exchange fisticuffs with a dragon for no discernible reason."
+    }
+  ],
 
   "2020": [
     {
@@ -880,7 +977,7 @@
         "http://www.legacyoftheshards.com/images/ArenPlatforming1.png"
       ],
       "description": "Set in a fantastical world filled with exploration, the player assumes the role of Aren, an adventurous youth seeking the means to travel beyond his home to find his long-lost parents. The game mechanics focus on classic platforming to explore and pursue nonlinear objectives. Players can approach quests and goals from several angles, building their own playstyle as they progress.",
-      "customhtml": "<p><a href='https://www.facebook.com/LegacyoftheShards/'><img class='icon-image' src='ui/facebook.png'>Facebook</a></p><p><a href='https://twitter.com/LegacyOfShards'><img class='icon-image' src='ui/twitter.png'>Twitter</a></p>"
+      "customhtml": "<p><a class='icon-link' href='https://www.facebook.com/LegacyoftheShards/'><img src='ui/facebook.png'> Facebook</a></p><p><a class='icon-link' href='https://twitter.com/LegacyOfShards'><img src='ui/twitter.png'> Twitter</a></p>"
     },
     {
       "name": "Heart Attack",
