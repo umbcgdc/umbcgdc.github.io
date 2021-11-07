@@ -90,11 +90,6 @@
       "engine": "Godot",
       "tagline": "A mobile rhythm game",
       "images": ["images/2021/Rhythm_Game.png"]
-    },
-    {
-      "name": "Untitled Loot Simulator",
-      "engine": "",
-      "description": "An open world game with a focus on exploration and discovery and a secondary focus on base-building.\n- First-person ARPG with fluid mechanical controls and combat.\n- Strong focus on procedural and random generation to ensure that no two playthroughs are ever the same.\n- Hunt down powerful enemies in the wilds and delve deep into the various dungeons you find in the wilderness to obtain the all-too-familiar dopamine hit of rare loot.\n- Companion AI that makes sense. Gone are the days of designated healers choosing to forsake the Hippocratic oath and exchange fisticuffs with a dragon for no discernible reason."
     }
   ],
 
