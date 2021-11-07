@@ -61,7 +61,7 @@
     {
       "name": "Hrabowski Kart",
       "engine": "Unreal Engine",
-      "description": "",
+      "tagline": "A Mario Kart-like game in Unreal Engine.",
       "images": ["images/2021/Hrabowski_Kart.jpg"],
       "links": [
         {
@@ -76,7 +76,13 @@
       "engine": "Unity",
       "tagline": "A pixellated sidescroller where you join a school club and take on questionable tasks from other students for social status.",
       "description": "You play as a freshman girl looking to climb the social ladder and become one of the most popular kids in school. While at school, you discover a secret society of students who go around campus completing tasks for others. Joining this club offers you a chance to increase your social points and gain a higher status than before. But it comes at a cost, as the jobs get more and more dangerous will you break under the peer pressure of other students or stand victorious as the most popular person in the whole school?",
-      "images": ["images/2021/Lost_and_Found.png"],
+      "images": [
+        "images/2021/Lost_and_Found.png",
+        "images/2021/Lost_and_Found_2.jpg",
+        "images/2021/Lost_and_Found_3.jpg",
+        "images/2021/Lost_and_Found_4.jpg",
+        "images/2021/Lost_and_Found_5.jpg"
+      ],
       "links": [
         {
           "text": "Demo",
