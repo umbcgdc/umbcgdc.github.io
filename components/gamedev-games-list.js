@@ -12,12 +12,16 @@ Vue.component('gamedev-games-list', {
         </option>
       </select>
     </span>
+    
+    <ul
+      v-for="projects, category in games[currentYear]"
+      :key="currentYear+category"
+      class="year-page"
+    >
 
-    <ul class="year-page">
+      <h1 class="text-centered">{{ category }}</h1>
 
-      <h1 class="text-centered">{{ yearRange(currentYear) }} Games</h1>
-
-      <li v-for="game of games[currentYear]" :key="game.id" class="game-card">
+      <li v-for="game of projects" :key="currentYear+game.name" class="game-card">
         <div class="game-cover-container">
           <div class="game-cover" @click="openGameDisplay(game)">
             <img
@@ -61,15 +65,6 @@ Vue.component('gamedev-games-list', {
       let response = await fetch('./games.json')
       this.games = await response.json()
       this.years = Object.keys(this.games);
-
-      let _i = 0;
-      for (let year in this.games) {
-        for (let game of this.games[year]) {
-          game.id = _i; // unique id helps vue keep track of elements
-          game.current = 0; // current image
-          _i++;
-        }
-      }
 
       // find the newest year up to this year
       this.currentYear = new Date().getFullYear();
@@ -115,11 +110,14 @@ Vue.component('gamedev-games-list', {
         let _hash_year = _hash.slice(0, 4);
         // use a regex to search in case game contains dashes instead of spaces
         let _re = new RegExp(_hash.slice(5).replace(/\-/g, '[\\s\\-]'), 'i');
-        let _matches = this.games[_hash_year].filter(game => _re.test(game.name));
-        // open game of first match
-        if (_matches.length) {
-          this.currentYear = _hash_year;
-          this.openGameDisplay(_matches[0]);
+        for ([category, projects] of Object.entries(this.games[_hash_year])) {
+          let _matches = projects.filter(game => _re.test(game.name));
+          // open game of first match
+          if (_matches.length) {
+            this.currentYear = _hash_year;
+            this.openGameDisplay(_matches[0]);
+            break;
+          }
         }
       }
     });

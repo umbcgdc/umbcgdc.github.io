@@ -99,6 +99,7 @@ template: `
 <div class="modal columns">
 
   <gamedev-image-viewer
+    v-if="game.images"
     :images="game.images"
     class="column two-thirds"
   >
