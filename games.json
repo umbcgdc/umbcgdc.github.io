@@ -6,7 +6,10 @@
         "engine": "Unity",
         "description": "A 3D platformer type game where you take a sentient growing snowman head on a rampage to reunite with its body by the end of each level.",
         "images": [
-          "images/2021/Project_Snowman.jpg"
+          "images/2021/Project_Snowman.jpg",
+          "images/2021/Project_Snowman4.jpg",
+          "images/2021/Project_Snowman2.jpg",
+          "images/2021/Project_Snowman3.jpg"
         ]
       },
       {
@@ -61,7 +64,7 @@
         ]
       }
     ],
-    "2021 Semester Games": [
+    "2021 Fall Semester Games": [
       {
         "name": "Final Fantasy Knockoff",
         "engine": "Godot",
