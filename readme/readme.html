@@ -35,7 +35,7 @@
     }
     textarea {
       width: 100%;
-      height: 8em;
+      height: 10em;
       padding: 1em;
       box-sizing: border-box;
     }
@@ -47,117 +47,105 @@
 
 <main role="main" id="main" class="main"> <!--MAIN CONTENT-->
 
-<h1>Website Guide</h1>
+<h1>How to Website</h1>
 
 <button v-for="tab of tabs" :key="tab" @click="currentTab=tab">
-  <p>{{ tab }}</p>
+  <p v-if="tab==currentTab" style="text-decoration: underline">{{ tab }}</p>
+  <p v-else>{{ tab }}</p>
 </button>
 
 <div v-show="currentTab=='Update Games List'">
 
 <section>
-<p>This is the documentation for the website!</p>
-<p>I recommend reading this ("Update Games List") tab, but the rest is really not necessary unless you need to add pages.</p>
+<h2>So you are the webmaster, what do you do</h2>
+<p>Everyone gives you stuff and you add it to a JSON file. That's all your duties, other than working with the other officers, so have fun!</p>
+<h2>How do I view the site?</h2>
+<p>Because stuff is loaded from a JSON file, you have to run some sort of server to view the games page.</p>
+<p>One easy way is open a terminal, navigate with <code>cd</code> to the directory, and run <code>python3 -m http.server</code></p>
 </section>
 
 <section>
-<h2>Updating the Games List</h2>
-<p>To add games to the games list, you only need to edit "games_list.js", found in the home directory. Preferably, you would organize the images in images/year.</p>
-<p>Looking at the existing games in the file should give you a good idea of how to add a game. <em><strong>It's possible you won't need to read this guide at all, so please take a look at the file.</strong></em></p>
-</section>
-
-<section>
-<h3>Adding a tab to the list</h3>
-<p>To add a tab (such as for a year), open the games_list.js file. The games are stored in an object which holds lists which holds more objects (lol).</p>
-<p>Each key in the main object is a tab, so you just need to add a key-value pair for the tab name and the list of games under that tab.</p>
+<h2>Updating the Games List (games.json)</h2>
+<p>Looking at the existing games in the file should give you a good idea of how to add a game.<p>
+<p>The file is split into tabs (for the years), which contain groups of games.</p>
 <textarea readonly>
 "Tab Name": [
-  // games will go in here, each game separated by a comma.
+  "Header Name": {
+    { name: "Sample Game Title" },
+    { name: "Another Game Title" },
+  }
 ]
 </textarea>
-<p>Tabs can be in any order, because they are automatically sorted by year and then alphabetically. The site will always open to the most recent year (it also will not overshoot).</p>
-</section>
-
-<section>
-<h3>Adding a game to a tab</h3>
-<p>Each game is an unnamed object, so you write the properties of a game between curly braces {}. The only required property is "name".</p>
-<textarea readonly>
-"Tab Name": [
-  { name: "Sample Game Title" },
-  { name: "Another Game Title" },
-]
-</textarea>
+<p>Tabs can be in any order, because they are automatically sorted by year and then alphabetically. The site will always open to the most recent year.</p>
 <p>Whitespace doesn't matter, so you can space out the properties however you want to make it more readable.</p>
 </section>
 
 <section>
-<gamedev-expand-all label="List of game properties">
+<h2>List of game properties</h2>
 <p>Properties can be listed in any order. Remember to put a comma between each property.</p>
-<gamedev-dropdown label="name">
-  <p>The title of the game. The only required property.</p>
-</gamedev-dropdown>
-<gamedev-dropdown label="description">
-  <p>A short description of the game.</p>
-</gamedev-dropdown>
-<gamedev-dropdown label="engine">
-  <p>The name of the engine that game was created in.</p>
-</gamedev-dropdown>
-<gamedev-dropdown label="images">
-  <p>A list containing links/file paths to images of the game. They are displayed in the order you write them in.</p>
-  <textarea readonly>
+<ul>
+<li>name: The title of the game. The only required property.</li>
+<li>tagline: A short description of the game.</li>
+<li>description: A longer description of the game.</li>
+<li>engine: The name of the engine that game was created in.</li>
+<li>images: A list containing links/file paths to images of the game. They are displayed in the order you write them in.</li>
+<textarea readonly>
 images: [
   "images/2018/some-image.png",
   "images/2018/some-other-image.png"
 ]
-  </textarea>
-</gamedev-dropdown>
-<gamedev-dropdown label="links">
-  <p>A list containing pairs of link names and links. They are displayed in the order you write them in. You can add the name of a <a href="https://material.io/resources/icons/">material design icon</a> if you'd like your link to have a different icon next to it.</p>
-  <textarea readonly>
+</textarea>
+<li>links: A list containing pairs of link names and links. They are displayed in the order you write them in. You can add the name of a <a href="https://material.io/resources/icons/">material design icon</a> if you'd like your link to have a different icon next to it.</li>
+<textarea readonly>
 links: [
   ["link name", "https://www.google.com/"],
   ["other link", "https://duckduckgo.com/", "videogame_asset"]
 ]
-  </textarea>
-</gamedev-dropdown>
-<gamedev-dropdown label="roster">
-  <p>List of people who worked on the game (credits).</p>
-  <textarea readonly>
+</textarea>
+<li>roster: List of people who worked on the game (credits).</li>
+<textarea readonly>
 roster: [
   "Me",
   "My friend"
 ]
-  </textarea>
-</gamedev-dropdown>
-</gamedev-expand-all>
+</textarea>
 </section>
 
 <section>
 <h3>Debugging</h3>
 <gamedev-dropdown label="If you open the file and there is no content on the page, make sure...">
 <ul>
+  <li>You remembered to use a server and didn't just double click the file</li>
   <li>There are commas between every entry in the lists</li>
   <li>There are commas between every property</li>
   <li>There are commas between every tab</li>
   <li>All brackets/braces of any kind have a matching end bracket/brace</li>
 </ul>
+<p>Using some sort of JSON editor or validator may be useful.</p>
 </gamedev-dropdown>
-<gamedev-dropdown label="If a specific entry you made isn't appearing on the page, make sure...">
+<gamedev-dropdown label="If a specific entry you made isn't appearing, make sure...">
 <ul>
   <li>You saved the file</li>
   <li>You reloaded the page</li>
-  <li>You're viewing the file and not the online website</li>
   <li>The property name is spelled correctly</li>
   <li>Everything that should be in quotes actually has quotes around it</li>
-  <li>Your content is inside the games_list and not before or after</li>
+  <li>Your content is inside the list and not before or after</li>
+  <li>If the problem is that the online website doesn't reflect the changes, make sure you actually committed and pushed your changes</li>
 </ul>
 </gamedev-dropdown>
 <p>You can always duplicate an existing game entry to use as a template.</p>
 </section>
 
+<section>
+  <h3>What's this Warhorse thingy?</h3>
+  <p>Once upon a time, there was a CMSC 202 project called Warhorse...the person making this website decided to include a js version of said project for memes.</p>
+</section>
+
 </div>
 
 <div v-show="currentTab=='Create Pages'">
+
+<h2>You don't need to add pages but if you want to here is a guide</h2>
 
 <section>
 <h2>Using Components</h2>
@@ -166,8 +154,8 @@ roster: [
 </section>
 
 <section>
-<h3>Setting up a page</h3>
-<p>There's a file called <a href="../template.html">template.html</a> in the home directory that contains the page template with the header, footer, and head tags. Just duplicate it and change the content in the "main" div.</p>
+<h2>Setting up a page</h2>
+<p>There's a file called <a href="../template.html">template.html</a> that contains the page template with the header, footer, and head tags. Just duplicate it and change the content in the "main" div.</p>
 <gamedev-dropdown label="Extended explanation of page content">
   <p>(Hover over lines to show explanation)</p>
   <pre v-for="line in webTemplate" :title="line[1]">{{ line[0] }}</pre>
@@ -175,22 +163,23 @@ roster: [
 </section>
 
 <section>
-<h3>Using the components</h3>
+<h2>Using the components</h2>
+
 <p>Components are basically custom html elements, included through scripts. Once you include the template script, they can be used in the #gamedev-root element.</p>
+
 <p>The source files for the components are found in the "components" folder, and they all start with the prefix "gamedev-". Check them out if you're familiar with Vue or just want to look at the html templates and css classes.</p>
+
 <p>To use components, you need 3 things:</p>
-<gamedev-dropdown label="Include Vue">
-  <p>The components require Vue to work, so makes sure the page has included vue with:</p>
-  <textarea readonly><script src="js/vue.min.js"></script></textarea>
-</gamedev-dropdown>
-<gamedev-dropdown label="Include the script of the component you want">
-  <p>Each component is contained in a js file that has to be included. Check the <a href="#" @click="currentTab='Component Properties'">full list</a> of which components are in which file.</p>
-  <textarea readonly><script src="components/gamedev-some-component.js"></script></textarea>
-</gamedev-dropdown>
-<gamedev-dropdown label="Include the template component">
-  <p>The template component creates a Vue element (necessary to use components). It also includes the header and footer components; they don't need to be included separately.</p>
-  <textarea readonly><script src="components/gamedev-template.js"></script></textarea>
-</gamedev-dropdown>
+<ul>
+  <li>Include Vue: The components require Vue to work, so makes sure the page has included vue with:
+    <textarea readonly><script src="js/vue.min.js"></script></textarea>
+  </li>
+  <li>Include the script of the component you want: Each component is contained in a js file that has to be included. Check the <a href="#" @click="currentTab='Component Properties'">full list</a> of which components are in which file.</li>
+    <textarea readonly><script src="components/gamedev-some-component.js"></script></textarea>
+  <li>Include the template component: The template component creates a Vue element (necessary to use components). It also includes the header and footer components; they don't need to be included separately.</li>
+    <textarea readonly><script src="components/gamedev-template.js"></script></textarea>
+</ul>
+
 <p>Then, you can use the components just like you would use a normal html element. For example, you can make a dropdown like this, and it automatically applies the styling and functionality of the dropdown component:</p>
 <textarea readonly>
   <gamedev-dropdown label="Example label">
@@ -206,15 +195,8 @@ roster: [
 <section>
 <h3>Why didn't you use webpack/.vue files/something else?</h3>
 <p>My main goal was to make the website as easy to edit as possible for someone with knowledge of only html5/css3. With this type of component registration, whoever is maintaining the website just has to include the scripts and then write html with a few extra elements, and there is (hopefully) no confusion over scoped css or the framework itself.</p>
-</section>
-
-<section>
 <h3>Additional notes</h3>
 <p>If you end up inserting content using Vue's "mustaches", remember to include v-cloak on the element so the content won't show until Vue has loaded.</p>
-</section>
-
-<section>
-<h3>Enjoy being Webmaster of the Game Developers Club!</h3>
 </section>
 
 </div>
@@ -222,6 +204,7 @@ roster: [
 <div v-show="currentTab=='Component Properties'">
 
 <gamedev-expand-all label="List of Components and Properties">
+<h3>If you make a new page you might want to use some of these to make your life easier</h3>
 <p>Properties in [ ] are optional.</p>
 <p>Non-string properties must be listed with a colon in front, like :property="value".</p>
 
@@ -245,7 +228,6 @@ roster: [
   </ul>
 </gamedev-dropdown>
 <gamedev-dropdown label="Example">
-<section>
   <textarea readonly style="height:15em">
   <gamedev-expand-all label="Header">
   
@@ -267,7 +249,6 @@ roster: [
       <p>More content</p>
     </gamedev-dropdown>
   </gamedev-expand-all>
-</section>
 </gamedev-dropdown>
 
 </section> <!--END DROPDOWNS-->
