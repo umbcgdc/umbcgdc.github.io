@@ -4,18 +4,23 @@
       {
         "name": "Snowman",
         "engine": "Unity",
-        "description": "A 3D platformer type game where you take a sentient growing snowman head on a rampage to reunite with its body by the end of each level.",
+        "description": "Project Snowman is a game where the player takes the role of a snowman's head and rolls around various levels in search of the rest of its body. Like a rolling snowball, the snowman's head grows in size as it rolls on snowy ground and eventually can become big enough to destroy obstacles in the environment.",
         "images": [
           "images/2021/Project_Snowman.jpg",
           "images/2021/Project_Snowman4.jpg",
           "images/2021/Project_Snowman2.jpg",
           "images/2021/Project_Snowman3.jpg"
+        ],
+        "roster": [
+          "Project lead: Noah Reardon",
+          "Team: Evan McRae, Jacob Pickholtz, Shane Taylor"
         ]
       },
       {
         "name": "Hunter",
         "engine": "GameMaker",
-        "description": "A hack-and-slash platformer with emphasis on combining combat and traversal.",
+        "tagline": "A hack-and-slash platformer with emphasis on combining combat and traversal.",
+        "description": "In Hunter, play as an assassin who's simply trying to do what she's getting paid for: slaughtering monsters that may pose a danger to others. But as you and your dragon wyrmling pal Vel venture deeper into the caves, things begin to not appear as they seem...",
         "images": [
           "images/2021/Hunter.png",
           "images/2021/Hunter_2.png",
@@ -24,7 +29,7 @@
         ],
         "links": [
           {
-            "text": "Demo",
+            "text": "Play",
             "href": "https://averyicypenguin.itch.io/hunter",
             "icon": "laptop_windows"
           },
@@ -33,21 +38,28 @@
             "href": "https://twitter.com/umbcGameDev/status/1447955226426757120",
             "icon": "video_library"
           }
+        ],
+        "roster": [
+          "Project Lead: Alex Jeffries",
+          "Team: Isaiah Hull, Scott Serafin, Joey Kihn, Sam Denoncourt, Harrang Khalsa"
         ]
       },
       {
         "name": "Satyr",
         "engine": "Unity",
-        "description": "A 2D metroidvania type game. You play as a deer satyr who gets possessed by a god and has to travel across a world to find a city and take down a tyrannical empire.",
+        "description": "Satyr is a two-dimensional Metroidvania-inspired game with an emphasis on storytelling and world-building. The playable character Pan, a young boy who is part deer and part human, becomes possessed by the goddess Reya and they must work together to take down an evil empire. The player can explore an open world, fight enemies, and unlock new powers as they learn more about the world and the mysterious beings that inhabit it.",
         "images": [
           "images/2021/Satyr.png"
+        ],
+        "roster": [
+          "Project Lead: Anna Teather",
+          "Team: Aidan Brown, Evan McRae, Jacob Pickholtz, Zachary Nelson, Alex Cragg"
         ]
       },
       {
         "name": "Lost & Found",
         "engine": "Unity",
-        "tagline": "A pixellated sidescroller where you join a school club and take on questionable tasks from other students for social status.",
-        "description": "You play as a freshman girl looking to climb the social ladder and become one of the most popular kids in school. While at school, you discover a secret society of students who go around campus completing tasks for others. Joining this club offers you a chance to increase your social points and gain a higher status than before. But it comes at a cost, as the jobs get more and more dangerous will you break under the peer pressure of other students or stand victorious as the most popular person in the whole school?",
+        "description": "A 2D side-scrolling RPG set in a private high school run by a mysterious club called the “Seekers”. A transfer student named Blair joins the club in hopes of improving her social status by completing quests for fellow students. The tasks grow increasingly morally questionable, and Blair must carefully consider how far she’s willing to go for the sake of popularity.",
         "images": [
           "images/2021/Lost_and_Found.png",
           "images/2021/Lost_and_Found_2.jpg",
@@ -55,12 +67,24 @@
           "images/2021/Lost_and_Found_4.jpg",
           "images/2021/Lost_and_Found_5.jpg"
         ],
+        "roster": [
+          "Project Lead: Julia Nau",
+          "Team: Maxfield L. Hartley, Jet E. Thompson, Matthew T. Hustead, Phoenix Lawrence, Madelyn Holbrook, Toni Olafunmiloye"
+        ],
         "links": [
           {
-            "text": "Demo",
+            "text": "Play",
             "href": "https://tonio-tech.itch.io/lost-found",
             "icon": "laptop"
           }
+        ]
+      },
+      {
+        "name": "DCOM",
+        "description": "A sport like no other, DCOM is a MOBA in which 4 teams of animals claim territory and attempt to keep the most of it before time runs out.",
+        "roster": [
+          "Project Lead: Scott Serafin",
+          "Team: TJ  Colligan, Salad Chen, Joey Kihn, Zavier Howard"
         ]
       }
     ],
@@ -146,7 +170,7 @@
             "icon": "video_library"
           },
           {
-            "text": "Demo",
+            "text": "Play",
             "href": "https://devkeo.itch.io/planetary-devastation",
             "icon": "laptop_windows"
           }
@@ -170,7 +194,7 @@
         ],
         "links": [
           {
-            "text": "Demo",
+            "text": "Play",
             "href": "https://default-frogs.itch.io/ele-mental",
             "icon": "laptop_windows"
           }
@@ -195,7 +219,7 @@
         ],
         "links": [
           {
-            "text": "Demo",
+            "text": "Play",
             "href": "https://thelovedoc.itch.io/spare-parts"
           }
         ]
@@ -233,7 +257,7 @@
         "description": "A visual novel about a newly-turned werewolf-man trying to become human again.",
         "links": [
           {
-            "text": "Demo",
+            "text": "Play",
             "href": "https://maggyrat.itch.io/werewolf-sound-novel",
             "icon": "laptop_windows"
           }
@@ -273,7 +297,7 @@
         "tagline": "Move and distribute code bubbles between machines in order to solve puzzles!",
         "links": [
           {
-            "text": "itch.io",
+            "text": "Play",
             "href": "https://dethsavis.itch.io/binary-bubbles",
             "icon": "laptop_windows"
           }
@@ -366,7 +390,7 @@
         ],
         "links": [
           {
-            "text": "itch.io",
+            "text": "Play",
             "href": "https://brandonalxellis.itch.io/bit-rush",
             "icon": "phone_android"
           },
@@ -424,7 +448,7 @@
         ],
         "links": [
           {
-            "text": "itch.io",
+            "text": "Play",
             "href": "https://bentenure.itch.io/bruise-cruise"
           }
         ],
@@ -463,7 +487,7 @@
         ],
         "links": [
           {
-            "text": "itch.io",
+            "text": "Play",
             "href": "https://atolbertsmith.itch.io/candybaggers"
           },
           {
@@ -655,7 +679,7 @@
         ],
         "links": [
           {
-            "text": "itch.io",
+            "text": "Play",
             "href": "https://liamupton1.github.io/Adryft/"
           }
         ]
@@ -722,7 +746,7 @@
         ],
         "links": [
           {
-            "text": "itch.io",
+            "text": "Play",
             "href": "https://mnchino.itch.io/star-marten"
           },
           {
@@ -749,7 +773,7 @@
         ],
         "links": [
           {
-            "text": "itch.io",
+            "text": "Play",
             "href": "https://khadyah.itch.io/marzipan"
           },
           {
