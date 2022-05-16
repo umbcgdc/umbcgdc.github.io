@@ -14,6 +14,13 @@
         "roster": [
           "Project lead: Noah Reardon",
           "Team: Evan McRae, Jacob Pickholtz, Shane Taylor"
+        ],
+        "links": [
+          {
+            "text": "Play",
+            "href": "https://team-snowman.itch.io/snowman",
+            "icon": "laptop"
+          }
         ]
       },
       {
@@ -54,6 +61,13 @@
         "roster": [
           "Project Lead: Anna Teather",
           "Team: Aidan Brown, Evan McRae, Jacob Pickholtz, Zachary Nelson, Alex Cragg"
+        ],
+        "links": [
+          {
+            "text": "Play",
+            "href": "https://ladyakemi.itch.io/satyr",
+            "icon": "laptop_windows"
+          }
         ]
       },
       {
