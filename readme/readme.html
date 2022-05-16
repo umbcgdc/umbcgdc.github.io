@@ -95,11 +95,14 @@ images: [
   "images/2018/some-other-image.png"
 ]
 </textarea>
-<li>links: A list containing pairs of link names and links. They are displayed in the order you write them in. You can add the name of a <a href="https://material.io/resources/icons/">material design icon</a> if you'd like your link to have a different icon next to it.</li>
+<li>links: A list containing link information. They are displayed in the order you write them in. You can add the name of a <a href="https://material.io/resources/icons/">material design icon</a> if you'd like your link to have a different icon next to it.</li>
 <textarea readonly>
 links: [
-  ["link name", "https://www.google.com/"],
-  ["other link", "https://duckduckgo.com/", "videogame_asset"]
+  {
+    "text":"Some text to appear as the link",
+    "href":"https://www.google.com/",
+    "icon":"laptop"
+  }
 ]
 </textarea>
 <li>roster: List of people who worked on the game (credits).</li>
