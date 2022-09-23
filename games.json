@@ -111,6 +111,17 @@
                     "Sound Design: Malachi White",
                     "Writers: Sydnee Conigland"
                 ]
+            },
+            {
+                "name": "Party Bullet Hell",
+                "engine": "Unity",
+                "description": "A party game where one player places down patterns of bullets while 1-3 other players try to dodge them.",
+                "roster": [
+                    "Project Lead: Jet Thompson",
+                    "Programmers: Jacob Adams, Jet Thompson",
+                    "Artist: Julia Nau",
+                    "Composer: Max Hartley"
+                ]
             }
         ]
     },
