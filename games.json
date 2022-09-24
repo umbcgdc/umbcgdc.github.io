@@ -54,7 +54,7 @@
                     "Project Lead: Julia Nau",
                     "Programmer: Matthew Zheng",
                     "Artist: Micah Stone",
-                    "Composer: ",
+                    "Composer: Joshua Epstein",
                     "Writer: Julia Nau"
                 ],
                 "links": [
@@ -72,7 +72,7 @@
                 "roster": [
                     "Project Lead: Julia Nau",
                     "Programmer: Jet Thompson",
-                    "Artists: ",
+                    "Artist: Ky DeSilva",
                     "Composer: Malachi White",
                     "Writer: Julia Nau"
                 ]
@@ -106,7 +106,7 @@
                 "roster": [
                     "Project Lead: Ky \"Lupidcorvid\" DeSilva",
                     "Programmers: Evan McRae, Ryan Whitfield, Matthew Zheng, Mikey, Anando Carter",
-                    "Artists: Zia, AJ",
+                    "Artists: Zia Animashaun, AJ",
                     "Composer: Evan McRae",
                     "Sound Design: Malachi White",
                     "Writers: Sydnee Conigland"
@@ -121,6 +121,29 @@
                     "Programmers: Jacob Adams, Jet Thompson",
                     "Artist: Julia Nau",
                     "Composer: Max Hartley"
+                ]
+            },
+            {
+                "name": "What Remains Unseen",
+                "description": "A psychological horror game where you play as a librarian working in your small town's grand library. Form bonds with other residents and learn more about this mysterious town during the day. Then, brave the night shift without letting your fear consume you. Complete your tasks and clock out before what lurks in the dark catches up to you... or is there something else that remains unseen?",
+                "engine": "GameMaker Studio 2",
+                "roster": [
+                    "Project Lead: Billie Allen",
+                    "Programmer: Justin Tony",
+                    "Artist: Ames Salvador",
+                    "Writers: Caleb Sparks, Eden Zhang"
+                ]
+            },
+            {
+                "name": "Se7en Paths",
+                "engine": "Godot",
+                "description": "A 2.5d boss rush where each boss is based on one of the 7 deadly sins. Each boss is unique and will take on the attributes of the others after you beat one.",
+                "roster": [
+                    "Project Lead: William Mo",
+                    "Programmer: William Mo",
+                    "Artist: William Mo",
+                    "Composer: William Mo",
+                    "Writer: William Mo"
                 ]
             }
         ]
