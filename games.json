@@ -1,5 +1,168 @@
 {
     "2022": {
+        "2022-2023 Games": [
+            {
+                "name": "Super Palette Swapper",
+                "engine": "GameMaker Studio 2",
+                "description": "A 2D platformer that follows the journey of two artists reclaiming their collection of prized magical paints. Each color of paint added to the player's palette grants the player a unique ability that they can use to further traverse the levels or find once inaccessible secrets.",
+                "images": [
+                    "images/2022/Super_Palette_Swapper.png"
+                ],
+                "roster": [
+                    "Project Lead: Scott Serafin",
+                    "Programmers: Scott Serafin, Evan McRae, Isaiah Hull",
+                    "Artists: Salad Chen, Julia Nau",
+                    "Composer: Scott Serafin",
+                    "Writers: Sydnee Conigland, Salad Chen"
+                ]
+            },
+            {
+                "name": "Fall's End",
+                "engine": "Unity",
+                "description": "Falls End is a semi-open world fantasy RPG. It's about a man named Elric who has a small case of amnesia. He remembers that he was ordered by the military to meet someone in the country of Aloria. The funny thing is he doesn't remember any details of his mission. You play as Elric as you discover what your mission is and what tragedy is happening to the country of Aloria.",
+                "roster": [
+                    "Project Lead: Michael Thomas",
+                    "Programmers: Ben Bolster, Aidan Brown, Jacob Pickholtz, Zach Nelson",
+                    "Artists: Luke Schultz, Toni Olafunmiloye, Nektarios Tsoulfidis, TJ Colligan, Elizabeth Schaefer, Ryan Johnston",
+                    "Composer: Noah Stuehler",
+                    "Sound Design: Stephen \"Shaido\" Bollinger",
+                    "Writer: Chidube Ibe"
+                ]
+            },
+            {
+                "name": "Daylight",
+                "engine": "Unity",
+                "description": "You are a newly appointed warrior of a town of dogs to brave the dangerous, monster ridden outside world. In this 2D adventure, you collect survival resources and fight enemies to keep the town safe. But how much longer can the warriors hold the monsters back?",
+                "tagline": "2D side scrolling story based adventure game",
+                "images": [
+                    "images/2022/Sword_Dog_Game.png",
+                    "images/2022/Sword_Dog_Game_2.png",
+                    "images/2022/Sword_Dog_Game_3.png"
+                ],
+                "roster": [
+                    "Project Lead: Ky \"Lupidcorvid\" DeSilva",
+                    "Programmers: Evan McRae, Ryan Whitfield, Jeremy Niles, Shayan Khan",
+                    "Artists: Ky \"Lupidcorvid\" DeSilva",
+                    "Composer: Evan McRae",
+                    "Sound Design: Malachi White",
+                    "Writers: Sydnee Conigland"
+                ],
+                "links" : [
+                    {
+                        "text" : "Video",
+                        "href" : "https://drive.google.com/file/d/10INKAiaIbbrPUQMWsyAq1J3M-fCUGu2e/view?usp=sharing",
+                        "icon" : "video_library"
+                    }
+                ]
+            },
+            {
+                "name": "Party Bullet Hell",
+                "engine": "Unity",
+                "description": "A party game where one player places down patterns of bullets while 1-3 other players try to dodge them.",
+                "roster": [
+                    "Project Lead: Jet Thompson",
+                    "Programmer: Jet Thompson"
+                ]
+            },
+            {
+                "name": "What Remains Unseen",
+                "description": "A psychological horror game where you play as a librarian working in your small town's grand library. Form bonds with other residents and learn more about this mysterious town during the day. Then, brave the night shift without letting your fear consume you. Complete your tasks and clock out before what lurks in the dark catches up to you... or is there something else that remains unseen?",
+                "engine": "GameMaker Studio 2",
+                "roster": [
+                    "Project Lead: Billie Allen",
+                    "Programmers: Justin Tony, Caleb Sparks",
+                    "Artist: Ames Salvador",
+                    "Composer: Joshua Epstein",
+                    "Writers: Billie Allen, Caleb Sparks, Eden Zhang"
+                ]
+            }
+        ],
+        "2023 Spring Semester Games": [
+            {
+                "name" : "Boxmen",
+                "description" : "A Punch-Out!! inspired game where you box against a variety of fighters, all with different attacks and adaptations.",
+                "engine" : "GameMaker Studio 2",
+                "roster" : [
+                    "Project Lead: Caleb Moesner",
+                    "Programmer: Caleb Moesner",
+                    "Artist: Caleb Moesner"
+                ]
+            },
+            {
+                "name" : "Untitled Zelda-like",
+                "description" : "A simple 2d Zelda-inspired adventure game",
+                "engine" : "Unity",
+                "roster" : [
+                    "Project Lead: Jacob Pickholtz",
+                    "Programmers: Jacob Pickholtz, Brandon Griffin, Faezaan Ansari, Sean Henderson"
+                ]
+            },
+            {
+                "name" : "Late Night Cooking",
+                "description" : "Experience college living through the time-old tradition of making dinner at 3 in the morning! There are also demons, which is a slightly less common experience, but something you get the luck of dealing with. Make late night delicacies while fending off the underworld.",
+                "engine" : "Unity",
+                "roster" : [
+                    "Project Lead: Al Smith",
+                    "Programmer: Al Smith",
+                    "Artists: Al Smith, Hannah Smith"
+                ]
+            },
+            {
+                "name" : "Undead Ambush",
+                "description" : "An top down arcade-style zombie shooter that features many different enemies, wave variations, and weapons. It is planned to have a endless mode, and a short story mode as well.",
+                "engine" : "Unity",
+                "images" : [
+                    "images/2022/Undead_Ambush_1.png"
+                ],
+                "roster" : [
+                    "Project Lead: Rick Jenkins",
+                    "Programmer: Rick Jenkins",
+                    "Artist: Rick Jenkins",
+                    "Composer: Ava J."
+                ],
+                "links": [
+                    {
+                        "text": "Play",
+                        "href": "https://itsjustrick12.itch.io/undead-ambush",
+                        "icon": "laptop"
+                    }
+                ]
+            },
+            {
+                "name" : "A Workplace Romance",
+                "description" : "A hospital drama dating sim where you have a the chance to romance your co-star.",
+                "roster" : [
+                    "Project Leads: Ayo Akinyemi, Anjum Hajera",
+                    "Programmer: Ayo Akinyemi",
+                    "Artists: Anjum Hajera, Ky DeSilva, Olivia Brooks",
+                    "Writers: Ayo Akinyemi, Anjum Hajera, Olivia Brooks"
+                ]
+            },
+            {
+                "name" : "Talali and Sonure",
+                "description" : "This visual novel follows a normal day in your life as the main caretaker of two developing gods who have opposite sleep schedules: Talali, a sun god in training, and Sonore, a moon god in training. Come have a good time and meet some cute kids!",
+                "engine" : "Ren'py",
+                "images" : [
+                    "images/2022/Talali_and_Sonure_1.png",
+                    "images/2022/Talali_and_Sonure_2.png",
+                    "images/2022/Talali_and_Sonure_3.png"
+                ],
+                "roster" : [
+                    "Project Lead: Salad Chen",
+                    "Programmer: Salad Chen",
+                    "Artist: Salad Chen",
+                    "Composer: Salad Chen",
+                    "Writer: Salad Chen"
+                ],
+                "links": [
+                    {
+                        "text": "Play",
+                        "href": "https://drive.google.com/file/d/1BpOXKh3UAk1ncdsqKMPlEIXVatN8zSk0/view?usp=sharing",
+                        "icon": "laptop"
+                    }
+                ]
+            }
+        ],
         "2022 Fall Semester Games": [
             {
                 "name": "A Grave Tale",
@@ -12,32 +175,6 @@
                     "Artists: Stephen \"Shaido\" Bollinger, Felicia Edet, Macaela Morrison"
                 ]
 
-            },
-            {
-                "name": "Super Palette Swapper",
-                "engine": "GameMaker Studio 2",
-                "description": "A 2D platformer that follows the journey of two artists reclaiming their collection of prized magical paints. Each color of paint added to the player's palette grants the player a unique ability that they can use to further traverse the levels or find once inaccessible secrets.",
-                "images": [
-                    "images/2022/Super_Palette_Swapper.png"
-                ],
-                "roster": [
-                    "Project Lead: Scott Serafin",
-                    "Programmers: Scott Serafin, Evan McRae, Caleb Moesner",
-                    "Artists: Salad Chen, Julia Nau",
-                    "Composer: Scott Serafin",
-                    "Writers: Sydnee Conigland, Salad Chen"
-                ]
-            },
-            {
-                "name": "Fall's End",
-                "engine": "Unity",
-                "description": "An open-world fantasy RPG in which a man mysteriously wakes up in a forest and goes on a quest to discover his past.",
-                "roster": [
-                    "Project Lead: Michael Thomas",
-                    "Programmers: Ben Lipchin, Harrison, Aidan Brown, Jacob Pickholtz",
-                    "Artists: Luke Schultz, Toni Olafunmiloye, Nektarios Tsoulfidis,  TJ Colligan",
-                    "Writer: Michael Thomas"
-                ]
             },
             {
                 "name": "Lost & Found",
@@ -92,47 +229,6 @@
                     "Writer: "
                 ]
 
-            },
-            {
-                "name": "Sword Dog Game",
-                "engine": "Unity",
-                "description": "You are a newly appointed warrior of a town of dogs to brave the dangerous, monster ridden outside world. In this 2D adventure, you collect survival resources and fight enemies to keep the town safe. But how much longer can the warriors hold the monsters back?",
-                "tagline": "2D side scrolling story based adventure game",
-                "images": [
-                    "images/2022/Sword_Dog_Game.png",
-                    "images/2022/Sword_Dog_Game_2.png",
-                    "images/2022/Sword_Dog_Game_3.png"
-                ],
-                "roster": [
-                    "Project Lead: Ky \"Lupidcorvid\" DeSilva",
-                    "Programmers: Evan McRae, Ryan Whitfield, Matthew Zheng, Mikey, Anando Carter",
-                    "Artists: Zia Animashaun, AJ",
-                    "Composer: Evan McRae",
-                    "Sound Design: Malachi White",
-                    "Writers: Sydnee Conigland"
-                ]
-            },
-            {
-                "name": "Party Bullet Hell",
-                "engine": "Unity",
-                "description": "A party game where one player places down patterns of bullets while 1-3 other players try to dodge them.",
-                "roster": [
-                    "Project Lead: Jet Thompson",
-                    "Programmers: Jacob Adams, Jet Thompson",
-                    "Artist: Julia Nau",
-                    "Composer: Max Hartley"
-                ]
-            },
-            {
-                "name": "What Remains Unseen",
-                "description": "A psychological horror game where you play as a librarian working in your small town's grand library. Form bonds with other residents and learn more about this mysterious town during the day. Then, brave the night shift without letting your fear consume you. Complete your tasks and clock out before what lurks in the dark catches up to you... or is there something else that remains unseen?",
-                "engine": "GameMaker Studio 2",
-                "roster": [
-                    "Project Lead: Billie Allen",
-                    "Programmer: Justin Tony",
-                    "Artist: Ames Salvador",
-                    "Writers: Caleb Sparks, Eden Zhang"
-                ]
             },
             {
                 "name": "Se7en Paths",
