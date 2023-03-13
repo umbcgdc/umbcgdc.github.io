@@ -161,6 +161,16 @@
                         "icon": "laptop"
                     }
                 ]
+            },
+            {
+                "name" : "2D Fighters",
+                "description" : " A 2D fighting game involving multiple characters with unique fighting styles and several stages to choose from.",
+                "roster" : [
+                    "Project Lead: Nektarios Lerakis",
+                    "Programmer: Kyle Williford",
+                    "Artist: Nektarios Lerakis",
+                    "Sound Design: Heath Franklin"
+                ]
             }
         ],
         "2022 Fall Semester Games": [
