@@ -14,6 +14,18 @@
                     "Artists: Salad Chen, Julia Nau",
                     "Composer: Scott Serafin",
                     "Writers: Sydnee Conigland, Salad Chen"
+                ],
+                "links": [
+                    {
+                        "text" : "Video",
+                        "href" : "https://www.youtube.com/watch?v=_MVY0_go9OQ",
+                        "icon" : "video_library"
+                    },
+                    {
+                        "text" : "Play",
+                        "href" : "https://averyicypenguin.itch.io/super-palette-swapper",
+                        "icon" : "laptop"
+                    }
                 ]
             },
             {
@@ -158,6 +170,11 @@
                     "Writer: Salad Chen"
                 ],
                 "links": [
+                    {
+                        "text" : "Video",
+                        "href" : "https://www.youtube.com/watch?v=lX2GXM3KBNo",
+                        "icon" : "video_library"
+                    },
                     {
                         "text": "Play",
                         "href": "https://drive.google.com/file/d/1BpOXKh3UAk1ncdsqKMPlEIXVatN8zSk0/view?usp=sharing",
