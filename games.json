@@ -1,4 +1,202 @@
 {
+    "2023": {
+        "2023 Fall Semester Games": [
+            {
+                "name": "Beat the Heat",
+                "engine": "Godot",
+                "description": "A game where the temperature increases the longer you play making the game more difficult as you go along",
+                "images": [
+                    "images/2023/Beat_The_Heat.png",
+                    "images/2023/Beat_The_Heat_2.gif",
+                    "images/2023/Beat_The_Heat_3.gif"
+                ],
+                "roster": [
+                    "Project Lead: Josh S.",
+                    "Programmers: Scott H., Jet Thompson, Cole D., Kyle Williford, Josh S.",
+                    "Artist: Josh S.",
+                    "Sound Design: Cole D."
+                ]
+            },
+            {
+                "name": "Radioactive Ravioli",
+                "engine": "Godot",
+                "description": "Enter a post-apocalyptic world where you step into the shoes of a resourceful chef. Your mission? Prepare and serve up radioactive cuisine that bestows temporary mutations and superhuman abilities upon you. In this rouge-like game you slay radioactive beasts to get ingredients and use those ingredients to cook cuisine to slay more fearsome beasts.",
+                "roster": [
+                    "Project Lead: Ben Bolster",
+                    "Programmer: Ben Bolster"
+                ]
+            },
+            {
+                "name" : "Untitled Zelda-like",
+                "description" : "A simple 2d Zelda-inspired adventure game",
+                "engine" : "Unity",
+                "images": [
+                    "images/2023/Untitled_Zeldalike.png",
+                    "images/2023/Untitled_Zeldalike_2.png"
+                ],
+                "roster" : [
+                    "Project Lead: Jacob Pickholtz",
+                    "Programmers: Jacob Pickholtz, Brandon Griffin, Asher Edwards",
+                    "Artist: Carson Becker"
+                ]
+            },
+            {
+                "name": "Super Palette Swapper",
+                "engine": "GameMaker Studio 2",
+                "description": "A 2D platformer that follows the journey of two artists reclaiming their collection of prized magical paints. Each color of paint added to the player's palette grants the player a unique ability that they can use to further traverse the levels or find once inaccessible secrets.",
+                "images": [
+                    "images/2022/Super_Palette_Swapper.png",
+                    "images/2023/Super_Palette_Swapper_2.png",
+                    "images/2023/Super_Palette_Swapper_3.png",
+                    "images/2023/Super_Palette_Swapper_4.png",
+                    "images/2023/Super_Palette_Swapper_5.png"
+                ],
+                "roster": [
+                    "Project Lead: Scott Serafin",
+                    "Programmers: Scott Serafin, Evan McRae, Isaiah Hull",
+                    "Artists: Salad Chen, Al Smith, Julia Nau",
+                    "Composer: Scott Serafin",
+                    "Writers: Sydnee Conigland, Salad Chen"
+                ],
+                "links": [
+                    {
+                        "text" : "Video [Aqua Build]",
+                        "href" : "https://www.youtube.com/watch?v=_MVY0_go9OQ",
+                        "icon" : "video_library"
+                    },
+                    {
+                        "text" : "Play [Black Build]",
+                        "href" : "https://averyicypenguin.itch.io/super-palette-swapper",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name": "Schweebo!",
+                "engine": "Unreal Engine 5",
+                "description": "A 3D puzzle platformer where you possess and use creatures to solve puzzles.",
+                "roster": [
+                    "Project Lead: Al Smith",
+                    "Programmers: Al Smith, Cameron Kozlay, John Daniel, Logal Mageha, Oliver Bobbitt, Sophia Hamer",
+                    "Artists: Al Smith, Sophia Hamer",
+                    "Design: James Hughes, Oliver Bobbitt, Simon Murray, Sophia Hamer",
+                    "QA: Simon Murray"
+                ]
+            },
+            {
+                "name": "Fall's End",
+                "engine": "Unity",
+                "description": "Falls End is a semi-open world fantasy RPG. It's about a man named Elric who has a small case of amnesia. He remembers that he was ordered by the military to meet someone in the country of Aloria. The funny thing is he doesn't remember any details of his mission. You play as Elric as you discover what your mission is and what tragedy is happening to the country of Aloria.",
+                "images" : [
+                    "images/2022/Falls_End_1.jpg"
+                ],
+                "roster": [
+                    "Project Lead: Michael Thomas",
+                    "Programmers: Ben Bolster, Aidan Brown, Jacob Pickholtz, Zach Nelson, Josh Hirtle",
+                    "Artists: Luke Schultz, Toni Olafunmiloye, Deandre Roan, Carson Becker",
+                    "Composer: Noah Stuehler",
+                    "Sound Design: Stephen \"Shaido\" Bollinger",
+                    "Writer: Lance Boac"
+                ]
+            },
+            {
+                "name" : "Boxmen",
+                "description" : "A Punch-Out!! inspired game where you box against a variety of fighters, all with different attacks and adaptations.",
+                "engine" : "GameMaker Studio 2",
+                "images": [
+                    "images/2023/Boxmen.png"
+                ],
+                "roster" : [
+                    "Project Lead: Caleb Moesner",
+                    "Programmer: Caleb Moesner",
+                    "Artist: Caleb Moesner"
+                ],
+                "links": [
+                    {
+                        "text" : "Video",
+                        "href" : "https://www.youtube.com/watch?v=G2nUc0KkNhg",
+                        "icon" : "video_library"
+                    }
+                ]
+            },
+            {
+                "name" : "Undead Ambush",
+                "description" : "A top down arcade-style zombie shooter that features many different enemies, wave variations, and weapons. It is planned to have a endless mode, and a short story mode as well.",
+                "engine" : "Unity",
+                "images" : [
+                    "images/2022/Undead_Ambush_1.png"
+                ],
+                "roster" : [
+                    "Project Lead: Rick Jenkins",
+                    "Programmer: Rick Jenkins",
+                    "Artist: Rick Jenkins",
+                    "Composer: Ava J.",
+                    "Sound Design: Heath Franklin"
+                ],
+                "links": [
+                    {
+                        "text" : "Video",
+                        "href" : "images/2023/Undead_Ambush_Demo_Video.mp4",
+                        "icon" : "video_library"
+                    },
+                    {
+                        "text": "Play",
+                        "href": "https://itsjustrick12.itch.io/undead-ambush",
+                        "icon": "laptop"
+                    }
+                ]
+            },
+            {
+                "name": "VNZ",
+                "engine": "Godot",
+                "description": "A narrative-focused JRPG-inspired game with a turn-based battle grid.",
+                "images" : [
+                    "images/2023/VNZ.png"
+                ],
+                "roster": [
+                    "Project Lead: Chidube Ibe",
+                    "Programmer: Daniel Geronilla",
+                    "Artist: Rachel Capria",
+                    "Writer: Chidube Ibe"
+                ]
+            },
+            {
+                "name": "Daylight",
+                "engine": "Unity",
+                "description": "You are a newly appointed warrior of a town of dogs to brave the dangerous, monster ridden outside world. In this 2D adventure, you collect survival resources and fight enemies to keep the town safe. But how much longer can the warriors hold the monsters back?",
+                "tagline": "2D side scrolling story based adventure game",
+                "images": [
+                    "images/2023/Daylight.png",
+                    "images/2023/Daylight_2.png",
+                    "images/2023/Daylight_3.png",
+                    "images/2022/Sword_Dog_Game.png",
+                    "images/2022/Sword_Dog_Game_2.png",
+                    "images/2022/Sword_Dog_Game_3.png"
+                ],
+                "roster": [
+                    "Project Lead: Ky \"Lupidcorvid\" DeSilva",
+                    "Programmers: Evan McRae, Ryan Whitfield, Jeremy Niles, Shayan Khan",
+                    "Artists: Ky \"Lupidcorvid\" DeSilva, Anthony Ho, Zia Animashaun, Myah Jackson Solomon, Abi Lehr",
+                    "Composers: Evan McRae, Malachi White, Josh Epstein",
+                    "Sound Design: Malachi White",
+                    "Writers: Sydnee Conigland, El Fishman"
+                ],
+                "links" : [
+                    {
+                        "text" : "Video",
+                        "href" : "https://www.youtube.com/watch?v=BYjZGRyrstM",
+                        "icon" : "video_library"
+                    },
+                    {
+                        "text" : "Combat Demo",
+                        "href" : "images/2023/Daylight_Video.mp4",
+                        "icon" : "video_library"
+                    }
+                ]
+            }
+
+        ]
+    },
     "2022": {
         "2022-2023 Games": [
             {
@@ -124,7 +322,7 @@
             },
             {
                 "name" : "Undead Ambush",
-                "description" : "An top down arcade-style zombie shooter that features many different enemies, wave variations, and weapons. It is planned to have a endless mode, and a short story mode as well.",
+                "description" : "A top down arcade-style zombie shooter that features many different enemies, wave variations, and weapons. It is planned to have a endless mode, and a short story mode as well.",
                 "engine" : "Unity",
                 "images" : [
                     "images/2022/Undead_Ambush_1.png"
@@ -200,7 +398,7 @@
                 "description": "An action rouge-lite with checkpoints, leveling and gem progression as well as quests from the various townspeople and NPCs. You are a Grave Digger that found a magic book while digging a new grave and it sucked you in to a fantasy world and you need to work your way through a dungeon to escape the book. Your weapon is the shovel that got sucked in with you, and you can socket it with gems, to give yourself new abilities and such as you explore the dungeon.",
                 "roster": [
                     "Project Lead: Stephen \"Shaido\" Bollinger",
-                    "Programmers: Allison Smith, Kyle Williford, Macaela Morrison, Jeremy Nilles, Kurt Drexel",
+                    "Programmers: Al Smith, Kyle Williford, Macaela Morrison, Jeremy Nilles, Kurt Drexel",
                     "Sound Design: Stephen \"Shaido\" Bollinger",
                     "Artists: Stephen \"Shaido\" Bollinger, Felicia Edet, Macaela Morrison"
                 ]
@@ -569,7 +767,7 @@
             {
                 "name": "Elderville",
                 "roster": [
-                    "Allison Smith: Project Lead, Programmer",
+                    "Al Smith: Project Lead, Programmer",
                     "Spencer Lawrence: Project Lead, Programmer",
                     "Isaiah Swinton: Mechanic Designer, Programmer",
                     "Cade Christianson: Writer, Programmer",
