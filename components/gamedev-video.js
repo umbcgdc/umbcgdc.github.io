@@ -1,6 +1,6 @@
 // <gamedev-video src="#"></gamedev-video>
 
-Vue.component('gamedev-video', {
+app.component('gamedev-video', {
 props: {
   src: {
     type: String,

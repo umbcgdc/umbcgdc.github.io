@@ -28,8 +28,9 @@
 </div>
 
 <script src="js/vue.min.js"></script>
+<script src="components/gamedev-template.js"></script>
 <script>
-  Vue.component('redbubble-embed', {
+  app.component('redbubble-embed', {
     template: `
       <iframe class="full-image" src="https://www.redbubble.com/people/gamedevclub/external-portfolio?count=4" scrolling="no" allowtransparency="true" width="506" :height="redBubbleHeight" frameborder="0"></iframe>
     `,
@@ -40,7 +41,7 @@
     }
   })
 </script>
-<script src="components/gamedev-template.js"></script>
+<script>app.mount('#gamedev-root')</script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 //
 
-Vue.component('gamedev-games-list', {
+app.component('gamedev-games-list', {
   template: `
   <div>
 

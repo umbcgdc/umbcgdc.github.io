@@ -1,7 +1,7 @@
 // <gamedev-dropdown [:open="false"] label="some text">
 //   content
 // </gamedev-dropdown>
-Vue.component('gamedev-dropdown', {
+app.component('gamedev-dropdown', {
 props: {
   open: {
     type: Boolean,
@@ -43,51 +43,6 @@ computed: {
     return {
       hidden: this.closed
     }
-  }
-}
-});
-
-// <gamedev-expand-all [label="" expand="Expand All" close="Close All"]>
-//   content
-// </gamedev-expand-all>
-Vue.component('gamedev-expand-all', {
-props: {
-  label: {
-    type: String,
-    default: ''
-  },
-  expand: {
-    type: String,
-    default: 'Expand All'
-  },
-  close: {
-    type: String,
-    default: 'Close All'
-  }
-},
-template: `
-<div>
-  <h1>
-    {{ label }}
-    <button @click="toggleAll">
-      <h3>{{ closed ? expand : close }}</h3>
-    </button>
-  </h1>
-  <slot></slot>
-</div>
-`,
-data() {
- return {
-   closed: true
- }
-},
-methods: {
-  toggleAll() {
-    let sectionDropdowns = this.$children;
-    for (let dropdown of sectionDropdowns) {
-      dropdown.closed = !this.closed;
-    }
-    this.closed = !this.closed;
   }
 }
 });

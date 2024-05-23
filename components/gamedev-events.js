@@ -5,7 +5,7 @@
 
 const eventNodesToGet = ['PostedAt', 'Title', 'Tagline', 'Body', 'Summary', 'Website'];
 
-Vue.component('gamedev-events', {
+app.component('gamedev-events', {
 props: {
   noPosts: {
     type: String,
@@ -44,7 +44,6 @@ template: `
 `,
 data() {
   return {
-    feed: '',
     loading: true,
     xmlError: false,
     events: []
@@ -57,6 +56,7 @@ methods: {
   loadData () {
     this.xmlError = false;
 
+    console.log(this.feed);
     fetch(this.feed)
       .then(response => response.text())
       .then(str => new window.DOMParser().parseFromString(str, "text/xml"))

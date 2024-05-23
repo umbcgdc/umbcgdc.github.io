@@ -2,7 +2,7 @@
 // gamedev-image-viewer: image viewer, takes an array of images to display
 // gamedev-game-display: shows a game, includes an image viewer
 
-Vue.component('gamedev-image-viewer', {
+app.component('gamedev-image-viewer', {
 
 props: {
   images: {
@@ -86,7 +86,7 @@ methods: {
 });
 
 
-Vue.component('gamedev-game-display', {
+app.component('gamedev-game-display', {
 
 props: {
   game: {

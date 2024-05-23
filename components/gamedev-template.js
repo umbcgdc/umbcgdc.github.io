@@ -1,5 +1,32 @@
+// root element usable on all pages
+const { createApp } = Vue;
+const app = createApp({
+  data() {
+    return {
+      theme: localStorage.getItem('theme') || 'dark-theme'
+    }
+  },
+  created() {
+    document.body.className = this.theme;
+  },
+  methods: {
+    themeChange() {
+      // update the theme when it's changed
+      this.theme = document.body.className;
+    }
+  },
+  computed: {
+    twitterTheme() {
+      return this.theme.slice(0, -6)
+    },
+    twitterHeight() {
+      return window.innerHeight > window.innerWidth ? '80vh' : '35vw';
+    }
+  }
+});
+
 // <gamedev-nav></gamedev-nav>
-Vue.component('gamedev-nav', {
+app.component('gamedev-nav', {
 
 template: `
 <nav class="gamedev-nav">
@@ -111,7 +138,7 @@ methods: {
 // <header id="header">
 //   <gamedev-header></gamedev-header>
 // </header>
-Vue.component('gamedev-header', {
+app.component('gamedev-header', {
 
 template: `
 <header :style="main">
@@ -155,7 +182,7 @@ methods: {
 //   <gamedev-footer></gamedev-footer>
 // </footer>
 
-Vue.component('gamedev-footer', {
+app.component('gamedev-footer', {
 
 template: `
 <footer style="padding-bottom: 2rem;">
@@ -191,31 +218,6 @@ template: `
 </footer>
 `
 
-});
-
-// root element usable on all pages
-var gamedevRoot = new Vue({
-  el: '#gamedev-root',
-  data: {
-    theme: localStorage.getItem('theme') || 'dark-theme'
-  },
-  created() {
-    document.body.className = this.theme;
-  },
-  methods: {
-    themeChange() {
-      // update the theme when it's changed
-      this.theme = document.body.className;
-    }
-  },
-  computed: {
-    twitterTheme() {
-      return this.theme.slice(0, -6)
-    },
-    twitterHeight() {
-      return window.innerHeight > window.innerWidth ? '80vh' : '35vw';
-    }
-  }
 });
 
 // load theme

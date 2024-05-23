@@ -54,7 +54,7 @@
   <p v-else>{{ tab }}</p>
 </button>
 
-<div v-show="currentTab=='Update Games List'">
+<div v-show="currentTab=='Update Site'">
 
 <section>
 <h2>So you are the webmaster, what do you do</h2>
@@ -140,6 +140,11 @@ roster: [
 </section>
 
 <section>
+  <h3>Updating Vue</h3>
+  <p>Vue is included in the repository rather than CDN, so to update it, please download it from CDN. You can find links to the recent files through Vue's <a href="https://vuejs.org/guide/quick-start.html">quick start.</a></p>
+</section>
+
+<section>
   <h3>What's this Warhorse thingy?</h3>
   <p>Once upon a time, there was a CMSC 202 project called Warhorse...the person making this website decided to include a js version of said project for memes.</p>
 </section>
@@ -172,18 +177,20 @@ roster: [
 
 <p>The source files for the components are found in the "components" folder, and they all start with the prefix "gamedev-". Check them out if you're familiar with Vue or just want to look at the html templates and css classes.</p>
 
-<p>To use components, you need 3 things:</p>
+<p>To use components, you need 4 things:</p>
 <ul>
   <li>Include Vue: The components require Vue to work, so makes sure the page has included vue with:
     <textarea readonly><script src="js/vue.min.js"></script></textarea>
   </li>
+  <li>Include the template component: The template component creates a Vue app (necessary to use components). It also includes the header and footer components; they don't need to be included separately.</li>
+    <textarea readonly><script src="components/gamedev-template.js"></script></textarea>
   <li>Include the script of the component you want: Each component is contained in a js file that has to be included. Check the <a href="#" @click="currentTab='Component Properties'">full list</a> of which components are in which file.</li>
     <textarea readonly><script src="components/gamedev-some-component.js"></script></textarea>
-  <li>Include the template component: The template component creates a Vue element (necessary to use components). It also includes the header and footer components; they don't need to be included separately.</li>
-    <textarea readonly><script src="components/gamedev-template.js"></script></textarea>
+  <li>Start up the app!</li>
+    <textarea readonly><script>app.mount('#gamedev-root')</script></textarea>
 </ul>
 
-<p>Then, you can use the components just like you would use a normal html element. For example, you can make a dropdown like this, and it automatically applies the styling and functionality of the dropdown component:</p>
+<p>You can use the components just like you would use a normal html element. For example, you can make a dropdown like this, and it automatically applies the styling and functionality of the dropdown component:</p>
 <textarea readonly>
   <gamedev-dropdown label="Example label">
     <p>Some content here!</p>
@@ -196,8 +203,8 @@ roster: [
 </section>
 
 <section>
-<h3>Why didn't you use webpack/.vue files/something else?</h3>
-<p>My main goal was to make the website as easy to edit as possible for someone with knowledge of only html5/css3. With this type of component registration, whoever is maintaining the website just has to include the scripts and then write html with a few extra elements, and there is (hopefully) no confusion over scoped css or the framework itself.</p>
+<h3>Why didn't you use webpack/vite/something else?</h3>
+<p>My main goal was to make the website as easy to edit as possible for someone with knowledge of only html5/css3. With this type of component registration, whoever is maintaining the website just has to include the scripts and then write html with a few extra elements, and there is (hopefully) no confusion over scoped css or the framework itself. This also uses Options API rather than Composition API as it's closer to what is taught in required UMBC CS classes.</p>
 <h3>Additional notes</h3>
 <p>If you end up inserting content using Vue's "mustaches", remember to include v-cloak on the element so the content won't show until Vue has loaded.</p>
 </section>
@@ -206,7 +213,7 @@ roster: [
 
 <div v-show="currentTab=='Component Properties'">
 
-<gamedev-expand-all label="List of Components and Properties">
+<h1>List of Components and Properties</h1>
 <h3>If you make a new page you might want to use some of these to make your life easier</h3>
 <p>Properties in [ ] are optional.</p>
 <p>Non-string properties must be listed with a colon in front, like :property="value".</p>
@@ -220,38 +227,22 @@ roster: [
     <li>[open]: <i>true</i> if the dropdown should be open be default.</li>
     <li>label: the text on the dropdown.</li>
   </ul>
-</gamedev-dropdown>
-<gamedev-dropdown label="gamedev-expand-all">
-  <p>Creates a button you can click to open all dropdowns directly inside this component.</p>
-  <p>Properties:</p>
-  <ul>
-    <li>[label]: a section header if you want.</li>
-    <li>[expand]: the text to display on the button. "Expand All" by default.</li>
-    <li>[close]: the text to display on the button after it was clicked. "Close All" by default.</li>
-  </ul>
-</gamedev-dropdown>
-<gamedev-dropdown label="Example">
   <textarea readonly style="height:15em">
-  <gamedev-expand-all label="Header">
-  
-    <gamedev-dropdown :open="true" label="some text">
-      <p>Some content</p>
-    </gamedev-dropdown>
-  
-    <gamedev-dropdown label="other text">
-      <p>More content</p>
-    </gamedev-dropdown>
-  
-  </gamedev-expand-all>
+  <gamedev-dropdown :open="true" label="An open tab">
+    <p>Some content</p>
+  </gamedev-dropdown>
+
+  <gamedev-dropdown label="A closed tab">
+    <p>More content</p>
+  </gamedev-dropdown>
   </textarea>
-  <gamedev-expand-all label="Header">
-    <gamedev-dropdown :open="true" label="An open tab">
-      <p>Some content</p>
-    </gamedev-dropdown>
-    <gamedev-dropdown label="A closed tab">
-      <p>More content</p>
-    </gamedev-dropdown>
-  </gamedev-expand-all>
+  <gamedev-dropdown :open="true" label="An open tab">
+    <p>Some content</p>
+  </gamedev-dropdown>
+
+  <gamedev-dropdown label="A closed tab">
+    <p>More content</p>
+  </gamedev-dropdown>
 </gamedev-dropdown>
 
 </section> <!--END DROPDOWNS-->
@@ -264,8 +255,6 @@ roster: [
   <ul>
     <li>src: a link to the video.</li>
   </ul>
-</gamedev-dropdown>
-<gamedev-dropdown label="Example">
   <textarea readonly>
 <gamedev-video src="https://www.youtube.com/embed/?listType=playlist&list=UUIKfaNXsz7qUd366ayobr-Q"></gamedev-video>
   </textarea>
@@ -321,18 +310,17 @@ roster: [
       <li>images: an array of images.</li>
     </ul>
   </gamedev-dropdown>
-  </section> <!--END GAMES-->
-
-</gamedev-expand-all>
+</section> <!--END GAMES-->
 
 </div>
 
-</div> <!--END MAIN CONTENT-->
+</main> <!--END MAIN CONTENT-->
 
 <script src="../js/vue.min.js"></script>
+<script src="readme.js"></script>
 <script src="../components/gamedev-dropdown.js"></script>
 <script src="../components/gamedev-video.js"></script>
-<script src="readme.js"></script>
+<script>app.mount('#main');</script>
 </body>
 
 </html>
