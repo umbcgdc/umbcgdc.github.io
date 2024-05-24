@@ -232,16 +232,14 @@ footer .copyright {
 
 /* Fade in animation */
 
-.appear-enter-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 
-.appear-enter {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
-}
-
-.appear-enter-move {
-  transition: transform 1s;
 }
 
 /* theme colors */

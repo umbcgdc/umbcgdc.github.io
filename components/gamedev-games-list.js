@@ -1,4 +1,4 @@
-//
+// gamedev-games-list: loads games list and creates grid and year select. uses gamedev-game-display
 
 app.component('gamedev-games-list', {
   template: `
@@ -38,7 +38,7 @@ app.component('gamedev-games-list', {
 
     </ul>
 
-    <transition name="appear">
+    <Transition name="fade">
       <div v-if="currentGameOpen!=null">
         <div class="modal-background" @click="closeGameDisplay">
         </div>
@@ -47,7 +47,7 @@ app.component('gamedev-games-list', {
           @close="closeGameDisplay">
         </gamedev-game-display>
       </div>
-  </transition>
+    </Transition>
 
   </div>
   `,
@@ -62,8 +62,8 @@ app.component('gamedev-games-list', {
   methods: {
     async loadGames() {
       // get games from local file
-      let response = await fetch('./games.json')
-      this.games = await response.json()
+      let response = await fetch('./games.json');
+      this.games = await response.json();
       this.years = Object.keys(this.games);
 
       // find the newest year up to this year
