@@ -7,21 +7,6 @@
   <link rel="shortcut icon" href="ui/logo.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <style>
-    .twitter-timeline {
-      width: 100vw !important;
-    }
-    .twitter-outline {
-      border: 1px solid rgba(145,165,180,.6);
-      border-radius: 5px;
-    }
-    @media screen and (max-width: 800px) {
-      /* allow twitter scroll iOS */
-      .timeline-Viewport {
-        -webkit-overflow-scrolling: touch;
-      }
-    }
-  </style>
 
   <title>UMBC Game Developers Club</title>
 </head>
@@ -29,13 +14,9 @@
 <body>
 
 <div id="gamedev-root">
-<gamedev-header @theme-change="themeChange"></gamedev-header>
+<gamedev-header></gamedev-header>
 
 <main role="main" class="main">
-
-  <h2><a href="/direct">UMBC Game Developers Direct</a></h2>
-
-  <hr>
 
   <h1>Welcome to the UMBC Game Developers Club</h1>
   <p>The UMBC Game Developers Club is a professional, career-focused club dedicated to bringing students of all majors together to learn about game development, learn in a team-based environment, network, and improve our resumes and portfolios to get jobs upon graduation.</p>
@@ -52,9 +33,8 @@
       <gamedev-video src="https://www.youtube.com/embed/?listType=playlist&list=UUIKfaNXsz7qUd366ayobr-Q"></gamedev-video>
     </div>
     <div class="column">
-      <div class="twitter-outline" id="tweets">
-        <a class="twitter-timeline" :data-theme="twitterTheme" :data-height="twitterHeight" href="https://twitter.com/umbcGameDev">Tweets by @umbcGameDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
+      <h2 style="text-align:center">Check out some of our games!</h2>
+      <gamedev-games-sample></gamedev-games-sample>
     </div>
   </div>
 
@@ -66,7 +46,8 @@
 <script src="js/vue.min.js"></script>
 <script src="components/gamedev-template.js"></script>
 <script src="components/gamedev-video.js"></script>
-<script>app.mount('#gamedev-root')</script>
+<script src="components/gamedev-games-sample.js"></script>
+<script>app.mount('#gamedev-root');</script>
 </body>
 
 </html>

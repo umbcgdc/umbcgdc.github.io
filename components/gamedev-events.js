@@ -56,7 +56,6 @@ methods: {
   loadData () {
     this.xmlError = false;
 
-    console.log(this.feed);
     fetch(this.feed)
       .then(response => response.text())
       .then(str => new window.DOMParser().parseFromString(str, "text/xml"))

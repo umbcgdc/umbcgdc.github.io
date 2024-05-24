@@ -14,14 +14,6 @@ const app = createApp({
       // update the theme when it's changed
       this.theme = document.body.className;
     }
-  },
-  computed: {
-    twitterTheme() {
-      return this.theme.slice(0, -6)
-    },
-    twitterHeight() {
-      return window.innerHeight > window.innerWidth ? '80vh' : '35vw';
-    }
   }
 });
 
