@@ -177,7 +177,11 @@
   background: white;
 }
 
+/* mobile styles */
 @media screen and (max-width: 800px) {
+  .game-card {
+    width: 50%; /* only display 2 per row */
+  }
   .modal {
     overflow-y: auto;
   }

@@ -2,8 +2,8 @@
 
 app.component('gamedev-games-sample', {
   template: `
-  <div>
-    <article v-for="game of games" :style="styleBox">
+  <article style="min-height: 40vh;">
+    <div v-for="game of games" style="position: relative;">
       <Transition name="fade">
         <div v-if="games[current].name==game.name" :style="styleCard">
           <a :href="currentHref">
@@ -12,8 +12,8 @@ app.component('gamedev-games-sample', {
           </a>
         </div>
       </Transition>
-    </article>
-  </div>
+    </div>
+  </article>
   `,
   data() {
     return {
@@ -21,12 +21,10 @@ app.component('gamedev-games-sample', {
       games: [],
       current: 0,
       timer: null,
-      styleBox: {
-        position: 'relative'
-      },
       styleCard: {
         textAlign: 'center',
         width: '100%',
+        minHeight: '30vh',
         // keep the images at top during fade
         position: 'absolute',
         top: '0'
