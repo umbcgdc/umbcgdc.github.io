@@ -1,5 +1,228 @@
 {
     "2023": {
+        "2023-2024 Year Games": [
+            {
+                "name": "Super Palette Swapper",
+                "engine": "GameMaker",
+                "tagline": "Become the legendary Rainbow Champion!",
+                "description": "A 2D platformer that follows the journey of two artists reclaiming their collection of prized magical paints. Each color of paint added to the player's palette grants a unique ability that they can use to further traverse the levels or find once inaccessible secrets.",
+                "images": [
+                    "images/2022/Super_Palette_Swapper.png",
+                    "images/2023/Super_Palette_Swapper_6.png",
+                    "images/2023/Super_Palette_Swapper_2.png",
+                    "images/2023/Super_Palette_Swapper_7.png",
+                    "images/2023/Super_Palette_Swapper_8.png",
+                    "images/2023/Super_Palette_Swapper_9.png",
+                    "images/2023/Super_Palette_Swapper_10.png",
+                    "images/2023/Super_Palette_Swapper_11.png",
+                    "images/2023/Super_Palette_Swapper_12.png",
+                    "images/2023/Super_Palette_Swapper_13.png",
+                    "images/2023/Super_Palette_Swapper_14.png"
+                ],
+                "roster": [
+                    "Project Lead: Scott Serafin",
+                    "Programmers: Scott Serafin, Isaiah Hull, Evan McRae",
+                    "Artists: Salad Chen, Al Smith, Scott Serafin, Isaiah Hull, Sam Mengel, Julia Nau, Meshie",
+                    "Composer: Scott Serafin",
+                    "Writers: Salad Chen, Scott Serafin"
+                ],
+                "links": [
+                    {
+                        "text" : "Video [Aqua Build]",
+                        "href" : "https://www.youtube.com/watch?v=_MVY0_go9OQ",
+                        "icon" : "video_library"
+                    },
+                    {
+                        "text" : "Play [Black Build]",
+                        "href" : "https://averyicypenguin.itch.io/super-palette-swapper",
+                        "icon" : "laptop"
+                    },
+                    {
+                        "text" : "Twitter",
+                        "href" : "https://twitter.com/@SuperPalSwapper",
+                        "icon" : "chat_bubble"
+                    }
+                ]
+            },
+            {
+                "name": "Daylight",
+                "engine": "Unity",
+                "description": "You are a newly appointed warrior of a town of dogs to brave the dangerous, monster ridden outside world. In this 2D adventure, you collect survival resources and fight enemies to keep the town safe. But how much longer can the warriors hold the monsters back?",
+                "tagline": "2D side scrolling story based adventure game",
+                "images": [
+                    "images/2023/Daylight.png",
+                    "images/2023/Daylight_2.png",
+                    "images/2023/Daylight_3.png",
+                    "images/2023/Daylight_4.png",
+                    "images/2023/Daylight_5.png",
+                    "images/2023/Daylight_6.png"
+                ],
+                "roster": [
+                    "Project Lead: Ky DeSilva",
+                    "Project Manager: Myah Jackson-Solomon",
+                    "Programmers: Evan McRae, Ryan Whitfield, Jeremy Niles, Shayan Khan",
+                    "Artists: Ky DeSilva, Anthony Ho, Myah Jackson-Solomon, Abi Lehr, Nyla Williams",
+                    "Composers: Evan McRae, Malachi White, Josh Epstein",
+                    "Sound Design: Malachi White",
+                    "Writers: Sydnee Conigland"
+                ],
+                "links" : [
+                    {
+                        "text" : "First Video",
+                        "href" : "https://www.youtube.com/watch?v=BYjZGRyrstM",
+                        "icon" : "video_library"
+                    },
+                    {
+                        "text" : "Combat Video",
+                        "href" : "images/2023/Daylight_Video.mp4",
+                        "icon" : "video_library"
+                    },
+                    {
+                        "text" : "Play (password: dog)",
+                        "href" : "https://lupidcorvid.itch.io/daylight-demo-1 ",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name" : "Boxmen",
+                "description" : "A Punch-Out!! inspired game where you box against a variety of fighters, all with different attacks and adaptations.",
+                "engine" : "GameMaker",
+                "images": [
+                    "images/2023/Boxmen_2.png"
+                ],
+                "roster" : [
+                    "Project Lead: Caleb Moesner",
+                    "Programmer: Caleb Moesner",
+                    "Artist: Caleb Moesner",
+                    "Composer: Caleb Moesner"
+                ],
+                "links": [
+                    {
+                        "text" : "Video",
+                        "href" : "https://www.youtube.com/watch?v=lKZEG3l5UVY",
+                        "icon" : "video_library"
+                    },
+                    {
+                        "text" : "Play",
+                        "href" : "https://calbhonkman.itch.io/boxmen-demo",
+                        "icon" : "laptop"
+                    }
+                ]
+            }
+        ],
+        "2024 Spring Semester Games": [
+            {
+                "name": "Sandwich Bamwich",
+                "engine": "Pygame",
+                "description": "Combine the food ingredients in sets of three and work your way up the food chain in order to create a sandwich! Use the powerups to increase your chances!",
+                "images": [
+                    "images/2023/Sandwich_Bamwich.png"
+                ],
+                "roster": [
+                    "Project Lead: Toni Olafunmiloye",
+                    "Programmer: Toni Olafunmiloye",
+                    "Artist: Toni Olafunmiloye"
+                ],
+                "links": [
+                    {
+                        "text" : "Play",
+                        "href" : "https://tonio-tech.itch.io/sandwich-bamwich",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name": "Over the Moon",
+                "engine": "Godot",
+                "description": "Hop onto stars to arrive to your frog date on the moon while avoiding UFOs and thunderclouds!",
+                "images": [
+                    "images/2023/Over_the_Moon.png",
+                    "images/2023/Over_the_Moon_2.png"
+                ],
+                "roster": [
+                    "Project Lead: Sam Mengel",
+                    "Programmers: Sam Mengel, Evan McRae",
+                    "Artist: Sam Mengel"
+                ]
+            },
+            {
+                "name": "Breaking Down!",
+                "engine": "Unity",
+                "description": "Tear through enviorments using nothing but a baseball bat and pent up anger!",
+                "images": [
+                    "images/2023/Breaking_Down.png",
+                    "images/2023/Breaking_Down_2.png",
+                    "images/2023/Breaking_Down_3.png",
+                    "images/2023/Breaking_Down_4.png"
+                ],
+                "roster": [
+                    "Project Lead: Rick Jenkins",
+                    "Programmer: Rick Jenkins",
+                    "Artists: Toni Olafunmiloye, Rick Jenkins",
+                    "Composer: Heath Franklin"
+                ],
+                "links": [
+                    {
+                        "text" : "Play",
+                        "href" : "https://itsjustrick12.itch.io/breakingdown",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name" : "Astro Frenzy",
+                "engine": "PICO-8",
+                "tagline": "Astronaut-themed Minigame Mayhem",
+                "description": "A WarioWare-like game themed around outer space.",
+                "images": [
+                    "images/2023/Astro_Frenzy.png"
+                ],
+                "roster": [
+                    "Project Lead: Tom Sybert",
+                    "Programmer: Tom Sybert",
+                    "Artist: Tom Sybert"
+                ],
+                "links": [
+                    {
+                        "text" : "Play",
+                        "href" : "https://tomsybert.itch.io/project-astro",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name": "INSANITY",
+                "engine": "Wolf RPG Editor",
+                "description": "A normal farming game where nothing happens and n0 0ne has t0 die.",
+                "images": [
+                    "images/2023/INSANITY.png"
+                ],
+                "roster": [
+                    "Project Lead: Andrew Egan"
+                ]
+            },
+            {
+                "name": "B.O.X.E.S.",
+                "engine": "Phaser",
+                "description": "A block pushing puzzle game with a built in level editor and sharing feature",
+                "images": [
+                    "images/2023/BOXES.png"
+                ],
+                "roster": [
+                    "Project Lead: Jet Thompson",
+                    "Other Contributors: Jonathan Andersen-Taylor, Abdulrahman Mohammed Almuwarraee, Aidan Brown, Joss Blumberg"
+                ],
+                "links": [
+                    {
+                        "text" : "GitHub",
+                        "href" : "https://github.com/Jet-UMBC/cmsc447-sp2024-Ragdoll/",
+                        "icon" : "code"
+                    }
+                ]
+
+            }
+        ],
         "2023 Fall Semester Games": [
             {
                 "name": "Beat the Heat",
@@ -41,37 +264,6 @@
                 ]
             },
             {
-                "name": "Super Palette Swapper",
-                "engine": "GameMaker Studio 2",
-                "description": "A 2D platformer that follows the journey of two artists reclaiming their collection of prized magical paints. Each color of paint added to the player's palette grants the player a unique ability that they can use to further traverse the levels or find once inaccessible secrets.",
-                "images": [
-                    "images/2022/Super_Palette_Swapper.png",
-                    "images/2023/Super_Palette_Swapper_2.png",
-                    "images/2023/Super_Palette_Swapper_3.png",
-                    "images/2023/Super_Palette_Swapper_4.png",
-                    "images/2023/Super_Palette_Swapper_5.png"
-                ],
-                "roster": [
-                    "Project Lead: Scott Serafin",
-                    "Programmers: Scott Serafin, Evan McRae, Isaiah Hull",
-                    "Artists: Salad Chen, Al Smith, Julia Nau",
-                    "Composer: Scott Serafin",
-                    "Writers: Sydnee Conigland, Salad Chen"
-                ],
-                "links": [
-                    {
-                        "text" : "Video [Aqua Build]",
-                        "href" : "https://www.youtube.com/watch?v=_MVY0_go9OQ",
-                        "icon" : "video_library"
-                    },
-                    {
-                        "text" : "Play [Black Build]",
-                        "href" : "https://averyicypenguin.itch.io/super-palette-swapper",
-                        "icon" : "laptop"
-                    }
-                ]
-            },
-            {
                 "name": "Schweebo!",
                 "engine": "Unreal Engine 5",
                 "description": "A 3D puzzle platformer where you possess and use creatures to solve puzzles.",
@@ -97,26 +289,6 @@
                     "Composer: Noah Stuehler",
                     "Sound Design: Stephen \"Shaido\" Bollinger",
                     "Writer: Lance Boac"
-                ]
-            },
-            {
-                "name" : "Boxmen",
-                "description" : "A Punch-Out!! inspired game where you box against a variety of fighters, all with different attacks and adaptations.",
-                "engine" : "GameMaker Studio 2",
-                "images": [
-                    "images/2023/Boxmen.png"
-                ],
-                "roster" : [
-                    "Project Lead: Caleb Moesner",
-                    "Programmer: Caleb Moesner",
-                    "Artist: Caleb Moesner"
-                ],
-                "links": [
-                    {
-                        "text" : "Video",
-                        "href" : "https://www.youtube.com/watch?v=G2nUc0KkNhg",
-                        "icon" : "video_library"
-                    }
                 ]
             },
             {
@@ -159,49 +331,14 @@
                     "Artist: Rachel Capria",
                     "Writer: Chidube Ibe"
                 ]
-            },
-            {
-                "name": "Daylight",
-                "engine": "Unity",
-                "description": "You are a newly appointed warrior of a town of dogs to brave the dangerous, monster ridden outside world. In this 2D adventure, you collect survival resources and fight enemies to keep the town safe. But how much longer can the warriors hold the monsters back?",
-                "tagline": "2D side scrolling story based adventure game",
-                "images": [
-                    "images/2023/Daylight.png",
-                    "images/2023/Daylight_2.png",
-                    "images/2023/Daylight_3.png",
-                    "images/2022/Sword_Dog_Game.png",
-                    "images/2022/Sword_Dog_Game_2.png",
-                    "images/2022/Sword_Dog_Game_3.png"
-                ],
-                "roster": [
-                    "Project Lead: Ky \"Lupidcorvid\" DeSilva",
-                    "Programmers: Evan McRae, Ryan Whitfield, Jeremy Niles, Shayan Khan",
-                    "Artists: Ky \"Lupidcorvid\" DeSilva, Anthony Ho, Zia Animashaun, Myah Jackson Solomon, Abi Lehr",
-                    "Composers: Evan McRae, Malachi White, Josh Epstein",
-                    "Sound Design: Malachi White",
-                    "Writers: Sydnee Conigland, El Fishman"
-                ],
-                "links" : [
-                    {
-                        "text" : "Video",
-                        "href" : "https://www.youtube.com/watch?v=BYjZGRyrstM",
-                        "icon" : "video_library"
-                    },
-                    {
-                        "text" : "Combat Demo",
-                        "href" : "images/2023/Daylight_Video.mp4",
-                        "icon" : "video_library"
-                    }
-                ]
             }
-
         ]
     },
     "2022": {
-        "2022-2023 Games": [
+        "2022-2023 Year Games": [
             {
                 "name": "Super Palette Swapper",
-                "engine": "GameMaker Studio 2",
+                "engine": "GameMaker",
                 "description": "A 2D platformer that follows the journey of two artists reclaiming their collection of prized magical paints. Each color of paint added to the player's palette grants the player a unique ability that they can use to further traverse the levels or find once inaccessible secrets.",
                 "images": [
                     "images/2022/Super_Palette_Swapper.png"
@@ -280,7 +417,7 @@
             {
                 "name": "What Remains Unseen",
                 "description": "A psychological horror game where you play as a librarian working in your small town's grand library. Form bonds with other residents and learn more about this mysterious town during the day. Then, brave the night shift without letting your fear consume you. Complete your tasks and clock out before what lurks in the dark catches up to you... or is there something else that remains unseen?",
-                "engine": "GameMaker Studio 2",
+                "engine": "GameMaker",
                 "roster": [
                     "Project Lead: Billie Allen",
                     "Programmers: Justin Tony, Caleb Sparks",
@@ -294,7 +431,7 @@
             {
                 "name" : "Boxmen",
                 "description" : "A Punch-Out!! inspired game where you box against a variety of fighters, all with different attacks and adaptations.",
-                "engine" : "GameMaker Studio 2",
+                "engine" : "GameMaker",
                 "roster" : [
                     "Project Lead: Caleb Moesner",
                     "Programmer: Caleb Moesner",
