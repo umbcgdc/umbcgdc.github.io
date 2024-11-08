@@ -1,4 +1,148 @@
 {
+    "2024": {
+        "2024 Fall Semester Games": [
+            {
+                "name": "Project M&L",
+                "engine": "Godot",
+                "description": "In an uncharted cavern, hosting a civilization littered in criminal activity, a notably accomplished criminal forcibly exiles himself in order to avoid his execution. Escaped into the surface world and feeling betrayed by the people he thought he could trust, he aims to wiggle his way back into the cavern and throw it into tyranny, showing no remorse to anyone or anything while on the surface. His reckless actions cause chain reactions that deeply impact the lives on the surface, particularly Bruce, Milo, and Phoebe. As the criminal's plans get more and more drastic, it's up to the trio to team up, track this criminal down, and shut him down before he gets in too deep for anyone to stop him.",
+                "images": [
+                    "images/2024/M&L.png",
+                    "images/2024/M&L_2.png",
+                    "images/2024/M&L_3.png",
+                    "images/2024/M&L_4.gif",
+                    "images/2024/M&L_5.gif"
+                ],
+                "roster": [
+                    "Project Lead: Sam Mengel",
+                    "Programmer: Brandon Griffin",
+                    "Artist: Sam Mengel",
+                    "Writers: Sam Mengel, Ahat Siddiqui",
+                    "Composers: Isaiah Turner, Sam Mengel"
+                ]
+            },
+            {
+                "name": "Star of Artifice",
+                "engine": "Godot",
+                "tagline": "Save our Sun",
+                "description": "A 2D turn-based RPG that takes place in the fantasy planet of Cepheid, whose natural sun had dissipated aeons ago and replaced with an artificial one, dividing the world into a Realm where only the artificial sun shines, and one where only the moon thrives. After an accident results in the destruction of the artificial sun, the world is plunged into darkness and overtaken by Entropy, a corruptive force that transforms living beings into monstrosities. Gather your party. Find your light. Remember what's lost. Don the mask of the \"hero\".",
+                "images": [
+                    "images/2024/Star_of_Artifice.png"
+                ],
+                "roster": [
+                    "Project Lead: Beatriz Cardenas",
+                    "Programmers: Jet Thompson, Taurus Hink, Paul Abili, Kyle Gardner, James Ace",
+                    "Artists: Beatriz Cardenas, Yaseen Hussain, Tyler Stewart",
+                    "Composer: Joshua Epstein",
+                    "Writers: Beatriz Cardenas, Yaseen Hussain, Tyler Steward, Kyle Gardner, James Ace"
+                ]
+            },
+            {
+                "name": "Starlight",
+                "engine": "Ren'py",
+                "tagline": "An interplanetary furry visual novel where the relationships you build and the choices you make decide the outcome of the story.",
+                "description": "Follow the journey of Arfred, a mercenary whose memories have been stolen from him and aid rebellion in the fight against the iron-grip of an interplanetary rule where your choices, reflexes, and relationships with the characters influence the ending of your story. Will you get justice for what you’ve lost? Or will you give in to the ones who kept you loyal?",
+                "images": [
+                    "images/2024/Starlight.png",
+                    "images/2024/Starlight_2.png",
+                    "images/2024/Starlight_3.png"
+                ],
+                "roster": [
+                    "Project Lead: Jaylen Jenkins",
+                    "Programmer: Jaylen Jenkins",
+                    "Artists: Scott Serafin, Ky DeSilva",
+                    "Composer: Sol Gelete"
+                ]
+            },
+            {
+                "name": "Untitled Fighting Game",
+                "engine": "Godot",
+                "tagline": "A 2D, hand-drawn, beginner friendly fighting game, with a side scrolling beat-em-up mode heavily inspired by Streets of Rage.",
+                "description": "Fight your way through city streets, snowy peaks, and jungle beats; spar with your friends and cooperate in “Hit the Streets”, or brave Arcade Mode to uncover the truth hidden behind the city lights.",
+                "images": [
+                    "images/2024/Untitled_Fighter.png",
+                    "images/2024/Untitled_Fighter_2.png",
+                    "images/2024/Untitled_Fighter_3.png",
+                    "images/2024/Untitled_Fighter_4.jpg",
+                    "images/2024/Untitled_Fighter_5.jpg",
+                    "images/2024/Untitled_Fighter_6.jpg",
+                    "images/2024/Untitled_Fighter_7.gif"
+                ],
+                "roster": [
+                    "Project Lead: Amen Tessera",
+                    "Programmers: Sophia Hamer, Caleb Sparks",
+                    "Artist: Amen Tessera"
+                ]
+            },
+            {
+                "name": "ToyBox Game",
+                "engine": "Godot",
+                "description": "ToyBox Game is a game about anthropomorphic stuffed animals that fight in a toy town. You play as Sammy, a squirrel who stands at four feet tall.",
+                "images": [
+                    "images/2024/Toybox_Game.png"
+                ],
+                "roster": [
+                    "Project Lead: Cole Gaither",
+                    "Programmer: Nathan Lee",
+                    "Artist: Cole Gaither",
+                    "QA: Juan Hall",
+                    "Voice Acting: Juan Hall"
+                ]
+            },
+            {
+                "name": "Daylight",
+                "engine": "Unity",
+                "description": "You are a newly appointed warrior of a town of dogs to brave the dangerous, monster ridden outside world. In this 2D adventure, you collect survival resources and fight enemies to keep the town safe. But how much longer can the warriors hold the monsters back?",
+                "tagline": "2D side scrolling story based adventure game",
+                "images": [
+                    "images/2023/Daylight.png",
+                    "images/2023/Daylight_2.png",
+                    "images/2023/Daylight_3.png",
+                    "images/2023/Daylight_4.png",
+                    "images/2023/Daylight_5.png",
+                    "images/2023/Daylight_6.png"
+                ],
+                "roster": [
+                    "Project Lead: Ky DeSilva",
+                    "Programmers: Evan McRae, Ryan Whitfield",
+                    "Artists: Ky DeSilva, Anthony Ho, Myah Jackson-Solomon, Abi Lehr, Cris Williams",
+                    "Composers: Evan McRae, Malachi White, Josh Epstein",
+                    "Sound Design: Malachi White",
+                    "Writers: Sydnee Conigland, Jaylen Jenkins, Scott Serafin"
+                ],
+                "links" : [
+                    {
+                        "text" : "Play (password: dog)",
+                        "href" : "https://lupidcorvid.itch.io/daylight-demo-1 ",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name": "Empress Invader",
+                "engine": "Unity",
+                "description": "A gloomy and confusing story about someone invading a castle with rooms that are entire worlds that become more dark and twisted the deeper you go into them, only to find someone that’s a little too much like them.",
+                "images": [
+                    "images/2024/Empress_Invader.png",
+                    "images/2024/Empress_Invader_2.png",
+                    "images/2024/Empress_Invader_3.png",
+                    "images/2024/Empress_Invader_4.png",
+                    "images/2024/Empress_Invader_5.png",
+                    "images/2024/Empress_Invader_6.png",
+                    "images/2024/Empress_Invader_7.jpg"
+                ],
+                "roster": [
+                    "Proejct Lead: Michael"
+                ],
+                "links" : [
+                    {
+                        "text" : "Concept Comic",
+                        "href" : "https://cubari.moe/read/imgur/DYTkfMQ/1",
+                        "icon" : "import_contacts"
+                    }
+                ]
+            }
+        ]
+    },
     "2023": {
         "2023-2024 Year Games": [
             {
