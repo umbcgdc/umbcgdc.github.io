@@ -120,7 +120,7 @@
             {
                 "name": "Empress Invader",
                 "engine": "Unity",
-                "description": "A gloomy and confusing story about someone invading a castle with rooms that are entire worlds that become more dark and twisted the deeper you go into them, only to find someone that’s a little too much like them.",
+                "description": "A gloomy and confusing story about someone invading a castle with rooms that are entire worlds that become more dark and twisted the deeper you go into them, only to find someone that's a little too much like them.",
                 "images": [
                     "images/2024/Empress_Invader.png",
                     "images/2024/Empress_Invader_2.png",
@@ -131,7 +131,7 @@
                     "images/2024/Empress_Invader_7.jpg"
                 ],
                 "roster": [
-                    "Proejct Lead: Michael"
+                    "Proejct Lead: Michael Hammond"
                 ],
                 "links" : [
                     {
@@ -139,6 +139,22 @@
                         "href" : "https://cubari.moe/read/imgur/DYTkfMQ/1",
                         "icon" : "import_contacts"
                     }
+                ]
+            },
+            {
+                "name": "Feral Fight",
+                "engine": "Godot",
+                "tagline": "A Turn-Based RPG where everyone turns into animals.",
+                "description": "In the year 20XX a catastrophic explosion in Lab 010 marked the escape of many dangerous anthropomorphic convicts. Using their special abilities of morphing into animals, these criminals need to learn how to fight in their new bodies in order to survive.",
+                "images": [
+                    "images/2024/Feral_Fight.png"
+                ],
+                "roster": [
+                    "Project Lead: Ifeoluwapo Akinlosotu",
+                    "Programmers: Mac Molina, Niko Tabernero-Zuniga, Seth L., Shayan Khan",
+                    "Artists: Ifeoluwapo Akinlosotu, Jay China",
+                    "Composer: Jay China",
+                    "Writers: Ifeoluwapo Akinlosotu, Seth L."
                 ]
             }
         ]
