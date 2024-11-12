@@ -23,8 +23,8 @@
             {
                 "name": "Star of Artifice",
                 "engine": "Godot",
-                "tagline": "Save our Sun",
-                "description": "A 2D turn-based RPG that takes place in the fantasy planet of Cepheid, whose natural sun had dissipated aeons ago and replaced with an artificial one, dividing the world into a Realm where only the artificial sun shines, and one where only the moon thrives. After an accident results in the destruction of the artificial sun, the world is plunged into darkness and overtaken by Entropy, a corruptive force that transforms living beings into monstrosities. Gather your party. Find your light. Remember what's lost. Don the mask of the \"hero\".",
+                "tagline": "Save Our Sun",
+                "description": "A 2D turn-based RPG that takes place in the fantasy planet of Cepheid, whose natural sun had dissipated aeons ago and replaced with an artificial one, dividing the world into two Realms, one where only the artificial sun shines, and one where only the moon thrives. After an accident results in the destruction of the artificial sun, the world is plunged into darkness and overtaken by Entropy, a corruptive force that transforms living beings into monstrosities. Gather your party, travel around the world, and find your light amongst the darkness.",
                 "images": [
                     "images/2024/Star_of_Artifice.png"
                 ],
