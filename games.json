@@ -2,7 +2,7 @@
     "2024": {
         "2024 Fall Semester Games": [
             {
-                "name": "Project M&L",
+                "name": "Scale Seekers: Bane of Biorift",
                 "engine": "Godot",
                 "description": "In an uncharted cavern, hosting a civilization littered in criminal activity, a notably accomplished criminal forcibly exiles himself in order to avoid his execution. Escaped into the surface world and feeling betrayed by the people he thought he could trust, he aims to wiggle his way back into the cavern and throw it into tyranny, showing no remorse to anyone or anything while on the surface. His reckless actions cause chain reactions that deeply impact the lives on the surface, particularly Bruce, Milo, and Phoebe. As the criminal's plans get more and more drastic, it's up to the trio to team up, track this criminal down, and shut him down before he gets in too deep for anyone to stop him.",
                 "images": [
@@ -44,13 +44,21 @@
                 "images": [
                     "images/2024/Starlight.png",
                     "images/2024/Starlight_2.png",
-                    "images/2024/Starlight_3.png"
+                    "images/2024/Starlight_3.png",
+                    "images/2024/Starlight_4.png"
                 ],
                 "roster": [
                     "Project Lead: Jaylen Jenkins",
                     "Programmer: Jaylen Jenkins",
-                    "Artists: Scott Serafin, Ky DeSilva",
+                    "Artists: Scott Serafin, Jaylen Jenkins, Ky DeSilva",
                     "Composer: Sol Gelete"
+                ],
+                "links": [
+                    {
+                        "text": "Play (password: Rojal)",
+                        "href": "https://phynthefox.itch.io/starlight",
+                        "icon": "laptop"
+                    }
                 ]
             },
             {
