@@ -1,6 +1,26 @@
 {
     "2024": {
-        "2024 Fall Semester Games": [
+        "2024-2025 Year Games": [
+            {
+                "name": "Untitled Fighting Game",
+                "engine": "Godot",
+                "tagline": "A 2D, hand-drawn, beginner friendly fighting game, with a side scrolling beat-em-up mode heavily inspired by Streets of Rage.",
+                "description": "Fight your way through city streets, snowy peaks, and jungle beats; spar with your friends and cooperate in “Hit the Streets”, or brave Arcade Mode to uncover the truth hidden behind the city lights.",
+                "images": [
+                    "images/2024/Untitled_Fighter.png",
+                    "images/2024/Untitled_Fighter_7.jpg",
+                    "images/2024/Untitled_Fighter_8.jpg",
+                    "images/2024/Untitled_Fighter_6.jpg",
+                    "images/2024/Untitled_Fighter_9.jpg",
+                    "images/2024/Untitled_Fighter_10.png",
+                    "images/2024/Untitled_Fighter_11.png"
+                ],
+                "roster": [
+                    "Project Lead: Amen Tessera",
+                    "Programmers: Sophia Hamer, Caleb Sparks",
+                    "Artist: Amen Tessera"
+                ]
+            },
             {
                 "name": "Scale Seekers: Bane of Biorift",
                 "engine": "Godot",
@@ -31,9 +51,9 @@
                 "roster": [
                     "Project Lead: Beatriz Cardenas",
                     "Programmers: Jet Thompson, Taurus Hink, Paul Abili, Kyle Gardner, James Ace",
-                    "Artists: Beatriz Cardenas, Yaseen Hussain, Tyler Stewart",
+                    "Artists: Beatriz Cardenas, Yaseen Hussain, Tyler Stewart, Dana Lawrence",
                     "Composer: Joshua Epstein",
-                    "Writers: Beatriz Cardenas, Yaseen Hussain, Tyler Steward, Kyle Gardner, James Ace"
+                    "Writers: Beatriz Cardenas, Yaseen Hussain, Tyler Steward, Kyle Gardner, James Ace, Andres Ramos Ortiz, Praxis Duda"
                 ]
             },
             {
@@ -49,7 +69,7 @@
                 "roster": [
                     "Project Lead: Jaylen Jenkins",
                     "Programmer: Jaylen Jenkins",
-                    "Artists: Scott Serafin, Jaylen Jenkins, Ky DeSilva",
+                    "Artists: Jaylen Jenkins, Ky DeSilva",
                     "Composer: Sol Gelete"
                 ],
                 "links": [
@@ -58,41 +78,6 @@
                         "href": "https://phynthefox.itch.io/starlight",
                         "icon": "laptop"
                     }
-                ]
-            },
-            {
-                "name": "Untitled Fighting Game",
-                "engine": "Godot",
-                "tagline": "A 2D, hand-drawn, beginner friendly fighting game, with a side scrolling beat-em-up mode heavily inspired by Streets of Rage.",
-                "description": "Fight your way through city streets, snowy peaks, and jungle beats; spar with your friends and cooperate in “Hit the Streets”, or brave Arcade Mode to uncover the truth hidden behind the city lights.",
-                "images": [
-                    "images/2024/Untitled_Fighter.png",
-                    "images/2024/Untitled_Fighter_2.png",
-                    "images/2024/Untitled_Fighter_3.png",
-                    "images/2024/Untitled_Fighter_4.jpg",
-                    "images/2024/Untitled_Fighter_5.jpg",
-                    "images/2024/Untitled_Fighter_6.jpg",
-                    "images/2024/Untitled_Fighter_7.gif"
-                ],
-                "roster": [
-                    "Project Lead: Amen Tessera",
-                    "Programmers: Sophia Hamer, Caleb Sparks",
-                    "Artist: Amen Tessera"
-                ]
-            },
-            {
-                "name": "ToyBox Game",
-                "engine": "Godot",
-                "description": "ToyBox Game is a game about anthropomorphic stuffed animals that fight in a toy town. You play as Sammy, a squirrel who stands at four feet tall.",
-                "images": [
-                    "images/2024/Toybox_Game.png"
-                ],
-                "roster": [
-                    "Project Lead: Cole Gaither",
-                    "Programmer: Nathan Lee",
-                    "Artist: Cole Gaither",
-                    "QA: Juan Hall",
-                    "Voice Acting: Juan Hall"
                 ]
             },
             {
@@ -125,6 +110,143 @@
                 ]
             },
             {
+                "name": "Feral Fight",
+                "engine": "Godot",
+                "tagline": "A Turn-Based RPG where everyone turns into animals.",
+                "description": "In the year 20XX a catastrophic explosion in Lab 010 marked the escape of many dangerous anthropomorphic convicts. Using their special abilities of morphing into animals, these criminals need to learn how to fight in their new bodies in order to survive.",
+                "images": [
+                    "images/2024/Feral_Fight.png",
+                    "images/2024/Feral_Fight_2.png",
+                    "images/2024/Feral_Fight_3.png"
+                ],
+                "roster": [
+                    "Project Lead: Ifeoluwapo Akinlosotu",
+                    "Programmers: Mac Molina, Niko Tabernero-Zuniga, Seth L., Shayan Khan",
+                    "Artists: Ifeoluwapo Akinlosotu",
+                    "Writers: Ifeoluwapo Akinlosotu, Seth L."
+                ]
+            }
+        ],
+        "2025 Spring Semester Games": [
+            {
+                "name": "Another Game",
+                "engine": "Unity",
+                "description": "Another Game is an RPG about a group of players who trigger the inevitable ruin of their world by playing a new video game (a la Homestuck), and they work together to fix their world by beating the game.",
+                "images": [
+                    "images/2024/Another_Game.jpg"
+                ],
+                "roster": [
+                    "Project Lead: Alimu Seesay",
+                    "Artist: Alimu Seesay",
+                    "Writers: Alimu Seesay, Shamita Nandeerswaran"
+                ]
+            },
+            {
+                "name": "Project Abyssa",
+                "engine": "Godot",
+                "description": "A 2D hack-and-slash pirate game",
+                "images": [
+                    "images/2024/Abyssa.png"
+                ],
+                "roster": [
+                    "Project Lead: Casey Something",
+                    "Programmer: Jacob Fruittree",
+                    "Artists: Mokke Miku, Airplanebro Symbols",
+                    "Writer: Casey Something"
+                ]
+            },
+            {
+                "name": "Spells & Potions",
+                "engine": "Tabletop Game",
+                "tagline": "A competitive card game about battling monsters and crafting spells and potions. Who will be the most worthy wizard?",
+                "description": "A competitive card game about battling monsters and crafting spells and potions. Gather the correct card combinations to cast damaging spells on the evil monsters and craft potions to assist or challenge yourself and your fellow wizards. With many bosses to choose from, battle them all until they fall. Who will be the most worthy wizard and leave with the highest damage count?",
+                "images": [
+                    "images/2024/Spells_and_Potions.jpg"
+                ],
+                "roster": [
+                    "Project Leads: Jay Cina, Karma Tobden, Izra Samson"
+                ],
+                "links": [
+                    {
+                        "text": "Rules",
+                        "href": "https://docs.google.com/document/d/1wxoxAVRL21AdxfQ0EtwspqlyI3rc_Xdb9XmJQJcUdEk/edit?usp=sharing",
+                        "icon": "description"
+                    }
+                ]
+            },
+            {
+                "name": "Tavernimals",
+                "engine": "Unity",
+                "tagline": "The collectathon platformer about foraging food for feverishly famished furry friends!",
+                "description": "In Tavernimals, you play as an animal who runs their own tavern. By collecting ingredients and recipes in the wild, the player can craft food to feed new faces and get to know them, and in return those characters can grant new abilities to traverse the world Metroidvania style.",
+                "images": [
+                    "images/2024/Tavernimals.png",
+                    "images/2024/Tavernimals_2.png"
+                ],
+                "roster": [
+                    "Project Lead: Scott Serafin",
+                    "Programmers: Evan McRae, Ryan Whitfield, Ky DeSilva, Scott Serafin",
+                    "Artist: Ky DeSilva",
+                    "Composers: Evan McRae, Scott Serafin",
+                    "Writer: Scott Serafin"
+                ]
+            },
+            {
+                "name": "Minecraft Distant Dreams",
+                "engine": "Minecraft Forge",
+                "tagline": "[!] DISCLAIMER: THIS IS NOT AN OFFICIAL MINECRAFT PRODUCT [!]",
+                "description": "A new Minecraft mod adding a new dimension for you to explore, the Distant Realm. This dimension is filled with sights familiar and new, and inhabited by prehistoric fauna of all sizes. Will you immerse yourself in this world's fauna or hunker down and protect yourself from what lurks in the shadows? It's up to you to decide.",
+                "images": [
+                    "images/2024/Distant_Dreams.png",
+                    "images/2024/Distant_Dreams_2.png",
+                    "images/2024/Distant_Dreams_3.png",
+                    "images/2024/Distant_Dreams_4.png",
+                    "images/2024/Distant_Dreams_5.png",
+                    "images/2024/Distant_Dreams_6.png",
+                    "images/2024/Distant_Dreams_7.png"
+                ],
+                "roster": [
+                    "Project Lead: Yaseen Hussain",
+                    "Programmers: Adrian Maldonaldo, Abhinna Das",
+                    "Artist: Yaseen Hussain",
+                    "Composer: Jacqueline W."
+                ]
+            },
+            {
+                "name": "Petal Paint",
+                "engine": "Godot",
+                "tagline": "A casual 2D single-player game where you play as a painter who makes paint and paintings.",
+                "description": "A casual 2D single-player game where you play as a painter who makes paint and paintings. Explore nature to collect colorful flowers and use them to mix and make paint! With an easel and a brush, paint your mind's eye.",
+                "images": [
+                    "images/2024/Petal_Paint.png"
+                ],
+                "roster": [
+                    "Project Lead: Jay Cina",
+                    "Programmer: Jay Cina",
+                    "Artist: Jay Cina",
+                    "Composer: Jay Cina",
+                    "Writer: Jay Cina"
+                ]
+            }
+
+        ],
+        "2024 Fall Semester Games": [  
+            {
+                "name": "ToyBox Game",
+                "engine": "Godot",
+                "description": "ToyBox Game is a game about anthropomorphic stuffed animals that fight in a toy town. You play as Sammy, a squirrel who stands at four feet tall.",
+                "images": [
+                    "images/2024/Toybox_Game.png"
+                ],
+                "roster": [
+                    "Project Lead: Cole Gaither",
+                    "Programmer: Nathan Lee",
+                    "Artist: Cole Gaither",
+                    "QA: Juan Hall",
+                    "Voice Acting: Juan Hall"
+                ]
+            },
+            {
                 "name": "Empress Invader",
                 "engine": "Unity",
                 "description": "A gloomy and confusing story about someone invading a castle with rooms that are entire worlds that become more dark and twisted the deeper you go into them, only to find someone that's a little too much like them.",
@@ -146,22 +268,6 @@
                         "href" : "https://cubari.moe/read/imgur/DYTkfMQ/1",
                         "icon" : "import_contacts"
                     }
-                ]
-            },
-            {
-                "name": "Feral Fight",
-                "engine": "Godot",
-                "tagline": "A Turn-Based RPG where everyone turns into animals.",
-                "description": "In the year 20XX a catastrophic explosion in Lab 010 marked the escape of many dangerous anthropomorphic convicts. Using their special abilities of morphing into animals, these criminals need to learn how to fight in their new bodies in order to survive.",
-                "images": [
-                    "images/2024/Feral_Fight.png"
-                ],
-                "roster": [
-                    "Project Lead: Ifeoluwapo Akinlosotu",
-                    "Programmers: Mac Molina, Niko Tabernero-Zuniga, Seth L., Shayan Khan",
-                    "Artists: Ifeoluwapo Akinlosotu, Jay China",
-                    "Composer: Jay China",
-                    "Writers: Ifeoluwapo Akinlosotu, Seth L."
                 ]
             }
         ]
@@ -1734,7 +1840,7 @@
                 "name": "Umbra",
                 "description": "Umbra is an adventure-horror game with a twist. Friends and enemies alike have long since been turned to stone by an evil curse. They only move when the player closes their eyes. Hide and dash your way through an evil-infested castle as you dodge enemies and try to solve the curse to free your friends.",
                 "roster": [
-                    "Project Lead: Chris Hamer",
+                    "Project Lead: Sophia Hamer",
                     "3D Art lead: Emma O'Donnell",
                     "Programming Lead: Jacob Bradford",
                     "Design Lead: Zachary Holtzman"
@@ -1816,7 +1922,7 @@
                 "tagline": "3D Platformer",
                 "roster": [
                     "Project and Art Lead: Andrea Wozniak",
-                    "Programming Lead: Chris Hamer",
+                    "Programming Lead: Sophia Hamer",
                     "Music: Evan Thweatt",
                     "Artists: Jacqueline Wojcik, Erika Schumacher, Savanah May"
                 ],
@@ -1873,7 +1979,7 @@
             },
             {
                 "name": "Dethroned",
-                "tagline": "Table Top Game",
+                "tagline": "Tabletop Game",
                 "description": "A card game fusing Real-Time combat with the Hidden-Role genre. Simple enough for parties but deep enough for veteran gamers.",
                 "roster": [
                     "Project Lead: Eliot Carney-Seim",
@@ -1941,7 +2047,7 @@
                 "tagline": "Educational Game",
                 "roster": [
                     "Project Lead: Andrea Wozniak",
-                    "Programming Lead: Chris Hamer",
+                    "Programming Lead: Sophia Hamer",
                     "Artist: Jasmine Martin",
                     "Music: Samuel Winnie"
                 ]
@@ -1965,7 +2071,7 @@
                 "description": "A disease in unleashed upon a derelict cruise ship. When the vessel's mechanical servants begin a fatal quaratining, it's up to Henrietta, the ship's mechanic, to save whoever she can.",
                 "roster": [
                     "Project Lead: Austin Pagano",
-                    "Programming Lead: Chris Hamer",
+                    "Programming Lead: Sophia Hamer",
                     "Art Lead: Savannah Myers",
                     "Artists: Nicole Simke, Graham Sullivan",
                     "Programmers: DJ Streat, Adam Cunningham",
@@ -2081,7 +2187,7 @@
                 "description": "After five years, a new generation of programmers are creating a new game engine from scratch. It's fast, versatile, and reliable - and after this year, this engine will be used to make new games with the latest technology.",
                 "roster": [
                     "Project Lead: Michael Leung",
-                    "Code: Michael Leung, Jonathan Engbert, Chris Hamer"
+                    "Code: Michael Leung, Jonathan Engbert, Sophia Hamer"
                 ]
             }
         ]
