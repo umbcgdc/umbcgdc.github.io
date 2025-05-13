@@ -245,6 +245,13 @@
                 ],
                 "roster": [
                     "Project Lead: Rick Jenkins"
+                ],
+                "links":[
+                    {
+                        "text" : "Play",
+                        "href" : "https://itsjustrick12.itch.io/against-the-grain",
+                        "icon" : "laptop"
+                    }
                 ]
             }
 
