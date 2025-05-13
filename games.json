@@ -239,6 +239,7 @@
                 "tagline": "Top Down 2D game",
                 "description": "Against The Grain is a Top Down 2D game that blends elements of strategy and farming games to create unique logistical challenges for the player to overcome. The project was made with Unity and C#.",
                 "images": [
+                    "images/2024/AgainstTheGrain0.png",
                     "images/2024/AgainstTheGrain1.png",
                     "images/2024/AgainstTheGrain2.png",
                     "images/2024/AgainstTheGrain3.png"
