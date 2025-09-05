@@ -762,7 +762,11 @@
                 "description" : "A top down arcade-style zombie shooter that features many different enemies, wave variations, and weapons. It is planned to have a endless mode, and a short story mode as well.",
                 "engine" : "Unity",
                 "images" : [
-                    "images/2022/Undead_Ambush_1.png"
+                    "images/2022/UA0.png",
+                    "images/2022/UA1.png",
+                    "images/2022/UA2.png",
+                    "images/2022/UA3.png",
+                    "images/2022/UA4.png"
                 ],
                 "roster" : [
                     "Project Lead: Rick Jenkins",
