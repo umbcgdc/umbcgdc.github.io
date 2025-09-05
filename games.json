@@ -475,30 +475,6 @@
                 ]
             },
             {
-                "name": "Breaking Down!",
-                "engine": "Unity",
-                "description": "Tear through enviorments using nothing but a baseball bat and pent up anger!",
-                "images": [
-                    "images/2023/Breaking_Down.png",
-                    "images/2023/Breaking_Down_2.png",
-                    "images/2023/Breaking_Down_3.png",
-                    "images/2023/Breaking_Down_4.png"
-                ],
-                "roster": [
-                    "Project Lead: Rick Jenkins",
-                    "Programmer: Rick Jenkins",
-                    "Artists: Toni Olafunmiloye, Rick Jenkins",
-                    "Composer: Heath Franklin"
-                ],
-                "links": [
-                    {
-                        "text" : "Play",
-                        "href" : "https://itsjustrick12.itch.io/breakingdown",
-                        "icon" : "laptop"
-                    }
-                ]
-            },
-            {
                 "name" : "Astro Frenzy",
                 "engine": "PICO-8",
                 "tagline": "Astronaut-themed Minigame Mayhem",
@@ -549,6 +525,118 @@
                     }
                 ]
 
+            }
+        ],
+        "2024 Spring Game Jam Games":[
+            {
+                "name": "Breaking Down!",
+                "engine": "Unity",
+                "description": "Tear through enviorments using nothing but a baseball bat and pent up anger!",
+                "images": [
+                    "images/2023/Breaking_Down.png",
+                    "images/2023/Breaking_Down_2.png",
+                    "images/2023/Breaking_Down_3.png",
+                    "images/2023/Breaking_Down_4.png"
+                ],
+                "roster": [
+                    "Project Lead: Rick Jenkins",
+                    "Programmer: Rick Jenkins",
+                    "Artists: Toni Olafunmiloye, Rick Jenkins",
+                    "Composer: Heath Franklin"
+                ],
+                "links": [
+                    {
+                        "text" : "Play",
+                        "href" : "https://itsjustrick12.itch.io/breakingdown",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name": "Boundless Breakout",
+                "description": "2D Car Builder where you add tools to your car to better defeat enemies.",
+                "images": [
+                    "images/2024/BB0.png",
+                    "images/2024/BB1.png",
+                    "images/2024/BB2.png",
+                    "images/2024/BB3.png"
+                ],
+                "roster": [
+                    "Josiah - Programming, Art, Sound Effects",
+                    "Angelo - Music, Programming",
+                    "Souri - Art"
+                ],
+                "links": [
+                    {
+                        "text" : "Play",
+                        "href" : "https://josiah-umbc.itch.io/boundless-breakout",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name": "Numba Ninja",
+                "description": "Break out of the enemy hideout by breaking down some numbers! Use your shuriken to create expressions that cancel out to zero to find a way out.",
+                "images": [
+                    "images/2024/NN1.png",
+                    "images/2024/NN2.png",
+                    "images/2024/NN3.png"
+                ],
+                "roster": [
+                    "Created by Christian Cunningham"
+                ],
+                "links": [
+                    {
+                        "text" : "Play",
+                        "href" : "https://in2one.itch.io/numba-ninja",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name": "Planet X",
+                "engine": "Unreal Engine",
+                "description": "A prototype for a 3D platforming game about an archer.",
+                "images": [
+                    "images/2024/PX.jpg",
+                    "images/2024/PX1.png",
+                    "images/2024/PX2.png",
+                    "images/2024/PX3.png",
+                    "images/2024/PX4.png",
+                    "images/2024/PX5.png",
+                    "images/2024/PX6.png"
+                ],
+                "roster": [
+                    "Artist: Ryan Griffin",
+                    "Programming: Keonte Wilson-Robinson"
+                ],
+                "links": [
+                    {
+                        "text" : "Play",
+                        "href" : "https://devkeo.itch.io/planet-x",
+                        "icon" : "laptop"
+                    }
+                ]
+            },
+            {
+                "name": "Blocks",
+                "description": "Break blocks down into smaller blocks.",
+                "images": [
+                    "images/2024/blocks1.png",
+                    "images/2024/blocks2.png"
+                ],
+                "roster": [
+                    "Created by Al Smith",
+                    "Audio by Fupi",
+                    "Font by Daniel Linssen"
+                ],
+                "links": [
+                    {
+                        "text" : "Play",
+                        "href" : "https://alasmith.itch.io/blocks",
+                        "icon" : "laptop"
+                    }
+                ]
             }
         ],
         "2023 Fall Semester Games": [
