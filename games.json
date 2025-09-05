@@ -235,7 +235,7 @@
             {
                 "name": "Against The Grain",
                 "engine": "Unity",
-                "tagline": "Top Down 2D game",
+                "tagline": "Top Down 2D Strategy Game",
                 "description": "Against The Grain is a Top Down 2D game that blends elements of strategy and farming games to create unique logistical challenges for the player to overcome. The project was made with Unity and C#.",
                 "images": [
                     "images/2024/AgainstTheGrain0.png",
@@ -253,8 +253,37 @@
                         "icon" : "laptop"
                     }
                 ]
+            },
+            {
+                "name": "King Scribble",
+                "engine": "Unity",
+                "tagline": "2D puzzle platformer game",
+                "description": "King Scribble is a 2D puzzle platformer game where you draw the platforms! The more platforms you draw, the more King Scribble shrinks. Draw too much and he'll pop! Along the way, you'll find extra supplies (pencil, pen, eraser, and more!) to help you navigate more challenging obstacles. Be creative and resourceful as you make it through each level and find your way back home!",
+                "images": [
+                    "images/2024/KS1.png",
+                    "images/2024/KS2.png",
+                    "images/2024/KS3.png",
+                    "images/2024/KS4.png",
+                    "images/2024/KS5.png"
+                ],
+                "roster": [
+                    "Creator: Evan McRae",
+                    "Producer: Jay Cina",
+                    "Design Lead: Brian Lawser",
+                    "Art Lead: Ginger Sealy",
+                    "Audio Lead: Colby Frashure",
+                    "Programming: Brian Lawser, Evan McRae, Jay Cina, Sormeh Jaribion, Scott Serafin",
+                    "Art: Anthony Bonilla Duron, Ginger Sealy, Justin Gaylord, Rowan Barr, Steven Nguyen, Halle Onyeador",
+                    "Audio: Colby Frashure, Evan McRae, Justin Gaylord"
+                ],
+                "links":[
+                    {
+                        "text" : "Play",
+                        "href" : "https://evanmcrae.itch.io/king-scribble",
+                        "icon" : "laptop"
+                    }
+                ]
             }
-
         ],
         "2024 Fall Semester Games": [  
             {
