@@ -567,6 +567,9 @@
                 "name": "Schweebo!",
                 "engine": "Unreal Engine 5",
                 "description": "A 3D puzzle platformer where you possess and use creatures to solve puzzles.",
+                "images" : [
+                    "images/2023/Schweebo1.png"
+                ],
                 "roster": [
                     "Project Lead: Al Smith",
                     "Programmers: Al Smith, Cameron Kozlay, John Daniel, Logal Mageha, Oliver Bobbitt, Sophia Hamer",
