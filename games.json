@@ -1,4 +1,64 @@
 {
+    "2025":{
+        "2025 Fall Games":[
+            {
+                "name":"Vulxilow",
+                "engine":"Ren'Py",
+                "tagline":"A furry, sci-fi visual novel where the choice and relationships you make define your ending.",
+                "description":"Vulxilow follows a mercenary by the name of Arfred Rojal, a hybrid Fox-like man who is hired by a rebel organization known as the Vulxilow. He is tasked with leading a team of him and 5 others to perform sabotage and infiltration against the enemy empire, the nation of Aral. Through gameplay such as player choice, relationships, and quick-time events, each player will be able to experience the game in a different way.",
+                "images":["images/2025/Vulxilow1.png"],
+                "roster":[
+                    "Jaylen Jenkins: Project Lead, Programmer, Writer, Artist",
+                    "Ky DeSilva: Artist",
+                    "Ayomide Oni: Music",
+                    "Sol Gelete: Music"
+                ],
+                "links": [
+                    {
+                        "text": "Play (Password: Starlight)",
+                        "href": "https://phynthefox.itch.io/vulxilow",
+                        "icon": "laptop"
+                    },
+                    {
+                        "text": "Give Feedback",
+                        "href": "https://docs.google.com/forms/d/e/1FAIpQLSeaKjcXxkm4XZnVHVTa2xW5tfpe8lOBsxwV8Jb9icSPBiV0eg/viewform?usp=dialog",
+                        "icon": "add comment"
+                    }
+                ]
+            },
+            {
+                "name":"Shirohebi and the Tower of Mercy",
+                "engine":"RPG Maker MV",
+                "tagline":"Climb the Tower of Mercy and discover its secrets!",
+                "description":"SatToM is an RPG inspired by games like Final Fantasy and Earthbound, where you climb The Tower of Mercy, a 100 floor tower filled with enemies, puzzles, and characters to meet. You play as Nemesis, a dragon searching for redemption for his past, and he suffers from a mysterious illness called \"The Possession.\" You can use a resource called \"Mercy\" to combat The Possession",
+                "images":["images/2025/shirohebi1.png", "images/2025/shirohebi2.png", "images/2025/shirohebi3.png",
+                            "images/2025/shirohebi4.png", "images/2025/shirohebi5.png", "images/2025/shirohebi6.png"],
+                "roster":["Lev Carter: Designer, Writer, Artist, Musician, Programmer"],
+                "links": [
+                    {
+                        "text": "Itch.io",
+                        "href": "https://levthelion.itch.io/shirohebi",
+                        "icon": "laptop"
+                    },
+                    {
+                        "text": "Steam",
+                        "href": "https://store.steampowered.com/app/3644170/Shirohebi_and_The_Tower_of_Mercy/",
+                        "icon": "share"
+                    }
+                ]
+            },
+            {
+                "name":"Trash Compactor",
+                "engine":"Godot ver 4.5",
+                "tagline":"Everyone sees your mistakes, don't make a fool of the company",
+                "description":"You exist in the modern corporate world and have nothing else better to do with your time. You learn of a special machine that your office building has that can create life out of junk and living organism parts. You and your coworkers use this machine to create creatures to fight each other with. Build your way up the ranks and through the building by making different combinations of creatures to defeat your coworkers.",
+                "images":["images/2025/Trash_compactor_concept_art.png"],
+                "roster":["Jacob: Project lead, Programmer, artist, avid bench warmer",
+                            "James: Lead game designer, story writer, sound effects artist, penalty box specialist",
+                            "Josh Epstein: Lead musician. sound effects artist, varsity wide receiver"]
+            }
+        ]
+    },
     "2024": {
         "2024-2025 Year Games": [
             {

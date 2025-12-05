@@ -1,0 +1,18 @@
+{
+    "name":"",
+    "engine":"",
+    "tagline":"",
+    "description":"",
+    "images":["", ""],
+    "roster":[""],
+    "links": [
+        {
+            "text": "Play",
+            "href": "",
+            "icon": "laptop"
+        }
+    ]
+}
+
+itch.io icon: "laptop"
+steam icon: "share"
