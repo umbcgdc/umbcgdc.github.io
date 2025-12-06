@@ -64,7 +64,8 @@ app.component('gamedev-games-list', {
       // get games from local file
       let response = await fetch('./games.json');
       this.games = await response.json();
-      this.years = Object.keys(this.games);
+      this.years = Object.keys(this.games); //returns keys (each year) as strings
+      this.years = this.years.map(key => parseInt(key, 10)); //Parse years into integers for sorting
 
       // find the newest year up to this year
       this.currentYear = new Date().getFullYear();
@@ -79,7 +80,7 @@ app.component('gamedev-games-list', {
         } else if (typeof b == "string") {
           return 1;
         }
-        return a - b;
+        return b - a;
       });
     },
     yearRange(year) {
