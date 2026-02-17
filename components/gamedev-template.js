@@ -181,6 +181,10 @@ template: `
   <hr style="margin-bottom: 2rem;">
   <div class="columns">
     <h3 class="column" style="margin-left:5%;">
+      <a href="https://discord.gg/tdY4e353wJ" class="icon-link">
+        <img src="ui/discord.png">
+      </a>
+
       <a href="https://twitter.com/umbcGameDev/" class="icon-link">
         <img src="ui/twitter.png">
       </a>
