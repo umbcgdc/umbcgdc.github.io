@@ -1,12 +1,12 @@
 {
     "2025":{
-        "2025 Fall Games":[
+        "2025-2026 Year Games":[
             {
                 "name":"Vulxilow",
                 "engine":"Ren'Py",
                 "tagline":"A furry, sci-fi visual novel where the choice and relationships you make define your ending.",
                 "description":"Vulxilow follows a mercenary by the name of Arfred Rojal, a hybrid Fox-like man who is hired by a rebel organization known as the Vulxilow. He is tasked with leading a team of him and 5 others to perform sabotage and infiltration against the enemy empire, the nation of Aral. Through gameplay such as player choice, relationships, and quick-time events, each player will be able to experience the game in a different way.",
-                "images":["images/2025/Vulxilow1.png"],
+                "images":["images/2025/Vulxilow1.png","images/2025/Vulxilow2.png","images/2025/Vulxilow3.png","images/2025/Vulxilow4.png"],
                 "roster":[
                     "Jaylen Jenkins: Project Lead, Programmer, Writer, Artist",
                     "Ky DeSilva: Artist",
@@ -56,6 +56,219 @@
                 "roster":["Jacob: Project lead, Programmer, artist, avid bench warmer",
                             "James: Lead game designer, story writer, sound effects artist, penalty box specialist",
                             "Josh Epstein: Lead musician. sound effects artist, varsity wide receiver"]
+            },
+            {
+                "name":"Another Game",
+                "description":"In this RPG, the main character and his friends gets their hands on a mysterious video game that has been the talk of of the internet lately. However, they quickly learn that this game is far from normal, as playing it ends up screwing over their world (something like Homestuck), and they must work together to fix it. The game will be episodic, with 8-9 separate “acts” connecting to the overarching plot. This pitch is focusing on Act 1, as the later ones might not be done by the end of the year.",
+                "images":["images/2025/another0.png", "images/2025/another1.png"],
+                "roster":[
+                    "Alimu Seesay - Project Lead, Writer, Artist"
+                ],
+                "links": [
+                    {
+                        "text": "Game Overview",
+                        "href": "https://docs.google.com/document/d/1GqapftnnS4leTd_RuIswTokldL2J_VlL0OYZpk0mQWo/",
+                        "icon": "article"
+                    },
+                    {
+                        "text": "Pitch",
+                        "href": "https://docs.google.com/presentation/d/1-s3N3St01YXpyKzCXXQbxM7UdTGmewEhOOa-HHeIeYQ/",
+                        "icon": "slideshow"
+                    }
+                ]
+            },
+            {
+                "name":"Belly of the Beast",
+                "engine":"Godot",
+                "tagline":"Take over this creature from the inside out... or become digested trying...",
+                "description":"A parasite has been consumed by a creature beyond its scale, and is now tasked with taking over the creature as its new host. The antsy parasite will run automatically, and it's up to you to evade enemy behaviors, collect coins, and scout out the path of least resistance as he progresses further into the Belly of the Beast!",
+                "images":["images/2025/botb6.png", "images/2025/botb0.png", "images/2025/botb1.png","images/2025/botb2.png","images/2025/botb3.png","images/2025/botb4.png","images/2025/botb5.png"],
+                "roster":[
+                    "Sam Mengel: Programmer, Artist, Musician, Level and UI Designer"
+                ]
+            },
+            {
+                "name":"Minecraft Distant Dreams",
+                "engine":"Minecraft Forge Mod",
+                "tagline":"Embark on your journey into a land echoing the distant past!",
+                "description":"In this Minecraft mod, you'll find youself lost in a strange but familiar world known as the Distant Realm. There, you'll encounter all sorts of strange creatures. While some resemble creatures of the Overworld, others seem like they come straight out of the halls of museums. What is this strange world? How do you survive in it? That's up for you to decide! DISCLAIMER: THIS IS NOT AN OFFICIAL MINECRAFT PRODUCT",
+                "images":["images/2025/dd0.png","images/2025/dd1.png","images/2025/dd2.png","images/2025/dd3.png","images/2025/dd4.png"],
+                "roster":[
+                    "Yaseen Hussain - Project Lead, Designer, Modeler, Animator",
+                    "Adeola Ogunsan - Programmer/Developer",
+                    "Bryn Bailiff - Programmer/Developer",
+                    "Mekyl Amimi - Programmer/Developer",
+                    "Jacqueline W. - Composer"
+                ]
+            },
+            {
+                "name":"XP Grinders",
+                "engine":"Dextrous and hand-made",
+                "tagline":"Where dying is temporary and XP is everything!",
+                "description":"XP Grinders is a multiplayer card game that is a mix of PvP and PvE. You and up to three other adventurers go up against a boss—also played by another player—and their minions. As you kill the minions, you gain more and more XP. The game ends if the boss kills everyone, or you all kill the boss. The player with the most XP wins! But be careful; if another player notices your XP count and kills you, they get half, and you lose half.",
+                "images":["images/2025/xpgrinders3.jpg","images/2025/xpgrinders0.jpg", "images/2025/xpgrinders1.jpg", "images/2025/xpgrinders2.png"],
+                "roster":[
+                    "Azaria Reindorf - Idea, Card Creation and Digitization, Card Balancing",
+                    "Niamh - Card art",
+                    "Tony Feng - Original card layout",
+                    "Josh Brown - Ideas, playtesting, prototype printing"
+                ]
+            },
+            {
+                "name":"Too Many Cooks",
+                "engine":"Unity (development), Mirror (multiplayer networking)",
+                "tagline":"Compete against your friends to contribute the most to making food in the ultimate kitchen battle!",
+                "description":"A chaotic first-person competitve cooking game where you and up to 3 of your friends face off in a culinary brawl to claim credit for each ingredient cooked. Success requires mastering a series of ingredient-based challenges to increase your score. Whether you're brawling it out to keep control of a sizzling steak, or running with a knife to chase down bouncing produce, cooperation is a myth in this kitchen battle; if a rival chef holds what you need to succeed, a solid swing with your right hook can send them flying, and their goods to the ground. From sabotaging opponents with grease fires to sniping them across a room with dough canisters, you will do whatever it takes to be the top chef.",
+                "images":["images/2025/tmc0.png", "images/2025/tmc1.png"],
+                "roster":[
+                    "PieMonsterEater - Project Lead, Programmer",
+                    "Ben Langsdale - 3D Models, Animations",
+                    "Amanuel Seifu - Level Design, Post-processing",
+                    "Disastermelon (Isaiah) - Music"
+                ],
+                "links": [
+                    {
+                        "text": "Play",
+                        "href": "https://piescode.net/toomanycooks",
+                        "icon": "laptop"
+                    }
+                ]
+            }
+        ],
+        "2026 Spring Semester Games":[
+            {
+                "name":"The Last Stop",
+                "engine":"Unity",
+                "tagline":"A train station at the end of the world.",
+                "description":"The Last Stop is a narrative focused puzzle game focused on blending an immersive atmosphere with interesting puzzles and storytelling. The current version of the game is a short demo focused on showing off those exact features.",
+                "images":["images/2025/tls0.png", "images/2025/tls1.png","images/2025/tls2.png","images/2025/tls3.png",
+                          "images/2025/tls4.png", "images/2025/tls5.png","images/2025/tls6.png","images/2025/tls7.png","images/2025/tls8.png"],
+                "roster":[
+                    "Casey Lee - Project Lead, Creative Lead, Writer",
+                    "Dax Mikow - Technical Lead, Graphics and Puzzle Programmer",
+                    "Luke Schultz - Gameplay Programmer",
+                    "Madeleine Woolley - Sound Programmer",
+                    "James Burris - Puzzle Designer",
+                    "Knight - 3D Character Artist",
+                    "C22Raptor - 3D Environmental Artist",
+                    "Jay Cina - Concept artist and UI Artist",
+                    "Ky DeSilva - 3D Character Artist",
+                    "Quest - Composer and UI Artist",
+                    "Brendan Witt - Sound Designer"
+                ],
+                "links": [
+                    {
+                        "text": "Play",
+                        "href": "https://edenemil.itch.io/the-last-stop",
+                        "icon": "laptop"
+                    }
+                ]
+            },
+            {
+                "name":"Masks of Magic",
+                "engine":"Unity 3D",
+                "tagline":"An endless 3d beat 'em-up game!",
+                "description":" A global game jam project made in 48 hours, and also my first time making a 3D game in unity. The theme was Mask, so I created a Persona-inspired beat 'em-up game where you dash and weave around enemies while performing your own attacks in order to get buffs to your combo. More enemies spawn faster as the game continues, creating a more difficult challenge requiring more skill and precise timing.",
+                "images":["images/2025/MoM0.png", "images/2025/MoM1.png", "images/2025/MoM2.png",  "images/2025/MoM3.png"],
+                "roster":[
+                    "Demi Oloyede"
+                ],
+                "links": [
+                    {
+                        "text": "Play",
+                        "href": "https://knightstrike5.itch.io/masks-of-magic",
+                        "icon": "laptop"
+                    }
+                ]
+            },
+            {
+                "name":"RotGrid",
+                "engine":"Godot",
+                "tagline":"Wave based, 2d top down zombie game, try to survive as long as you can, unlock areas, weapons, etc.",
+                "description":"In Rotgrid, you play as a survivor hauled up in a location, with multiple areas of the level to explore, some needing puzzles to solve and others requiring currency. Survive endless waves of zombies to last as long as possible, find new weapons, manage your resources. It is inspired by l4d2 and CoD Zombies but in a Top Down 2d Shooter style.",
+                "images":["images/2025/rotgrid.png"],
+                "roster":[
+                    "Omer Gunes"
+                ]
+            },
+            {
+                "name":"Against The Grain",
+                "engine":"Unity",
+                "tagline":"A turn-based game that blends farming and tactics mechanics.",
+                "description":"Against The Grain is a top-down 2D tactics game that blends elements from games like Fire Emblem and Advanced Wars with farming sim mechanics found in games like Stardew Valley and the Harvest Moon series. Plant crops, water them, sell your yield, and build a battalion of animals and farmers to take on the vicious and land-hungry NoZama corporation!",
+                "images":["images/2025/atg0.png", "images/2025/atg1.png", "images/2025/atg2.png"],
+                "roster":[
+                    "Rick Jenkins - Project lead, Lead programmer",
+                    "Henry Walenczyk - Programmer",
+                    "Cristian Uribe - Programmer",
+                    "Daniel Lee - Lead Artist",
+                    "Ben Varga - Artist",
+                    "Lacey Wilburn - Artist",
+                    "Unchisa Kitisook - Artist"
+                ],
+                "links": [
+                    {
+                        "text": "Play",
+                        "href": "https://itsjustrick12.itch.io/against-the-grain",
+                        "icon": "laptop"
+                    }
+                ]
+            },
+            {
+                "name":"Mason's Birthday",
+                "engine":"Godot ver 4.6",
+                "tagline":"How much of a devoted friend are you?",
+                "description":"You play as Mason's best friend and try to make Mason love you by the end of the game. As you play, you learn more about Mason's questionable obsession and try to survive the creatures roaming around Mason's house. This is the first in a series of games being worked on.",
+                "images":["images/2025/mb0.png", "images/2025/mb1.png", "images/2025/mb2.png"],
+                "roster":[
+                    "Jacob Fruchey: Project lead, programmer, 3d artist",
+                    "BrighterBug: Artist - Mason",
+                    "Marshal Ikpea: Artist - Jacob",
+                    "Sam Mengel: Artist - Hanji",
+                    "Demi Oloyede: Artist - Shi",
+                    "Ifeoluwapo Akinlosotu: Artist - Ollie"
+                ]
+            },
+            {
+                "name":"Voltage Virus",
+                "engine":"Unity 3D",
+                "tagline":"A real-time strategy game where you battle against evil robots!",
+                "description":"A project made in just 48 hours for the Ctrl+Alt+DMV gamejam. Your character will automatically attack the closest enemy, but you can direct their movement and drag skill cards in order to perform powerful attacks! Landing attacks an enemy will build up a stun gauge, which when filled will stun that enemy for a period of time and leave them open to attacks! However, the same thing can also happen to you!",
+                "images":["images/2025/vv0.png", "images/2025/vv1.png", "images/2025/vv2.png"],
+                "roster":[
+                    "Demi Oloyede - Programming, Art, Animation",
+                    "Alex Hazoume - Music"
+                ],
+                "links": [
+                    {
+                        "text": "Play",
+                        "href": "https://knightstrike5.itch.io/voltage-virus",
+                        "icon": "laptop"
+                    }
+                ]
+            },
+            {
+                "name":"Sandwich Dog",
+                "engine":"Unity",
+                "tagline":"The VR game where you make a sandwich... as a dog!",
+                "description":"Sandwich Dog is a virtual reality (VR) video game created with Unity engine as part of the Capstone Games Group Project course. The game makes core use of the XR interaction toolkit package and native physics systems from Unity engine to immerse the player in a world where they have to do a mundane task in an unfamiliar way. The goal of the game is to make a peanut butter and jelly sandwich with the dexterity challenges that come with being an ordinary dog. This project encouraged visual art majors who were previously unfamiliar with 3D software to learn how to create game-ready assets, and challenged programmers to encapsulate and test gameplay systems without having access to the VR hardware at all times.",
+                "images":["images/2025/sd1.png", "images/2025/sd2.png", "images/2025/sd3.png", "images/2025/sd4.png", "images/2025/sd5.png", "images/2025/sd6.png"],
+                "roster":[
+                    "Ky DeSilva - Project Lead, Programmer",
+                    "Luke Schultz - Programmer",
+                    "Chloe Hradek - 3D artist",
+                    "Riley Heath - 3D artist",
+                    "Sophie Suit - 3D and 2D artist",
+                    "Maria Diaz - 3D and 2D artist",
+                    "Derek Levey - 3D and VFX artist"
+                ],
+                "links": [
+                    {
+                        "text": "Github Repository",
+                        "href": "https://github.com/LupidCorvid/SandwichDog",
+                        "icon": "commit"
+                    }
+                ]
             }
         ]
     },
