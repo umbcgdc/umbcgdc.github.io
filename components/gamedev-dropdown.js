@@ -15,7 +15,7 @@ props: {
 template: `
 <div class="gamedev-dropdown">
   <button>
-    <h3 :class="arrowClass" @click="dropdown">{{ label }}</h3>
+    <h2 :class="arrowClass" @click="dropdown">{{ label }}</h3>
   </button>
   <div :class="contentClass">
     <slot></slot>

@@ -73,7 +73,6 @@ data() {
       ["Resources", "resources.html"],
       ["Events", "events.html"],
       ["Contact", "contact.html"],
-      ["Shop", "shop.html"]
     ],
     open: false,
     hamburger: {
@@ -181,16 +180,12 @@ template: `
   <hr style="margin-bottom: 2rem;">
   <div class="columns">
     <h3 class="column" style="margin-left:5%;">
-      <a href="https://discord.gg/tdY4e353wJ" class="icon-link">
+      <a href="https://discord.gg/k9QKByV" class="icon-link">
         <img src="ui/discord.png">
       </a>
 
       <a href="https://twitter.com/umbcGameDev/" class="icon-link">
         <img src="ui/twitter.png">
-      </a>
-      
-      <a href="https://www.facebook.com/groups/umbcgamedev/" class="icon-link">
-        <img src="ui/facebook.png">
       </a>
 
       <a href="https://www.instagram.com/umbcgamedevelopers/" class="icon-link">
@@ -199,10 +194,6 @@ template: `
       
       <a href="https://www.youtube.com/channel/UCIKfaNXsz7qUd366ayobr-Q/" class="icon-link">
         <img src="ui/youtube.png">
-      </a>
-
-      <a href="https://www.twitch.tv/umbcgamedev/" class="icon-link">
-        <img src="ui/twitch.png">
       </a>
 
       <a href="mailto:umbcgamedev@gmail.com" class="icon-link">

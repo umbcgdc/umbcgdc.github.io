@@ -1,146 +1,344 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="ui/logo.ico" type="image/x-icon">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="ui/logo.ico" type="image/x-icon" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
   <title>UMBC Game Developers Club</title>
 </head>
 
 <body>
-<div id="gamedev-root">
-<gamedev-header></gamedev-header>
+  <div id="gamedev-root">
+    <gamedev-header></gamedev-header>
 
-<main class="main">
+    <main class="main">
+      <h1>Resources</h1>
+      <p></p>
 
-<h1>Resources</h1>
+      <section>
+        <!-- K-12 Resources -->
+        <gamedev-dropdown label="K-12 Resources">
+          <ul>
+            <li><a href="https://drive.google.com/file/d/1sGBfcBohxUsj543ve1wU1v_cKSWCj5_b/view?usp=sharing">Introductory Game Software Brochure</a></li>
+            <li><a href="resources/2019_Brochure.pdf">Resource Guide 2019</a></li>
+          </ul>
+        </gamedev-dropdown>
 
-<section>
-  <h1>K-12 Resources</h1>
-  <p><a href="https://drive.google.com/file/d/1sGBfcBohxUsj543ve1wU1v_cKSWCj5_b/view?usp=sharing">
-    <i class="material-icons md-18">description</i>
-    Introductory Game Software Brochure</a></p>
-  <p><a href="resources/2019_Brochure.pdf">
-    <i class="material-icons md-18">description</i>
-    Resource Guide 2019
-  </a></p>
-</section>
+        <!-- Website Resources -->
+        <gamedev-dropdown label="Websites">
+          <!-- General Websites -->
+          <h3>General Websites</h3>
+          <ul>
+            <li><a href="https://www.startmakinggames.com/">Start Making Games</a></li>
+            <li><a href="https://gamedev.stackexchange.com/">Game Dev Stack Exchange</a></li>
+            <li><a href="https://gamedev.net/">gamedev.net</a></li>
+          </ul>
 
-<section>
+          <!-- Learning Websites -->
+          <h3>Learning Websites</h3>
+          <ul>
+            <li><a href="https://gameprogrammingpatterns.com/">Game Programming Patterns</a></li>
+            <li><a href="https://book.leveldesignbook.com/">The Level Design Book</a></li>
+          </ul>
 
-  <h1>Resources</h1>
+          <!-- Database/Reference Websites -->
+          <h3>Database/Reference Websites</h3>
+          <ul>
+            <li><a href="https://gamemechanicexplorer.com/">Game Mechanic Explorer</a></li>
+            <li><a href="https://gameaccessibilityguidelines.com/">Game Accessibility Guidelines</a></li>
+            <li><a href="https://www.gameuidatabase.com/index.php">Game UI Database</a></li>
+          </ul>
+        </gamedev-dropdown>
 
-  <p><a href="https://www.startmakinggames.com/">
-    <i class="material-icons md-18">link</i>
-    Start Making Games website
-  </a></p>
+        <gamedev-dropdown label="Game Engines">
+          <ul>
+            <li><a href="https://unity.com/">Unity</a> - Free* (Windows, Mac, Linux)</li>
+            <li><a href="https://godotengine.org/">Godot</a> - Free (Windows, Mac, Linux, Android, Web Editor)</li>
+            <li><a href="https://www.unrealengine.com/">Unreal Engine</a> - Free* (Windows, Mac, Linux)</li>
+            <li><a href="https://www.rpgmakerweb.com/">RPG Maker</a> - Paid (Windows, Mac, Linux)</li>
+            <li><a href="https://gamemaker.io/en">GameMaker</a> - Free* (Windows, Mac, Linux)</li>
+            <li><a href="https://www.renpy.org/">Ren'Py</a> - Free (Windows, Mac, Linux)</li>
+            <li><a href="https://www.stride3d.net/">Stride (formerly Xenko)</a> - Free (Windows)</li>
+            <li><a href="https://www.construct.net/en">Construct</a> - Paid (Windows, Mac, Linux, Android, iOS)</li>
+            <li><a href="https://twinery.org/">Twine</a> - Free (Windows, Mac, Linux)</li>
+            <li><a href="https://bevy.org/">Bevy</a> - Free (Windows, Mac, Linux)</li>
+          </ul>
+          <p>
+            *This engine is free to use, but has specific lisencing depending
+            on how much money the game makes. Check each webpage for more
+            information.
+          </p>
+        </gamedev-dropdown>
 
-  <gamedev-dropdown label="Primary Engines">
+        <gamedev-dropdown label="Languages">
+          <p>
+            Different game engines use different programming languages, but
+            many fundamental programming concepts can be transferred from one
+            language to another! This list is less of a recommendation for
+            what languages to use, but rather a collection of links to
+            documentation for the different languages.
+          </p>
 
-    <p><a href="https://www.unrealengine.com/en-US/what-is-unreal-engine-4">Unreal Engine 4</a></p>
-    <p>One of the primary game engines used right now for 3D game development, featuring a strong C++ usage and various tools such as blueprints to streamline development.</p>
+          <!-- Languages -->
+          <ul>
+            <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a></li>
+            <li><a href="https://cplusplus.com/doc/tutorial/">C++</a></li>
+            <li><a href="https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170">C</a></li>
+            <li><a href="https://docs.oracle.com/en/java/">Java</a></li>
+            <li><a href="https://docs.python.org/3/">Python</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+            <li>
+              <a
+                href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html">GDScript</a>
+            </li>
+          </ul>
+        </gamedev-dropdown>
 
-    <p><a href="https://unity3d.com/">Unity3D</a></p>
-    <p>One of the more accessible game engines used for game development, with C# as the primary code language and various tools and plugins to develop both 2D and 3D games.</p>
+        <gamedev-dropdown label="Programming Frameworks and Libraries">
+          <ul>
+            <li><a href="https://www.love2d.org/">LÖVE</a> - Free (Windows, Mac, Linux, Android, iOS)</li>
+            <li><a href="https://lovr.org/">LÖVR</a> - Free (Windows, Mac, Linux, Android)</li>
+            <li><a href="https://www.pygame.org/docs/">Pygame</a> - Free</li>
+            <li><a href="https://monogame.net/">MonoGame</a> - Free</li>
+          </ul>
+        </gamedev-dropdown>
 
-  </gamedev-dropdown>
+        <gamedev-dropdown label="3D Modeling/Animation">
+          <ul>
+            <li><a href="https://www.blender.org/">Blender</a> - Free (Windows, Mac, Linux)</li>
+            <li><a href="https://www.autodesk.com/products/maya/overview">Maya</a> - Paid (Windows, Mac, Linux)</li>
+            <li><a href="https://blockbench.net/">Blockbench</a> - Free (Windows, Mac, Linux)
+              <ul>
+                <li>Used for low poly modeling.</li>
+              </ul>
+            </li>
+          </ul>
+        </gamedev-dropdown>
 
-  <gamedev-dropdown label="Alternative Engines">
-    <p><a href="https://www.cryengine.com/">CryEngine</a></p>
-    <p><a href="https://godotengine.org/">Godot</a></p>
-    <p><a href="https://stride3d.net/">Stride</a></p>
-    <p>How to use Xenko on Lab Computers:<p>
-    <ol>
-      <li>Click “download package” from <a href="https://www.nuget.org/packages/Xenko.GameStudio/">this website.</a></li>
-      <li>Right click the downloaded .nupkg and unzip it with 7zip</li>
-      <li>Go to the lib folder and click on “Xenko.GameStudio.exe”. It may take a little bit to load for the first time.</li>
-    </ol>
-    <p><a href="https://aws.amazon.com/lumberyard/">Amazon Lumberyard</a></p>
-    <p><a href="https://www.yoyogames.com/gamemaker">Game Maker Studio</a></p>
-  </gamedev-dropdown>
+        <gamedev-dropdown label="2D Art">
+          <ul>
+            <li>
+              <a href="https://krita.org/en/">Krita</a> - Free (Windows, Mac,
+              Linux)
+              <ul>
+                <li>This program also supports animation.</li>
+              </ul>
+            </li>
+            <li><a href="https://www.gimp.org/">GIMP</a> - Free (Windows, Mac, Linux)
+              <ul>
+                This program is used for image editing. 
+              </ul>
+            </li>
+            <li><a href="https://www.aseprite.org/">Aseprite</a> - Paid (Windows, Mac, Linux)
+              <ul>
+                <li>
+                  This program is used for pixel art. It also supports animation.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.piskelapp.com/">Piskel</a> - Free (Windows,
+              Mac, Linux, Web Editor)
+              <ul>
+                <li>
+                  This program is used for pixel art. It also supports animation.
+                </li>
+              </ul>
+            </li>
+            <li><a href="https://www.clipstudio.net/en/">Clip Studio Paint</a>
+              <ul>
+                <li>This program also supports animation.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.systemax.jp/en/sai/">PaintTool SAI</a>
+            </li>
+            <li>
+              <a href="https://paint.net/">Paint.NET</a> - Free (Windows)
+              <ul>
+                <li>This program is used for image editing.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://inkscape.org/">Inkscape</a> - Free (Windows,
+              Mac, Linux)
+              <ul>
+                <li>This program is used for vector editing.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://procreate.com/">Procreate</a> - Paid (iOS)
+            </li>
+            <ul>
+              <li>This program also supports animation.</li>
+            </ul>
+            <li>
+              <a href="https://www.mapeditor.org/">Tiled</a> - Free (Windows,
+              Mac, Linux)
+              <ul>
+                <li>This program is used for creating tilemaps.</li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.tilesetter.org/">Tilesetter</a> - Free*
+              (Windows, Mac, Linux)
+              <ul>
+                <li>This pgoram is used for creating tilemaps.</li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            *There is a free and paid version of this application, with the
+            free version having limited features.
+          </p>
+        </gamedev-dropdown>
 
-  <gamedev-dropdown label="Languages">
-    <p><a href="http://www.cplusplus.com/doc/tutorial/">C++</a>: The language of choice for various engines, including Unreal Engine 4.</p>
-    <p><a href="https://www.tutorialspoint.com/csharp/">C#</a>: Another language used by several engines, including Unity3D Engine.</p>
-    <p>Latest C# Resources for Unity:<p>
-    <ul>
-      <li>
-        <p><a href="https://docs.microsoft.com/en-us/visualstudio/cross-platform/unity-scripting-upgrade?view=vs-2017#choosing-between-net-4x-and-net-standard-20-profiles">Microsoft .NET 4.x in Unity</a></p>
-      </li>
-      <li>
-        <p><a href="https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap-en-us/0">A guide on Asynchronous programming using Coroutines and TAP.</a></p>
-      </li>
-      <li>
-        <p><a href="http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/">Another resource on Async and Await in Unity.</a></p>
-      </li>
-    </ul>
-  </gamedev-dropdown>
+        <gamedev-dropdown label="2D Animation">
+          <ul>
+            <li>
+              <a href="https://opentoonz.github.io/e/index.html">OpenToonz</a>
+              - Free, Windows, Mac
+            </li>
+            <li>
+              <a href="https://tahoma2d.org/">Tahoma2D</a> - Free, Windows, Mac, Linux
+            </li>
+            <li>
+              <a href="https://www.toonboom.com/products/harmony">Toon Boom Harmony</a> - Paid (Windows, Mac, Linux)
+            </li>
+            <li>
+              <a href="https://www.pencil2d.org/">Pencil2D</a> - Free (Windows, Mac, Linux)
+            </li>
+            <li>
+              <a href="https://toonsquid.com/">ToonSquid</a> - Paid (iOS)
+            </li>
+            <li>
+              <a href="https://www.live2d.com/en/">Live2D Cubism</a> - Free*
+              (Windows, Mac)
+              <ul>
+                <li>
+                  Live2D Cubism is a software for animating static images by
+                  moving separate parts of the image to get a 2.5D look.
+                </li>
+                <li>
+                  There exists a
+                  <a href="https://student.live2d.com/en/student-discount/">student discount</a>
+                  for the software.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            *There is a free and paid version of this application, with the
+            free version having limited features.
+          </p>
+        </gamedev-dropdown>
 
-  <gamedev-dropdown label="3D Modeling">
-    <p><a href="https://www.blender.org/">Blender</a></p>
-    <p><a href="https://www.autodesk.com/products/maya/overview">Maya</a></p>
-    <p><a href="https://www.autodesk.com/products/3ds-max/overview">3DS Max</a></p>
-    <p><a href="https://www.poliigon.com/">Poliigon (textures and materials)</a></p>
-  </gamedev-dropdown>
+        <gamedev-dropdown label="Sound">
+          <!-- Libraries -->
+          <h3>Sound Libraries</h3>
+          <ul>
+            <li><a href="https://freesound.org/">FreeSound</a></li>
+            <li><a href="https://freemusicarchive.org/">Free Music Archive</a></li>
+            <li><a href="https://gamesounds.xyz/">gamesounds.xyz</a></li>
+            <li><a href="https://soundbible.com/">SoundBible</a></li>
+          </ul>
 
-  <gamedev-dropdown label="2D Art">
-    <p><a href="https://krita.org/en/">Krita</a></p>
-    <p><a href="https://inkscape.org/">Inkscape (Vector)</a></p>
-  </gamedev-dropdown>
+          <!-- Software -->
+          <h3>Software</h3>
+          <ul>
+            <li><a href="https://www.audacityteam.org/">Audacity</a> - Free(Windows, Mac, Linux)</li>
+            <li><a href="https://www.cakewalk.com/">Cakewalk</a> - Free (Windows, Mac)</li>
+            <li><a href="https://www.fmod.com/">FMOD</a> - Free (Windows, Mac, Linux)</li>
+            <li><a href="https://www.reaper.fm/index.php">Reaper</a> - Paid (Windows, Mac, Linux)</li>
+            <li><a href="https://www.ableton.com/">Ableton</a> - Paid (Windows, Mac)</li>
+            <li><a href="https://www.image-line.com/">FL Studio</a> - Paid (Windows, Mac)</li>
+          </ul>
 
-  <gamedev-dropdown label="Animation">
-    <p><a href="https://opentoonz.github.io/e/">OpenToonz</a></p>
-  </gamedev-dropdown>
+          <!-- SFX Generators -->
+          <h3>SFX Generators</h3>
+          <ul><li><a href="https://sfbgames.itch.io/chiptone">ChipTone</a> - Free (Windows, Mac, Web Editor)</li>
+            <li><a href="https://www.bfxr.net/">bfxr</a> - Free (Web Editor)</li>
+            <li><a href="https://sfxr.me/">jsfxr</a> - Free* (Web Editor)</li>
+          </ul>
 
-  <gamedev-dropdown label="Sound">
-    <p><a href="https://freesound.org/">FreeSound</a></p>
-    <p><a href="http://freemusicarchive.org/">Free Music Archive</a></p>
-    <p><a href="https://www.bandlab.com/products/cakewalk">Cakewalk (Digital Audio Workstation)</a></p>
-  </gamedev-dropdown>
+          <p>
+            *There is a free and paid version of this application, with the
+            free version having limited features.
+          </p>
+        </gamedev-dropdown>
 
-  <gamedev-dropdown label="Other Assets">
-    <p><a href="https://kenney.nl/">Kenney</a></p>
-  </gamedev-dropdown>
+        <gamedev-dropdown label="Source Control">
+          <p>
+            Also known as version control, source control is used to keep
+            track of changes in code and files in a program. Source control is
+            important for collaborating with others, as it allows multiple
+            people to work on a project at once without accidentally
+            overriding someone else's work. Source control is also good for
+            keeping track of what features one has added to their program, and
+            can allow one to rollback to previous versions in case something
+            breaks. <a href="https://git-scm.com/">Git</a> is a free and open
+            source version control system which can run on Windows, Mac, and
+            Linux, and is widely used by developers for source control.
+          </p>
+          <p>
+            Git can accessed from the command line, but there exists Git
+            clients which can provide the user with either a GUI or an
+            enhanced command line environment.
+          </p>
 
-  <gamedev-dropdown label="Source Control">
-    <p>Teams usually use Git for collaboration. A few popular Git clients are:</p>
-    <ul>
-      <li><a href="https://desktop.github.com">GitHub Desktop</a></li>
-      <li><a href="https://gitextensions.github.io">Git Extensions</a></li>
-      <li><a href="https://www.sourcetreeapp.com">SourceTree</a></li>
-      <li><a href="https://git-fork.com">Fork</a></li>
-      <li><a href="https://www.gitkraken.com">GitKraken</a></li>
-    </ul>
-    <p>Some Git hosting sites:</p>
-    <ul>
-      <li><a href="https://about.gitlab.com">GitLab</a></li>
-      <li><a href="https://github.com">GitHub</a></li>
-      <li><a href="https://gitgud.io/">GitGud</a></li>
-      <li><a href="https://bitbucket.org">Bitbucket</a></li>
-    </ul>
-  </gamedev-dropdown>
+          <!-- Git Clients -->
+          <h3>Git Clients</h3>
+          <ul>
+            <li><a href="https://desktop.github.com">GitHub Desktop</a></li>
+            <li><a href="https://gitextensions.github.io">Git Extensions</a></li>
+            <li><a href="https://www.sourcetreeapp.com">SourceTree</a></li>
+            <li><a href="https://git-fork.com">Fork</a></li>
+            <li><a href="https://www.gitkraken.com">GitKraken</a></li>
+          </ul>
 
-</section>
+          <!-- Git Hosting -->
+          <h3>Git Hosting</h3>
+          <ul>
+            <li><a href="https://about.gitlab.com">GitLab</a></li>
+            <li><a href="https://github.com">GitHub</a></li>
+            <li><a href="https://gitgud.io/">GitGud</a></li>
+            <li><a href="https://bitbucket.org">Bitbucket</a></li>
+            <li><a href="https://codeberg.org/">Codeberg</a></li>
+            <li><a href="https://about.gitea.com/">Gitea</a></li>
+          </ul>
+        </gamedev-dropdown>
 
-<section>
-  <h1>Jobs</h1>
-  <p><a href="https://gamejobhunter.com/local-video-game-companies-baltimore/"><i class="material-icons md-18">link</i> Local Game Companies</a></p>
-  <p><a href="https://www.gamedevmap.com/index.php?country=United%20States&state=Maryland&city=&query=&type="><i class="material-icons md-18">link</i> GameDevMap (Maryland)</p>
-</section>
+        <gamedev-dropdown label="Assets">
+          <ul>
+            <li><a href="https://kenney.nl/">Kenney</a></li>
+            <li><a href="https://game-icons.net/">Game-icons.net</a></li>
+          </ul>
+        </gamedev-dropdown>
+      </section>
 
-</main>
+      <section>
+        <h1>Jobs</h1>
+        <ul>
+          <li><a
+              href="https://www.gamedevmap.com/index.php?country=United%20States&state=Maryland&city=&query=&type=">GameDevMap (Maryland)</a> </li>
+          <li><a href="https://www.workwithindies.com/">Work With Indies</a></li>
+        </ul>
+      </section>
+    </main>
 
-<gamedev-footer></gamedev-footer>
-</div>
+    <gamedev-footer></gamedev-footer>
+  </div>
 
-<script src="js/vue.min.js"></script>
-<script src="components/gamedev-template.js"></script>
-<script src="components/gamedev-dropdown.js"></script>
-<script>app.mount('#gamedev-root')</script>
+  <script src="js/vue.min.js"></script>
+  <script src="components/gamedev-template.js"></script>
+  <script src="components/gamedev-dropdown.js"></script>
+  <script>
+    app.mount("#gamedev-root");
+  </script>
 </body>
 
 </html>
